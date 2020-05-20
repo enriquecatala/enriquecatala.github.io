@@ -2,6 +2,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "0.0.0.0" # the base hostname & protocol for your site
 
+
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
@@ -15,7 +16,7 @@ theme_settings:
      <h1>Blog tecnológico de Enrique Catalá Bañuls</h1>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme/">Portfolio-iro</a>
 
   # Icons
   rss: false
@@ -72,4 +73,4 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
