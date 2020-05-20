@@ -2,7 +2,7 @@
 layout: post
 title: SharedMaterial
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "https://image.shutterstock.com/image-vector/check-mark-vector-icon-green-260nw-1326165008.jpg"
+thumbnail-path: "img/icons/teaching.png"
 short-description: Shared material
 
 ---
