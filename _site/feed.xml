@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>A website with blog posts and pages</description>
-    <pubDate>Wed, 20 May 2020 09:54:37 -0500</pubDate>
+    <pubDate>Wed, 20 May 2020 11:06:54 -0500</pubDate>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -56,15 +56,6 @@
 &lt;p&gt;Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Nov 2014 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Feature images</title>
-        <link>http://0.0.0.0:4000/2014/11/29/feature-images.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2014/11/29/feature-images.html</guid>
-        <description>&lt;p&gt;This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Nov 2014 00:00:00 -0600</pubDate>
       </item>
     
       <item>
