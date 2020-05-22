@@ -75,3 +75,11 @@ sass:
   style: :compressed
 
 plugins: [jekyll-paginate]
+
+# Tipue search settings
+tipue_search:
+  include:
+    pages: true
+    collections: [_posts]
+  exclude:
+    files: [search.html]
