@@ -5,66 +5,105 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Fri, 29 May 2020 03:28:19 -0500</pubDate>
+    <pubDate>Fri, 29 May 2020 08:03:28 -0500</pubDate>
     
       <item>
-        <title>Disaster recovery from OnPrem to Azure</title>
-        <link>http://0.0.0.0:4000/azure/2020/05/20/OnPrem-To-Azure-DR.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/azure/2020/05/20/OnPrem-To-Azure-DR.html</guid>
-        <description>&lt;p&gt;demo articulo&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 May 2020 17:25:53 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Sample post</title>
-        <link>http://0.0.0.0:4000/2014/11/30/sample-post.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2014/11/30/sample-post.html</guid>
-        <description>&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.&lt;/p&gt;
+        <title>My new blog: GitHub pages, Jekyll and docker</title>
+        <link>http://0.0.0.0:4000/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html</guid>
+        <description>&lt;p&gt;After some internal debates with myself, I found that the best option for me to re-start blogging was to return to basics and get a flat and easy to maintain blog.&lt;/p&gt;
+
+&lt;p&gt;Since I found myself writing a lot of code in github and maintaining lots of Markdown documents and Python Notebooks… the main reason to choose Jekyll was because of &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. In this post, i want to help you to start blogging with GitHub Pages and maintain your blog with the strategy i found interesting: Docker + github branches&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;I´m using Windows 10 as my setup, but you can use any linux or Mac distro you want, since everything used here is opensource linux based code:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
-  &lt;li&gt;Donec a diam lectus&lt;/li&gt;
-  &lt;li&gt;Sed sit amet ipsum mauris&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.windows.com/windowsexperience/2020/05/27/how-to-get-the-windows-10-may-2020-update/&quot;&gt;Windows 10 2004 update&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.docker.com/products/docker-desktop&quot;&gt;Docker version &amp;gt;=2.3.0.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;Enable WSL2 on Windows10&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab&quot;&gt;Ubuntu 20.04 from windows store&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
-
-&lt;p&gt;Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula &lt;em&gt;semper consectetur sagittis&lt;/em&gt;, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.&lt;/p&gt;
-
-&lt;p&gt;Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.&lt;/p&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque&lt;/p&gt;
+  &lt;p&gt;NOTE: Those requisites are important, because with previous version of Windows 10, WSL and docker, the blog will not start correctly&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.&lt;/p&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 
-&lt;p&gt;Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.&lt;/p&gt;
+&lt;h3 id=&quot;configure-docker&quot;&gt;Configure docker&lt;/h3&gt;
+
+&lt;p&gt;Check the WSL2 integration on your Docker configuration&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And set up the distro you want to use with docker&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/2.png&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;create-your-repository&quot;&gt;Create your repository&lt;/h3&gt;
+
+&lt;p&gt;First action to do is follow the &lt;a href=&quot;https://guides.github.com/features/pages/&quot;&gt;official instructions&lt;/a&gt; and create your github page.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;TIP: After creating your repository, go and clone any Jekyll theme preconfigured (I´m using &lt;a href=&quot;https://github.com/rohanchandra/type-theme/&quot;&gt;portfolio-iro&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;setup-your-docker&quot;&gt;Setup your docker&lt;/h3&gt;
+
+&lt;p&gt;One of the main reasons i choose Jekyll was because i can run it in a container to quickly edit and review my posts before uploading to the site.&lt;/p&gt;
+
+&lt;p&gt;1) Create a &lt;em&gt;docker-compose.yml&lt;/em&gt; file in the root directory&lt;/p&gt;
+
+&lt;p&gt;2) Add the following contents&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;2.2'&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll/jekyll:latest&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll serve --watch --force_polling --verbose&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4000:4000&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.:/srv/jekyll&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will ensure that your container will not only start your blog locally, but will be refreshing your site after each “save” you are doing on the markdown file containing your post. This is a very convenient way to edit material and see how it renders in your blog when you commit the change to the main branch.&lt;/p&gt;
+
+&lt;p&gt;3) Execute “&lt;em&gt;docker-compose up&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;4) Open in browser &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;5) Start &lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/08-blogging/&quot;&gt;blogging as usual&lt;/a&gt; :)&lt;/p&gt;
+
+&lt;h2 id=&quot;tips&quot;&gt;Tips&lt;/h2&gt;
+
+&lt;h3 id=&quot;branches&quot;&gt;Branches&lt;/h3&gt;
+
+&lt;p&gt;To help you creating new posts and testing capabilities (like updating look and feel of your blog for example), you only need to &lt;strong&gt;create a branch of your repo&lt;/strong&gt;, and work on that branch.&lt;/p&gt;
+
+&lt;p&gt;For example…in my case, I created a branch called “&lt;em&gt;vNext&lt;/em&gt;” where I´ll create the new posts. The only thing to do to publish the post then will be to do a Pull request with my main branch :)&lt;/p&gt;
+
+&lt;p&gt;I´m also adding some kind of protection to myself, by requiring manual pull request reviewing…this will hopefuly minimize  mistakes from myself :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/3.png&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;To reference images in your markdown files, remember to point to the relative path from the root directory:&lt;/p&gt;
+
+&lt;p&gt;This will &lt;strong&gt;not&lt;/strong&gt; render the image correctly:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     !&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;../img/posts/createblog/2.png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will render the image correctly:&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     !&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;/img/posts/createblog/2.png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Sun, 30 Nov 2014 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <link>http://0.0.0.0:4000/jekyll/update/2000/05/03/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/jekyll/update/2000/05/03/welcome-to-jekyll.html</guid>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://ctalk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 03 May 2000 17:25:53 -0500</pubDate>
+        <pubDate>Thu, 28 May 2020 17:25:53 -0500</pubDate>
       </item>
     
   </channel>

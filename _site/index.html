@@ -162,7 +162,7 @@
   
   <div class="call-out" 
   style="background-image: url('/')">
-    <h1>Blog tecnológico de Enrique Catalá Bañuls</h1>
+    <h1>Data engineering with Enrique Catalá</h1>
 
   </div>
   
@@ -184,91 +184,108 @@
     <div class="post-teaser">
       <header>
         <h1>
-          <a class="post-link" href="/azure/2020/05/20/OnPrem-To-Azure-DR.html">
-            Disaster recovery from OnPrem to Azure
+          <a class="post-link" href="/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html">
+            My new blog: GitHub pages, Jekyll and docker
           </a>
         </h1>
         <p class="meta">
-          May 20, 2020
+          May 28, 2020
         </p>
       </header>
       <div class="excerpt">
-        <p>demo articulo</p>
+        <p>After some internal debates with myself, I found that the best option for me to re-start blogging was to return to basics and get a flat and easy to maintain blog.</p>
 
-        <a class="button" href="/azure/2020/05/20/OnPrem-To-Azure-DR.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="/2014/11/30/sample-post.html">
-            Sample post
-          </a>
-        </h1>
-        <p class="meta">
-          November 30, 2014
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.</p>
+<p>Since I found myself writing a lot of code in github and maintaining lots of Markdown documents and Python Notebooks… the main reason to choose Jekyll was because of <a href="https://pages.github.com/">GitHub Pages</a>. In this post, i want to help you to start blogging with GitHub Pages and maintain your blog with the strategy i found interesting: Docker + github branches</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>I´m using Windows 10 as my setup, but you can use any linux or Mac distro you want, since everything used here is opensource linux based code:</p>
 
 <ul>
-  <li>Consectetur adipiscing elit</li>
-  <li>Donec a diam lectus</li>
-  <li>Sed sit amet ipsum mauris</li>
+  <li><a href="https://blogs.windows.com/windowsexperience/2020/05/27/how-to-get-the-windows-10-may-2020-update/">Windows 10 2004 update</a></li>
+  <li><a href="https://www.docker.com/products/docker-desktop">Docker version &gt;=2.3.0.1</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Enable WSL2 on Windows10</a></li>
+  <li><a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab">Ubuntu 20.04 from windows store</a></li>
 </ul>
 
-<p>Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-
-<p>Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula <em>semper consectetur sagittis</em>, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.</p>
-
-<p>Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p>
-
 <blockquote>
-  <p>Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque</p>
+  <p>NOTE: Those requisites are important, because with previous version of Windows 10, WSL and docker, the blog will not start correctly</p>
 </blockquote>
 
-<p>Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.</p>
+<h2 id="setup">Setup</h2>
 
-<p>Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.</p>
+<h3 id="configure-docker">Configure docker</h3>
 
-        <a class="button" href="/2014/11/30/sample-post.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="/jekyll/update/2000/05/03/welcome-to-jekyll.html">
-            Welcome to Jekyll!
-          </a>
-        </h1>
-        <p class="meta">
-          May 3, 2000
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>Check the WSL2 integration on your Docker configuration</p>
 
-<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p><img src="/img/posts/createblog/1.png" alt="1" /></p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>And set up the distro you want to use with docker</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p><img src="/img/posts/createblog/2.png" alt="2" /></p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://ctalk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<h3 id="create-your-repository">Create your repository</h3>
 
+<p>First action to do is follow the <a href="https://guides.github.com/features/pages/">official instructions</a> and create your github page.</p>
 
-        <a class="button" href="/jekyll/update/2000/05/03/welcome-to-jekyll.html">
+<blockquote>
+  <p>TIP: After creating your repository, go and clone any Jekyll theme preconfigured (I´m using <a href="https://github.com/rohanchandra/type-theme/">portfolio-iro</a>)</p>
+</blockquote>
+
+<h3 id="setup-your-docker">Setup your docker</h3>
+
+<p>One of the main reasons i choose Jekyll was because i can run it in a container to quickly edit and review my posts before uploading to the site.</p>
+
+<p>1) Create a <em>docker-compose.yml</em> file in the root directory</p>
+
+<p>2) Add the following contents</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2.2'</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">jekyll</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">jekyll/jekyll:latest</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll serve --watch --force_polling --verbose</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">4000:4000</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">.:/srv/jekyll</span>
+</code></pre></div></div>
+
+<p>This will ensure that your container will not only start your blog locally, but will be refreshing your site after each “save” you are doing on the markdown file containing your post. This is a very convenient way to edit material and see how it renders in your blog when you commit the change to the main branch.</p>
+
+<p>3) Execute “<em>docker-compose up</em>”</p>
+
+<p>4) Open in browser <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></p>
+
+<p>5) Start <a href="https://jekyllrb.com/docs/step-by-step/08-blogging/">blogging as usual</a> :)</p>
+
+<h2 id="tips">Tips</h2>
+
+<h3 id="branches">Branches</h3>
+
+<p>To help you creating new posts and testing capabilities (like updating look and feel of your blog for example), you only need to <strong>create a branch of your repo</strong>, and work on that branch.</p>
+
+<p>For example…in my case, I created a branch called “<em>vNext</em>” where I´ll create the new posts. The only thing to do to publish the post then will be to do a Pull request with my main branch :)</p>
+
+<p>I´m also adding some kind of protection to myself, by requiring manual pull request reviewing…this will hopefuly minimize  mistakes from myself :)</p>
+
+<p><img src="/img/posts/createblog/3.png" alt="3" /></p>
+
+<h3 id="images">Images</h3>
+
+<p>To reference images in your markdown files, remember to point to the relative path from the root directory:</p>
+
+<p>This will <strong>not</strong> render the image correctly:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     !<span class="p">[</span><span class="nv">Img</span><span class="p">](</span><span class="sx">../img/posts/createblog/2.png</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This will render the image correctly:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     !<span class="p">[</span><span class="nv">Img</span><span class="p">](</span><span class="sx">/img/posts/createblog/2.png</span><span class="p">)</span>
+</code></pre></div></div>
+
+        <a class="button" href="/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html">
           Continue reading
         </a>
       </div>
