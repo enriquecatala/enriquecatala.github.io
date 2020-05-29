@@ -1,9 +1,9 @@
 ---
 layout: post
-title: SharedMaterial
+title: Shared material
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/icons/teaching.png"
-short-description: Shared material
+thumbnail-path: "img/icons/teaching-75x75.png"
+short-description: 
 
 ---
 # Shared material from past conferences
