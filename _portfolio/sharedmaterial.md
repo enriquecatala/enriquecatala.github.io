@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Shared material
-feature-img: "img/sample_feature_img.png"
+feature-img: "img/sample_feature_blue.png"
 thumbnail-path: "img/icons/teaching-75x75.png"
-short-description: 
+short-description: PPTs, backups, pdfs...
 
 ---
 # Shared material from past conferences
