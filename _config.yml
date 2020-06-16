@@ -25,7 +25,7 @@ theme_settings:
   behance:
   bitbucket:
   #dribbble: ""
-  facebook: "enriquecatala"
+  #facebook: "enriquecatala"
   flickr:
   #github: "madebymunsters/type-theme"
   github: "enriquecatala"
@@ -40,7 +40,7 @@ theme_settings:
   tumblr:
   twitter: "enriquecatala"
   wordpress:
-  youtube:
+  youtube: "enriquecatala"
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"

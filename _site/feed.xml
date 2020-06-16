@@ -5,7 +5,43 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Fri, 29 May 2020 08:03:28 -0500</pubDate>
+    <pubDate>Tue, 16 Jun 2020 03:56:15 -0500</pubDate>
+    
+      <item>
+        <title>Video: Crea tu propia imagen de SQL Server para docker</title>
+        <link>http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2-copy.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2-copy.html</guid>
+        <description>&lt;p&gt;In this video we are going to create our first personalized image of SQL Server with docker.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;Crea tu propia imagen de SQL Server para docker&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9M6Ewpcfw9I&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;script src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;g-ytsubscribe&quot; data-channelid=&quot;UCYboHnN6tvFfHqPWZWY82AQ&quot; data-layout=&quot;default&quot; data-count=&quot;default&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 15 Jun 2020 14:25:53 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Video: SQL Server, Docker y WSL2</title>
+        <link>http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2.html</guid>
+        <description>&lt;p&gt;This is the first video of a set of videos describing how to use SQL Server with Docker. I hope you find this info interesting.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/u5NXXssT1jI&quot;&gt;SQL Server, Docker y WSL2&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/u5NXXssT1jI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;script src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;g-ytsubscribe&quot; data-channelid=&quot;UCYboHnN6tvFfHqPWZWY82AQ&quot; data-layout=&quot;default&quot; data-count=&quot;default&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 15 Jun 2020 14:25:53 -0500</pubDate>
+      </item>
     
       <item>
         <title>My new blog: GitHub pages, Jekyll and docker</title>
