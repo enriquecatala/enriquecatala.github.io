@@ -26,11 +26,11 @@ I´m using Windows 10 as my setup, but you can use any linux or Mac distro you w
 
 Check the WSL2 integration on your Docker configuration
 
-![1](/img/posts/createblog/1.png)
+![Use WSL 2 engine](/img/posts/createblog/1.png)
 
 And set up the distro you want to use with docker
 
-![2](/img/posts/createblog/2.png)
+![Enable Ubuntu-20.04 integration](/img/posts/createblog/2.png)
 
 ### Create your repository
 
@@ -78,7 +78,7 @@ For example...in my case, I created a branch called "_vNext_" where I´ll create
 
 I´m also adding some kind of protection to myself, by requiring manual pull request reviewing...this will hopefuly minimize  mistakes from myself :)
 
-![3](/img/posts/createblog/3.png)
+![require pull request reviews](/img/posts/createblog/3.png)
 
 ### Images
 

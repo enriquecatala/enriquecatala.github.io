@@ -5,12 +5,12 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Tue, 16 Jun 2020 03:56:15 -0500</pubDate>
+    <pubDate>Wed, 17 Jun 2020 11:25:30 -0500</pubDate>
     
       <item>
         <title>Video: Crea tu propia imagen de SQL Server para docker</title>
-        <link>http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2-copy.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2-copy.html</guid>
+        <link>http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-own-image.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-own-image.html</guid>
         <description>&lt;p&gt;In this video we are going to create our first personalized image of SQL Server with docker.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;Crea tu propia imagen de SQL Server para docker&lt;/a&gt;&lt;/p&gt;
@@ -72,11 +72,11 @@
 
 &lt;p&gt;Check the WSL2 integration on your Docker configuration&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/1.png&quot; alt=&quot;Use WSL 2 engine&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And set up the distro you want to use with docker&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/2.png&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/2.png&quot; alt=&quot;Enable Ubuntu-20.04 integration&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;create-your-repository&quot;&gt;Create your repository&lt;/h3&gt;
 
@@ -124,7 +124,7 @@
 
 &lt;p&gt;I´m also adding some kind of protection to myself, by requiring manual pull request reviewing…this will hopefuly minimize  mistakes from myself :)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/3.png&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/3.png&quot; alt=&quot;require pull request reviews&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
 
