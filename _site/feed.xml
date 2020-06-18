@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Thu, 18 Jun 2020 05:47:55 -0500</pubDate>
+    <pubDate>Thu, 18 Jun 2020 05:58:58 -0500</pubDate>
     
       <item>
         <title>Examen DP-900</title>
@@ -15,7 +15,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/dp-900/dp-900.png&quot; alt=&quot;dp-900&quot; /&gt;&lt;/p&gt;
 
-&lt;!--more--&gt;
+&lt;!--end_excerpt--&gt;
 
 &lt;h2 id=&quot;quién-deberia-presentarse&quot;&gt;¿Quién deberia presentarse?&lt;/h2&gt;
 
@@ -113,6 +113,8 @@
 &lt;blockquote&gt;
   &lt;p&gt;NOTE: Those requisites are important, because with previous version of Windows 10, WSL and docker, the blog will not start correctly&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;!--end_excerpt--&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 
