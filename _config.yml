@@ -80,6 +80,6 @@ plugins: [jekyll-paginate]
 tipue_search:
   include:
     pages: true
-    collections: [_posts]
+    collections: [posts]
   exclude:
     files: [search.html]

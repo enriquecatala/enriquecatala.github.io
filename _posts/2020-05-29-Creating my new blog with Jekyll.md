@@ -3,6 +3,8 @@ layout: post
 title:  "My new blog: GitHub pages, Jekyll and docker"
 date:   2020-05-29 00:25:53 +0200
 categories: Blog
+tipue_search_active: true
+excerpt_separator: <!--end_excerpt-->
 ---
 
 After some internal debates with myself, I found that the best option for me to re-start blogging was to return to basics and get a flat and easy to maintain blog. 
@@ -19,6 +21,8 @@ I´m using Windows 10 as my setup, but you can use any linux or Mac distro you w
 - [Ubuntu 20.04 from windows store](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab)
 
 >NOTE: Those requisites are important, because with previous version of Windows 10, WSL and docker, the blog will not start correctly
+
+<!--end_excerpt-->
 
 ## Setup
 

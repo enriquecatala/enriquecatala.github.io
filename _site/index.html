@@ -196,6 +196,29 @@
     <div class="post-teaser">
       <header>
         <h1>
+          <a class="post-link" href="/blog/2020/06/16/DP-900.html">
+            Examen DP-900
+          </a>
+        </h1>
+        <p class="meta">
+          June 16, 2020
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>Os voy a comentar un poco sobre el examen Beta <a href="https://docs.microsoft.com/en-us/learn/certifications/exams/dp-900">DP-900</a> que acabo de realizar. Es un examen de introducción a los fundamentos de la plataforma de datos que hay en Azure, que es realmente grande y no para de crecer.</p>
+
+<p><img src="/img/posts/dp-900/dp-900.png" alt="dp-900" /></p>
+
+
+        <a class="button" href="/blog/2020/06/16/DP-900.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h1>
           <a class="post-link" href="/blog/2020/06/15/video-sqlserver-docker-own-image.html">
             Video: Crea tu propia imagen de SQL Server para docker
           </a>
@@ -282,78 +305,6 @@
   <p>NOTE: Those requisites are important, because with previous version of Windows 10, WSL and docker, the blog will not start correctly</p>
 </blockquote>
 
-<h2 id="setup">Setup</h2>
-
-<h3 id="configure-docker">Configure docker</h3>
-
-<p>Check the WSL2 integration on your Docker configuration</p>
-
-<p><img src="/img/posts/createblog/1.png" alt="Use WSL 2 engine" /></p>
-
-<p>And set up the distro you want to use with docker</p>
-
-<p><img src="/img/posts/createblog/2.png" alt="Enable Ubuntu-20.04 integration" /></p>
-
-<h3 id="create-your-repository">Create your repository</h3>
-
-<p>First action to do is follow the <a href="https://guides.github.com/features/pages/">official instructions</a> and create your github page.</p>
-
-<blockquote>
-  <p>TIP: After creating your repository, go and clone any Jekyll theme preconfigured (I´m using <a href="https://github.com/rohanchandra/type-theme/">portfolio-iro</a>)</p>
-</blockquote>
-
-<h3 id="setup-your-docker">Setup your docker</h3>
-
-<p>One of the main reasons i choose Jekyll was because i can run it in a container to quickly edit and review my posts before uploading to the site.</p>
-
-<p>1) Create a <em>docker-compose.yml</em> file in the root directory</p>
-
-<p>2) Add the following contents</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2.2'</span>
-
-<span class="na">services</span><span class="pi">:</span>
-  <span class="na">jekyll</span><span class="pi">:</span>
-    <span class="na">image</span><span class="pi">:</span> <span class="s">jekyll/jekyll:latest</span>
-    <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll serve --watch --force_polling --verbose</span>
-    <span class="na">ports</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">4000:4000</span>
-    <span class="na">volumes</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">.:/srv/jekyll</span>
-</code></pre></div></div>
-
-<p>This will ensure that your container will not only start your blog locally, but will be refreshing your site after each “save” you are doing on the markdown file containing your post. This is a very convenient way to edit material and see how it renders in your blog when you commit the change to the main branch.</p>
-
-<p>3) Execute “<em>docker-compose up</em>”</p>
-
-<p>4) Open in browser <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></p>
-
-<p>5) Start <a href="https://jekyllrb.com/docs/step-by-step/08-blogging/">blogging as usual</a> :)</p>
-
-<h2 id="tips">Tips</h2>
-
-<h3 id="branches">Branches</h3>
-
-<p>To help you creating new posts and testing capabilities (like updating look and feel of your blog for example), you only need to <strong>create a branch of your repo</strong>, and work on that branch.</p>
-
-<p>For example…in my case, I created a branch called “<em>vNext</em>” where I´ll create the new posts. The only thing to do to publish the post then will be to do a Pull request with my main branch :)</p>
-
-<p>I´m also adding some kind of protection to myself, by requiring manual pull request reviewing…this will hopefuly minimize  mistakes from myself :)</p>
-
-<p><img src="/img/posts/createblog/3.png" alt="require pull request reviews" /></p>
-
-<h3 id="images">Images</h3>
-
-<p>To reference images in your markdown files, remember to point to the relative path from the root directory:</p>
-
-<p>This will <strong>not</strong> render the image correctly:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     !<span class="p">[</span><span class="nv">Img</span><span class="p">](</span><span class="sx">../img/posts/createblog/2.png</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>This will render the image correctly:</p>
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     !<span class="p">[</span><span class="nv">Img</span><span class="p">](</span><span class="sx">/img/posts/createblog/2.png</span><span class="p">)</span>
-</code></pre></div></div>
 
         <a class="button" href="/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html">
           Continue reading
