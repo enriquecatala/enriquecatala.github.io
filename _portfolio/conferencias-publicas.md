@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Conferencias públicas
-feature-img: "img/my-youtube-header.png"
-thumbnail-path: "img/icons/teaching-75x75.png"
+feature-img: "/img/my-youtube-header.png"
+thumbnail-path: "/img/icons/teaching-75x75.png"
 short-description: Conferencias públicas
 
 ---
