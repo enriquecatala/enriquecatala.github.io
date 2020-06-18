@@ -5,7 +5,55 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Wed, 17 Jun 2020 11:31:14 -0500</pubDate>
+    <pubDate>Thu, 18 Jun 2020 05:47:55 -0500</pubDate>
+    
+      <item>
+        <title>Examen DP-900</title>
+        <link>http://0.0.0.0:4000/blog/2020/06/16/DP-900.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/16/DP-900.html</guid>
+        <description>&lt;p&gt;Os voy a comentar un poco sobre el examen Beta &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-900&quot;&gt;DP-900&lt;/a&gt; que acabo de realizar. Es un examen de introducción a los fundamentos de la plataforma de datos que hay en Azure, que es realmente grande y no para de crecer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/dp-900/dp-900.png&quot; alt=&quot;dp-900&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;quién-deberia-presentarse&quot;&gt;¿Quién deberia presentarse?&lt;/h2&gt;
+
+&lt;p&gt;En principio está pensado para aquella persona que quiera comenzar a ver qué servicios de datos existen en Azure, que son realmente muchisimos y si le gusta el camino de certificación enfocado a &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer?WT.mc_id=certposter_poster-wwl&quot;&gt;Azure Data Engineer&lt;/a&gt;. El examen realmente está pensado para alguien que quiera comenzar por la base, muy a alto nivel y sin entrar realmente al detalle en nada sino en conceptos muy superficiales (es un fundamental, recuerda), pero que tiene interes y/o ansias de probar si lo que sabe es suficiente como para dar el paso hacia el título de &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer?WT.mc_id=certposter_poster-wwl&quot;&gt;Azure Data Engineer&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;nivel-del-examen&quot;&gt;Nivel del examen&lt;/h1&gt;
+
+&lt;p&gt;En mi caso, corro el riesgo de compararlo con los &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-200&quot;&gt;DP-200&lt;/a&gt; y &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-201&quot;&gt;DP-201&lt;/a&gt; que tengo recientes…En esos dos exámenes hay que darle duro porque entran a bajo nivel y a conceptos muy amplios y variopintos en todo el stack de datos que hay en Azure. En este caso el nivel es años luz mucho mas sencillo, por lo que si empezaste a prepararte los &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-200&quot;&gt;DP-200&lt;/a&gt; y/o &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-201&quot;&gt;DP-201&lt;/a&gt;, podrias darte el capricho de aprobar el &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-900&quot;&gt;DP-900&lt;/a&gt; sin mucho esfuerzo.&lt;/p&gt;
+
+&lt;h2 id=&quot;merece-la-pena&quot;&gt;¿merece la pena?&lt;/h2&gt;
+
+&lt;p&gt;Pienso que no, creo que el premio gordo sigue siendo el &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-200&quot;&gt;DP-200&lt;/a&gt; y/o &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-201&quot;&gt;DP-201&lt;/a&gt; porque es donde realmente vas a tener que estudiar y trabajarte los laboratorios (si no te dedicas a diario a esto, vamos).&lt;/p&gt;
+
+&lt;h2 id=&quot;he-aprobado&quot;&gt;¿he aprobado?&lt;/h2&gt;
+
+&lt;p&gt;Pues no tengo ni idea ya que en el momento de escribir este post, al estar en estado BETA, la nota parece que la dan entre &lt;strong&gt;2 y 8 SEMANAS&lt;/strong&gt; tras acabar el examen asique…&lt;/p&gt;
+
+&lt;p&gt;La verdad que me he presentado a la aventura porque tenia curiosidad por verlo y porque es un buen candidato por el precio a probar mi primer examen desde casa&lt;/p&gt;
+
+&lt;h1 id=&quot;examen-en-casa&quot;&gt;Examen en casa&lt;/h1&gt;
+
+&lt;p&gt;He optado por realizar el examen en mi casa, por la situación actual de COVID-19, que me impedía desplazarme a otra comunidad donde realiarlo (en Alicante donde vivo no hay centros de certificación y debo pillar un coche casi 2h para el mas próximo) y probar la experiencia.&lt;/p&gt;
+
+&lt;p&gt;La experiencia es rara, pero seguramente repetiré porque me evito el palizón de viajar…Ahora bien, si tuviera un centro de certificación cercano iria allí porque:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Si te quedas sin internet te suspenden&lt;/li&gt;
+  &lt;li&gt;Si te llaman al tlf te suspenden&lt;/li&gt;
+  &lt;li&gt;Si te tapas la boca mucho tiempo y salta la alarma te juegas a que te suspendan&lt;/li&gt;
+  &lt;li&gt;Si alguien entra en la habitacion donde te examinas te suspenden&lt;/li&gt;
+  &lt;li&gt;Si se va la luz te suspenden&lt;/li&gt;
+  &lt;li&gt;Si hay ruidos extraños te suspenden&lt;/li&gt;
+  &lt;li&gt;Tienes que quitar todo de la habitacion (cuadros, pantallas, …vamos todo limpio como si fuera de obra)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Al final en mi caso la única opcion ha sido hacerlo en la &lt;strong&gt;habitacion de matrimonio&lt;/strong&gt;, donde menos trastos tenia para quitar…me he llevado una mesa y una silla pequeños y así lo he hecho. En resumen…que solo si como yo tienes que pegarte el palizón merece la pena hacerlo en tu casa.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Jun 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Video: Crea tu propia imagen de SQL Server para docker</title>
