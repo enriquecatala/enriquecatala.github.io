@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mssql-samplesdb
-feature-img: "/img/sample_feature_blue.png"
+feature-img: "img/sample_feature_blue.png"
 thumbnail-path: "/img/icons/sqlserver-75x75.png"
 short-description: SQL Server docker image with all sample databases
 
