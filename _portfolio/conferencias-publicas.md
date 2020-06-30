@@ -36,6 +36,28 @@ https://www.youtube.com/watch?v=PDbE4gQisYI&list=PLXXExoAK--GI5TDbfPC8h6rLLuNZS8
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FCGcj5izTBQ?start=27" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Cuando QueryStore no sirve, ¿qué opciones tenemos?
+
+<iframe src="https://player.vimeo.com/video/292077556?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/292077556">SolidQ Summit 2018 - Cuando QueryStore no sirve, &iquest;qu&eacute; opciones tenemos?</a> from <a href="https://vimeo.com/solidq">SolidQ</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## SQL Server on Linux
+
+<iframe src="https://player.vimeo.com/video/287030462?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/287030462">SolidQ Summit 2018 - SQL Server on Linux</a> from <a href="https://vimeo.com/solidq">SolidQ</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## Columnstore en la vida real
+
+<iframe src="https://player.vimeo.com/video/287030162?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/287030162">SolidQ Summit 2018 - Columnstore en la vida real</a> from <a href="https://vimeo.com/solidq">SolidQ</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+## QueryAnalytics DIY
+
+<iframe src="https://player.vimeo.com/video/260980711?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/260980711">WEBINAR Analytics DIY, Identifying Worst Performing TSQL Queries</a> from <a href="https://vimeo.com/solidq">SolidQ</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
 ## Micro entrevista con Enrique Catalá
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eX5YywK9iyE?start=27" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

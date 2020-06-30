@@ -5,7 +5,51 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Tue, 23 Jun 2020 10:37:36 -0500</pubDate>
+    <pubDate>Tue, 30 Jun 2020 06:16:25 -0500</pubDate>
+    
+      <item>
+        <title>mssql-server-samplesdb</title>
+        <link>http://0.0.0.0:4000/docker,/kubernetes,/sql/server,/samplesdb/2020/06/24/mssql-server-databases.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/docker,/kubernetes,/sql/server,/samplesdb/2020/06/24/mssql-server-databases.html</guid>
+        <description>&lt;p&gt;Si quieres, ya puedes olvidarte de instalar SQL Server para siempre y utilizar como forma de desarrollo contra SQL Server, un contenedor Docker nativo.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ULL5nntWn1A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;En mi cuenta de &lt;a href=&quot;https://github.com/enriquecatala/&quot;&gt;GitHub&lt;/a&gt;, mantengo el proyecto  &lt;a href=&quot;https://github.com/enriquecatala/mssql-server-samplesdb&quot;&gt;mssql-server-samplesdb&lt;/a&gt; para ayudar a otros developers que trabajen con SQL Server a utilizar Docker con/sin persistencia aprovechándonos de las bondades de &lt;a href=&quot;https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004/&quot;&gt;wsl2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Entre otras cosas, el proyecto te permitirá:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Añadir/quitar BBDD&lt;/li&gt;
+  &lt;li&gt;Trabajar con/sin persistencia&lt;/li&gt;
+  &lt;li&gt;Añadir todas las BBDD de ejemplo
+    &lt;ul&gt;
+      &lt;li&gt;Pubs&lt;/li&gt;
+      &lt;li&gt;Northwind&lt;/li&gt;
+      &lt;li&gt;WideWorldImporters&lt;/li&gt;
+      &lt;li&gt;AdventureWorks2017&lt;/li&gt;
+      &lt;li&gt;AdventureWorks2016&lt;/li&gt;
+      &lt;li&gt;AdventureWorks2014&lt;/li&gt;
+      &lt;li&gt;AdventureWorks2012&lt;/li&gt;
+      &lt;li&gt;AdventureWorksDW2017&lt;/li&gt;
+      &lt;li&gt;StackOverflow2010&lt;/li&gt;
+      &lt;li&gt;WideWorldImportersDW
+        &lt;blockquote&gt;
+          &lt;p&gt;NOTA: Desplegando a voluntad las que quieras&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Los detalles del proyecto los tienes aqui: https://github.com/enriquecatala/mssql-server-samplesdb&lt;/p&gt;
+
+&lt;p&gt;Además, aqui te dejo un vídeo explicando cómo ponerlo a funcionar:&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 24 Jun 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Examen DP-900</title>
