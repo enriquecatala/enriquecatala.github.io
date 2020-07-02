@@ -5,7 +5,26 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Tue, 30 Jun 2020 06:16:25 -0500</pubDate>
+    <pubDate>Thu, 02 Jul 2020 02:53:01 -0500</pubDate>
+    
+      <item>
+        <title>Microsoft MVP data platform 2020-2021</title>
+        <link>http://0.0.0.0:4000/blog/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</guid>
+        <description>&lt;p&gt;Wow! otro año mas, igual que la primera vez, una emoción enorme al recibir el premio &lt;a href=&quot;https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala&quot;&gt;MVP en la categoria DataPlatform&lt;/a&gt;.&lt;strong&gt;7 años seguidos&lt;/strong&gt; sintiendo la misma emoción y respeto por recibir este correo, con todo lo que lleva detrás.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/mvp2020/mvp-dataplatform.png&quot; alt=&quot;DataPlatform MVP&quot; /&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Sin lugar a dudas, lo mas importante para mi de este programa es poder conectar un año mas con la gran cantidad de expertos de los que aprender e inspirarme cada dia. Me siento muy honrado de que me dejen formar parte de esta familia otro año mas.&lt;/p&gt;
+
+&lt;p&gt;Gracias a &lt;a href=&quot;https://twitter.com/crisgherrero?s=20&quot;&gt;Cristina Gonzalez&lt;/a&gt; y a Irene Otero por haber contado conmigo, a &lt;a href=&quot;https://www.solidq.com/&quot;&gt;SolidQ&lt;/a&gt; por su apoyo y a toda la gente que lo hace posible, que es tanta que no se ni por donde empezar.&lt;/p&gt;
+
+&lt;p&gt;Y por lo que a mi respecta, seguiré haciendo altruistamente esto que tanto me gusta, aportar a la comunidad mi granito de arena, visibilizando todo lo bueno que tiene la plataforma de datos, para que cada vez mas gente quiera entrar a trabajar en &lt;a href=&quot;https://es.wikipedia.org/wiki/Dato&quot;&gt;#data&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jun 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>mssql-server-samplesdb</title>
