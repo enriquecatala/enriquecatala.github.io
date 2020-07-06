@@ -5,7 +5,26 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Thu, 02 Jul 2020 02:53:01 -0500</pubDate>
+    <pubDate>Mon, 06 Jul 2020 03:16:34 -0500</pubDate>
+    
+      <item>
+        <title>Video: Desplegar SQL Server personalizado en Kubernetes OnPremises</title>
+        <link>http://0.0.0.0:4000/blog,/vlog/2020/07/05/video-sqlserver-kubernetes.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog,/vlog/2020/07/05/video-sqlserver-kubernetes.html</guid>
+        <description>&lt;p&gt;En este vídeo voy a enseñar cómo desplegar una imagen de SQL Server 2019 personalizada contra nuestro Kubernetes baremetal corriendo en entorno virtualizado.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/ZhoRuib2JLc&quot;&gt;Desplegar SQL Server personalizado en Kubernetes OnPremises&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZhoRuib2JLc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;.&lt;!--end_excerpt--&gt;&lt;/p&gt;
+
+&lt;p&gt;En el vídeo vamos a partir de lo que aprendimos en el vídeo &lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;“Crea tu propia imagen de SQL Server para docker”&lt;/a&gt;, aprovechándonos de dicha imagen creada, para desplegarla contra nuestro entorno kubernetes baremetal.&lt;/p&gt;
+
+&lt;p&gt;El proceso de registro es bastante sencillo, partiendo del hecho que en el &lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;anterior video&lt;/a&gt; ya registramos nuestra imagen personalizada y ahora “solo” tenemos que ponerla a funcionar contra nuestro orquestador kubernetes.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Jul 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Microsoft MVP data platform 2020-2021</title>
