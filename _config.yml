@@ -83,3 +83,6 @@ tipue_search:
     collections: [posts]
   exclude:
     files: [search.html]
+
+gems:
+  - jekyll-sitemap
