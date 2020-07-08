@@ -2,7 +2,6 @@
 layout: post
 title:  "Fix for ms-screensketch protocol"
 date:   2020-07-13 00:00:00 +0200
-categories: Blog
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
 ---

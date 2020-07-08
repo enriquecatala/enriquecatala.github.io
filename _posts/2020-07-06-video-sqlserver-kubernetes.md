@@ -2,7 +2,6 @@
 layout: post
 title:  "Video: Desplegar SQL Server personalizado en Kubernetes OnPremises"
 date:   2020-07-06 00:00:00 +0200
-categories: Blog, Vlog
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
 ---
