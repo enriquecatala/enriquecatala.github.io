@@ -13,10 +13,17 @@
   margin-bottom: 0;
 }
 // Post listing
+// ECB: EDITADO POR MI
 .posts {
   h2 {
-    padding:5% 20% 0%;
+    //padding:5% 0% 0%;
     text-align: center;
+    font-size: 2.5em;
+  }
+  h3 {
+    padding:5% 0% 0%;
+    text-align: left;
+    font-size: 2em;    
   }
   .post-teaser {
     @extend %padding-regular;
@@ -35,9 +42,11 @@
 }
 
 // Work listing
+// ECB: EDITADO POR MI
 .work {
   h2 {
     text-align: center;
+    font-size: 2.5em;
   }
   @extend %padding-regular;
   background-size: $feature-image-size;

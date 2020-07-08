@@ -34,11 +34,11 @@ layout: default
     {% for post in paginator.posts %}
     <div class="post-teaser">
       <header>
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
-        </h2>
+        </h3>
         <p class="meta">
           {{ post.date | date: "%B %-d, %Y" }}
         </p>

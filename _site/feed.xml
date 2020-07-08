@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Wed, 08 Jul 2020 05:16:11 -0500</pubDate>
+    <pubDate>Wed, 08 Jul 2020 05:53:38 -0500</pubDate>
     
       <item>
         <title>Video: Desplegar SQL Server personalizado en Kubernetes OnPremises</title>
