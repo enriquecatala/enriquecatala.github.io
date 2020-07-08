@@ -5,12 +5,12 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Mon, 06 Jul 2020 03:16:34 -0500</pubDate>
+    <pubDate>Wed, 08 Jul 2020 05:53:38 -0500</pubDate>
     
       <item>
         <title>Video: Desplegar SQL Server personalizado en Kubernetes OnPremises</title>
-        <link>http://0.0.0.0:4000/blog,/vlog/2020/07/05/video-sqlserver-kubernetes.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog,/vlog/2020/07/05/video-sqlserver-kubernetes.html</guid>
+        <link>http://0.0.0.0:4000/2020/07/05/video-sqlserver-kubernetes.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/07/05/video-sqlserver-kubernetes.html</guid>
         <description>&lt;p&gt;En este vídeo voy a enseñar cómo desplegar una imagen de SQL Server 2019 personalizada contra nuestro Kubernetes baremetal corriendo en entorno virtualizado.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/ZhoRuib2JLc&quot;&gt;Desplegar SQL Server personalizado en Kubernetes OnPremises&lt;/a&gt;&lt;/p&gt;
@@ -28,8 +28,8 @@
     
       <item>
         <title>Microsoft MVP data platform 2020-2021</title>
-        <link>http://0.0.0.0:4000/blog/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</guid>
+        <link>http://0.0.0.0:4000/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</guid>
         <description>&lt;p&gt;Wow! otro año mas, igual que la primera vez, una emoción enorme al recibir el premio &lt;a href=&quot;https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala&quot;&gt;MVP en la categoria DataPlatform&lt;/a&gt;.&lt;strong&gt;7 años seguidos&lt;/strong&gt; sintiendo la misma emoción y respeto por recibir este correo, con todo lo que lleva detrás.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/mvp2020/mvp-dataplatform.png&quot; alt=&quot;DataPlatform MVP&quot; /&gt;&lt;/p&gt;
@@ -47,8 +47,8 @@
     
       <item>
         <title>mssql-server-samplesdb</title>
-        <link>http://0.0.0.0:4000/docker,/kubernetes,/sql/server,/samplesdb/2020/06/24/mssql-server-databases.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/docker,/kubernetes,/sql/server,/samplesdb/2020/06/24/mssql-server-databases.html</guid>
+        <link>http://0.0.0.0:4000/2020/06/24/mssql-server-databases.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/24/mssql-server-databases.html</guid>
         <description>&lt;p&gt;Si quieres, ya puedes olvidarte de instalar SQL Server para siempre y utilizar como forma de desarrollo contra SQL Server, un contenedor Docker nativo.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ULL5nntWn1A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -91,8 +91,8 @@
     
       <item>
         <title>Examen DP-900</title>
-        <link>http://0.0.0.0:4000/blog/2020/06/16/DP-900.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/16/DP-900.html</guid>
+        <link>http://0.0.0.0:4000/2020/06/16/DP-900.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/16/DP-900.html</guid>
         <description>&lt;p&gt;Os voy a comentar un poco sobre el examen Beta &lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/exams/dp-900&quot;&gt;DP-900&lt;/a&gt; que acabo de realizar. Es un examen de introducción a los fundamentos de la plataforma de datos que hay en Azure, que es realmente grande y no para de crecer.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/dp-900/dp-900.png&quot; alt=&quot;dp-900&quot; /&gt;&lt;/p&gt;
@@ -139,8 +139,8 @@
     
       <item>
         <title>Video: Crea tu propia imagen de SQL Server para docker</title>
-        <link>http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-own-image.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-own-image.html</guid>
+        <link>http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-own-image.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-own-image.html</guid>
         <description>&lt;p&gt;In this video we are going to create our first personalized image of SQL Server with docker.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;Crea tu propia imagen de SQL Server para docker&lt;/a&gt;&lt;/p&gt;
@@ -157,8 +157,8 @@
     
       <item>
         <title>Video: SQL Server, Docker y WSL2</title>
-        <link>http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/06/15/video-sqlserver-docker-wsl2.html</guid>
+        <link>http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-wsl2.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-wsl2.html</guid>
         <description>&lt;p&gt;This is the first video of a set of videos describing how to use SQL Server with Docker. I hope you find this info interesting.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/u5NXXssT1jI&quot;&gt;SQL Server, Docker y WSL2&lt;/a&gt;&lt;/p&gt;
@@ -175,8 +175,8 @@
     
       <item>
         <title>My new blog: GitHub pages, Jekyll and docker</title>
-        <link>http://0.0.0.0:4000/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2020/05/28/Creating-my-new-blog-with-Jekyll.html</guid>
+        <link>http://0.0.0.0:4000/2020/05/28/Creating-my-new-blog-with-Jekyll.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/05/28/Creating-my-new-blog-with-Jekyll.html</guid>
         <description>&lt;p&gt;After some internal debates with myself, I found that the best option for me to re-start blogging was to return to basics and get a flat and easy to maintain blog.&lt;/p&gt;
 
 &lt;p&gt;Since I found myself writing a lot of code in github and maintaining lots of Markdown documents and Python Notebooks… the main reason to choose Jekyll was because of &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. In this post, i want to help you to start blogging with GitHub Pages and maintain your blog with the strategy i found interesting: Docker + github branches&lt;/p&gt;

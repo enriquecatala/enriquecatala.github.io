@@ -2,7 +2,6 @@
 layout: post
 title:  "Video: SQL Server, Docker y WSL2"
 date:   2020-06-15 21:25:53 +0200
-categories: Blog
 tipue_search_active: true
 ---
 

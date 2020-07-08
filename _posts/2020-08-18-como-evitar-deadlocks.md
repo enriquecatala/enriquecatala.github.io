@@ -2,7 +2,6 @@
 layout: post
 title:  "Como evitar los temidos DeadLocks"
 date:   2020-08-18 00:00:00 +0200
-categories: T-SQL
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
 ---
