@@ -5,7 +5,31 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Enrique Catala Bañuls portfolio</description>
-    <pubDate>Wed, 08 Jul 2020 05:53:38 -0500</pubDate>
+    <pubDate>Thu, 09 Jul 2020 11:15:33 -0500</pubDate>
+    
+      <item>
+        <title>Speaker en Maratón Power Platform 2020</title>
+        <link>http://0.0.0.0:4000/2020/07/08/speaker-maratonpowerplatform.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/07/08/speaker-maratonpowerplatform.html</guid>
+        <description>&lt;p&gt;El próximo día 14 de Julio de 2020 estaré como speaker en el &lt;a href=&quot;https://twitter.com/hashtag/MaratonPowerPlatform?src=hashtag_click&quot;&gt;#MaratonPowerPlatform &lt;/a&gt;  a las 15pm hora española (utc+2) sobre &lt;a href=&quot;https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159&quot;&gt;cómo trabajar con PowerBI con modo directquery en la vida real&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Os espero!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159&quot; rel=&quot;maraton power platform&quot;&gt;&lt;img src=&quot;/img/posts/maratonpowerplatform2020/SpeakerFeatures_MaratónPowerPlatform_Template.jpg&quot; alt=&quot;#maratonpowerplatform&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;h2 id=&quot;título&quot;&gt;Título&lt;/h2&gt;
+&lt;p&gt;DirectQuery en PowerBI en la vida real&lt;/p&gt;
+
+&lt;h2 id=&quot;descripción&quot;&gt;Descripción&lt;/h2&gt;
+&lt;p&gt;En esta sesión veremos de tecnicas para poder utilizar PowerBI en modo directquery sobre un verdadero realtime operational analytics que procesa más de 43 mil millones de eventos y ritmos de 5k inserciones/segundo con SQL Server standard edition.  Hablaré sobre problemas encontrados y sobre algunos trucos en PowerBI y en el motor SQL Server que tuve que implementar para hacerlo viable económicamente corriendo en Azure con un SQL Server Standard edition.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159&quot; rel=&quot;maraton power platform&quot;&gt;&lt;img src=&quot;/img/posts/maratonpowerplatform2020/cartelmaraton.png&quot; alt=&quot;maraton power platform&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 08 Jul 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Video: Desplegar SQL Server personalizado en Kubernetes OnPremises</title>
