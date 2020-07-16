@@ -8,9 +8,19 @@ layout: default
     {{ page.date | date: "%B %-d, %Y" }}
     {% if page.author %} - {{ page.author }}{% endif %}
     </p>
-  </header>
-  <section class="post-content">{{ content }}</section>
+  </header>  
+  <section class="post-content">
+    <!-- Social links -->
+  <div class="social_links">
+    <a href="https://github.com/sponsors/enriquecatala"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=social&logo=github&logoColor=EA4AAA" alt="GitHub Sponsors"></a>
+    <a href="https://www.linkedin.com/in/enriquecatala"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+    <a href="https://twitter.com/enriquecatala"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/enriquecatala?label=twitter&style=social" alt="Twitter"></a>
+    <a href="https://github.com/enriquecatala"><img alt="GitHub followers" src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=social" alt="GitHub"></a>
+  </div>
+    {{ content }}
+  </section>
 </article>
+
 
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}
