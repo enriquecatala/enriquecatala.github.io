@@ -4,6 +4,7 @@ title:  "My new blog: GitHub pages, Jekyll and docker"
 date:   2020-05-29 00:25:53 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
+tags: Docker GitHub Blog
 ---
 
 After some internal debates with myself, I found that the best option for me to re-start blogging was to return to basics and get a flat and easy to maintain blog. 

@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Fri, 17 Jul 2020 05:29:09 -0500</pubDate>
+    <pubDate>Fri, 17 Jul 2020 06:44:01 -0500</pubDate>
     
       <item>
         <title>Fix for ms-screensketch protocol</title>

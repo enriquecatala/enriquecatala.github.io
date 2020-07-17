@@ -4,6 +4,7 @@ title:  "Video: Desplegar SQL Server personalizado en Kubernetes OnPremises"
 date:   2020-07-06 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
+tags: YouTube SqlServer WSL2 Docker Kubernetes GitHub
 ---
 
 En este vídeo voy a enseñar cómo desplegar una imagen de SQL Server 2019 personalizada contra nuestro Kubernetes baremetal corriendo en entorno virtualizado.
