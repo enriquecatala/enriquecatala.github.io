@@ -4,7 +4,7 @@ title:  "Como evitar los temidos DeadLocks"
 date:   2020-08-18 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
-tags: sqlserver blocking locking deadlocks locks performance
+tags: SqlServer Blocking Performance
 ---
 
 >NOTA: Este post ha sido migrado de mi blog oficial tal cual. Fue escrito en 2007

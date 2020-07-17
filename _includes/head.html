@@ -43,4 +43,10 @@
 	ga('send', 'pageview');
 	</script>
 	{% endif %}
+
+	<!-- site tags -->
+	{% if site.tags != "" %}
+		{% include collecttags.html %}
+	{% endif %}
+	
 </head>
