@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "0.0.0.0" # the base hostname & protocol for your site
+url: "www.enriquecatala.com" # the base hostname & protocol for your site
 
 
 # THEME-SPECIFIC CONFIGURATION
@@ -10,7 +10,7 @@ theme_settings:
   #avatar: avatar.png
   avatar: enrique.jpg
   gravatar: # Email MD5 hash
-  description: "Enrique Catala Bañuls portfolio" # used by search engines
+  description: "Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls." # used by search engines
 
   # Header and footer text
   header_text: >
