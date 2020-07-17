@@ -18,14 +18,18 @@ layout: default
     <a href="https://github.com/enriquecatala"><img alt="GitHub followers" src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=social" alt="GitHub"></a>
   </div>  
   <!-- Tags -->  
-  <span>[
-    {% for tag in page.tags %}
-      {% capture tag_name %}{{ tag }}{% endcapture %}
-      <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-    {% endfor %}
-  ]</span>
+  {% if page.tags %}
+    <span>[
+      {% for tag in page.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+      {% endfor %}
+    ]</span>
+  {% endif %}
 
-    {{ content }}
+  <!-- this is the content of the post-->
+  {{ content }}
+
   </section>
 </article>
 
