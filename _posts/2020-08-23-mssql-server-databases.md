@@ -4,6 +4,7 @@ title:  "mssql-server-samplesdb"
 date:   2020-06-25 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
+tags: sqlserver wsl2 samplesdb docker kubernetes github
 ---
 
 Si quieres, ya puedes olvidarte de instalar SQL Server para siempre y utilizar como forma de desarrollo contra SQL Server, un contenedor Docker nativo. 

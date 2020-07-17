@@ -4,6 +4,7 @@ title:  "Cálculo de letras del DNI con T-SQL"
 date:   2020-07-18 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
+tags: tsql
 ---
 
 >NOTA: Este post ha sido migrado de mi blog oficial tal cual. Fue escrito en 2007
