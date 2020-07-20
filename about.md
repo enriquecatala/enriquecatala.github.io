@@ -7,26 +7,20 @@ feature-img: "img/my-youtube-header.png"
 
 # Enrique Catalá Bañuls
 
-<div>
-  <img class="img-valign" src="https://enriquecatala.com/img/enrique-x250.jpg" alt="" />
-  <span class="text2">Esto es un texto extraño</span>  
-</div>
-
-
-![Enrique Catalá Bañuls](img/enrique.jpg){:height="250px" width="250px"}
-
-> [enrique@enriquecatala.com](mailto:enrique@enriquecatala.com)
-> 
-
+<img class="img-valign" src="https://enriquecatala.com/img/enrique.jpg" alt="Enrique Catalá Bañuls"  height="250px" width="250px" />
 
 [![MVP](img/icons/MVP_Logo_horizontal.png)](https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala)
+
+<div>
 
 <a href="https://github.com/sponsors/enriquecatala"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=flat&logo=github&logoColor=EA4AAA" alt="GitHub Sponsors"></a>
 <a href="https://www.linkedin.com/in/enriquecatala"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=flat&logo=linkedin" alt="LinkedIn"></a>
 <a href="https://twitter.com/enriquecatala"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/enriquecatala?label=twitter&style=flat" alt="Twitter"></a>
 <a href="https://github.com/enriquecatala"><img alt="GitHub followers" src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=flat" alt="GitHub"></a>
 
-[![youtubeff](/img/icons/youtube-75x43.png)](https://www.youtube.com/user/enriquecatala) <script src="https://apis.google.com/js/platform.js"></script> <div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
+<script src="https://apis.google.com/js/platform.js"></script> 
+<div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
+</div>
 
 ### Official Certification Transcript
 [![Download Transcript](/img/icons/transcript.png)](/assets/files/microsoft_certified_professional_transcript.pdf)
