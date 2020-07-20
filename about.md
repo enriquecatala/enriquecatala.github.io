@@ -7,6 +7,12 @@ feature-img: "img/my-youtube-header.png"
 
 # Enrique Catalá Bañuls
 
+<div>
+  <img class="img-valign" src="https://enriquecatala.com/img/enrique-x250.jpg" alt="" />
+  <span class="text2">Esto es un texto extraño</span>  
+</div>
+
+
 ![Enrique Catalá Bañuls](img/enrique.jpg){:height="250px" width="250px"}
 
 > [enrique@enriquecatala.com](mailto:enrique@enriquecatala.com)
@@ -20,9 +26,7 @@ feature-img: "img/my-youtube-header.png"
 <a href="https://twitter.com/enriquecatala"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/enriquecatala?label=twitter&style=flat" alt="Twitter"></a>
 <a href="https://github.com/enriquecatala"><img alt="GitHub followers" src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=flat" alt="GitHub"></a>
 
-[![youtubeff](/img/icons/youtube-75x43.png)](https://www.youtube.com/user/enriquecatala)
-<script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
+[![youtubeff](/img/icons/youtube-75x43.png)](https://www.youtube.com/user/enriquecatala) <script src="https://apis.google.com/js/platform.js"></script> <div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
 
 ### Official Certification Transcript
 [![Download Transcript](/img/icons/transcript.png)](/assets/files/microsoft_certified_professional_transcript.pdf)
