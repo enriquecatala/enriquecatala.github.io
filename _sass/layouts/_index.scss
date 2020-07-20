@@ -52,11 +52,12 @@
   background-size: $feature-image-size;
   border-bottom: 1px solid $border-color;
   li {
-    width: 32%;
+    width: 20%;
     margin-right:0.5%;
     margin-left:0.5%;
     margin-bottom: 0;
     display: inline-block;
+    vertical-align: top;
     p a:hover {
       @extend %link-hover;
     }
