@@ -22,13 +22,14 @@ layout: default
     <h2>My Work</h2>
     <div>
     {% assign projectsOrdered = (site.portfolio | short-description | sort: 'size')  %}
-    {% for project in projectsOrdered limit:4 %}
+    {% for project in projectsOrdered limit:5 %}
         <li>
-        
-          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
-          <a href="{{ project.url }}">{{ project.title }}</a>
-          <p>{{ project.short-description }}</p>
-        
+          <div>
+            <a href="{{ project.url }}"><img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/></a>
+            </p>
+            <a href="{{ project.url }}">{{ project.title }}</a>
+            <!--<p>{{ project.short-description }}</p>-->
+          </div>  
         </li>
     {% endfor %}
     </div>
