@@ -26,7 +26,8 @@
     font-size: 2em;    
   }
   .post-teaser {
-    @extend %padding-regular;
+    //@extend %padding-regular;
+    @extend %padding-regular-posts;
     width: 100%;
     margin-bottom: 0;
     display: inline-block;
