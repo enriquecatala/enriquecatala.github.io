@@ -35,7 +35,7 @@ Technical leader at [SolidQ](https://www.solidq.com/) , [Microsoft Data Platform
 
 ### Short
 
-Microsoft  Data Platform MVP, Computer Engineer and Microsoft Certified Trainer. Working as Technical Leader and Mentor for @SolidQ with focus on SQL Server scalability , performance and High availability environments.
+Microsoft  Data Platform MVP, Computer Engineer and Microsoft Certified Trainer. Working as Technical Leader for @SolidQ with focus on SQL Server scalability , performance and High availability environments.
 
 #### Ultra-short
 
@@ -47,4 +47,8 @@ Technical Leader en [SolidQ](https://www.solidq.com/), [Microsoft Data Platform 
 
 ### Corta
 
-Microsoft  Data Platform MVP, Ingeniero en Informática y Microsoft Certified Trainer. Trabajo como Technical Leader y Mentor para @SolidQ con foco en alta disponibilidad, escalabilidad y rendimiento de la plataforma de datos de Microsoft.
+Microsoft  Data Platform MVP, Ingeniero en Informática y Microsoft Certified Trainer. Trabajo como Technical Leader para @SolidQ con foco en alta disponibilidad, escalabilidad y rendimiento de la plataforma de datos de Microsoft.
+
+#### Ultra-corta
+
+Microsoft Data Platform MVP, Ingeniero Informático y Technical Leader en SolidQ

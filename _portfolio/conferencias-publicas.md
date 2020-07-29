@@ -4,7 +4,7 @@ title: Conferencias públicas
 feature-img: "img/my-youtube-header.png"
 thumbnail-path: "/img/icons/teaching-75x75.png"
 short-description: Conferencias públicas
-
+tags: Portfolio
 ---
 
 ## Mis conferencias publicas
