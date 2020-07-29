@@ -13,19 +13,17 @@ feature-img: "img/my-youtube-header.png"
 
 <div>
 
-<a href="https://github.com/sponsors/enriquecatala"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=flat&logo=github&logoColor=EA4AAA" alt="GitHub Sponsors"></a>
-<a href="https://www.linkedin.com/in/enriquecatala"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=flat&logo=linkedin" alt="LinkedIn"></a>
-<a href="https://twitter.com/enriquecatala"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/enriquecatala?label=twitter&style=flat" alt="Twitter"></a>
-<a href="https://github.com/enriquecatala"><img alt="GitHub followers" src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=flat" alt="GitHub"></a>
+<a href="https://github.com/sponsors/enriquecatala"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=flat&logo=github&logoColor=EA4AAA" alt="Sponsor Enrique Catalá on GitHub"></a>
+<a href="https://www.linkedin.com/in/enriquecatala"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=flat&logo=linkedin" alt="LinkedIn Enrique Catalá"></a>
+<a href="https://twitter.com/enriquecatala"><img src="https://img.shields.io/twitter/follow/enriquecatala?label=twitter&style=flat" alt="Twitter @enriquecatala"></a>
+<a href="https://github.com/enriquecatala"><img src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=flat" alt="GitHub followers of Enrique Catalá"></a>
 
 <script src="https://apis.google.com/js/platform.js"></script> 
 <div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
 </div>
 
-### Official Certification Transcript
-[![Download Transcript](/img/icons/transcript.png)](/assets/files/microsoft_certified_professional_transcript.pdf)
-
-
+### Curriculum Vitae
+[![Download Transcript](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)
 
 # BIO
 
