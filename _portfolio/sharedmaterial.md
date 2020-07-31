@@ -2,7 +2,7 @@
 layout: post
 title: Shared material
 feature-img: "img/sample_feature_blue.png"
-thumbnail-path: "img/icons/microsoftonedrive.png"
+thumbnail-path: "/img/icons/microsoftonedrive.png"
 short-description: PPTs, backups, pdfs...
 tags: Portfolio
 ---

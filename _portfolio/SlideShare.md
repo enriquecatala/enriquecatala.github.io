@@ -2,7 +2,7 @@
 layout: post
 title: SlideShare
 feature-img: "img/sample_feature_blue.png"
-thumbnail-path: "img/icons/slideshare.png"
+thumbnail-path: "/img/icons/slideshare.png"
 short-description: PPTs, backups, pdfs...
 tags: Portfolio
 ---
