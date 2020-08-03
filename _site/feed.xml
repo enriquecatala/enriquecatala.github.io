@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 03 Aug 2020 06:29:57 -0500</pubDate>
+    <pubDate>Mon, 03 Aug 2020 06:44:38 -0500</pubDate>
     
       <item>
         <title>Where is the notepad in windows10 2004 update?</title>
@@ -235,6 +235,21 @@
       </item>
     
       <item>
+        <title>Cambio de blog y nuevo canal de youtube!</title>
+        <link>http://0.0.0.0:4000/2020/06/15/cambio-blog-nuevo-canal-youtube.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/15/cambio-blog-nuevo-canal-youtube.html</guid>
+        <description>&lt;p&gt;Aqui tienes el último post que hice en mi viejo blog:&lt;/p&gt;
+
+&lt;p&gt;http://ecatalab.blogspot.com/2020/06/cambio-de-blog-y-nuevo-canal-de-youtube.html&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Esta entrada la tengo creada para que el indexador google no me moleste mucho :)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2020 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
         <title>Video: Crea tu propia imagen de SQL Server para docker</title>
         <link>http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-own-image.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-own-image.html</guid>
@@ -456,6 +471,21 @@ Todo lo anterior no nos sirve de mucho si nuestro servicio de SQL Server no disp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 28 May 2020 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Averiguar conexiones externas hacia nuestro SQL Server</title>
+        <link>http://0.0.0.0:4000/2010/07/05/averiguar-conexiones-externas-hacia.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2010/07/05/averiguar-conexiones-externas-hacia.html</guid>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Esta entrada la tengo creada para que el indexador google no me moleste mucho :)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;leer-post-original&quot;&gt;&lt;a href=&quot;http://ecatalab.blogspot.com/2010/07/averiguar-conexiones-externas-hacia.html&quot;&gt;Leer Post Original&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;IMPORTANTE&lt;/strong&gt;: Este post tiene &lt;mark&gt;mas de 10 años!&lt;/mark&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Jul 2010 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
