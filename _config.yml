@@ -84,5 +84,11 @@ tipue_search:
   exclude:
     files: [search.html]
 
+# https://github.com/jekyll/jekyll-redirect-from
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+# https://github.com/jekyll/jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
