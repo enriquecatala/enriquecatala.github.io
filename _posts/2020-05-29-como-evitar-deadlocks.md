@@ -5,6 +5,7 @@ date:   2020-05-29 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
 tags: SqlServer Blocking Performance
+redirects_from: /2020/08/17/como-evitar-deadlocks.html
 ---
 
 >NOTA: Este post ha sido migrado de mi blog oficial tal cual. Fue escrito en 2007
