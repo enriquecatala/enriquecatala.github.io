@@ -23,7 +23,14 @@ feature-img: "img/my-youtube-header.png"
 </div>
 
 ### Curriculum Vitae
+
 [![Download Transcript](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)
+
+### Microsoft Transcript
+
+See my official [microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate)
+
+> Transcript ID: 977266 - Access Code: enriquecatala
 
 # BIO
 
