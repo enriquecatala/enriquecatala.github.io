@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Sun, 09 Aug 2020 07:36:12 -0500</pubDate>
+    <pubDate>Sun, 09 Aug 2020 07:50:54 -0500</pubDate>
     
       <item>
         <title>Howto update gems on Github pages</title>
