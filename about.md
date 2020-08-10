@@ -11,31 +11,17 @@ feature-img: "img/my-youtube-header.png"
 
 [![MVP](img/icons/MVP_Logo_horizontal.png)](https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala)
 
-<div>
+<div class="social_links">
+    <a href="https://github.com/sponsors/enriquecatala"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=flat-square&logo=github&logoColor=EA4AAA" alt="Sponsor Enrique Catalá on GitHub" height=24></a>    
+    <a href="https://www.linkedin.com/in/enriquecatala"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=flat-square&logo=linkedin" alt="LinkedIn Enrique Catalá" height=24></a>
+    <a href="https://twitter.com/enriquecatala"><img src="https://img.shields.io/twitter/follow/enriquecatala?color=blue&label=twitter&style=flat-square" alt="Twitter @enriquecatala" height=24></a>    
+    <a href="https://github.com/enriquecatala"><img  src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=-square" alt="GitHub followers of Enrique Catalá" height=24></a>
+    <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
+</div>  
 
-<a href="https://github.com/sponsors/enriquecatala"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=flat&logo=github&logoColor=EA4AAA" alt="Sponsor Enrique Catalá on GitHub"></a>
-<a href="https://www.linkedin.com/in/enriquecatala"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=flat&logo=linkedin" alt="LinkedIn Enrique Catalá"></a>
-<a href="https://twitter.com/enriquecatala"><img src="https://img.shields.io/twitter/follow/enriquecatala?label=twitter&style=flat" alt="Twitter @enriquecatala"></a>
-<a href="https://github.com/enriquecatala"><img src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=flat" alt="GitHub followers of Enrique Catalá"></a>
-
-<script src="https://apis.google.com/js/platform.js"></script> 
-<div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
-</div>
-
-### Curriculum Vitae
-
-[![Download Transcript](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)
-
-### Microsoft Transcript
-
-See my official [microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate)
-
-> Transcript ID: 977266 - Access Code: enriquecatala
-
-
-| Curriculum Vitae | MS transcript |
+| Curriculum Vitae | Microsoft transcript |
 |--------------------|-----------------|
-| [![Download Transcript](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)           | [microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala  |
+| [![Download Transcript](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)           | [Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala  |
 
 
 # BIO
