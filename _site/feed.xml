@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Enrique Catalá</title>
+    <title>Data engineering with Enrique Catalá</title>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 11 Aug 2020 06:21:31 -0500</pubDate>
+    <pubDate>Tue, 11 Aug 2020 07:17:04 -0500</pubDate>
     
       <item>
         <title>Howto update gems on Github pages</title>
