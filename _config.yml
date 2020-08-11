@@ -6,7 +6,7 @@ url: https://enriquecatala.com # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Enrique Catalá
+  title: Data engineering with Enrique Catalá
   #avatar: avatar.png
   avatar: enrique.jpg
   gravatar: # Email MD5 hash
@@ -74,8 +74,6 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-plugins: [jekyll-paginate]
-
 # Tipue search settings
 tipue_search:
   include:
@@ -85,9 +83,10 @@ tipue_search:
     files: [search.html]
 
 # https://github.com/jekyll/jekyll-redirect-from
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-paginate
 
 # https://github.com/jekyll/jekyll-redirect-from
 whitelist:
