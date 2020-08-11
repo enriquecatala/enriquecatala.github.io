@@ -62,6 +62,10 @@ https://www.youtube.com/watch?v=PDbE4gQisYI&list=PLXXExoAK--GI5TDbfPC8h6rLLuNZS8
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eX5YywK9iyE?start=27" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Datawarehouse como servicio en Azure (SQLDW)
+
+<iframe src="https://channel9.msdn.com/Events/Microsoft-Spain-Events/Microsoft-Summit/T6-Cortana-Intelligence-Suite-Datawarehouse-como-servicio-en-Azure-SQLDW/player" width="960" height="540" allowFullScreen frameBorder="0" title="T6: Cortana Intelligence Suite: Datawarehouse como servicio en Azure (SQLDW) - Microsoft Channel 9 Video"></iframe>
+
 ### Azure Data Warehouse
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t9JrvyKPxGE?start=27" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
