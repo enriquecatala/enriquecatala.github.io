@@ -7,9 +7,10 @@ short-description: Exam badges earned
 tags: Portfolio
 ---
 
-| Curriculum Vitae | Microsoft transcript |
-|--------------------|-----------------|
-| [![Download Transcript](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)           | [Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala  |
+# Microsoft transcript 
+
+[Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala 
+>For more info, see [about](/about)
 
 # Certifications
 <div style="text-align:center;">
@@ -103,3 +104,4 @@ tags: Portfolio
   </tr>
 </tbody>
 </table>
+ 
