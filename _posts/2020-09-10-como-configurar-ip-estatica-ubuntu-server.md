@@ -1,18 +1,16 @@
 ---
 layout: post
 title:  "Cómo configurar ip estática en Ubuntu Server"
-date:   2020-06-17 00:00:00 +0200
+date:   2020-09-10 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
 tags: OS
 ---
-Me pasa bastante tener que levantar VM con ubuntu, que es un poco peculiar y he decidido hacer este pequeño paso a paso para configurarlo. 
-
-<!--end_excerpt-->
-
-# Configurar IP estática en Ubuntu Server
+Si como en mi caso, tienes que levantar ubuntu server, sin GUI y necesitas añadirte la red, este es tu post :)
 
 En Ubuntu, si utilizas una versión igual o superior a 18.04, verás que la forma de configurar tus tarjetas de red ha cambiado ligeramente. Ahora, la configuración es algo mas sencilla y se puede hacer con un fichero YAML de la siguente manera:
+
+<!--end_excerpt-->
 
 ## Identificar el nombre de las interfaces de red disponibles
 
@@ -76,3 +74,5 @@ Verifica que efectivamente todo funciona como debe
 ```bash
 ip addr show dev eth0
 ```
+
+Y...listo, ya tienes la red lista :)

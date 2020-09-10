@@ -5,7 +5,83 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 31 Aug 2020 17:43:19 -0500</pubDate>
+    <pubDate>Thu, 10 Sep 2020 11:10:16 -0500</pubDate>
+    
+      <item>
+        <title>Cómo configurar ip estática en Ubuntu Server</title>
+        <link>http://0.0.0.0:4000/2020/09/09/como-configurar-ip-estatica-ubuntu-server.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/09/09/como-configurar-ip-estatica-ubuntu-server.html</guid>
+        <description>&lt;p&gt;Si como en mi caso, tienes que levantar ubuntu server, sin GUI y necesitas añadirte la red, este es tu post :)&lt;/p&gt;
+
+&lt;p&gt;En Ubuntu, si utilizas una versión igual o superior a 18.04, verás que la forma de configurar tus tarjetas de red ha cambiado ligeramente. Ahora, la configuración es algo mas sencilla y se puede hacer con un fichero YAML de la siguente manera:&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;h2 id=&quot;identificar-el-nombre-de-las-interfaces-de-red-disponibles&quot;&gt;Identificar el nombre de las interfaces de red disponibles&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enrique@ubuntuk8sarc:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ip &lt;span class=&quot;nb&quot;&gt;link
+&lt;/span&gt;1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    &lt;span class=&quot;nb&quot;&gt;link&lt;/span&gt;/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    &lt;span class=&quot;nb&quot;&gt;link&lt;/span&gt;/ether 00:15:5d:01:f3:61 brd ff:ff:ff:ff:ff:ff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: En este caso, quiero configurar eth0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;configurar-eth0&quot;&gt;Configurar eth0&lt;/h2&gt;
+
+&lt;p&gt;En este caso, la configuración se realiza con el YAML de configuración de &lt;a href=&quot;https://netplan.io/examples/&quot;&gt;netplan&lt;/a&gt; , que básicamente se encuentra en &lt;em&gt;/etc/netplan/&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enrique@ubuntuk8sarc:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/netplan/
+enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;00-installer-config.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Editamos el fichero que tenemos&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/netplan/00-installer-config.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;y le añadimos la configuración que queramos. En mi caso es esta:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# This is the network config &lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;networkd&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;ethernets&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;eth0&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;dhcp4&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;no&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;addresses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;192.168.100.91/24&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;gateway4&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;192.168.100.1&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;nameservers&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;addresses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;1.1.1.1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;8.8.8.8&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Es bastante autoexplicativo, pero si quieres mas información entra en la &lt;a href=&quot;https://netplan.io/examples/&quot;&gt;ayuda de netplan&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;aplica-los-cambios&quot;&gt;Aplica los cambios&lt;/h2&gt;
+
+&lt;p&gt;Ahora solo te queda aplicar cambios&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;netplan apply
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;comprueba-los-cambios&quot;&gt;Comprueba los cambios&lt;/h2&gt;
+
+&lt;p&gt;Verifica que efectivamente todo funciona como debe&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ip addr show dev eth0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Y…listo, ya tienes la red lista :)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Howto update gems on Github pages</title>
@@ -546,21 +622,6 @@ Todo lo anterior no nos sirve de mucho si nuestro servicio de SQL Server no disp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 28 May 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Averiguar conexiones externas hacia nuestro SQL Server</title>
-        <link>http://0.0.0.0:4000/2010/07/05/averiguar-conexiones-externas-hacia.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2010/07/05/averiguar-conexiones-externas-hacia.html</guid>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;NOTA: Esta entrada la tengo creada para que el indexador google no me moleste mucho :)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;leer-post-original&quot;&gt;&lt;a href=&quot;http://ecatalab.blogspot.com/2010/07/averiguar-conexiones-externas-hacia.html&quot;&gt;Leer Post Original&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;IMPORTANTE&lt;/strong&gt;: Este post tiene &lt;mark&gt;mas de 10 años!&lt;/mark&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 05 Jul 2010 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
