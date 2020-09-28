@@ -5,7 +5,59 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 10 Sep 2020 11:10:16 -0500</pubDate>
+    <pubDate>Mon, 28 Sep 2020 08:49:53 -0500</pubDate>
+    
+      <item>
+        <title>Cómo aplicar un commit concreto de una rama en otra</title>
+        <link>http://0.0.0.0:4000/2020/09/09/aplicar-commit-concreto-de-una-rama-en-otra.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/09/09/aplicar-commit-concreto-de-una-rama-en-otra.html</guid>
+        <description>&lt;h1 id=&quot;cómo-aplicar-un-commit-concreto-de-una-rama-en-otra&quot;&gt;Cómo aplicar un commit concreto de una rama en otra&lt;/h1&gt;
+
+&lt;p&gt;Es algo poco deseable, pero en ocasiones pasa…verdad? :) De repente estás desarrollando en una rama, aplicas un FIX crítico que debes llevarte de inmediato a otra rama en la que algun compañero está trabajando, o viceversa. Cuando hablamos de 1 o 2 cambios, algo tonto, pues a veces acabamos antes directamente aplicando nosotros el fix, pero cuando la cosa se complica porque son decenas de pequeños cambios, nuevos assets,… y no tienes el control real de lo que hablas, te interesa saber cómo hacerlo.&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;h2 id=&quot;git-cherry-pick&quot;&gt;git cherry-pick&lt;/h2&gt;
+
+&lt;p&gt;Nuestro amigo en este caso se llama git &lt;a href=&quot;https://git-scm.com/docs/git-cherry-pick&quot;&gt;cherry-pick&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El comando require el hash del commit que quieras llevarte. Yo soy bastante comodón y suelo usar el plugin de vscode llamado &lt;a href=&quot;https://github.com/mhutchie/vscode-git-graph&quot;&gt;mhutchie.git-graph&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En este caso, hago checkout en la rama que tiene el commit que busco y me anoto el &lt;strong&gt;commit hash&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-git&quot;&gt;git checkout RamaConTuCommit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ahora busco a ver el commit hash que quiero llevarme a otro lado:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/cherry-pick/cherry-pick1.png&quot; alt=&quot;git cherry-pick&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez lo tengo claro, lanzo el comando cherry-pick &lt;strong&gt;sobre la rama A LA QUE QUIERO TRAERMELO&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout RamaDondeQuieroTraerElCommit
+git pull 
+&lt;span class=&quot;c&quot;&gt;# git cherry-pick COMMIT-HASH&lt;/span&gt;
+git cherry-pick a4045a23e15dff7d6daf4e0c5a77d6d7954c89d0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Una vez lanzado, tendrás que reparar todos los conflictos que tengas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/cherry-pick/cherry-pick2.png&quot; alt=&quot;cherry-pick2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En mi caso tengo varios conflictos como puedes ver. la mayoria de ellos son prácticamente porque se trata de ficheros nuevos, que por &lt;strong&gt;defecto entiende que debe eliminar&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/cherry-pick/git-merge.png&quot; alt=&quot;git-merge&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pero yo no quiero eliminar, sino añadir, por lo que toca hacer un&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# básicamente sobre la carpeta que tiene todo lo nuevo en mi caso&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Y finalmente hacer un commit de todo y su correspondiente push, con lo que las 2 ramas quedan con los cambios aplicados y obviamente cada una todavia sigue su propio camino.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/cherry-pick/git-graph.png&quot; alt=&quot;git-graph&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2020 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Cómo configurar ip estática en Ubuntu Server</title>
@@ -576,50 +628,6 @@ El terreno de la optimización de las Bases de Datos es un terreno bastante peli
 Todo lo anterior no nos sirve de mucho si nuestro servicio de SQL Server no dispone de memoria suficiente para realizar las operaciones y está continuamente paginando a disco. Encontrar una buena salud de nuestro servidor de BBDD tambien ha de estar en nuestra cabeza cuando queramos minimizar el impacto de una consulta contra la BBDD.&lt;/p&gt;
 
 &lt;p&gt;Como vemos, todo es muy genérico pero resulta importante tenerlo en mente siempre que diseñemos un acceso a datos , sea al motor de Base de Datos que sea.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 May 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cálculo de letras del DNI con T-SQL</title>
-        <link>http://0.0.0.0:4000/2020/05/28/calculo-letras-dni-tsql.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/05/28/calculo-letras-dni-tsql.html</guid>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;NOTA: Este post ha sido migrado de mi blog oficial tal cual. Fue escrito en 2007&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Si necesitas calcular la letra DNI de un conjunto grande de números DNI, aqui tienes una posible solución con T-SQL.&lt;/p&gt;
-
-&lt;p&gt;Para optimizar, puedes almacenar el NIF en un tipo de datos INT ( sin letra ), que puedes poner como PK. Con la siguiente CTE podrás calcular la letra de esos nº de NIF:&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempdb&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;go&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;DECLARE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NIFS_table&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numnif&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;primary&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;insert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;into&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NIFS_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numnif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12569875&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;52345612&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NIFS_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;DECLARE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letras_nif&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;CHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'TRWAGMYFPDXBNJZSQVHLCKE'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SubSelect&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numnif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;CONVERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;FLOOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-     &lt;span class=&quot;n&quot;&gt;FLOOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-           &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-             &lt;span class=&quot;k&quot;&gt;CONVERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;FLOAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numnif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FLOOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;CONVERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;FLOAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numnif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pos_letra&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NIFS_table&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SUBSTRING&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letras_nif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pos_letra&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letra&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-       &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numnif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'-'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SUBSTRING&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letras_nif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pos_letra&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dni&lt;/span&gt;        
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subselect&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 28 May 2020 17:00:00 -0500</pubDate>
       </item>
