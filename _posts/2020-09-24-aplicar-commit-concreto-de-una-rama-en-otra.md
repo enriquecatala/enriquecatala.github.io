@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cómo configurar ip estática en Ubuntu Server"
+title:  "Cómo aplicar un commit concreto de una rama en otra"
 date:   2020-09-10 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
