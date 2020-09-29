@@ -7,8 +7,6 @@ excerpt_separator: <!--end_excerpt-->
 tags: GitHub
 ---
 
-# Cómo aplicar un commit concreto de una rama en otra
-
 Es algo poco deseable, pero en ocasiones pasa...verdad? :) De repente estás desarrollando en una rama, aplicas un FIX crítico que debes llevarte de inmediato a otra rama en la que algun compañero está trabajando, o viceversa. Cuando hablamos de 1 o 2 cambios, algo tonto, pues a veces acabamos antes directamente aplicando nosotros el fix, pero cuando la cosa se complica porque son decenas de pequeños cambios, nuevos assets,... y no tienes el control real de lo que hablas, te interesa saber cómo hacerlo. 
 
 <!--end_excerpt-->
