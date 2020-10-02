@@ -5,7 +5,26 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 29 Sep 2020 06:40:34 -0500</pubDate>
+    <pubDate>Fri, 02 Oct 2020 11:33:26 -0500</pubDate>
+    
+      <item>
+        <title>Video: Parchear SQL Server en windows (1/2)</title>
+        <link>http://0.0.0.0:4000/2020/10/01/video-parchear-sqlserver-windows.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/10/01/video-parchear-sqlserver-windows.html</guid>
+        <description>&lt;p&gt;En este vídeo voy a hacer un ejemplo rápido sobre cómo es el proceso de parcheo de SQL Server y qué nos puede ocurrir si queremos “des-parchear” :). En esta ocasión lo vamos a hacer con Windows, dejando para un siguiente vídeo el cómo se hace cuando corremos nuestro SQL Server sobre Kubernetes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/u5NXXssT1jI&quot;&gt;SQL Server, Docker y WSL2&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cRduwHDBoNg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;script src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Si te parece interesante, subscríbete!&lt;/p&gt;
+&lt;div class=&quot;g-ytsubscribe&quot; data-channelid=&quot;UCYboHnN6tvFfHqPWZWY82AQ&quot; data-layout=&quot;default&quot; data-count=&quot;default&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 01 Oct 2020 17:00:53 -0500</pubDate>
+      </item>
     
       <item>
         <title>Docker images of SQL server samplesdb updated</title>
@@ -563,107 +582,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 
 </description>
         <pubDate>Mon, 15 Jun 2020 14:25:53 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>My new blog: GitHub pages, Jekyll and docker</title>
-        <link>http://0.0.0.0:4000/2020/05/28/Creating-my-new-blog-with-Jekyll.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/05/28/Creating-my-new-blog-with-Jekyll.html</guid>
-        <description>&lt;p&gt;After some internal debates with myself, I found that the best option for me to re-start blogging was to return to basics and get a flat and easy to maintain blog.&lt;/p&gt;
-
-&lt;p&gt;Since I found myself writing a lot of code in github and maintaining lots of Markdown documents and Python Notebooks… the main reason to choose Jekyll was because of &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. In this post, i want to help you to start blogging with GitHub Pages and maintain your blog with the strategy i found interesting: Docker + github branches&lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-
-&lt;p&gt;I´m using Windows 10 as my setup, but you can use any linux or Mac distro you want, since everything used here is opensource linux based code:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blogs.windows.com/windowsexperience/2020/05/27/how-to-get-the-windows-10-may-2020-update/&quot;&gt;Windows 10 2004 update&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.docker.com/products/docker-desktop&quot;&gt;Docker version &amp;gt;=2.3.0.1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;Enable WSL2 on Windows10&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab&quot;&gt;Ubuntu 20.04 from windows store&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: Those requisites are important, because with previous version of Windows 10, WSL and docker, the blog will not start correctly&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-
-&lt;h3 id=&quot;configure-docker&quot;&gt;Configure docker&lt;/h3&gt;
-
-&lt;p&gt;Check the WSL2 integration on your Docker configuration&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/1.png&quot; alt=&quot;Use WSL 2 engine&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And set up the distro you want to use with docker&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/2.png&quot; alt=&quot;Enable Ubuntu-20.04 integration&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;create-your-repository&quot;&gt;Create your repository&lt;/h3&gt;
-
-&lt;p&gt;First action to do is follow the &lt;a href=&quot;https://guides.github.com/features/pages/&quot;&gt;official instructions&lt;/a&gt; and create your github page.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;TIP: After creating your repository, go and clone any Jekyll theme preconfigured (I´m using &lt;a href=&quot;https://github.com/rohanchandra/type-theme/&quot;&gt;portfolio-iro&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;setup-your-docker&quot;&gt;Setup your docker&lt;/h3&gt;
-
-&lt;p&gt;One of the main reasons i choose Jekyll was because i can run it in a container to quickly edit and review my posts before uploading to the site.&lt;/p&gt;
-
-&lt;p&gt;1) Create a &lt;em&gt;docker-compose.yml&lt;/em&gt; file in the root directory&lt;/p&gt;
-
-&lt;p&gt;2) Add the following contents&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;2.2'&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll/jekyll:latest&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll serve --watch --force_polling --verbose&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4000:4000&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.:/srv/jekyll&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This will ensure that your container will not only start your blog locally, but will be refreshing your site after each “save” you are doing on the markdown file containing your post. This is a very convenient way to edit material and see how it renders in your blog when you commit the change to the main branch.&lt;/p&gt;
-
-&lt;p&gt;3) Execute “&lt;em&gt;docker-compose up&lt;/em&gt;”&lt;/p&gt;
-
-&lt;p&gt;4) Open in browser &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;5) Start &lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/08-blogging/&quot;&gt;blogging as usual&lt;/a&gt; :)&lt;/p&gt;
-
-&lt;h2 id=&quot;tips&quot;&gt;Tips&lt;/h2&gt;
-
-&lt;h3 id=&quot;branches&quot;&gt;Branches&lt;/h3&gt;
-
-&lt;p&gt;To help you creating new posts and testing capabilities (like updating look and feel of your blog for example), you only need to &lt;strong&gt;create a branch of your repo&lt;/strong&gt;, and work on that branch.&lt;/p&gt;
-
-&lt;p&gt;For example…in my case, I created a branch called “&lt;em&gt;vNext&lt;/em&gt;” where I´ll create the new posts. The only thing to do to publish the post then will be to do a Pull request with my main branch :)&lt;/p&gt;
-
-&lt;p&gt;I´m also adding some kind of protection to myself, by requiring manual pull request reviewing…this will hopefuly minimize  mistakes from myself :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/createblog/3.png&quot; alt=&quot;require pull request reviews&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
-
-&lt;p&gt;To reference images in your markdown files, remember to point to the relative path from the root directory:&lt;/p&gt;
-
-&lt;p&gt;This will &lt;strong&gt;not&lt;/strong&gt; render the image correctly:&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     !&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;../img/posts/createblog/2.png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This will render the image correctly:&lt;/p&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     !&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;/img/posts/createblog/2.png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 28 May 2020 17:25:53 -0500</pubDate>
       </item>
     
   </channel>
