@@ -5,7 +5,27 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Wed, 07 Oct 2020 11:42:27 -0500</pubDate>
+    <pubDate>Fri, 06 Nov 2020 06:05:50 -0600</pubDate>
+    
+      <item>
+        <title>Speaker: Techmarathons</title>
+        <link>http://0.0.0.0:4000/2020/10/06/speaker-techmarathons.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2020/10/06/speaker-techmarathons.html</guid>
+        <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el próximo evento &lt;a href=&quot;https://www.techmarathons.com/&quot;&gt;#TechMarathons&lt;/a&gt; que tendrá lugar en los dias 9 al 14 de Noviembre de 2020.&lt;/p&gt;
+
+&lt;p&gt;En mi sesión voy a hablar durante 30m en pura demo sobre “&lt;em&gt;Realtime operational analytics en SQL Server&lt;/em&gt;” donde voy a comentaros sobre problemas encontrados y sobre algunos trucos que tuve que implementar para hacerlo viable económicamente corriendo en Azure con un SQL Server Standard edition.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.techmarathons.com/&quot;&gt;&lt;img src=&quot;/img/posts/speaker-techmaraton/portada%20speakers.png&quot; alt=&quot;techmarathons enrique catala&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Para seguir con el juego del evento, aqui va mi Thumb up!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-techmaraton/thumb_up.jpg&quot; alt=&quot;thumb up enrique catala&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 06 Oct 2020 17:00:53 -0500</pubDate>
+      </item>
     
       <item>
         <title>Video: Parchear SQL Server en kubernetes (2/2)</title>
@@ -575,24 +595,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 15 Jun 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Video: Crea tu propia imagen de SQL Server para docker</title>
-        <link>http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-own-image.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/15/video-sqlserver-docker-own-image.html</guid>
-        <description>&lt;p&gt;In this video we are going to create our first personalized image of SQL Server with docker.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;Crea tu propia imagen de SQL Server para docker&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9M6Ewpcfw9I&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;script src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;g-ytsubscribe&quot; data-channelid=&quot;UCYboHnN6tvFfHqPWZWY82AQ&quot; data-layout=&quot;default&quot; data-count=&quot;default&quot;&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 15 Jun 2020 14:25:53 -0500</pubDate>
       </item>
     
   </channel>
