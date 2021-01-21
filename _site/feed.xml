@@ -5,7 +5,143 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 21 Jan 2021 04:51:01 -0600</pubDate>
+    <pubDate>Thu, 21 Jan 2021 05:57:29 -0600</pubDate>
+    
+      <item>
+        <title>10 trucos para aprobar el examen CKA</title>
+        <link>http://0.0.0.0:4000/2021/01/19/Trucos-para-aprobar-examen-CKA.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/01/19/Trucos-para-aprobar-examen-CKA.html</guid>
+        <description>&lt;p&gt;Hoy mismo recibo el mail indicándome que acabo de aprobar el examen &lt;a href=&quot;https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/&quot;&gt;CKA: Certified Kubernetes Administrator&lt;/a&gt;. El examen es bastante chulo porque se aparta del típico examen al que estaba acostumbrado (al menos yo) de tipo test. En este caso, se miden realmente tus capacidades resolutivas con la tecnologia, porque el examen se trata de 17 preguntas, de diferente dificultad, donde te dan un objetivo, una linea de comandos y un tiempo para conseguirlo. La verdad que he disfrutado muchísimo y al margen de lo dificil/facil que te pueda parecer, la experiencia es bastante satisfactoria.&lt;/p&gt;
+
+&lt;p&gt;En este post te voy a contar las cosas que a mi modo de ver debes tener bien presentes antes de embarcarte en la certificacion CKA&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/cka-exam-passed/cka-enrique-catala-bañuls.png&quot; alt=&quot;cka exam Enrique Catalá&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;hazte-experto-en-kubectl&quot;&gt;Hazte experto en kubectl&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;mark&gt;¡EL EXAMEN NO DA TIEMPO A FINALIZARLO SI NO CONOCES KUBECTL!&lt;/mark&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Debes dominar al extremo el comando kubectl porque el tiempo es realmente escaso y debes maximizar y priorizar tus opciones al máximo.&lt;/p&gt;
+
+&lt;p&gt;Te recomiendo que al menos controles fuertemente comandos como los siguientes, porque &lt;strong&gt;serán la diferencia entre aprobar o suspender por el tiempo de montar a mano yaml&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# explain commands&lt;/span&gt;
+kubectl explain pod &lt;span class=&quot;nt&quot;&gt;--recursive&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-A5&lt;/span&gt; tolerations
+
+&lt;span class=&quot;c&quot;&gt;# create pod yaml&lt;/span&gt;
+kubectl run pod nginx &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nginx &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;--labels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tier&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;db &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;myns &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+			&lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; file.yaml
+
+&lt;span class=&quot;c&quot;&gt;# create deployment yaml&lt;/span&gt;
+kubectl create deployment nginx  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+					&lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nginx &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+					&lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+					&lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;myns &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+					&lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; file.yaml
+
+&lt;span class=&quot;c&quot;&gt;# create service yaml&lt;/span&gt;
+kubectl create service clusterip myservice &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;--tcp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;80:80 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;myns &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; file.yaml
+
+&lt;span class=&quot;c&quot;&gt;# change namespace&lt;/span&gt;
+kubectl config set-context &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl config current-context&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;dev
+
+&lt;span class=&quot;c&quot;&gt;# exec something from inside a pod&lt;/span&gt;
+kubectl &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; mypod &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; nslookup mysql.namespace.svc.cluster.local
+
+&lt;span class=&quot;c&quot;&gt;# create configmaps&lt;/span&gt;
+kubectl create configmap nginx-configuration &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ingress-space &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; nginx-configuration.yaml
+
+&lt;span class=&quot;c&quot;&gt;# create serviceaccounts&lt;/span&gt;
+kubectl create serviceaccount ingress-serviceaccount &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ingress-space &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ingress-serviceaccount.yaml
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;controla-jsonpath&quot;&gt;Controla jsonpath&lt;/h1&gt;
+
+&lt;p&gt;En mas de una pregunta vas a tener que usar indirectamente busquedas con jsonpath, porque te pediran hacer tal o cual cosa contra ciertos objetos, que deberas encontrar entre una lista bastante importante. Recuerda hacerte amigo de:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;kubectl … –sort-by==&lt;/li&gt;
+  &lt;li&gt;kubectl … -o jsonpath=’’&lt;/li&gt;
+  &lt;li&gt;kubectl … -o=custom-columns=’’&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;conoce-bien-cómo-interactuan-los-servicios-internamente&quot;&gt;Conoce bien cómo interactuan los servicios internamente&lt;/h1&gt;
+
+&lt;p&gt;Hazte al ánimo que al menos una pregunta pesada (de 15 puntos) va a ser de reparar un cluster con un worker node caido. Entiende bien cómo funcionan los servicios con &lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/journalctl.html&quot;&gt;journalctl -u&lt;/a&gt;, &lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/systemctl.html&quot;&gt;systemctl&lt;/a&gt;, conoce cómo despliega kubernetes los pods estáticos (típicamente en /etc/kubernetes/manifest/, pero igual en tu pregunta no están ahi…just saying :)). En fin, que entiendas bien cómo se levantan los servicios, qué certificados, claves y CA utilizan…de dónde salen las configuraciones de kubelet,…&lt;/p&gt;
+
+&lt;p&gt;Para aprenderlo bien, te recomiendo que te instales como mínimo una vez un &lt;a href=&quot;https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/&quot;&gt;cluster con kubeadm&lt;/a&gt; y un cluster &lt;a href=&quot;https://github.com/kelseyhightower/kubernetes-the-hard-way&quot;&gt;usando la version dura&lt;/a&gt; y que te centres en entender cómo va cada cosa mas allá de hacer copy-paste para que te sirva en troubleshooting futuros.&lt;/p&gt;
+
+&lt;h1 id=&quot;créate-bookmarks-en-chrome&quot;&gt;Créate bookmarks en chrome&lt;/h1&gt;
+
+&lt;p&gt;Durante el examen permiten una pestaña de chrome con acceso completo a https://kubernetes.io/docs/home y aunque tienes un buen buscador…siempre hay cosas que cuando estudias, seguro que se te quedan algo cojas y conviene tenerlas en el bookmark por si te preguntan sobre ello. 
+Como mínimo te recomiendo que tengas preparadas las siguientes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/reference/kubectl/cheatsheet/&quot;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/#steps-for-the-first-control-plane-node&quot;&gt;Install with kubeadm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/&quot;&gt;DNS debug&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/index.md&quot;&gt;NGINX ingress deployment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A partir de ahi, las que tu consideres pero piensa que si te pasas poniendote marcadores…igual acabas teniendo que usar el buscador :)&lt;/p&gt;
+
+&lt;p&gt;Recuerda que las preguntas no van a ser directamente preguntarte cosas de esas webs, esas webs son buena referencia para cosas que por ejemplo no recuerdes (en mi caso por poner un ejemplo a la hora de crear un usuario con certificado, siempre se me olvida cómo generar el base64 del certificado para incrustarlo en el yaml…)&lt;/p&gt;
+
+&lt;h1 id=&quot;destina-tus-2-primeros-minutos-a-configurar-tu-entorno&quot;&gt;Destina tus 2 primeros minutos a configurar tu entorno&lt;/h1&gt;
+
+&lt;p&gt;Recuerda, cada segundo cuenta, destina 2 minutos a configurar tus atajos de teclado&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &amp;lt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kubectl completion bash&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;source &amp;lt;(kubectl completion bash)&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc 
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;kubectl
+&lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; __start_kubectl k
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;revisa-el-namespace-y-el-cluster-siempre&quot;&gt;Revisa el namespace y el cluster SIEMPRE!&lt;/h1&gt;
+
+&lt;p&gt;Cada pregunta tiene al principio un comando kubectl que debes lanzar para saltar al cluster kubernetes donde resolver la pregunta en cuestión. Recuerda hacerlo nada mas cambiar de pregunta.
+Hay preguntas donde te van a decir que hagas tal o cual cosa con objetos dobre diferentes namespace. Lee bien la pregunta porque si lo haces en el namespace que no sea…la pregunta es 0 :)&lt;/p&gt;
+
+&lt;h1 id=&quot;usa-tu-teclado-y-ratón&quot;&gt;Usa tu teclado y ratón&lt;/h1&gt;
+
+&lt;p&gt;Me arrepentiré siempre de no haber usado mi teclado y haber ido al examen con el laptop y su tedioso teclado. Enserio, acabé la última pregunta a 1m de finalizar el examen por la cantidad de errores que estuve metiendo constantemente al escribir comandos en un teclado que no era el habitual. Recuerda, &lt;strong&gt;cada segundo cuenta&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;editor-de-texto-vi&quot;&gt;Editor de texto vi&lt;/h1&gt;
+
+&lt;p&gt;Aprende vi. Si no sabes usar vi, aprende vi. ¿te he dicho ya que aprendas vi? pues eso :)&lt;/p&gt;
+
+&lt;h1 id=&quot;hazte-buscador-experto-en-kubernetesio&quot;&gt;Hazte buscador experto en kubernetes.io&lt;/h1&gt;
+
+&lt;p&gt;Pues eso, van a salirte cosas muy variopintas, mas te vale conocer muy a fondo la estructura de la web kubernetes.io, porque seguro que la consultas mas de lo que piensas y acabar perdido entre su “peculiar” forma de organizar información no debe ser nada agradable cuando el tiempo vuela :)&lt;/p&gt;
+
+&lt;h1 id=&quot;olvídate-de-buscar-atajos-con-supuestas-empresas-que-te-dan-preguntasrespuestas&quot;&gt;Olvídate de buscar atajos con supuestas empresas que te dan preguntas/respuestas&lt;/h1&gt;
+
+&lt;p&gt;Si eres de esos que se compran packs de preguntas de examen, te las estudias de memoria y se presentan…este examen no es para ti. En general me da mucha rabia la gente que hace ese tipo de cosas, pero eso ya es otro tema de discusión aqui. Lo que quiero que entiendas es que realmente este examen va sobre tener las cosas claras y de hecho te dejan total libertad para abrirte una pestaña de navegador y acceder a las siguientes URL:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://kubernetes.io/docs/home/&lt;/li&gt;
+  &lt;li&gt;https://github.com/kubernetes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En este examen no hay un tipo de pregunta tipo test y cada pregunta parece random y con cositas diferentes que no tiene ningun sentido saberse de memoria teniendo acceso completo a los recursos de la propia web kubernetes para consultarlos&lt;/p&gt;
+
+&lt;h1 id=&quot;suerte&quot;&gt;Suerte!&lt;/h1&gt;
+
+&lt;p&gt;Si estas leyendo este post entiendo que es porque tienes pensado presentarte, por lo que te deseo que lo consigas pronto!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Jan 2021 16:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Speaker: Techmarathons</title>
@@ -580,21 +716,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 &lt;p&gt;Al final en mi caso la única opcion ha sido hacerlo en la &lt;strong&gt;habitacion de matrimonio&lt;/strong&gt;, donde menos trastos tenia para quitar…me he llevado una mesa y una silla pequeños y así lo he hecho. En resumen…que solo si como yo tienes que pegarte el palizón merece la pena hacerlo en tu casa.&lt;/p&gt;
 </description>
         <pubDate>Tue, 16 Jun 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cambio de blog y nuevo canal de youtube!</title>
-        <link>http://0.0.0.0:4000/2020/06/15/cambio-blog-nuevo-canal-youtube.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/15/cambio-blog-nuevo-canal-youtube.html</guid>
-        <description>&lt;p&gt;Aqui tienes el último post que hice en mi viejo blog:&lt;/p&gt;
-
-&lt;h2 id=&quot;leer-post-original&quot;&gt;&lt;a href=&quot;http://ecatalab.blogspot.com/2020/06/cambio-de-blog-y-nuevo-canal-de-youtube.html&quot;&gt;Leer Post Original&lt;/a&gt;&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTA: Esta entrada la tengo creada para que el indexador google no me moleste mucho :)&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 15 Jun 2020 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
