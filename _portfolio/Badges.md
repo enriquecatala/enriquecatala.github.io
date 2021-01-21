@@ -86,18 +86,15 @@ tags: Portfolio
 
 <table style="height:100%">
 <tbody>
-  <tr>
-  <td>
-        
-  </td>
+  <tr>  
   <td>
         <a href="https://www.youracclaim.com/badges/d38df761-04ac-4552-ac58-3c890dc8a59d/linked_in" target="_blank">
             <img src="https://images.youracclaim.com/size/340x340/images/46faaece-34f2-45fa-af8f-12ecf2f0f9b3/Containers.png" 
-                 alt="Microsoft Openhack: Containers"
-                 Width="50%" >
+                 alt="Microsoft Openhack: Containers">
         </a>
   </td>
-  </td>
+  <td> </td>
+  <td> </td>
   </tr>
 </tbody>
 </table>
