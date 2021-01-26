@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shared material
+title: Shared materials
 feature-img: "img/sample_feature_blue.png"
 thumbnail-path: "/img/icons/microsoftonedrive.png"
 short-description: PPTs, backups, pdfs...
