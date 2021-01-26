@@ -57,7 +57,7 @@ tags: Portfolio
     </td>   
     <td>
         <a href="https://www.youracclaim.com/earner/earned/badge/e375d52a-0b94-4bdc-8c3c-1f1b0f298297" target="_blank">
-            <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/Microsoft-Certified-Trainer-2021-2022?raw=true" 
+            <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/Microsoft-Certified-Trainer-2021-2022.png" 
                  alt="Microsoft Certified Trainer 2021-2022" 
                  >
         </a> 
