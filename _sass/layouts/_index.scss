@@ -53,6 +53,7 @@
   background-size: $feature-image-size;
   border-bottom: 1px solid $border-color;
   li {
+    text-align: center;
     width: 20%;
     margin-right:0.5%;
     margin-left:0.5%;
@@ -62,9 +63,15 @@
     p a:hover {
       @extend %link-hover;
     }
+    //width: 100px;
+    //border: 1px solid black;
+    //display: table-cell;
   }
   .excerpt {
     margin-top: 1em;
+  }
+  ul {
+    display: table-row;
   }
 }
 // Pagination
