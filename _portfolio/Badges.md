@@ -54,23 +54,37 @@ tags: Portfolio
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/azure-fundamentals-600x600.png?raw=true" 
                  alt="Microsoft Certified: Azure Fundamentals" >
         </a>
-    </td>      
-   <td>
-        <a href="https://docs.microsoft.com/en-us/learn/certifications/mct-certification#requirements" target="_blank">
-            <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/MCT-Microsoft%252BCertified%252BTrainer.png?raw=true" 
-                 alt="Microsoft Certified Trainer 2020-2021" 
+    </td>   
+    <td>
+        <a href="https://www.youracclaim.com/earner/earned/badge/e375d52a-0b94-4bdc-8c3c-1f1b0f298297" target="_blank">
+            <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/Microsoft-Certified-Trainer-2021-2022?raw=true" 
+                 alt="Microsoft Certified Trainer 2021-2022" 
                  >
         </a> 
     </td>    
     <td>
         <a href="https://docs.microsoft.com/en-us/learn/certifications/mct-certification#requirements" target="_blank">
-            <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/MCT-2018.png?raw=true" 
+            <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/MCT-Microsoft%252BCertified%252BTrainer.png?raw=true" 
+                 alt="Microsoft Certified Trainer 2020-2021" 
+                 >
+        </a> 
+    </td>  
+    </tr>  
+    <tr>
+    <td>
+        <a href="https://www.youracclaim.com/earner/earned/badge/6f5fcfdf-094a-47da-a25e-9f0bdcb57740" target="_blank">
+            <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2018.png" 
                  alt="Microsoft Certified Trainer 2018-2019" 
                  >
         </a>
     </td>
-    </tr>  
-  <tr>
+    <td>
+        <a href="https://www.youracclaim.com/earner/earned/badge/e7a2d04c-0e28-472a-a78e-b6fb431510fe" target="_blank">
+            <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2017.png" 
+                 alt="Microsoft Certified Trainer 2017-2018" 
+                 >
+        </a>
+    </td>
     <td>
         <a href="https://docs.microsoft.com/en-us/learn/certifications/mcsa-sql2016-database-administration-certification" target="_blank">
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/MCSA-SQL%252B2016%252BDatabase%252BAdministration.png?raw=true" 
