@@ -21,6 +21,7 @@ layout: default
   <div class="work">
     <h2>My Work</h2>
     <div>
+      <ul>
     {% for project in site.portfolio limit:7 %}
         <li>
           <div>
@@ -28,9 +29,11 @@ layout: default
             </p>
             <a href="{{ project.url }}">{{ project.title }}</a>
             <!--<p>{{ project.short-description }}</p>-->
+            </p>
           </div>  
         </li>
     {% endfor %}
+      </ul> 
     </div>
   </div>
 
