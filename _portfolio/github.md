@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitHub
+title: GitHub account
 feature-img: "img/sample_feature_blue.png"
 thumbnail-path: "/img/icons/github.png"
 short-description: GitHub repos

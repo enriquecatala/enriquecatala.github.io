@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SlideShare
+title: My slides
 feature-img: "img/sample_feature_blue.png"
 thumbnail-path: "/img/icons/slideshare.png"
 short-description: PPTs, backups, pdfs...

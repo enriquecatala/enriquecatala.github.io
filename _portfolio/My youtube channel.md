@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YouTube
+title: My YouTube channel
 feature-img: "img/my-youtube-header.png"
 thumbnail-path: "/img/icons/youtube-75x75.png"
 short-description: My youtube data engineering focused channel

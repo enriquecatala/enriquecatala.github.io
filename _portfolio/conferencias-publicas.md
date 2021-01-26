@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conferencias
+title: Videos de algunas de mis conferencias públicas
 feature-img: "img/my-youtube-header.png"
 thumbnail-path: "/img/icons/teaching-75x75.png"
 short-description: Conferencias públicas

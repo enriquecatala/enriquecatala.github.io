@@ -25,11 +25,13 @@ layout: default
     {% for project in site.portfolio limit:7 %}
         <li>
           <div>
-            <a href="{{ project.url }}"><img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/></a>
-            </p>
+            <a href="{{ project.url }}"><img src="{{ project.thumbnail-path }}" alt="{{ project.title }}" title="{{ project.title }}"/></a>
+            <!--
+              </p>
             <a href="{{ project.url }}">{{ project.title }}</a>
+            -->
             <!--<p>{{ project.short-description }}</p>-->
-            </p>
+            <!--</p>-->
           </div>  
         </li>
     {% endfor %}
