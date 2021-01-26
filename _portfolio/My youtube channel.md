@@ -1,9 +1,9 @@
 ---
 layout: post
-title: My youtube channel
+title: YouTube
 feature-img: "img/my-youtube-header.png"
 thumbnail-path: "/img/icons/youtube-75x75.png"
-short-description: Data engineering focused channel
+short-description: My youtube data engineering focused channel
 tags: Portfolio
 redirect_to: https://www.youtube.com/user/enriquecatala
 ---
