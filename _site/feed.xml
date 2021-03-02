@@ -5,7 +5,77 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Fri, 26 Feb 2021 02:33:38 -0600</pubDate>
+    <pubDate>Tue, 02 Mar 2021 15:32:08 -0600</pubDate>
+    
+      <item>
+        <title>Remote jupyter notebook file root in vscode</title>
+        <link>http://0.0.0.0:4000/2021/03/01/remote-jupyter-notebook-file-root-vscode.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/01/remote-jupyter-notebook-file-root-vscode.html</guid>
+        <description>&lt;p&gt;When we use jupyter extensions in VScode and try to run a line of code that requires context of relative path, the default behaviour in vscode is different that the one we have with jupyter-notebooks. You can easily see this when comparing the output of a pwd command, opening the same notebook connected to the same jupyter notebook server…&lt;/p&gt;
+
+&lt;h2 id=&quot;vscode&quot;&gt;VScode&lt;/h2&gt;
+
+&lt;p&gt;VSCode connected to the same jupyter-notebook server (remote)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/notebook-file-root/vscode-notebook-file-root.png&quot; alt=&quot;vscode-notebook-file-root&quot; /&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;h2 id=&quot;jupyter-notebook-web&quot;&gt;Jupyter-notebook web&lt;/h2&gt;
+
+&lt;p&gt;Jupyter notebook server (same notebook opened from vscode in the same remote server)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/notebook-file-root/jupyter-notebook-file-root.png&quot; alt=&quot;jupyter-notebooks-file-root&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the vscode execution fails because it´s trying to open a module that doesn´t found, since it´s searching in the wrong directory.&lt;/p&gt;
+
+&lt;h2 id=&quot;change-vscode-notebook-file-root-behavior&quot;&gt;Change VSCode notebook file root behavior&lt;/h2&gt;
+
+&lt;p&gt;&lt;mark&gt;NOT WORKING FOR REMOTE JUPYTER KERNELS&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;To make VSCode notebook run as jupyter-notebook server, you need to open settings in VSCode and change “notebook file root”, from &lt;em&gt;${workspaceFolder}&lt;/em&gt; to &lt;em&gt;${fileDirname}&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So the config file must be like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/notebook-file-root/notebook-file-rootfiledirname.png&quot; alt=&quot;notebook-file-rootfiledirname&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fix-for-remote-jupyter-kernel-force-the-path-with-json-&quot;&gt;Fix for remote jupyter kernel: Force the path with json :)&lt;/h2&gt;
+
+&lt;p&gt;But the things get complicated when you are dealing with remote jupyter notebooks, because it seems that we &lt;em&gt;still&lt;/em&gt; don´t have any solution. In my case, when I work with tensorflow, I´m always using my prepared tensorflow docker image containing all the libraries and configurations…so this requires me to connect the vscode remotely to the container…and the past solution mentioned earliear doesn´t work :(&lt;/p&gt;
+
+&lt;p&gt;The only solution I was able to use is to manually change the working directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chdir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getcwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/tf/notebooks/DNN/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# '.' if the path is to current folder
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#print(os.getcwd())
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE: For more info, please check this https://github.com/microsoft/vscode-remote-release/issues/43&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 01 Mar 2021 16:00:00 -0600</pubDate>
+      </item>
+    
+      <item>
+        <title>Despliega servicios de Azure fuera de Azure</title>
+        <link>http://0.0.0.0:4000/2021/02/25/Despliega-servicios-azure-fuera-de-azure.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/02/25/Despliega-servicios-azure-fuera-de-azure.html</guid>
+        <description>&lt;p&gt;El pasado 28 de Febrero 2021 tuve el honor de impartir una sesion en la &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;#netcoreconf&lt;/a&gt; junto a grandes cracks de renombre nacional e internacional.&lt;/p&gt;
+
+&lt;p&gt;En mi sesión estuvimos viendo &lt;strong&gt;cómo desplegar servicios de datos Azure fuera de Azure&lt;/strong&gt; utilizando &lt;em&gt;Azure Arc for dataservices&lt;/em&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vsplAxtBkag?start=956&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;SPOILER: Rompimos cosas :)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 25 Feb 2021 16:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Speaker netCoreConf virtual 2021</title>
@@ -622,69 +692,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 &lt;p&gt;El proceso de registro es bastante sencillo, partiendo del hecho que en el &lt;a href=&quot;https://youtu.be/9M6Ewpcfw9I&quot;&gt;anterior video&lt;/a&gt; ya registramos nuestra imagen personalizada y ahora “solo” tenemos que ponerla a funcionar contra nuestro orquestador kubernetes.&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Jul 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Microsoft MVP data platform 2020-2021</title>
-        <link>http://0.0.0.0:4000/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/30/Microsoft-MVP-DataPlatform-2020-2021.html</guid>
-        <description>&lt;p&gt;Wow! otro año mas, igual que la primera vez, una emoción enorme al recibir el premio &lt;a href=&quot;https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala&quot;&gt;MVP en la categoria DataPlatform&lt;/a&gt;.&lt;strong&gt;7 años seguidos&lt;/strong&gt; sintiendo la misma emoción y respeto por recibir este correo, con todo lo que lleva detrás.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/mvp2020/mvp-dataplatform.png&quot; alt=&quot;DataPlatform MVP&quot; /&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Sin lugar a dudas, lo mas importante para mi de este programa es poder conectar un año mas con la gran cantidad de expertos de los que aprender e inspirarme cada dia. Me siento muy honrado de que me dejen formar parte de esta familia otro año mas.&lt;/p&gt;
-
-&lt;p&gt;Gracias a &lt;a href=&quot;https://twitter.com/crisgherrero?s=20&quot;&gt;Cristina Gonzalez&lt;/a&gt; y a Irene Otero por haber contado conmigo, a &lt;a href=&quot;https://www.solidq.com/&quot;&gt;SolidQ&lt;/a&gt; por su apoyo y a toda la gente que lo hace posible, que es tanta que no se ni por donde empezar.&lt;/p&gt;
-
-&lt;p&gt;Y por lo que a mi respecta, seguiré haciendo altruistamente esto que tanto me gusta, aportar a la comunidad mi granito de arena, visibilizando todo lo bueno que tiene la plataforma de datos, para que cada vez mas gente quiera entrar a trabajar en &lt;a href=&quot;https://es.wikipedia.org/wiki/Dato&quot;&gt;#data&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 30 Jun 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>mssql-server-samplesdb</title>
-        <link>http://0.0.0.0:4000/2020/06/24/mssql-server-databases.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/06/24/mssql-server-databases.html</guid>
-        <description>&lt;p&gt;Si quieres, ya puedes olvidarte de instalar SQL Server para siempre y utilizar como forma de desarrollo contra SQL Server, un contenedor Docker nativo.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ULL5nntWn1A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;En mi cuenta de &lt;a href=&quot;https://github.com/enriquecatala/&quot;&gt;GitHub&lt;/a&gt;, mantengo el proyecto  &lt;a href=&quot;https://github.com/enriquecatala/mssql-server-samplesdb&quot;&gt;mssql-server-samplesdb&lt;/a&gt; para ayudar a otros developers que trabajen con SQL Server a utilizar Docker con/sin persistencia aprovechándonos de las bondades de &lt;a href=&quot;https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004/&quot;&gt;wsl2&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Entre otras cosas, el proyecto te permitirá:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Añadir/quitar BBDD&lt;/li&gt;
-  &lt;li&gt;Trabajar con/sin persistencia&lt;/li&gt;
-  &lt;li&gt;Añadir todas las BBDD de ejemplo
-    &lt;ul&gt;
-      &lt;li&gt;Pubs&lt;/li&gt;
-      &lt;li&gt;Northwind&lt;/li&gt;
-      &lt;li&gt;WideWorldImporters&lt;/li&gt;
-      &lt;li&gt;AdventureWorks2017&lt;/li&gt;
-      &lt;li&gt;AdventureWorks2016&lt;/li&gt;
-      &lt;li&gt;AdventureWorks2014&lt;/li&gt;
-      &lt;li&gt;AdventureWorks2012&lt;/li&gt;
-      &lt;li&gt;AdventureWorksDW2017&lt;/li&gt;
-      &lt;li&gt;StackOverflow2010&lt;/li&gt;
-      &lt;li&gt;WideWorldImportersDW
-        &lt;blockquote&gt;
-          &lt;p&gt;NOTA: Desplegando a voluntad las que quieras&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Los detalles del proyecto los tienes aqui: https://github.com/enriquecatala/mssql-server-samplesdb&lt;/p&gt;
-
-&lt;p&gt;Además, aqui te dejo un vídeo explicando cómo ponerlo a funcionar:&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 24 Jun 2020 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
