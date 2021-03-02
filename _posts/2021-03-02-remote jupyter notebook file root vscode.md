@@ -38,7 +38,7 @@ So the config file must be like this:
 
 
 
-## Fix for remote jupyter kernel: Force the path with json :)
+## Fix for remote jupyter kernel: Force the path with python :)
 
 But the things get complicated when you are dealing with remote jupyter notebooks, because it seems that we _still_ don´t have any solution. In my case, when I work with tensorflow, I´m always using my prepared tensorflow docker image containing all the libraries and configurations...so this requires me to connect the vscode remotely to the container...and the past solution mentioned earliear doesn´t work :(
 
