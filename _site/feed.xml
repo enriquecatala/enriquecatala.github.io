@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 02 Mar 2021 15:32:08 -0600</pubDate>
+    <pubDate>Tue, 02 Mar 2021 15:41:06 -0600</pubDate>
     
       <item>
         <title>Remote jupyter notebook file root in vscode</title>
@@ -67,6 +67,10 @@
         <description>&lt;p&gt;El pasado 28 de Febrero 2021 tuve el honor de impartir una sesion en la &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;#netcoreconf&lt;/a&gt; junto a grandes cracks de renombre nacional e internacional.&lt;/p&gt;
 
 &lt;p&gt;En mi sesión estuvimos viendo &lt;strong&gt;cómo desplegar servicios de datos Azure fuera de Azure&lt;/strong&gt; utilizando &lt;em&gt;Azure Arc for dataservices&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si quieres ver el vídeo continua leyendo…&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vsplAxtBkag?start=956&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
