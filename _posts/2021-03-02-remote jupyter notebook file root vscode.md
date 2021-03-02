@@ -4,7 +4,7 @@ title:  "Remote jupyter notebook file root in vscode"
 date:   2021-03-02 00:00:00 +0200
 tipue_search_active: true
 excerpt_separator: <!--end_excerpt-->
-tags: Dev Data
+tags: Dev Data AI
 ---
 
 When we use jupyter extensions in VScode and try to run a line of code that requires context of relative path, the default behaviour in vscode is different that the one we have with jupyter-notebooks. You can easily see this when comparing the output of a pwd command, opening the same notebook connected to the same jupyter notebook server... 
