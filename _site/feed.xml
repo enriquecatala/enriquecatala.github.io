@@ -5,7 +5,24 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Wed, 24 Mar 2021 04:34:28 -0500</pubDate>
+    <pubDate>Wed, 31 Mar 2021 03:01:29 -0500</pubDate>
+    
+      <item>
+        <title>Cómo instalar Kubernetes con Kubeadm (1/4)</title>
+        <link>http://0.0.0.0:4000/2021/03/30/instalar-cluster-kubernetes-kubeadm.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/30/instalar-cluster-kubernetes-kubeadm.html</guid>
+        <description>&lt;p&gt;En esta serie de 4 posts voy a enseñar cómo desplegar un cluster Kubernetes manualmente utilizando Kubeadm para tener una arquitectura similar a esta:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/kubeadm/kubernetes_network.png&quot; alt=&quot;kubernetes architecture&quot; /&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finalmente el artículo completo lo verás &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/como-instalar-cluster-kubernetes-kubeadm&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Mar 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Copying files from docker container to host</title>
@@ -701,30 +718,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 12 Jul 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Speaker en Maratón Power Platform 2020</title>
-        <link>http://0.0.0.0:4000/2020/07/08/speaker-maratonpowerplatform.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/07/08/speaker-maratonpowerplatform.html</guid>
-        <description>&lt;p&gt;El próximo día 14 de Julio de 2020 estaré como speaker en el &lt;a href=&quot;https://twitter.com/hashtag/MaratonPowerPlatform?src=hashtag_click&quot;&gt;#MaratonPowerPlatform &lt;/a&gt;  a las 15pm hora española (utc+2) sobre &lt;a href=&quot;https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159&quot;&gt;cómo trabajar con PowerBI con modo directquery en la vida real&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Os espero!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159&quot; rel=&quot;maraton power platform&quot;&gt;&lt;img src=&quot;/img/posts/maratonpowerplatform2020/SpeakerFeatures_MaratónPowerPlatform_Template.jpg&quot; alt=&quot;#maratonpowerplatform&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;h2 id=&quot;título&quot;&gt;Título&lt;/h2&gt;
-&lt;p&gt;DirectQuery en PowerBI en la vida real&lt;/p&gt;
-
-&lt;h2 id=&quot;descripción&quot;&gt;Descripción&lt;/h2&gt;
-&lt;p&gt;En esta sesión veremos de tecnicas para poder utilizar PowerBI en modo directquery sobre un verdadero realtime operational analytics que procesa más de 43 mil millones de eventos y ritmos de 5k inserciones/segundo con SQL Server standard edition.  Hablaré sobre problemas encontrados y sobre algunos trucos en PowerBI y en el motor SQL Server que tuve que implementar para hacerlo viable económicamente corriendo en Azure con un SQL Server Standard edition.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159&quot; rel=&quot;maraton power platform&quot;&gt;&lt;img src=&quot;/img/posts/maratonpowerplatform2020/cartelmaraton.png&quot; alt=&quot;maraton power platform&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 08 Jul 2020 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
