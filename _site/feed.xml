@@ -5,12 +5,27 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Wed, 31 Mar 2021 06:55:37 -0500</pubDate>
+    <pubDate>Fri, 09 Apr 2021 08:47:43 -0500</pubDate>
+    
+      <item>
+        <title>Cómo instalar Kubernetes con Kubeadm (2/4)</title>
+        <link>http://0.0.0.0:4000/2021/04/08/kubernetes-master-bootstap-kubeadm.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/08/kubernetes-master-bootstap-kubeadm.html</guid>
+        <description>&lt;p&gt;Una vez tenemos ya &lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;preparados nuestros nodos&lt;/a&gt;, ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 08 Apr 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>FastAPI helloworld!</title>
-        <link>http://0.0.0.0:4000/2021/03/30/fastapi-helloworld.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/30/fastapi-helloworld.html</guid>
+        <link>http://0.0.0.0:4000/2021/03/31/fastapi-helloworld.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/31/fastapi-helloworld.html</guid>
         <description>&lt;p&gt;He dejado en mi GitHub personal una pequeña API Rest escrita en Python con &lt;a href=&quot;https://fastapi.tiangolo.com/&quot;&gt;FastAPI&lt;/a&gt; que viene bien cuando quieres trastear con networking en Kubernetes. Jugar con tu ingress y ver si hace lo que quieres te resultará mas facil con esto (espero :).&lt;/p&gt;
 
 &lt;p&gt;Aqui la tienes:&lt;/p&gt;
@@ -21,7 +36,7 @@
 &lt;p&gt;&lt;a href=&quot;https://github.com/enriquecatala/fastapi-helloworld&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 30 Mar 2021 17:00:00 -0500</pubDate>
+        <pubDate>Wed, 31 Mar 2021 17:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -662,25 +677,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 08 Aug 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Where is the notepad in windows10 2004 update?</title>
-        <link>http://0.0.0.0:4000/2020/07/19/Where-is-the-notepad-in-windows10-2020.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/07/19/Where-is-the-notepad-in-windows10-2020.html</guid>
-        <description>&lt;p&gt;After updating my windows to the Version 2004 (19041.329), I found that &lt;strong&gt;Notepad disapeared!&lt;/strong&gt; This seems some kind of a bug during the installation process…and the worst part is that despite the Notepad is still listed in the Windows Store&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/notepad/notepad%20windows%20store.png&quot; alt=&quot;notepad in windows store&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;mark&gt;You can´t install it from the Windows Store!&lt;/mark&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;The solution is basically install Notepad from the “windows optional features”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/notepad/notepad%20optional%20features%20windows10.png&quot; alt=&quot;notepad optional features windows10&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Jul 2020 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
