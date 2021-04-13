@@ -5,7 +5,21 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Fri, 09 Apr 2021 08:47:43 -0500</pubDate>
+    <pubDate>Tue, 13 Apr 2021 10:25:55 -0500</pubDate>
+    
+      <item>
+        <title>Despliega Azure en tu OnPremise con Azure Arc DataServices</title>
+        <link>http://0.0.0.0:4000/2021/04/12/Despliega-Azure-en-tu-OnPremise-con-Arc-DataServices.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/12/Despliega-Azure-en-tu-OnPremise-con-Arc-DataServices.html</guid>
+        <description>&lt;p&gt;El próximo viernes 16 de Abril de 2021 tengo el honor de impartir una sesion en la &lt;a href=&quot;https://globalazure.es/&quot;&gt;#GlobalAzure&lt;/a&gt; junto a grandes cracks de renombre nacional e internacional.&lt;/p&gt;
+
+&lt;p&gt;En mi sesión vamos a ver &lt;strong&gt;cómo traernos servicios PaaS de datos como SQL Managed Instances a nuestro entorno OnPremise (o a cualquier otro sitio fuera de Azure)&lt;/strong&gt; utilizando &lt;em&gt;Azure Arc for dataservices&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://globalazure.es/&quot;&gt;&lt;img src=&quot;/img/posts/globalazure2021/enrique-catala-speaker-globalazure.png&quot; alt=&quot;Global Azure Bootcamp Enrique Catalá Speaker&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 12 Apr 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Cómo instalar Kubernetes con Kubeadm (2/4)</title>
@@ -18,6 +32,11 @@
 &lt;!--end_excerpt--&gt;
 
 &lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Posts de la serie:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Thu, 08 Apr 2021 17:00:00 -0500</pubDate>
       </item>
@@ -49,7 +68,7 @@
 
 &lt;!--end_excerpt--&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/como-instalar-cluster-kubernetes-kubeadm&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Finalmente el artículo completo lo verás &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/como-instalar-cluster-kubernetes-kubeadm&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -610,73 +629,6 @@ enrique@ubuntuk8sarc:/etc/netplan&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt
 &lt;p&gt;Y…listo, ya tienes la red lista :)&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Sep 2020 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Howto update gems on Github pages</title>
-        <link>http://0.0.0.0:4000/2020/08/08/githubpages-update-gems.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/08/08/githubpages-update-gems.html</guid>
-        <description>&lt;p&gt;It seems that kramdown has a big security issue and i want this to be fixed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/gem-update-github-pages/kramdown-security-1.png&quot; alt=&quot;kramdown security issue&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To solve the problem, we can click to the “See dependabot alert”&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;And this is what we found:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/gem-update-github-pages/kramdown-security-2.png&quot; alt=&quot;kramdown security issue2&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;fix&quot;&gt;Fix&lt;/h1&gt;
-
-&lt;p&gt;The fix seems easy to solve…we only need to fix this on the gemfiles…but as i´m using Windows10 to work with jekyll, and i don´t have any jekyll instalation on my machine…i only need to make a little change to the docker-compose.yml file&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: &lt;a href=&quot;https://enriquecatala.com/2020/05/28/Creating-my-new-blog-with-Jekyll.html&quot;&gt;Check this post&lt;/a&gt; to understand why i need to do this&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;1) Edit &lt;a href=&quot;/docker-compose.yml&quot;&gt;docker-compose&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;2) &lt;mark&gt;Change the command to&lt;/mark&gt;&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;: bundle update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;3) Edit &lt;a href=&quot;/Gemfile&quot;&gt;Gemfile&lt;/a&gt; file and add the following to the end of the file&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;c&quot;&gt;# vulnerability found &lt;/span&gt;
-   gem &lt;span class=&quot;s2&quot;&gt;&quot;kramdown&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;= 2.3.0&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;4) Now, cleanup the container&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   docker-compose down   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;5) Fix the dependencies&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   docker-compose up   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: you should see the following text after the container ends successfully&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll_1  | Bundle updated!
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And your &lt;a href=&quot;/Gemfile.lock&quot;&gt;Gemfile.lock&lt;/a&gt; file should be updated accordingly, with kramdown among other gems&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/gem-update-github-pages/gemfilelock.png&quot; alt=&quot;gemfile.lock update&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now, you can edit again your &lt;a href=&quot;/docker-compose.yml&quot;&gt;docker-compose&lt;/a&gt; file to set the value to the previous one&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;: jekyll serve &lt;span class=&quot;nt&quot;&gt;--watch&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--force_polling&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--verbose&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--safe&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And thats it!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: Please remind to execute a &lt;em&gt;docker-compose down&lt;/em&gt; prior working again :)&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sat, 08 Aug 2020 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
