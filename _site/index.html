@@ -165,6 +165,8 @@
 			
 			
 			
+			
+			
 			<!-- Social icons from Font Awesome, if enabled -->
 			
 
@@ -351,6 +353,81 @@
     <div class="post-teaser">
       <header>
         <h3>
+          <a class="post-link" href="/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html">
+            Cómo instalar Kubernetes con Kubeadm (4/4)
+          </a>
+        </h3>
+        <p class="meta">
+          April 26, 2021
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>Una vez tenemos ya <a href="https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html">nuestro cluster kubernetes con kubeadm terminado</a>, es hora de añadir una capa de persistencia para poder utilizar despliegues stateful.</p>
+
+<p><a href="https://blogvisionarios.com/e-learning/cloud/como-anadir-storage-server-cluster-kubernetes/"><img src="/img/posts/kubeadm/arc.png" alt="kubeadm" /></a></p>
+
+
+        <a class="button" href="/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2021/04/19/kubernetes-inicializar-nodos-procesamiento.html">
+            Cómo instalar Kubernetes con Kubeadm (2/4)
+          </a>
+        </h3>
+        <p class="meta">
+          April 19, 2021
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>Una vez tenemos ya <a href="https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html">preparados nuestros nodos</a>, ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.</p>
+
+<p><a href="https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/"><img src="/img/posts/kubeadm/arc.png" alt="kubeadm" /></a></p>
+
+
+        <a class="button" href="/2021/04/19/kubernetes-inicializar-nodos-procesamiento.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2021/04/14/Libera-espacio-del-fichero-ext4.vhdx.html">
+            Libera espacio del fichero ext4.vhdx
+          </a>
+        </h3>
+        <p class="meta">
+          April 14, 2021
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>Si utilizas #wsl2 para desarrollar y acabas generando contenedores grandes, verás crecer fuertemente tu fichero dockerfile donde se almacenan todos esos contenedores. Recientemente he estado trabajando con el modelo <a href="https://github.com/EleutherAI/gpt-neo/">GPT-NEO</a> que tiene la friolera de 10.2Gb de tamaño en pesos de red neuronal…a la que he metido mis propios “artefactos” (dejemoslo ahi :). El caso es que cada etapa de generacion lleba a superar los 15Gb, haciendo que al final de la contienda mover una imagen como esta llegó a menearme 150Gb de disco.</p>
+
+<p>Llegado el momento de limpiar el asunto me encontré con esto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Total reclaimed space: 157.7GB
+</code></pre></div></div>
+
+<p>Y con esto:
+<img src="/img/posts/clean-ext4vhd/ext4.vhdx.png" alt="ext4.vhdx" /></p>
+
+
+        <a class="button" href="/2021/04/14/Libera-espacio-del-fichero-ext4.vhdx.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
           <a class="post-link" href="/2021/04/12/Despliega-Azure-en-tu-OnPremise-con-Arc-DataServices.html">
             Despliega Azure en tu OnPremise con Azure Arc DataServices
           </a>
@@ -376,95 +453,21 @@
     <div class="post-teaser">
       <header>
         <h3>
-          <a class="post-link" href="/2021/04/08/kubernetes-master-bootstap-kubeadm.html">
-            Cómo instalar Kubernetes con Kubeadm (2/4)
+          <a class="post-link" href="/2021/04/12/kubernetes-master-bootstap-kubeadm.html">
+            Cómo instalar Kubernetes con Kubeadm (3/4)
           </a>
         </h3>
         <p class="meta">
-          April 8, 2021
+          April 12, 2021
         </p>
       </header>
       <div class="excerpt">
-        <p>Una vez tenemos ya <a href="https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html">preparados nuestros nodos</a>, ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.</p>
+        <p>Una vez tenemos ya realizado el <a href="https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html">bootstrap del nodo master</a>, es hora de inicializar nuestros nodos de procesamiento.</p>
 
-<p><a href="https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/"><img src="/img/posts/kubeadm/arc.png" alt="kubeadm" /></a></p>
-
-
-        <a class="button" href="/2021/04/08/kubernetes-master-bootstap-kubeadm.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/03/31/fastapi-helloworld.html">
-            FastAPI helloworld!
-          </a>
-        </h3>
-        <p class="meta">
-          March 31, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>He dejado en mi GitHub personal una pequeña API Rest escrita en Python con <a href="https://fastapi.tiangolo.com/">FastAPI</a> que viene bien cuando quieres trastear con networking en Kubernetes. Jugar con tu ingress y ver si hace lo que quieres te resultará mas facil con esto (espero :).</p>
-
-<p>Aqui la tienes:</p>
-<ul>
-  <li><a href="https://github.com/enriquecatala/fastapi-helloworld">FastAPI helloworld</a></li>
-</ul>
-
-<p><a href="https://github.com/enriquecatala/fastapi-helloworld"><img src="/img/posts/kubeadm/arc.png" alt="kubeadm" /></a></p>
+<p><a href="https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/"><img src="/img/posts/kubeadm/arc.png" alt="kubeadm" /></a></p>
 
 
-        <a class="button" href="/2021/03/31/fastapi-helloworld.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/03/30/instalar-cluster-kubernetes-kubeadm.html">
-            Cómo instalar Kubernetes con Kubeadm (1/4)
-          </a>
-        </h3>
-        <p class="meta">
-          March 30, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>En esta serie de 4 posts voy a enseñar cómo desplegar un cluster Kubernetes manualmente utilizando Kubeadm para tener una arquitectura similar a esta:</p>
-
-<p><img src="/img/posts/kubeadm/kubernetes_network.png" alt="kubernetes architecture" /></p>
-
-
-        <a class="button" href="/2021/03/30/instalar-cluster-kubernetes-kubeadm.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/03/23/docker-copying-files-from-docker-container-to-host.html">
-            Copying files from docker container to host
-          </a>
-        </h3>
-        <p class="meta">
-          March 23, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Suppose that you are working from a stateless docker container in your dev environment (no mounted volumes) and you ended with some changes in files that you don´t want to loose.</p>
-
-<p>One easy way to do that is to use the <code class="language-plaintext highlighter-rouge">docker cp</code> utility to get the data out of the container.</p>
-
-
-        <a class="button" href="/2021/03/23/docker-copying-files-from-docker-container-to-host.html">
+        <a class="button" href="/2021/04/12/kubernetes-master-bootstap-kubeadm.html">
           Continue reading
         </a>
       </div>
