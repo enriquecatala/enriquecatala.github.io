@@ -17,7 +17,7 @@ Accede al documento completo [aqui](https://blogvisionarios.com/e-learning/cloud
 
 Posts de la serie:
 - [1/4: Preparar los nodos](https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html)
-- [2/4: Bootstrap de master](https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html)
-- [3/4: Añadir nodos de procesamiento](https://enriquecatala.com/2021/04/20/kubernetes-inicializar-nodos-procesamiento.html)
-- [4/4: Añadir storage server a nuestro cluster kubernetes](https://enriquecatala.com/2021/04/27/kubernetes-añadir-persistencia.html)
+- [2/4: Bootstrap de master](https://enriquecatala.com/2021/04/19/kubernetes-inicializar-nodos-procesamiento.html)
+- [3/4: Añadir nodos de procesamiento](https://enriquecatala.com/2021/04/12/kubernetes-master-bootstap-kubeadm.html)
+- [4/4: Añadir storage server a nuestro cluster kubernetes](https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html)
 
