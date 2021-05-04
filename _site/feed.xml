@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 27 Apr 2021 06:50:50 -0500</pubDate>
+    <pubDate>Tue, 04 May 2021 10:22:04 -0500</pubDate>
     
       <item>
         <title>Cómo instalar Kubernetes con Kubeadm (4/4)</title>
@@ -23,35 +23,12 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/20/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/27/kubernetes-añadir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         <pubDate>Mon, 26 Apr 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cómo instalar Kubernetes con Kubeadm (2/4)</title>
-        <link>http://0.0.0.0:4000/2021/04/19/kubernetes-inicializar-nodos-procesamiento.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/19/kubernetes-inicializar-nodos-procesamiento.html</guid>
-        <description>&lt;p&gt;Una vez tenemos ya &lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;preparados nuestros nodos&lt;/a&gt;, ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Posts de la serie:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/20/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/27/kubernetes-añadir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 19 Apr 2021 17:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -89,6 +66,29 @@
       </item>
     
       <item>
+        <title>Cómo instalar Kubernetes con Kubeadm (3/4)</title>
+        <link>http://0.0.0.0:4000/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html</guid>
+        <description>&lt;p&gt;Una vez tenemos ya realizado el &lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;bootstrap del nodo master&lt;/a&gt;, es hora de inicializar nuestros nodos de procesamiento.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Posts de la serie:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 12 Apr 2021 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
         <title>Despliega Azure en tu OnPremise con Azure Arc DataServices</title>
         <link>http://0.0.0.0:4000/2021/04/12/Despliega-Azure-en-tu-OnPremise-con-Arc-DataServices.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/12/Despliega-Azure-en-tu-OnPremise-con-Arc-DataServices.html</guid>
@@ -103,26 +103,26 @@
       </item>
     
       <item>
-        <title>Cómo instalar Kubernetes con Kubeadm (3/4)</title>
-        <link>http://0.0.0.0:4000/2021/04/12/kubernetes-master-bootstap-kubeadm.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/12/kubernetes-master-bootstap-kubeadm.html</guid>
-        <description>&lt;p&gt;Una vez tenemos ya realizado el &lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;bootstrap del nodo master&lt;/a&gt;, es hora de inicializar nuestros nodos de procesamiento.&lt;/p&gt;
+        <title>Cómo instalar Kubernetes con Kubeadm (2/4)</title>
+        <link>http://0.0.0.0:4000/2021/04/08/kubernetes-master-bootstap-kubeadm.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/08/kubernetes-master-bootstap-kubeadm.html</guid>
+        <description>&lt;p&gt;Una vez tenemos ya &lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;preparados nuestros nodos&lt;/a&gt;, ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--end_excerpt--&gt;
 
-&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Posts de la serie:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/20/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/27/kubernetes-añadir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 12 Apr 2021 17:00:00 -0500</pubDate>
+        <pubDate>Thu, 08 Apr 2021 17:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -160,8 +160,8 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/20/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/27/kubernetes-añadir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 30 Mar 2021 17:00:00 -0500</pubDate>
