@@ -25,6 +25,18 @@
     text-align: left;
     font-size: 2em;    
   }
+  .tags{
+    //@extend %padding-regular;
+    @extend %padding-regular-posts;
+    width: 100%;
+    margin-bottom: 0;
+    display: inline-block;
+    background-size: $feature-image-size;
+    border-bottom: 1px solid $border-color;
+    p a:hover {
+      @extend %link-hover;
+    }
+  }
   .post-teaser {
     //@extend %padding-regular;
     @extend %padding-regular-posts;

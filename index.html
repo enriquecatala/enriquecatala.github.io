@@ -39,8 +39,18 @@ layout: default
     </div>
   </div>
 
+ 
   <div class="posts">
     <h2>My Posts</h2>
+
+    <div class="tags">
+      <span>{% for tag in site.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        [<a href="/tag/{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>]        
+      {% endfor %}
+      </span>
+    </div>
+
     {% for post in paginator.posts %}
     <div class="post-teaser">
       <header>
@@ -62,6 +72,7 @@ layout: default
     </div>
     {% endfor %}
   </div>
+ 
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
