@@ -3,6 +3,7 @@ layout: post
 title:  "Cómo instalar Kubernetes con Kubeadm (3/4)"
 date:   2021-04-13 00:00:00 +0200
 tipue_search_active: false
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Kubernetes Docker
 ---

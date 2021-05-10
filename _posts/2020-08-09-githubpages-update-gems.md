@@ -3,6 +3,7 @@ layout: post
 title:  "Howto update gems on Github pages"
 date:   2020-08-09 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Docker Blog
 ---

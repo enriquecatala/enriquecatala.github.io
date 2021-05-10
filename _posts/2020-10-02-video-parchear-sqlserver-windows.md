@@ -3,6 +3,7 @@ layout: post
 title:  "Video: Parchear SQL Server en windows (1/2)"
 date:   2020-10-02 00:00:53 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: SqlServer YouTube
 ---

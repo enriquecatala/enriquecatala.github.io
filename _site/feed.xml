@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 04 May 2021 10:22:04 -0500</pubDate>
+    <pubDate>Mon, 10 May 2021 08:34:14 -0500</pubDate>
     
       <item>
         <title>Cómo instalar Kubernetes con Kubeadm (4/4)</title>

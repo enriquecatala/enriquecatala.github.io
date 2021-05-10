@@ -3,6 +3,7 @@ layout: post
 title:  "FastAPI helloworld!"
 date:   2021-04-01 00:00:00 +0200
 tipue_search_active: false
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Kubernetes Dev Docker
 ---

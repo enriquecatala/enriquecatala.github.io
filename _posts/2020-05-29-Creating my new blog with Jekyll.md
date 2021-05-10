@@ -3,6 +3,7 @@ layout: post
 title:  "My new blog: GitHub pages, Jekyll and docker"
 date:   2020-05-29 00:25:53 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Docker GitHub Blog
 ---

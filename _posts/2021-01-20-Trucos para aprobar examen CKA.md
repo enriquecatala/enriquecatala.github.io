@@ -3,6 +3,7 @@ layout: post
 title:  "10 trucos para aprobar el examen CKA"
 date:   2021-01-20 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Exam Kubernetes
 ---

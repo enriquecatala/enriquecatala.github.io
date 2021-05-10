@@ -3,6 +3,7 @@ layout: post
 title:  "Where is the notepad in windows10 2004 update?"
 date:   2020-07-20 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: OS BugFix
 ---

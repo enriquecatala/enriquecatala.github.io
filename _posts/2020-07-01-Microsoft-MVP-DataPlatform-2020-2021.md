@@ -3,6 +3,7 @@ layout: post
 title:  "Microsoft MVP data platform 2020-2021"
 date:   2020-07-01 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: MVP DataPlatform
 ---

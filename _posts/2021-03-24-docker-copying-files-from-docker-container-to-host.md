@@ -3,6 +3,7 @@ layout: post
 title:  "Copying files from docker container to host"
 date:   2021-03-24 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: WSL2
 ---
