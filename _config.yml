@@ -44,7 +44,7 @@ theme_settings:
 
   # Scripts
   google_analytics: UA-169893411-1
-  disqus_shortname:
+  disqus_shortname: enriquecatala
   katex: true # Enable if using math markup
 
   # Localization strings
@@ -70,6 +70,9 @@ collections:
 
 # BUILD SETTINGS
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
 sass:
   sass_dir: _sass
   style: :compressed

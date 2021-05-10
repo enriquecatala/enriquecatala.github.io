@@ -3,6 +3,7 @@ layout: post
 title:  "mssql-server-samplesdb"
 date:   2020-06-25 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: SqlServer WSL2 Docker Kubernetes GitHub
 ---

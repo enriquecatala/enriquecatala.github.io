@@ -3,6 +3,7 @@ layout: post
 title:  "Remote jupyter notebook file root in vscode"
 date:   2021-03-02 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Dev Data AI
 ---

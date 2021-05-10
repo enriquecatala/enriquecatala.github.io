@@ -3,6 +3,7 @@ layout: post
 title:  "Libera espacio del fichero ext4.vhdx"
 date:   2021-04-15 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Docker Dev
 ---

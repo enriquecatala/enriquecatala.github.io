@@ -3,6 +3,7 @@ layout: post
 title:  "Despliega Azure en tu OnPremise con Azure Arc DataServices"
 date:   2021-04-13 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: Speaker Azure Kubernetes Cloud DataPlatform
 ---

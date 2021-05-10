@@ -3,6 +3,7 @@ layout: post
 title:  "Speaker en Maratón Power Platform 2020"
 date:   2020-07-09 00:00:00 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: PowerBI Speaker
 ---

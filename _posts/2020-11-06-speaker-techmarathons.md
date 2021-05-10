@@ -3,6 +3,7 @@ layout: post
 title:  "Speaker: Techmarathons"
 date:   2020-10-07 00:00:53 +0200
 tipue_search_active: true
+comments: true
 excerpt_separator: <!--end_excerpt-->
 tags: SqlServer PowerBI Speaker
 ---
