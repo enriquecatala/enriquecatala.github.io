@@ -5,7 +5,7 @@ date:   2021-05-13 00:00:00 +0200
 comments: true
 tipue_search_active: false
 excerpt_separator: <!--end_excerpt-->
-tags: Dev GitHub
+tags: Dev OS
 ---
 
 Si usas [Windows Terminal](https://github.com/microsoft/terminal) y tiras mucha linea de comando, en este post vamos a ver cómo hacer que nuestro terminal se vea estupendamente :)
