@@ -5,7 +5,142 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 10 May 2021 11:45:12 -0500</pubDate>
+    <pubDate>Thu, 13 May 2021 06:46:00 -0500</pubDate>
+    
+      <item>
+        <title>Windows Terminal bonito</title>
+        <link>http://0.0.0.0:4000/2021/05/12/windows-terminal-bonito.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/12/windows-terminal-bonito.html</guid>
+        <description>&lt;p&gt;Si usas &lt;a href=&quot;https://github.com/microsoft/terminal&quot;&gt;Windows Terminal&lt;/a&gt; y tiras mucha linea de comando, en este post vamos a ver cómo hacer que nuestro terminal se vea estupendamente :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code2.png&quot; alt=&quot;cascadia code PL&quot; /&gt;
+&lt;img src=&quot;/img/posts/pretty-terminal/nerdfonts.png&quot; alt=&quot;nerd fonts&quot; /&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Post basado en &lt;a href=&quot;https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh&quot;&gt;How to make a pretty prompt in Windows Terminal&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;1-instala-windows-terminal&quot;&gt;1) Instala Windows Terminal&lt;/h2&gt;
+
+&lt;p&gt;Descargalo de &lt;a href=&quot;https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-configuracion-powershell&quot;&gt;2) Configuracion PowerShell&lt;/h2&gt;
+
+&lt;p&gt;Para powershell&lt;/p&gt;
+
+&lt;h3 id=&quot;abre-una-ventana-powershell&quot;&gt;Abre una ventana powershell&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/1.png&quot; alt=&quot;x&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;instala-los-siguientes-módulos&quot;&gt;Instala los siguientes módulos&lt;/h3&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Install-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;posh-git&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Install-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;oh-my-posh&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si además utilizas PowerShell Core, activa esto tambien&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Install-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PSReadLine&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-AllowPrerelease&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Force&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-SkipPublisherCheck&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;activa-los-módulos-por-defecto&quot;&gt;Activa los módulos por defecto&lt;/h3&gt;
+
+&lt;p&gt;Para activar los módulos anteriores por defecto al arrancar powershell, ejecuta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;notepad $PROFILE&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/notepad.png&quot; alt=&quot;powershell profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;y añadele estas líneas:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Import-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;posh-git&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Import-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;oh-my-posh&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Set-PoshPrompt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Theme&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Paradox&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;y este es el aspecto que vas a tener ahora:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/without-fonts.png&quot; alt=&quot;pretty-terminal1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-configuracion-wsl2&quot;&gt;3) Configuracion WSL2&lt;/h2&gt;
+
+&lt;p&gt;Toca ahora el turno de tu distro favorita. En mi caso uso Ubuntu y la forma de activarlo es:&lt;/p&gt;
+
+&lt;h3 id=&quot;instalar-oh-my-posh&quot;&gt;Instalar oh-my-posh&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; /usr/local/bin/oh-my-posh
+&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; +x /usr/local/bin/oh-my-posh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;descargar-los-temas&quot;&gt;Descargar los &lt;a href=&quot;https://ohmyposh.dev/docs/themes/&quot;&gt;temas&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; ~/.poshthemes
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; ~/.poshthemes/themes.zip
+unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; ~/.poshthemes
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;u+rw ~/.poshthemes/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.json
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ~/.poshthemes/themes.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;activar-el-tema&quot;&gt;Activar el tema&lt;/h3&gt;
+
+&lt;p&gt;Edita tu fichero &lt;em&gt;~/.bashrc&lt;/em&gt; y añade la siguiente línea:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;oh-my-posh &lt;span class=&quot;nt&quot;&gt;--init&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--shell&lt;/span&gt; bash &lt;span class=&quot;nt&quot;&gt;--config&lt;/span&gt; ~/.poshthemes/jandedobbeleer.omp.json&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;3-instala-una-fuente-de-texto-adecuada&quot;&gt;3) Instala una fuente de texto adecuada&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Descarga &lt;a href=&quot;https://github.com/microsoft/cascadia-code/releases&quot;&gt;Cascadia-Code&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Descarga las &lt;a href=&quot;https://ohmyposh.dev/docs/fonts&quot;&gt;Nerd fonts&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instala &lt;em&gt;CascadiaCodePL.ttf&lt;/em&gt; 
+&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code.png&quot; alt=&quot;CascadiaCodePL.ttf&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instala &lt;em&gt;Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:
+` “fontFace”:  “Cascadia Code PL”, `&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;De esta forma, por ejemplo la sección de powershell quedaría algo así:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Make&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;changes&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;here&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;powershell.exe&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;profile.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;guid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{61c54bbd-c2c6-5271-96e7-009a87ff44bf}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Windows PowerShell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;commandline&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;powershell.exe&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cascadia Code PL&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hidden&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tambien puedes hacerlo con el nuevo GUI&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/settings-font.png&quot; alt=&quot;settings nerd fonts windows terminal&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Añade en tu visual studio code la siguiente configuración tambien &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;terminal.integrated.fontFamily&quot;: &quot;Cascadia Code PL&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: &lt;a href=&quot;https://www.nerdfonts.com/&quot;&gt;Aqui&lt;/a&gt; tienes un montón de fuentes que puedes añadir. Solo recuerda utilizar una que tenga soporte para &lt;em&gt;PowerLine Glyphs&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En este punto, ya deberias ver algo así:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code2.png&quot; alt=&quot;cascadia code PL&quot; /&gt;
+&lt;img src=&quot;/img/posts/pretty-terminal/nerdfonts.png&quot; alt=&quot;nerd fonts&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 May 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Cute highlighting for code-snippets in GitHub pages</title>
@@ -538,30 +673,6 @@ Hay preguntas donde te van a decir que hagas tal o cual cosa con objetos dobre d
 &lt;p&gt;Para seguir con el juego del evento, aqui va mi Thumb up!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/speaker-techmaraton/thumb_up.jpg&quot; alt=&quot;thumb up enrique catala&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 06 Oct 2020 17:00:53 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Video: Parchear SQL Server en kubernetes (2/2)</title>
-        <link>http://0.0.0.0:4000/2020/10/06/video-parchear-sqlserver-kubernetes.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/10/06/video-parchear-sqlserver-kubernetes.html</guid>
-        <description>&lt;p&gt;En esta segunda parte sobre cómo parchear SQL Server 2019, vamos a ver cómo hacerlo con SQL Server funcionando sobre un entorno Kubernetes OnPremises. Veremos cómo hacer un downgrade de SQL Server.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_koA4vfBQEE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://youtu.be/cRduwHDBoNg&quot;&gt;Parchear SQL Server en Windows (1/2)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://youtu.be/_koA4vfBQEE&quot;&gt;Parchear SQL Server en Kubernetes (2/2)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;script src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Si te parece interesante, subscríbete!&lt;/p&gt;
-&lt;div class=&quot;g-ytsubscribe&quot; data-channelid=&quot;UCYboHnN6tvFfHqPWZWY82AQ&quot; data-layout=&quot;default&quot; data-count=&quot;default&quot;&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Tue, 06 Oct 2020 17:00:53 -0500</pubDate>
