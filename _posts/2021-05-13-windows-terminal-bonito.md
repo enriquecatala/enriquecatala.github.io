@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Windows Terminal"
-date:   2021-05-12 00:00:00 +0200
+title:  "Windows Terminal bonito"
+date:   2021-05-13 00:00:00 +0200
 comments: true
 tipue_search_active: false
 excerpt_separator: <!--end_excerpt-->
@@ -10,8 +10,8 @@ tags: Dev GitHub
 
 Si usas [Windows Terminal](https://github.com/microsoft/terminal) y tiras mucha linea de comando, en este post vamos a ver cómo hacer que nuestro terminal se vea estupendamente :)
 
-![cascadia code PL](../img/posts/pretty-terminal/cascadia-code2.png)
-![nerd fonts](../img/posts/pretty-terminal/nerdfonts.png)
+![cascadia code PL](/img/posts/pretty-terminal/cascadia-code2.png)
+![nerd fonts](/img/posts/pretty-terminal/nerdfonts.png)
 
 <!--end_excerpt-->
 
@@ -28,7 +28,7 @@ Para powershell
 
 ### Abre una ventana powershell
 
-![x](../img/posts/pretty-terminal/1.png)
+![x](/img/posts/pretty-terminal/1.png)
 
 ### Instala los siguientes módulos
 
@@ -47,7 +47,7 @@ Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -Skip
 
 Para activar los módulos anteriores por defecto al arrancar powershell, ejecuta `notepad $PROFILE` 
 
-![powershell profile](../img/posts/pretty-terminal/notepad.png)
+![powershell profile](/img/posts/pretty-terminal/notepad.png)
 
 y añadele estas líneas:
 
@@ -59,7 +59,7 @@ Set-PoshPrompt -Theme Paradox
 
 y este es el aspecto que vas a tener ahora:
 
-![pretty-terminal1](../img/posts/pretty-terminal/without-fonts.png)
+![pretty-terminal1](/img/posts/pretty-terminal/without-fonts.png)
 
 ## 3) Configuracion WSL2
 
@@ -97,7 +97,7 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp
 2. Descarga las [Nerd fonts](https://ohmyposh.dev/docs/fonts)
    
 3. Instala _CascadiaCodePL.ttf_ 
-![CascadiaCodePL.ttf](../img/posts/pretty-terminal/cascadia-code.png)
+![CascadiaCodePL.ttf](/img/posts/pretty-terminal/cascadia-code.png)
 
 4. Instala _Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf_
 
@@ -119,7 +119,7 @@ De esta forma, por ejemplo la sección de powershell quedaría algo así:
 
 Tambien puedes hacerlo con el nuevo GUI
 
-![settings nerd fonts windows terminal](../img/posts/pretty-terminal/settings-font.png)
+![settings nerd fonts windows terminal](/img/posts/pretty-terminal/settings-font.png)
 
 
 4. Añade en tu visual studio code la siguiente configuración tambien `"terminal.integrated.fontFamily": "Cascadia Code PL"`
@@ -128,5 +128,5 @@ Tambien puedes hacerlo con el nuevo GUI
 
 En este punto, ya deberias ver algo así:
 
-![cascadia code PL](../img/posts/pretty-terminal/cascadia-code2.png)
-![nerd fonts](../img/posts/pretty-terminal/nerdfonts.png)
+![cascadia code PL](/img/posts/pretty-terminal/cascadia-code2.png)
+![nerd fonts](/img/posts/pretty-terminal/nerdfonts.png)
