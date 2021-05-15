@@ -122,6 +122,8 @@
 			
 			
 			
+			
+			
 			<li>
 				<a class="page-link" href="/about/">
 					About
@@ -141,6 +143,8 @@
 					Search
 				</a>
 			</li>
+			
+			
 			
 			
 			
@@ -392,7 +396,7 @@
         
           
           
-          [<a href="/tag/Azure">Azure(4)</a>]
+          [<a href="/tag/Azure">Azure(5)</a>]
         
           
           
@@ -400,7 +404,7 @@
         
           
           
-          [<a href="/tag/Kubernetes">Kubernetes(13)</a>]
+          [<a href="/tag/Kubernetes">Kubernetes(14)</a>]
         
           
           
@@ -408,7 +412,7 @@
         
           
           
-          [<a href="/tag/DataPlatform">DataPlatform(4)</a>]
+          [<a href="/tag/DataPlatform">DataPlatform(5)</a>]
         
           
           
@@ -416,7 +420,7 @@
         
           
           
-          [<a href="/tag/Speaker">Speaker(5)</a>]
+          [<a href="/tag/Speaker">Speaker(6)</a>]
         
           
           
@@ -428,11 +432,11 @@
         
           
           
-          [<a href="/tag/Cloud">Cloud(3)</a>]
+          [<a href="/tag/Cloud">Cloud(4)</a>]
         
           
           
-          [<a href="/tag/Dev">Dev(5)</a>]
+          [<a href="/tag/Dev">Dev(7)</a>]
         
           
           
@@ -440,11 +444,69 @@
         
           
           
-          [<a href="/tag/AI">AI(1)</a>]
+          [<a href="/tag/AI">AI(3)</a>]
+        
+          
+          
+          [<a href="/tag/Python">Python(1)</a>]
         
       </span>
     </div>
 
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2021/05/14/Configurar-conda-para-desarrollo-con-python.html">
+            Configurar conda para desarrollo con python
+          </a>
+        </h3>
+        <p class="meta">
+          May 14, 2021
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor “Spider” y la gestión de entornos.</p>
+
+<p>En este post vamos a ver rápidamente cómo configurar nuestro entorno python con conda para desarrollo sobre Windows.</p>
+
+<p><img src="/img/posts/configurar-conda/Anaconda.png" alt="anaconda gui" /></p>
+
+<p>Para configurarlo te propongo:</p>
+
+
+        <a class="button" href="/2021/05/14/Configurar-conda-para-desarrollo-con-python.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2021/05/13/Speaker-Kubernetes-Spanish-Day.html">
+            Speaker Kubernetes Community Days Spain
+          </a>
+        </h3>
+        <p class="meta">
+          May 13, 2021
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>Tengo el placer y el honor de ser ponente en el próximo evento <a href="https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/">Kubernetes Community Days Spain</a> que tendrá lugar en los dias 7 a 9 de Junio 2021 y que está organizado por <a href="https://twitter.com/KCDSpain">@KCDSpain</a></p>
+
+<p>En mi sesión voy a hablar sobre <strong>Cómo desplegar redes neuronales en kubernetes con HW cuda</strong></p>
+
+<p><img src="/img/posts/speaker-kcdspain/pods.png" alt="demo" /></p>
+
+<p>Y este es el abstract de la sesión:</p>
+
+
+        <a class="button" href="/2021/05/13/Speaker-Kubernetes-Spanish-Day.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
     
     <div class="post-teaser">
       <header>
@@ -513,58 +575,6 @@
 
 
         <a class="button" href="/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/04/14/Libera-espacio-del-fichero-ext4.vhdx.html">
-            Libera espacio del fichero ext4.vhdx
-          </a>
-        </h3>
-        <p class="meta">
-          April 14, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Si utilizas #wsl2 para desarrollar y acabas generando contenedores grandes, verás crecer fuertemente tu fichero dockerfile donde se almacenan todos esos contenedores. Recientemente he estado trabajando con el modelo <a href="https://github.com/EleutherAI/gpt-neo/">GPT-NEO</a> que tiene la friolera de 10.2Gb de tamaño en pesos de red neuronal…a la que he metido mis propios “artefactos” (dejemoslo ahi :). El caso es que cada etapa de generacion lleba a superar los 15Gb, haciendo que al final de la contienda mover una imagen como esta llegó a menearme 150Gb de disco.</p>
-
-<p>Llegado el momento de limpiar el asunto me encontré con esto:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Total reclaimed space: 157.7GB
-</code></pre></div></div>
-
-<p>Y con esto:
-<img src="/img/posts/clean-ext4vhd/ext4.vhdx.png" alt="ext4.vhdx" /></p>
-
-
-        <a class="button" href="/2021/04/14/Libera-espacio-del-fichero-ext4.vhdx.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html">
-            Cómo instalar Kubernetes con Kubeadm (3/4)
-          </a>
-        </h3>
-        <p class="meta">
-          April 12, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Una vez tenemos ya realizado el <a href="https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html">bootstrap del nodo master</a>, es hora de inicializar nuestros nodos de procesamiento.</p>
-
-<p><a href="https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/"><img src="/img/posts/kubeadm/arc.png" alt="kubeadm" /></a></p>
-
-
-        <a class="button" href="/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html">
           Continue reading
         </a>
       </div>

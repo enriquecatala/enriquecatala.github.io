@@ -5,7 +5,239 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 13 May 2021 11:46:51 -0500</pubDate>
+    <pubDate>Sat, 15 May 2021 14:09:44 -0500</pubDate>
+    
+      <item>
+        <title>Configurar conda para desarrollo con python</title>
+        <link>http://0.0.0.0:4000/2021/05/14/Configurar-conda-para-desarrollo-con-python.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/14/Configurar-conda-para-desarrollo-con-python.html</guid>
+        <description>&lt;p&gt;Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor “Spider” y la gestión de entornos.&lt;/p&gt;
+
+&lt;p&gt;En este post vamos a ver rápidamente cómo configurar nuestro entorno python con conda para desarrollo sobre Windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/Anaconda.png&quot; alt=&quot;anaconda gui&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para configurarlo te propongo:&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;h2 id=&quot;instalación&quot;&gt;Instalación&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instala &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;anaconda&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Abre anaconda prompt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/condaprompt.png&quot; alt=&quot;anaconda prompt&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lanza &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;where conda&lt;/code&gt; y copia la ubicación de su ejecutable&lt;/li&gt;
+  &lt;li&gt;Abre “Advanced system settings”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/advanced-system-settings.png&quot; alt=&quot;advanced system settings&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Añade a tu PATH el path de conda que te salga, que en mi caso es:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;naconda3&lt;span class=&quot;se&quot;&gt;\L&lt;/span&gt;ibrary&lt;span class=&quot;se&quot;&gt;\b&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;in
+&lt;/span&gt;C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;naconda3&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;cripts
+C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;naconda3&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;ondabin
+C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;naconda3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ya deberia funcionar lanzando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda --version&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/conda-version.png&quot; alt=&quot;conda-version&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Asegurate que tienes la última version de anaconda &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda update anaconda&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ conda update anaconda
+Collecting package metadata &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current_repodata.json&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;Solving environment: &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# All requested packages already installed.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Actualiza spider a la version 5&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;spider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;5.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;aislar-entornos-de-trabajo&quot;&gt;Aislar entornos de trabajo&lt;/h2&gt;
+
+&lt;p&gt;Es mas que interesante crear entornos de trabajo para cada proyecto. Esto es útil por ejemplo para poder tener diferentes versiones de python/librerias que puedan ser incompatibles entre ellas.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, si quisiéramos crearnos un entorno para trabajar con la IA &lt;a href=&quot;https://github.com/EleutherAI/gpt-neo&quot;&gt;GPT-Neo&lt;/a&gt;, que en el momento de escribir estas líneas está únicamente disponible en la rama main de &lt;a href=&quot;https://huggingface.co/&quot;&gt;huggingface&lt;/a&gt; (no en su paquete oficial todavía)&lt;/p&gt;
+
+&lt;h3 id=&quot;crear-un-entorno&quot;&gt;Crear un entorno&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; gptneo &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.8.8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Cuyo output…&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ conda create &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; gptneo &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.8.8
+Collecting package metadata &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current_repodata.json&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;Solving environment: &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;## Package Plan ##&lt;/span&gt;
+
+  environment location: C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;naconda3&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nvs&lt;span class=&quot;se&quot;&gt;\g&lt;/span&gt;ptneo
+
+  added / updated specs:
+    - &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.8.8
+
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2021.4.13-haa95532_1
+  certifi            pkgs/main/win-64::certifi-2020.12.5-py38haa95532_0
+  openssl            pkgs/main/win-64::openssl-1.1.1k-h2bbff1b_0
+  pip                pkgs/main/win-64::pip-21.0.1-py38haa95532_0
+  python             pkgs/main/win-64::python-3.8.8-hdbf39b2_5
+  setuptools         pkgs/main/win-64::setuptools-52.0.0-py38haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.35.4-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/noarch::wheel-0.36.2-pyhd3eb1b0_0
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py38_0
+
+
+Proceed &lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;y]/n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;? y
+
+Preparing transaction: &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;Verifying transaction: &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;Executing transaction: &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# To activate this environment, use&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#     $ conda activate gptneo&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# To deactivate an active environment, use&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#     $ conda deactivate&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;activar-el-entorno&quot;&gt;Activar el entorno&lt;/h3&gt;
+
+&lt;p&gt;Para activar el entorno por línea de comandos puedes lanzar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda activate gptneo&lt;/code&gt;, pero si lo que quieres es desde code, hacer el cambio…la opción mas facil sería lanzar &lt;em&gt;F1-&amp;gt;Python: select interpreter&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/select-interpreter.png&quot; alt=&quot;select interpreter&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;que como verás, ya automáticamente detecta el nuevo entorno:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/gptneo.png&quot; alt=&quot;python gptneo&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;instalar-paquetes-en-el-entorno&quot;&gt;Instalar paquetes en el entorno&lt;/h3&gt;
+
+&lt;p&gt;Una vez asegurados en el entorno de trabajo, ya podemos instalar nuestros paquetes con normalidad. En mi caso voy a desplegar la rama main de &lt;a href=&quot;https://github.com/huggingface/transformers&quot;&gt;git de huggingface&lt;/a&gt;, para poder acceder a las mejoras Transformer con las que poder desplegar una AI con &lt;a href=&quot;https://huggingface.co/EleutherAI/gpt-neo-2.7B&quot;&gt;GPTNeo 2.7B&lt;/a&gt; (lo mas parecido ahora mismo a la versión light de &lt;a href=&quot;https://arxiv.org/abs/2005.14165&quot;&gt;GPT-3&lt;/a&gt;)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; D:&lt;span class=&quot;se&quot;&gt;\g&lt;/span&gt;it&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriquecatala.github.io&amp;gt;conda activate gptneo
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;gptneo&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; D:&lt;span class=&quot;se&quot;&gt;\g&lt;/span&gt;it&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriquecatala.github.io&amp;gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git+https://github.com/huggingface/transformers@master
+Collecting git+https://github.com/huggingface/transformers@master
+  Cloning https://github.com/huggingface/transformers &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;to revision master&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; to c:&lt;span class=&quot;se&quot;&gt;\u&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;ppdata&lt;span class=&quot;se&quot;&gt;\l&lt;/span&gt;ocal&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;emp&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;ip-req-build-2ebx9m9g
+  Running &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;git clone &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt; https://github.com/huggingface/transformers &lt;span class=&quot;s1&quot;&gt;'C:\Users\enriq\AppData\Local\Temp\pip-req-build-2ebx9m9g'&lt;/span&gt;
+  Installing build dependencies ... &lt;span class=&quot;k&quot;&gt;done
+  &lt;/span&gt;Getting requirements to build wheel ... &lt;span class=&quot;k&quot;&gt;done
+    &lt;/span&gt;Preparing wheel metadata ... &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;Collecting sacremoses
+  Downloading sacremoses-0.0.45-py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;895 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 895 kB 6.8 MB/s
+Collecting huggingface-hub&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.0.8
+  Downloading huggingface_hub-0.0.8-py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;34 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Collecting filelock
+  Downloading filelock-3.0.12-py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;7.6 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Collecting tqdm&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4.27
+  Downloading tqdm-4.60.0-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;75 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 75 kB 5.1 MB/s
+Collecting packaging
+  Downloading packaging-20.9-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;40 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 40 kB 2.7 MB/s
+Collecting numpy&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.17
+  Downloading numpy-1.20.3-cp38-cp38-win_amd64.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;13.7 MB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 13.7 MB ...
+Collecting requests
+  Downloading requests-2.25.1-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;61 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 61 kB 3.8 MB/s
+Collecting regex!&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2019.12.17
+  Downloading regex-2021.4.4-cp38-cp38-win_amd64.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;270 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 270 kB ...
+Collecting tokenizers&amp;lt;0.11,&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.10.1
+  Downloading tokenizers-0.10.2-cp38-cp38-win_amd64.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2.0 MB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 2.0 MB 6.8 MB/s
+Collecting pyparsing&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2.0.2
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;67 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 67 kB 2.8 MB/s
+Collecting idna&amp;lt;3,&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2.5
+  Downloading idna-2.10-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;58 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 58 kB ...
+Collecting chardet&amp;lt;5,&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.0.2
+  Downloading chardet-4.0.0-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;178 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 178 kB ...
+Collecting urllib3&amp;lt;1.27,&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.21.1
+  Downloading urllib3-1.26.4-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;153 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 153 kB ...
+Requirement already satisfied: certifi&amp;gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2017.4.17 &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;c:&lt;span class=&quot;se&quot;&gt;\u&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;naconda3&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nvs&lt;span class=&quot;se&quot;&gt;\g&lt;/span&gt;ptneo&lt;span class=&quot;se&quot;&gt;\l&lt;/span&gt;ib&lt;span class=&quot;se&quot;&gt;\s&lt;/span&gt;ite-packages &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;from requests-&amp;gt;transformers&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;4.7.0.dev0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2020.12.5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Collecting six
+  Downloading six-1.16.0-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;11 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Collecting joblib
+  Downloading joblib-1.0.1-py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;303 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 303 kB 6.4 MB/s
+Collecting click
+  Downloading click-8.0.0-py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;96 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     |████████████████████████████████| 96 kB 6.4 MB/s
+Collecting colorama
+  Downloading colorama-0.4.4-py2.py3-none-any.whl &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;16 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Building wheels &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;collected packages: transformers
+  Building wheel &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;transformers &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;PEP 517&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ... &lt;span class=&quot;k&quot;&gt;done
+  &lt;/span&gt;Created wheel &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;transformers: &lt;span class=&quot;nv&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;transformers-4.7.0.dev0-py3-none-any.whl &lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2259729 &lt;span class=&quot;nv&quot;&gt;sha256&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;45d5f23c6d779450d66f26a1d9956684a0e88a0689b36b7e4b616dc6690149b2
+  Stored &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;directory: C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;nriq&lt;span class=&quot;se&quot;&gt;\A&lt;/span&gt;ppData&lt;span class=&quot;se&quot;&gt;\L&lt;/span&gt;ocal&lt;span class=&quot;se&quot;&gt;\T&lt;/span&gt;emp&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;ip-ephem-wheel-cache-8am4pg42&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;heels&lt;span class=&quot;se&quot;&gt;\2&lt;/span&gt;9&lt;span class=&quot;se&quot;&gt;\9&lt;/span&gt;7&lt;span class=&quot;se&quot;&gt;\b&lt;/span&gt;a&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;da99aa62c8a9414a8754b0b94ed3ae80559d7c8293929140f
+Successfully built transformers
+Installing collected packages: urllib3, idna, colorama, chardet, tqdm, six, requests, regex, pyparsing, joblib, filelock, click, tokenizers, sacremoses, packaging, numpy, huggingface-hub, transformers
+Successfully installed chardet-4.0.0 click-8.0.0 colorama-0.4.4 filelock-3.0.12 huggingface-hub-0.0.8 idna-2.10 joblib-1.0.1 
+numpy-1.20.3 packaging-20.9 pyparsing-2.4.7 regex-2021.4.4 requests-2.25.1 sacremoses-0.0.45 six-1.16.0 tokenizers-0.10.2 tqdm-4.60.0 transformers-4.7.0.dev0 urllib3-1.26.4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Y ya está, tenemos el entorno nuevo, con huggigface transformers utilizando la última versión disponible estable, que va por delante del propio paquete oficial huggingface (que es lo que quería enseñarte yo en este caso de ejemplo)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Recuerda que cada entorno está totalmente aislado del resto, y esto implica que incluso el ide Spyder no estará disponible en nuestro nuevo environment, lo que quiere decir que lo tendrás que instalar ahi tambien :)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;spider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;5.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 14 May 2021 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Speaker Kubernetes Community Days Spain</title>
+        <link>http://0.0.0.0:4000/2021/05/13/Speaker-Kubernetes-Spanish-Day.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/13/Speaker-Kubernetes-Spanish-Day.html</guid>
+        <description>&lt;p&gt;Tengo el placer y el honor de ser ponente en el próximo evento &lt;a href=&quot;https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/&quot;&gt;Kubernetes Community Days Spain&lt;/a&gt; que tendrá lugar en los dias 7 a 9 de Junio 2021 y que está organizado por &lt;a href=&quot;https://twitter.com/KCDSpain&quot;&gt;@KCDSpain&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;En mi sesión voy a hablar sobre &lt;strong&gt;Cómo desplegar redes neuronales en kubernetes con HW cuda&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/pods.png&quot; alt=&quot;demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y este es el abstract de la sesión:&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;&lt;em&gt;Kubernetes es la plataforma ideal para desplegar modelos deeplearning. Nos permite escalar nuestas redes en multiples pods y nodos, añadir soporte para hardware específico facilmente y además poder utilizar cualquier nube ya sea de forma pública o privada para nuestros modelos. En esta sesión vamos a ver cómo podemos montar nuestros propios contenedores con FastAPI, desplegarlos en nuestro propio cluster, cómo consumirlos y cómo preparar nuestra propia infraestructura para producción.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Un placer coincidir con tanto crack!&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 13 May 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Windows Terminal bonito</title>
@@ -520,162 +752,6 @@ f13dafbb392c   database_frameworktsqldatabase   &lt;span class=&quot;s2&quot;&gt
 &lt;p&gt;&lt;a href=&quot;https://netcoreconf.com/&quot;&gt;&lt;img src=&quot;/img/posts/netcoreconf2021/speakers.png&quot; alt=&quot;speakers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Feb 2021 16:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>10 trucos para aprobar el examen CKA</title>
-        <link>http://0.0.0.0:4000/2021/01/19/Trucos-para-aprobar-examen-CKA.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/01/19/Trucos-para-aprobar-examen-CKA.html</guid>
-        <description>&lt;p&gt;Hoy mismo recibo el mail indicándome que acabo de aprobar el examen &lt;a href=&quot;https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/&quot;&gt;CKA: Certified Kubernetes Administrator&lt;/a&gt;. El examen es bastante chulo porque se aparta del típico examen al que estaba acostumbrado (al menos yo) de tipo test. En este caso, se miden realmente tus capacidades resolutivas con la tecnologia, porque el examen se trata de 17 preguntas, de diferente dificultad, donde te dan un objetivo, una linea de comandos y un tiempo para conseguirlo. La verdad que he disfrutado muchísimo y al margen de lo dificil/facil que te pueda parecer, la experiencia es bastante satisfactoria.&lt;/p&gt;
-
-&lt;p&gt;En este post te voy a contar las cosas que a mi modo de ver debes tener bien presentes antes de embarcarte en la certificacion CKA&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/cka-exam-passed/cka-enrique-catala-bañuls.png&quot; alt=&quot;cka exam Enrique Catalá&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;hazte-experto-en-kubectl&quot;&gt;Hazte experto en kubectl&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;mark&gt;¡EL EXAMEN NO DA TIEMPO A FINALIZARLO SI NO CONOCES KUBECTL!&lt;/mark&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Debes dominar al extremo el comando kubectl porque el tiempo es realmente escaso y debes maximizar y priorizar tus opciones al máximo.&lt;/p&gt;
-
-&lt;p&gt;Te recomiendo que al menos controles fuertemente comandos como los siguientes, porque &lt;strong&gt;serán la diferencia entre aprobar o suspender por el tiempo de montar a mano yaml&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# explain commands&lt;/span&gt;
-kubectl explain pod &lt;span class=&quot;nt&quot;&gt;--recursive&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-A5&lt;/span&gt; tolerations
-
-&lt;span class=&quot;c&quot;&gt;# create pod yaml&lt;/span&gt;
-kubectl run pod nginx &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nginx &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;--labels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tier&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;db &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;myns &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; file.yaml
-
-&lt;span class=&quot;c&quot;&gt;# create deployment yaml&lt;/span&gt;
-kubectl create deployment nginx  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-					&lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nginx &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-					&lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-					&lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;myns &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-					&lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; file.yaml
-
-&lt;span class=&quot;c&quot;&gt;# create service yaml&lt;/span&gt;
-kubectl create service clusterip myservice &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;--tcp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;80:80 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;myns &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; file.yaml
-
-&lt;span class=&quot;c&quot;&gt;# change namespace&lt;/span&gt;
-kubectl config set-context &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl config current-context&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;dev
-
-&lt;span class=&quot;c&quot;&gt;# exec something from inside a pod&lt;/span&gt;
-kubectl &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; mypod &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; nslookup mysql.namespace.svc.cluster.local
-
-&lt;span class=&quot;c&quot;&gt;# create configmaps&lt;/span&gt;
-kubectl create configmap nginx-configuration &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ingress-space &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; nginx-configuration.yaml
-
-&lt;span class=&quot;c&quot;&gt;# create serviceaccounts&lt;/span&gt;
-kubectl create serviceaccount ingress-serviceaccount &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ingress-space &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;client &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; yaml &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ingress-serviceaccount.yaml
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;controla-jsonpath&quot;&gt;Controla jsonpath&lt;/h1&gt;
-
-&lt;p&gt;En mas de una pregunta vas a tener que usar indirectamente busquedas con jsonpath, porque te pediran hacer tal o cual cosa contra ciertos objetos, que deberas encontrar entre una lista bastante importante. Recuerda hacerte amigo de:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;kubectl … –sort-by==&lt;/li&gt;
-  &lt;li&gt;kubectl … -o jsonpath=’’&lt;/li&gt;
-  &lt;li&gt;kubectl … -o=custom-columns=’’&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;conoce-bien-cómo-interactuan-los-servicios-internamente&quot;&gt;Conoce bien cómo interactuan los servicios internamente&lt;/h1&gt;
-
-&lt;p&gt;Hazte al ánimo que al menos una pregunta pesada (de 15 puntos) va a ser de reparar un cluster con un worker node caido. Entiende bien cómo funcionan los servicios con &lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/journalctl.html&quot;&gt;journalctl -u&lt;/a&gt;, &lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/systemctl.html&quot;&gt;systemctl&lt;/a&gt;, conoce cómo despliega kubernetes los pods estáticos (típicamente en /etc/kubernetes/manifest/, pero igual en tu pregunta no están ahi…just saying :)). En fin, que entiendas bien cómo se levantan los servicios, qué certificados, claves y CA utilizan…de dónde salen las configuraciones de kubelet,…&lt;/p&gt;
-
-&lt;p&gt;Para aprenderlo bien, te recomiendo que te instales como mínimo una vez un &lt;a href=&quot;https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/&quot;&gt;cluster con kubeadm&lt;/a&gt; y un cluster &lt;a href=&quot;https://github.com/kelseyhightower/kubernetes-the-hard-way&quot;&gt;usando la version dura&lt;/a&gt; y que te centres en entender cómo va cada cosa mas allá de hacer copy-paste para que te sirva en troubleshooting futuros.&lt;/p&gt;
-
-&lt;h1 id=&quot;créate-bookmarks-en-chrome&quot;&gt;Créate bookmarks en chrome&lt;/h1&gt;
-
-&lt;p&gt;Durante el examen permiten una pestaña de chrome con acceso completo a https://kubernetes.io/docs/home y aunque tienes un buen buscador…siempre hay cosas que cuando estudias, seguro que se te quedan algo cojas y conviene tenerlas en el bookmark por si te preguntan sobre ello. 
-Como mínimo te recomiendo que tengas preparadas las siguientes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/reference/kubectl/cheatsheet/&quot;&gt;CheatSheet&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/#steps-for-the-first-control-plane-node&quot;&gt;Install with kubeadm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/&quot;&gt;DNS debug&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/index.md&quot;&gt;NGINX ingress deployment&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A partir de ahi, las que tu consideres pero piensa que si te pasas poniendote marcadores…igual acabas teniendo que usar el buscador :)&lt;/p&gt;
-
-&lt;p&gt;Recuerda que las preguntas no van a ser directamente preguntarte cosas de esas webs, esas webs son buena referencia para cosas que por ejemplo no recuerdes (en mi caso por poner un ejemplo a la hora de crear un usuario con certificado, siempre se me olvida cómo generar el base64 del certificado para incrustarlo en el yaml…)&lt;/p&gt;
-
-&lt;h1 id=&quot;destina-tus-2-primeros-minutos-a-configurar-tu-entorno&quot;&gt;Destina tus 2 primeros minutos a configurar tu entorno&lt;/h1&gt;
-
-&lt;p&gt;Recuerda, cada segundo cuenta, destina 2 minutos a configurar tus atajos de teclado&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &amp;lt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kubectl completion bash&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;source &amp;lt;(kubectl completion bash)&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc 
-&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;kubectl
-&lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; __start_kubectl k
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;revisa-el-namespace-y-el-cluster-siempre&quot;&gt;Revisa el namespace y el cluster SIEMPRE!&lt;/h1&gt;
-
-&lt;p&gt;Cada pregunta tiene al principio un comando kubectl que debes lanzar para saltar al cluster kubernetes donde resolver la pregunta en cuestión. Recuerda hacerlo nada mas cambiar de pregunta.
-Hay preguntas donde te van a decir que hagas tal o cual cosa con objetos dobre diferentes namespace. Lee bien la pregunta porque si lo haces en el namespace que no sea…la pregunta es 0 :)&lt;/p&gt;
-
-&lt;h1 id=&quot;usa-tu-teclado-y-ratón&quot;&gt;Usa tu teclado y ratón&lt;/h1&gt;
-
-&lt;p&gt;Me arrepentiré siempre de no haber usado mi teclado y haber ido al examen con el laptop y su tedioso teclado. Enserio, acabé la última pregunta a 1m de finalizar el examen por la cantidad de errores que estuve metiendo constantemente al escribir comandos en un teclado que no era el habitual. Recuerda, &lt;strong&gt;cada segundo cuenta&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;editor-de-texto-vi&quot;&gt;Editor de texto vi&lt;/h1&gt;
-
-&lt;p&gt;Aprende vi. Si no sabes usar vi, aprende vi. ¿te he dicho ya que aprendas vi? pues eso :)&lt;/p&gt;
-
-&lt;h1 id=&quot;hazte-buscador-experto-en-kubernetesio&quot;&gt;Hazte buscador experto en kubernetes.io&lt;/h1&gt;
-
-&lt;p&gt;Pues eso, van a salirte cosas muy variopintas, mas te vale conocer muy a fondo la estructura de la web kubernetes.io, porque seguro que la consultas mas de lo que piensas y acabar perdido entre su “peculiar” forma de organizar información no debe ser nada agradable cuando el tiempo vuela :)&lt;/p&gt;
-
-&lt;h1 id=&quot;olvídate-de-buscar-atajos-con-supuestas-empresas-que-te-dan-preguntasrespuestas&quot;&gt;Olvídate de buscar atajos con supuestas empresas que te dan preguntas/respuestas&lt;/h1&gt;
-
-&lt;p&gt;Si eres de esos que se compran packs de preguntas de examen, te las estudias de memoria y se presentan…este examen no es para ti. En general me da mucha rabia la gente que hace ese tipo de cosas, pero eso ya es otro tema de discusión aqui. Lo que quiero que entiendas es que realmente este examen va sobre tener las cosas claras y de hecho te dejan total libertad para abrirte una pestaña de navegador y acceder a las siguientes URL:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://kubernetes.io/docs/home/&lt;/li&gt;
-  &lt;li&gt;https://github.com/kubernetes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En este examen no hay un tipo de pregunta tipo test y cada pregunta parece random y con cositas diferentes que no tiene ningun sentido saberse de memoria teniendo acceso completo a los recursos de la propia web kubernetes para consultarlos&lt;/p&gt;
-
-&lt;h1 id=&quot;suerte&quot;&gt;Suerte!&lt;/h1&gt;
-
-&lt;p&gt;Si estas leyendo este post entiendo que es porque tienes pensado presentarte, por lo que te deseo que lo consigas pronto!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 19 Jan 2021 16:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Speaker: Techmarathons</title>
-        <link>http://0.0.0.0:4000/2020/10/06/speaker-techmarathons.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2020/10/06/speaker-techmarathons.html</guid>
-        <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el próximo evento &lt;a href=&quot;https://www.techmarathons.com/&quot;&gt;#TechMarathons&lt;/a&gt; que tendrá lugar en los dias 9 al 14 de Noviembre de 2020.&lt;/p&gt;
-
-&lt;p&gt;En mi sesión voy a hablar durante 30m en pura demo sobre “&lt;em&gt;Realtime operational analytics en SQL Server&lt;/em&gt;” donde voy a comentaros sobre problemas encontrados y sobre algunos trucos que tuve que implementar para hacerlo viable económicamente corriendo en Azure con un SQL Server Standard edition.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.techmarathons.com/&quot;&gt;&lt;img src=&quot;/img/posts/speaker-techmaraton/portada%20speakers.png&quot; alt=&quot;techmarathons enrique catala&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Para seguir con el juego del evento, aqui va mi Thumb up!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-techmaraton/thumb_up.jpg&quot; alt=&quot;thumb up enrique catala&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 06 Oct 2020 17:00:53 -0500</pubDate>
       </item>
     
   </channel>
