@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Sat, 15 May 2021 14:09:44 -0500</pubDate>
+    <pubDate>Sat, 15 May 2021 14:10:48 -0500</pubDate>
     
       <item>
         <title>Configurar conda para desarrollo con python</title>
