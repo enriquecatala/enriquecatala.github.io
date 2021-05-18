@@ -92,29 +92,33 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp
 
 ## 3) Instala una fuente de texto adecuada
 
-1. Descarga [Cascadia-Code](https://github.com/microsoft/cascadia-code/releases) 
-   
-2. Descarga las [Nerd fonts](https://ohmyposh.dev/docs/fonts)
-   
-3. Instala _CascadiaCodePL.ttf_ 
+- Descarga [Cascadia-Code](https://github.com/microsoft/cascadia-code/releases) 
+
+- Descarga las [Nerd fonts](https://ohmyposh.dev/docs/fonts)
+
+- Instala _CascadiaCodePL.ttf_ 
+
 ![CascadiaCodePL.ttf](/img/posts/pretty-terminal/cascadia-code.png)
 
-4. Instala _Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf_
+- Instala _Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf_
 
-3. Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:
-   ` "fontFace":  "Cascadia Code PL", `
+- Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:
+
+```json 
+"fontFace":  "Cascadia Code PL"
+```
 
 De esta forma, por ejemplo la sección de powershell quedaría algo así:
 
 ```json
  {
-                // Make changes here to the powershell.exe profile.
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "Windows PowerShell",
-                "commandline": "powershell.exe",
-                "fontFace": "Cascadia Code PL",
-                "hidden": false
-            }
+   // Make changes here to the powershell.exe profile.
+   "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+   "name": "Windows PowerShell",
+   "commandline": "powershell.exe",
+   "fontFace": "Cascadia Code PL",
+   "hidden": false
+}
 ```
 
 Tambien puedes hacerlo con el nuevo GUI
@@ -122,7 +126,7 @@ Tambien puedes hacerlo con el nuevo GUI
 ![settings nerd fonts windows terminal](/img/posts/pretty-terminal/settings-font.png)
 
 
-4. Añade en tu visual studio code la siguiente configuración tambien `"terminal.integrated.fontFamily": "Cascadia Code PL"`
+- Añade en tu visual studio code la siguiente configuración tambien `"terminal.integrated.fontFamily": "Cascadia Code PL"`
 
 >NOTA: [Aqui](https://www.nerdfonts.com/) tienes un montón de fuentes que puedes añadir. Solo recuerda utilizar una que tenga soporte para _PowerLine Glyphs_
 
