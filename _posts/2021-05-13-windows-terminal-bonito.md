@@ -90,6 +90,8 @@ Edita tu fichero _~/.bashrc_ y añade la siguiente línea:
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"
 ```
 
+>NOTA: Elige tu [tema](https://ohmyposh.dev/docs/themes/). En la imagen ves el de _jandedobbeleer_
+
 ## 3) Instala una fuente de texto adecuada
 
 - Descarga [Cascadia-Code](https://github.com/microsoft/cascadia-code/releases) 
@@ -134,3 +136,10 @@ En este punto, ya deberias ver algo así:
 
 ![cascadia code PL](/img/posts/pretty-terminal/cascadia-code2.png)
 ![nerd fonts](/img/posts/pretty-terminal/nerdfonts.png)
+
+
+## Mi configuración
+
+La configuración que estoy utilizando yo es:
+- Fuente _"MesloLGS NF"_
+- Tema _"slim"_
