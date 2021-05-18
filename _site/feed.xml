@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 18 May 2021 04:44:06 -0500</pubDate>
+    <pubDate>Tue, 18 May 2021 05:12:07 -0500</pubDate>
     
       <item>
         <title>Configurar conda para desarrollo con python</title>
@@ -320,6 +320,10 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;oh-my-posh &lt;span class=&quot;nt&quot;&gt;--init&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--shell&lt;/span&gt; bash &lt;span class=&quot;nt&quot;&gt;--config&lt;/span&gt; ~/.poshthemes/jandedobbeleer.omp.json&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Elige tu &lt;a href=&quot;https://ohmyposh.dev/docs/themes/&quot;&gt;tema&lt;/a&gt;. En la imagen ves el de &lt;em&gt;jandedobbeleer&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;h2 id=&quot;3-instala-una-fuente-de-texto-adecuada&quot;&gt;3) Instala una fuente de texto adecuada&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -376,6 +380,14 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code2.png&quot; alt=&quot;cascadia code PL&quot; /&gt;
 &lt;img src=&quot;/img/posts/pretty-terminal/nerdfonts.png&quot; alt=&quot;nerd fonts&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mi-configuración&quot;&gt;Mi configuración&lt;/h2&gt;
+
+&lt;p&gt;La configuración que estoy utilizando yo es:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fuente &lt;em&gt;“MesloLGS NF”&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Tema &lt;em&gt;“slim”&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Wed, 12 May 2021 17:00:00 -0500</pubDate>
       </item>
