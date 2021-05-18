@@ -90,6 +90,8 @@ Edita tu fichero _~/.bashrc_ y añade la siguiente línea:
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"
 ```
 
+>NOTA: Elige tu [tema](https://ohmyposh.dev/docs/themes/)
+
 ## 3) Instala una fuente de texto adecuada
 
 - Descarga [Cascadia-Code](https://github.com/microsoft/cascadia-code/releases) 
