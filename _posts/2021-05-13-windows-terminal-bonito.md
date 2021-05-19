@@ -137,6 +137,7 @@ En este punto, ya deberias ver algo así:
 ![cascadia code PL](/img/posts/pretty-terminal/cascadia-code2.png)
 ![nerd fonts](/img/posts/pretty-terminal/nerdfonts.png)
 
+![code-pretty-terminal](/img/posts/pretty-terminal/visual_studio_pretty_terminal.png)
 
 ## Mi configuración
 
