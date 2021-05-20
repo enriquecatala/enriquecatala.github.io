@@ -5,18 +5,20 @@ date:   2021-05-15 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Python Dev AI
+tags: Python Dev AI OS
 ---
 
-Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor "Spider" y la gestión de entornos. 
+Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor "Spider" y la gestión de entornos muy cómoda. 
 
-En este post vamos a ver rápidamente cómo configurar nuestro entorno python con conda para desarrollo sobre Windows.
+En este post vamos a ver rápidamente cómo configurar nuestro entorno python con conda para desarrollo data science sobre [Windows](#windows) y sobre [Linux](#linux).
 
 ![anaconda gui](/img/posts/configurar-conda/Anaconda.png)
 
 Para configurarlo te propongo: 
 
 <!--end_excerpt-->
+
+# Windows
 
 ## Instalación 
 
@@ -202,4 +204,67 @@ Y ya está, tenemos el entorno nuevo, con huggigface transformers utilizando la 
 
 ```bash
 conda install spider=5.0.0
+```
+
+# Linux
+
+En el caso de linux, pues se puede scriptar mas facilmente para variar :)
+
+![conda](/img/posts/configurar-conda/conda-ubuntu.png)
+
+## Descargar anaconda
+
+Lo primero que deberas hacer es entrar [aqui](https://www.anaconda.com/products/individual) y seleccionar la versión que quieras.
+
+En mi caso, voy a instalarlo para Ubuntu 20.04 64 bits y python 3.8
+https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+
+```bash
+cd /tmp
+# descargar
+curl -L -o anaconda-installer.sh https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+# instalar
+bash anaconda-installer.sh
+```
+
+En este momento te pedirá leer los términos de licencia, que obviamente deberás aceptar y te mostrará el path por defecto (que podrás cambiar donde se instalará)
+
+```bash
+Anaconda3 will now be installed into this location:
+/home/enrique/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/enrique/anaconda3] >>>
+PREFIX=/home/enrique/anaconda3
+Unpacking payload ...
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/enrique/anaconda3
+
+  added / updated specs:
+    - _ipyw_jlab_nb_ext_conf==0.1.0=py37_0
+....
+y aqui un largo etcétera de librerias ...
+```
+
+una vez acabada la instalación, solo queda añadir el path, que te preguntará
+
+```bash
+installation finished.
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/enrique/.bashrc ? [yes|no]
+```
+
+## Update conda
+
+Es **altamente recomendable** actualizar a la última version de conda, que muy probablemente no sea la que se instale con el script anterior. Para actualizar conda en linux
+
+```bash
+conda update conda
 ```
