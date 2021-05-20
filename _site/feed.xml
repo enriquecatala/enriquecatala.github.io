@@ -5,21 +5,23 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 18 May 2021 05:12:07 -0500</pubDate>
+    <pubDate>Thu, 20 May 2021 11:39:31 -0500</pubDate>
     
       <item>
         <title>Configurar conda para desarrollo con python</title>
         <link>http://0.0.0.0:4000/2021/05/14/Configurar-conda-para-desarrollo-con-python.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/14/Configurar-conda-para-desarrollo-con-python.html</guid>
-        <description>&lt;p&gt;Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor “Spider” y la gestión de entornos.&lt;/p&gt;
+        <description>&lt;p&gt;Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor “Spider” y la gestión de entornos muy cómoda.&lt;/p&gt;
 
-&lt;p&gt;En este post vamos a ver rápidamente cómo configurar nuestro entorno python con conda para desarrollo sobre Windows.&lt;/p&gt;
+&lt;p&gt;En este post vamos a ver rápidamente cómo configurar nuestro entorno python con conda para desarrollo data science sobre &lt;a href=&quot;#windows&quot;&gt;Windows&lt;/a&gt; y sobre &lt;a href=&quot;#linux&quot;&gt;Linux&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/Anaconda.png&quot; alt=&quot;anaconda gui&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Para configurarlo te propongo:&lt;/p&gt;
 
 &lt;!--end_excerpt--&gt;
+
+&lt;h1 id=&quot;windows&quot;&gt;Windows&lt;/h1&gt;
 
 &lt;h2 id=&quot;instalación&quot;&gt;Instalación&lt;/h2&gt;
 
@@ -213,6 +215,65 @@ numpy-1.20.3 packaging-20.9 pyparsing-2.4.7 regex-2021.4.4 requests-2.25.1 sacre
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;spider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;5.0.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;linux&quot;&gt;Linux&lt;/h1&gt;
+
+&lt;p&gt;En el caso de linux, pues se puede scriptar mas facilmente para variar :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/configurar-conda/conda-ubuntu.png&quot; alt=&quot;conda&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;descargar-anaconda&quot;&gt;Descargar anaconda&lt;/h2&gt;
+
+&lt;p&gt;Lo primero que deberas hacer es entrar &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;aqui&lt;/a&gt; y seleccionar la versión que quieras.&lt;/p&gt;
+
+&lt;p&gt;En mi caso, voy a instalarlo para Ubuntu 20.04 64 bits y python 3.8
+https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
+&lt;span class=&quot;c&quot;&gt;# descargar&lt;/span&gt;
+curl &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; anaconda-installer.sh https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+&lt;span class=&quot;c&quot;&gt;# instalar&lt;/span&gt;
+bash anaconda-installer.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En este momento te pedirá leer los términos de licencia, que obviamente deberás aceptar y te mostrará el path por defecto (que podrás cambiar donde se instalará)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Anaconda3 will now be installed into this location:
+/home/enrique/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;/home/enrique/anaconda3] &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;PREFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/enrique/anaconda3
+Unpacking payload ...
+Collecting package metadata &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current_repodata.json&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;Solving environment: &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;## Package Plan ##&lt;/span&gt;
+
+  environment location: /home/enrique/anaconda3
+
+  added / updated specs:
+    - &lt;span class=&quot;nv&quot;&gt;_ipyw_jlab_nb_ext_conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.1.0&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;py37_0
+....
+y aqui un largo etcétera de librerias ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;una vez acabada la instalación, solo queda añadir el path, que te preguntará&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;installation finished.
+Do you wish the installer to prepend the Anaconda3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;location
+to PATH &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your /home/enrique/.bashrc ? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;yes&lt;/span&gt;|no]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;update-conda&quot;&gt;Update conda&lt;/h2&gt;
+
+&lt;p&gt;Es &lt;strong&gt;altamente recomendable&lt;/strong&gt; actualizar a la última version de conda, que muy probablemente no sea la que se instale con el script anterior. Para actualizar conda en linux&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda update conda
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 14 May 2021 17:00:00 -0500</pubDate>
       </item>
@@ -380,6 +441,8 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code2.png&quot; alt=&quot;cascadia code PL&quot; /&gt;
 &lt;img src=&quot;/img/posts/pretty-terminal/nerdfonts.png&quot; alt=&quot;nerd fonts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/visual_studio_pretty_terminal.png&quot; alt=&quot;code-pretty-terminal&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;mi-configuración&quot;&gt;Mi configuración&lt;/h2&gt;
 
