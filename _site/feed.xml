@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 20 May 2021 11:39:31 -0500</pubDate>
+    <pubDate>Tue, 08 Jun 2021 09:33:42 -0500</pubDate>
     
       <item>
         <title>Configurar conda para desarrollo con python</title>
@@ -296,6 +296,7 @@ to PATH &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your /home/enrique/.bash
 
 &lt;p&gt;Un placer coincidir con tanto crack!&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 May 2021 17:00:00 -0500</pubDate>
       </item>
