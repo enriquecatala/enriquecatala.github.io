@@ -22,3 +22,4 @@ _Kubernetes es la plataforma ideal para desplegar modelos deeplearning. Nos perm
 
 Un placer coincidir con tanto crack!
 
+![sentiment inference huggingface](/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png)
