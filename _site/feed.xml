@@ -5,7 +5,28 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 08 Jun 2021 09:33:42 -0500</pubDate>
+    <pubDate>Fri, 23 Jul 2021 10:59:24 -0500</pubDate>
+    
+      <item>
+        <title>Cómo desplegar redes neuronales en kubernetes con hardware CUDA</title>
+        <link>http://0.0.0.0:4000/2021/07/22/como-desplegar-redes-neuronales-kubernetes-hw-cuda.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/07/22/como-desplegar-redes-neuronales-kubernetes-hw-cuda.html</guid>
+        <description>&lt;p&gt;Hace unos dias tuve el placer y honor de ser ponente en el evento &lt;a href=&quot;https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/&quot;&gt;Kubernetes Community Days Spain&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui te dejo el vídeo de mi sesión, espero que te guste:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-MaFzqWaRyM?start=14&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Y este es el abstract de la sesión:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Kubernetes es la plataforma ideal para desplegar modelos deeplearning. Nos permite escalar nuestas redes en multiples pods y nodos, añadir soporte para hardware específico facilmente y además poder utilizar cualquier nube ya sea de forma pública o privada para nuestros modelos. En esta sesión vamos a ver cómo podemos montar nuestros propios contenedores con FastAPI, desplegarlos en nuestro propio cluster, cómo consumirlos y cómo preparar nuestra propia infraestructura para producción.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Jul 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Configurar conda para desarrollo con python</title>
@@ -297,6 +318,8 @@ to PATH &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your /home/enrique/.bash
 &lt;p&gt;Un placer coincidir con tanto crack!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://training.solidq.com/es/course/curso-administracion-kubernetes/&quot;&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/banner-curso-administracion-kubernetes.png&quot; alt=&quot;curso admistracion 0-100&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 May 2021 17:00:00 -0500</pubDate>
       </item>
@@ -807,31 +830,6 @@ f13dafbb392c   database_frameworktsqldatabase   &lt;span class=&quot;s2&quot;&gt
 &lt;blockquote&gt;
   &lt;p&gt;SPOILER: Rompimos cosas :)&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-        <pubDate>Thu, 25 Feb 2021 16:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Speaker netCoreConf virtual 2021</title>
-        <link>http://0.0.0.0:4000/2021/02/25/Speaker-netCoreConf-virtual-2021.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/02/25/Speaker-netCoreConf-virtual-2021.html</guid>
-        <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el próximo evento &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;#netCoreConf&lt;/a&gt; que tendrá lugar en los dias 27 y 28 de Febrero 2021 de forma virtual.&lt;/p&gt;
-
-&lt;p&gt;En mi sesión voy a hablar durante 55m de &lt;strong&gt;cómo desplegar servicios de datos Azure fuera de Azure&lt;/strong&gt;. Concretamente vamos a hablar del nuevo servicio que actualmente está en estado PublicPreview llamado &lt;em&gt;Azure Arc for dataservices&lt;/em&gt;. La mayoria de la sesión será viendo cómo desplegar nuestro primer &lt;em&gt;Azure Arc DataService controller&lt;/em&gt; en un kubernetes OnPrem sobre el que desplegaremos nuestro primer Azure &lt;strong&gt;SQL Server Managed Instance&lt;/strong&gt; en nuestro entorno &lt;strong&gt;OnPremises&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;SPOILER: Se van a romper cosas :)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/netcoreconf2021/demo.png&quot; alt=&quot;demo&quot; /&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://netcoreconf.com/&quot;&gt;&lt;img src=&quot;/img/posts/netcoreconf2021/slide.png&quot; alt=&quot;slide&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un placer coincidir con tanto crack!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://netcoreconf.com/&quot;&gt;&lt;img src=&quot;/img/posts/netcoreconf2021/speakers.png&quot; alt=&quot;speakers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Feb 2021 16:00:00 -0600</pubDate>
       </item>
