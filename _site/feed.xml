@@ -5,7 +5,37 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Fri, 23 Jul 2021 10:59:24 -0500</pubDate>
+    <pubDate>Tue, 27 Jul 2021 07:35:45 -0500</pubDate>
+    
+      <item>
+        <title>How to release memory consumed by vmmem WSL2</title>
+        <link>http://0.0.0.0:4000/2021/07/26/release-memory-consumed-by-vmmem.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/07/26/release-memory-consumed-by-vmmem.html</guid>
+        <description>&lt;p&gt;There is a bug in WSL2 that causes the memory consumption of the vmmem process to not to be released. Right now, the version of WSL2 and windows i´m using is Windows 10 19043.1110 (21H1) and it´s still present.&lt;/p&gt;
+
+&lt;p&gt;This is what you can see when the error happens:&lt;/p&gt;
+
+&lt;p&gt;1) You have your WSL2 images stopped:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/vmmem-taking-too-much-memory/vmmem2.png&quot; alt=&quot;vmmem1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2) There is a lot of memory ussage from the vmmem process:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/vmmem-taking-too-much-memory/vmmem1.png&quot; alt=&quot;vmmem1&quot; /&gt;&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;The solution for this is to simply stop the vmmem process:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;wsl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Et voila :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/vmmem-taking-too-much-memory/vmmem3.png&quot; alt=&quot;vmmem3&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Jul 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Cómo desplegar redes neuronales en kubernetes con hardware CUDA</title>
@@ -811,27 +841,6 @@ f13dafbb392c   database_frameworktsqldatabase   &lt;span class=&quot;s2&quot;&gt
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 01 Mar 2021 16:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Despliega servicios de Azure fuera de Azure</title>
-        <link>http://0.0.0.0:4000/2021/02/25/Despliega-servicios-azure-fuera-de-azure.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/02/25/Despliega-servicios-azure-fuera-de-azure.html</guid>
-        <description>&lt;p&gt;El pasado 28 de Febrero 2021 tuve el honor de impartir una sesion en la &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;#netcoreconf&lt;/a&gt; junto a grandes cracks de renombre nacional e internacional.&lt;/p&gt;
-
-&lt;p&gt;En mi sesión estuvimos viendo &lt;strong&gt;cómo desplegar servicios de datos Azure fuera de Azure&lt;/strong&gt; utilizando &lt;em&gt;Azure Arc for dataservices&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si quieres ver el vídeo continua leyendo…&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vsplAxtBkag?start=956&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;SPOILER: Rompimos cosas :)&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Thu, 25 Feb 2021 16:00:00 -0600</pubDate>
       </item>
     
   </channel>
