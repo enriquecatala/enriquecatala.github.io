@@ -27,21 +27,22 @@ Como lo primero en todo proyecto de IA es preparar los datos, lo que vamos a hac
 
 # Crear cluster Databricks
 
-<mark> step-by-step deploy databricks </mark>
+Lo primero que vamos a hacer es crearnos nuestro cluster Databricks. Como es algo bastante sencillo y documentado, puede seguir esta [estupenda guia de Microsoft](https://docs.microsoft.com/en-us/azure/databricks/clusters/create)
 
-DBFS no permite subir ficheros de más de 2Gb de tamaño y puesto que nuestro conjunto de datos sobrepasa eso con creces, lo que vamos a hacer es montar un Azure blob storage en nuestro cluster y subir ahi nuestros datos con los que poder trabajar.
+En lo que a nosotros nos afecta, solo quiero añadir que puesto que DBFS no permite subir ficheros de más de 2Gb de tamaño y que nuestro conjunto de datos sobrepasa eso con creces, lo que vamos a hacer es montar un **Azure blob storage** en nuestro cluster y para subir ahi nuestros datos con los que poder trabajar.
 
 # Desplegar nuestro blob storage
 
-<mark> step-by-step deploy blob storage </mark>
+Tal como hemos comentado, vamos a necesitar un almacenamiento con el que poder trabajar, porque DBFS no nos va a dejar subir ficheros de más de 2Gb. Vamos en este caso a utilizar Azure Blob Storage por comodidad y precio. Para crear un blob storage te recomiendo que sigas esta [guia oficial](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
 
+Una vez creado, añadiremos nuestro contenedor para trabajar con databricks, que en este caso le voy a llamar _sentinelml_
 ![crear contenedor](/img/posts_published_in_other_sites/procesar_datos_databricks/1.png)
 
 # Subir los ficheros a procesar
 
-Y ahora añadimos los ficheros .csv como block blob:
+Y ahora añadimos los ficheros .csv como <mark>block blob</mark>:
 
->Importante: Databricks por ahora solo permite montar ficheros subidos en modo **block blob**.
+>Importante: Databricks por ahora solo permite trabajar con ficheros montados en modo **block blob**.
 
 ![block-blob](/img/posts_published_in_other_sites/procesar_datos_databricks/block-blob.png)
 
@@ -86,7 +87,7 @@ Y probar que efectivamente puedes acceder a tus ficheros:
 
 # Preparar los datos
 
-Yo soy bastante dato a utilizar [SQL](#scalasql), pero en este caso voy simplemente a utilizar databricks para preparar los datos rápido y luego volcar el resultado a un csv, que es lo que directamente utilizaré para entrenar mi modelo. Para ello lo que voy a hacer es un proceso en unas cuantas fases. Obviamente depende de cada escenario, tendrás que hacer una cosa u otra, pero para el escenario que necesito yo:
+En este paso vamos a realizar varias cosas, algunas en pyspark y otras en sparksql. Aqui ya es a gusto del desarrollador, yo simplemente me siento mas cómodo trabajando con SQL y por eso verás mucha query :)
 
 ## Obtener un conjunto de datos base
 
@@ -145,12 +146,35 @@ Para poder chequear rápido datos y ver que todo es correcto, vamos a salvar los
 
 ```python
 # Save to parquet
-output_parquet = "/tmp/output/people.parquet"
+output_parquet = "/tmp/output/domains.parquet"
 df_with_all_rows.write.mode("overwrite").parquet(output_parquet)
 
 parqDF = spark.read.parquet(output_parquet)
+# this is not required since we are going to load into database
 parqDF.createOrReplaceTempView("prepared_top_level_domains")
 ```
+
+### Cargar a base de datos (opcional)
+
+En este caso finalmente me han salido unos ~20M de filas, que databricks se come en apenas 5s como parquet, por lo que no es necesario tampoco venirse arriba y cargar en BBDD...pero si quisieramos, podríamos hacer esto:
+
+```sql
+%sql
+use sentinelml;
+
+create table if not exists prepared_top_level_domains(_c0 STRING comment "this is the domain name",
+                                              dga_class STRING comment "this is the class of the domain")
+using parquet
+options(
+path "/tmp/output/domains.parquet"
+)
+--partitioned by (dga_class)
+--clustered by (_c0) into 4 buckets
+```
+
+Con lo que ahora tendríamos accesible tambien los datos a nivel fijo en la BBDD llamada "sentinelml" que me cree yo previamente.
+
+>NOTA: La diferencia entre hacer esto o no, es que en los siguientes scripts tendrias que añadir "sentinelml." justo delante del nombre de la vista. Si hicieste un createOrReplaceTempView, no haría falta ponerle la referencia a BBDD, pero estará ejecutando otro motor diferente, que a penas vas a notar para los pocos datos que hay.
 
 ## Chequeo de datos
 
@@ -159,7 +183,9 @@ Ahora vamos a chequear la distribución de datos para ver que no hay desmadres
 ```sql
 %sql
 -- test
-select dga_class, count(*) from prepared_top_level_domains group by dga_class
+select dga_class, count(*) 
+from prepared_top_level_domains 
+group by dga_class
 ```
 
 ![checksql](/img/posts_published_in_other_sites/procesar_datos_databricks/checksql.png)
@@ -172,7 +198,10 @@ Vamos a ver cuántos duplicados tenemos:
 %sql
 -- cuantos duplicados?
 with cte as(
-select _c0,count(*)  from prepared_top_level_domains group by _c0 having count(*)>1
+  select _c0,count(*)  
+  from prepared_top_level_domains 
+  group by _c0 
+  having count(*)>1
 )
 select count(*) from cte
 ```
@@ -189,9 +218,11 @@ Para limpiar duplicados, vamos utilizar la estrategia de ROW_NUMBER:
 %sql
 -- clean duplicated domains
 with cte as (
-select _c0,dga_class,
-row_number() over(partition by _c0 order by _c0  ) as rn
-from prepared_top_level_domains )
+  select _c0,
+         dga_class,
+         row_number() over(partition by _c0 order by _c0  ) as rn
+  from prepared_top_level_domains 
+  )
 select _c0 as domain,dga_class from cte where rn = 1
 ```
 
@@ -203,10 +234,16 @@ Un requerimiento que vamos a tener a la hora de inyectar datos a la red neuronal
 
 ```sql
 %sql
-select * from prepared_top_level_domains order by rand() limit 10
+-- para que veas el ejemplito
+select * 
+from prepared_top_level_domains 
+order by rand() 
+limit 10
 ```
 
->NOTA: Shuffeling mediante ORDER BY RAND()
+>NOTA: Shuffeling de dga_class mediante ORDER BY RAND()
+
+![shuffeling](/img/posts_published_in_other_sites/procesar_datos_databricks/shuffeling.png)
 
 En este caso, realmente lo que vamos a barajar es el dataset sin los duplicados que hemos estado viendo antes, de esta forma la query quedará así:
 
@@ -214,10 +251,14 @@ En este caso, realmente lo que vamos a barajar es el dataset sin los duplicados 
 %sql
 -- clean duplicated domains
 with cte as (
-select _c0,dga_class,
-row_number() over(partition by _c0 order by _c0  ) as rn
-from prepared_top_level_domains )
-select _c0 as domain,dga_class from cte where rn = 1 ORDER BY rand()
+  select _c0,dga_class,
+  row_number() over(partition by _c0 order by _c0  ) as rn
+  from prepared_top_level_domains 
+)
+select _c0 as domain,dga_class 
+from cte 
+where rn = 1 
+ORDER BY rand()
 ``` 
 
 ## Salvar a CSV
@@ -236,11 +277,26 @@ select _c0 as domain,dga_class from cte where rn = 1 ORDER BY rand()"""
 spark.sql(sql_text).coalesce(1).write.option("mode","overwrite").option("header","true").csv(path=output_file_path)
 ```
 
-El resultado de ese output estará dentro del blob storage de nuestro azure, en una carpeta llamada "prepared_top_level_domains" y su contenido en un único fichero CSV con prefijo "part-"
+El resultado de ese output estará dentro del blob storage de nuestro azure, en una carpeta llamada "prepared_top_level_domains" y su contenido, gracias a haber forzado "coalesce(1)" en **un único fichero CSV** con prefijo "part-" que es el que más tarde me llevaré para el entrenamiento de mi red
 
 ![prepared](/img/posts_published_in_other_sites/procesar_datos_databricks/output.png)
 
 Ya solo nos queda bajarnos el fichero y enchufárselo a nuestra red neuronal, pero eso será otra historia :)
+
+## Cuántas clases tenemos
+
+Por último solo nos queda saber cuantas clases tenemos, para que nuestro clasificador lo sepa y asignarles sus id a nombres correspondientes.
+
+```sql
+select distinct row_number() over (order by dga_class) dga_class_id,
+       dga_class
+from prepared_top_level_domains group by dga_class
+```
+
+![clases](/img/posts_published_in_other_sites/procesar_datos_databricks/classes.png)
+
+
+Y listo!, con esto ya tenemos las 2 cosas necesarias para comenzar el entrenamiento de nuestra red (que es ya otra historia :))
 
 # Apéndice
 
