@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Preparando datos para deeplearning con databricks"
+title:  "Preparando datos para deeplearning con databricks (1/2)"
 date:   2021-07-21 00:00:00 +0200
 tipue_search_active: true
 comments: true
