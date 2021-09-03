@@ -154,7 +154,7 @@ parqDF = spark.read.parquet(output_parquet)
 parqDF.createOrReplaceTempView("prepared_top_level_domains")
 ```
 
-### Cargar a base de datos (opcional)
+### Meter los datos en base de datos (opcional)
 
 En este caso finalmente me han salido unos ~20M de filas, que databricks se come en apenas 5s como parquet, por lo que no es necesario tampoco venirse arriba y cargar en BBDD...pero si quisieramos, podríamos hacer esto:
 
@@ -296,7 +296,9 @@ from prepared_top_level_domains group by dga_class
 ![clases](/img/posts_published_in_other_sites/procesar_datos_databricks/classes.png)
 
 
-Y listo!, con esto ya tenemos las 2 cosas necesarias para comenzar el entrenamiento de nuestra red (que es ya otra historia :))
+Y listo!, con esto ya tenemos las 2 cosas mínimas necesarias para comenzar a plantear las ultimas fases de preparación de datos para nuestra red
+
+En el siguiente post, veremos cómo preparar el tokenizador y la conversión de estos dominios al array numérico que necesitamos. 
 
 # Apéndice
 
