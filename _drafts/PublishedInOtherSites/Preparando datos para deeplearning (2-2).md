@@ -10,7 +10,7 @@ tags: Databricks Python Dev AI Azure DataPlatform
 
 Si recuerdas en el post anterior, lo que hicimos fue la tarea bruta de tomar todos los datos y procesarlos para dejarlos limpios y preparados para comenzar la última parte de preparación necesaria para el entrenamiento.
 
-En mi caso, esta información la voy a utilizar como entrada en una red neuronal recurrente de tipo LSTM con capa de atención. Este tipo de redes requieren de una entrada de datos muy concreta, que por no extenderme mucho, necesita que esté fija en tamaño y que sea de forma numérica. Es decir, que ahora lo que tendremos que hacer es convertir esos 22M de dominios en una matriz de 22M x n, siendo n el número de columnas de mi array con el que codifiquemos los dominios...que aunque todavia no lo sabemos, deberia ser una cantidad igual al máximo [numero de carácteres permitidos por un dominio](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio).
+En mi caso, esta información la voy a utilizar como entrada en una red neuronal recurrente de tipo LSTM con capa de atención. Este tipo de redes requieren de una entrada de datos muy concreta, que por no extenderme mucho, necesita que esté fija en tamaño y que sea de forma numérica. Es decir, que ahora lo que tendremos que hacer es convertir esos 22M de dominios en un [tensor](https://www.tensorflow.org/guide/tensor) de 22M x n, siendo n el número de columnas de mi array con el que codifiquemos los dominios...que aunque todavia no lo sabemos, deberia ser una cantidad igual al máximo [numero de carácteres permitidos por un dominio](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio).
 
 # Instalar tensorflow
 
@@ -54,7 +54,7 @@ parqDF = spark.read.parquet(output_parquet)
 
 # Convertir los dominios a una lista
 
-Tal como sabrás si has entrenado alguna vez una red neuronal, ya sabrás que hay que convertir nuestros elementos a un array numérico. En este caso y ya que seguimos con los datos en databricks, vamos a utilizar el propio keras para conseguirlo...pero por desgracia tenemos que enviarle una lista de strings, lo que nos fuerza a convertir nuestros datos a ese formato. 
+Como decíamos antes, queremos preparar el [tensor](https://www.tensorflow.org/guide/tensor) y dado que tenemos ya los datos en databricks, vamos a utilizar el propio keras para conseguirlo...pero por desgracia tenemos que enviarle una lista de strings, lo que nos fuerza a convertir nuestros datos a ese formato. 
 
 Esto lo podemos hacer con el siguiente comando pyspark:
 
@@ -67,7 +67,7 @@ domains = parqDF.select("_c0").rdd.flatMap(lambda x: x).collect()
 
 # Rellenar nuestro vocabulario de tokenizacion
 
-Una vez ya tenemos nuestro dominio de texto en una lista (_"domains"_ en este caso), lo que tendremos que hacer es actualizar el vocabulario interno de nuestro tokenizador con esa información:
+Una vez ya tenemos nuestro dominio de texto en una lista (_"domains"_ en este caso), lo que tendremos que hacer es actualizar el **vocabulario** interno de nuestro tokenizador con esa información:
 
 ```python
 # ~3mins
@@ -77,9 +77,9 @@ tokenizer.fit_on_texts(domains)
 >NOTA: Para más información [fit_on_texts](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/text/Tokenizer#fit_on_texts)
 
 
-# Convertir nuestros dominios a array numérico
+# Convertir nuestros dominios a tensores
 
-Justo lo que necesitamos ahora...convertir nuestros dominios a un array numérico ya es posible porque el tokenizador ya es capaz de hacer las conversiones puesto que tine el vocabulario necesario
+Justo lo que necesitamos ahora...convertir nuestros dominios a un [tensor](https://www.tensorflow.org/guide/tensor) (matriz numérica) ya es posible porque el tokenizador ya es capaz de hacer las conversiones puesto que tine el **vocabulario** necesario
 
 Para hacerlo, lo que nos queda por tanto es:
 
@@ -120,7 +120,7 @@ Si recordais del anterior post, nosotros conectamos Databricks a nuestro azure b
 ![tokenizer](/img/posts_published_in_other_sites/procesar_datos_databricks/tokenizer.png)
 
 
-## Salvar los datos preparados para la red neuronal
+## Salvar el tensor
 
 Por último ya lo que nos queda es aprovecharnos de Databricks para dejarnos ya mascadito al máximo la información. Realmente en la máquina que voy a hacer yo el entrenamiento no tengo problema de memoria (+120Gb de RAM) por lo que no seria necesario este paso, pero lo normal no va a ser eso y por tanto te vendrá bien tambien ser capaz de salvar el array numérico que contiene las transformaciones de nuestro tokenizador de texto a número.
 
@@ -156,7 +156,7 @@ f_url_int_tokens = sqlContext.createDataFrame(row_rdd)
 x_padded = f_url_int_tokens.select("_1").withColumn("_1", pad_fix_length(f_url_int_tokens._1))
 ```
 
-Aqui puedes ver un poco el resultado:
+Aqui puedes ver un poco el resultado, que es además **muy rápido** al poder ejecutarse en **paralelo**:
 
 ![padding](/img/posts_published_in_other_sites/procesar_datos_databricks/padding.png)
 
@@ -177,3 +177,6 @@ Y ya lo tendríamos, nuestra misma información generada en el post1, pero esta 
 ![final](/img/posts_published_in_other_sites/procesar_datos_databricks/final.png)
 
 ![finalcsv](/img/posts_published_in_other_sites/procesar_datos_databricks/final_csv.png)
+
+
+Finalmente ya solo nos quedaría utilizar todos estos datos con nuestra red neuronal...pero eso ya es otra historia de la que hablar, si me decís que quereis leer la tercera parte de este post :)
