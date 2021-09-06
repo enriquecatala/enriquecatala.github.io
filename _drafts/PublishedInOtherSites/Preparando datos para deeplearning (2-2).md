@@ -10,7 +10,7 @@ tags: Databricks Python Dev AI Azure DataPlatform
 
 Si recuerdas en el post anterior, lo que hicimos fue la tarea bruta de tomar todos los datos y procesarlos para dejarlos limpios y preparados para comenzar la última parte de preparación necesaria para el entrenamiento.
 
-En mi caso, esta información la voy a utilizar como entrada en una red neuronal recurrente de tipo LSTM con capa de atención. Este tipo de redes requieren de una entrada de datos muy concreta, que por no extenderme mucho, necesita que esté fija en tamaño y que sea de forma numérica. Es decir, que ahora lo que tendremos que hacer es convertir esos 22M de dominios en una matriz de 22M x n, siendo n el número de columnas de mi array con el que codifiquemos los dominios...que aunque todavia no lo sabemos, deberia ser una cantidad igual al máximo numero de carácteres permitidos por un dominio. 
+En mi caso, esta información la voy a utilizar como entrada en una red neuronal recurrente de tipo LSTM con capa de atención. Este tipo de redes requieren de una entrada de datos muy concreta, que por no extenderme mucho, necesita que esté fija en tamaño y que sea de forma numérica. Es decir, que ahora lo que tendremos que hacer es convertir esos 22M de dominios en una matriz de 22M x n, siendo n el número de columnas de mi array con el que codifiquemos los dominios...que aunque todavia no lo sabemos, deberia ser una cantidad igual al máximo [numero de carácteres permitidos por un dominio](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio).
 
 # Instalar tensorflow
 
@@ -40,7 +40,7 @@ from tensorflow.python.keras.engine import input_layer
 tokenizer = Tokenizer(filters='', lower=True, char_level=True)
 ```
 
->NOTA: Nuestro tokenizador va a tratar cada caracter como un token (no es lo habitual) y ademas vamos a presumir que el texto es en minusculas. 
+>NOTA: Para este problema que queremos solucionar, nuestro tokenizador va a tratar cada caracter como un token (no es lo habitual) y ademas vamos a presumir que el texto es en minusculas. 
 Esto último es particularmente importante recordarlo a la hora de hacer la inferencia :)
 
 # Cargar los dominios
@@ -54,7 +54,7 @@ parqDF = spark.read.parquet(output_parquet)
 
 # Convertir los dominios a una lista
 
-Para poder entrenar nuestra red neuronal, tenemos que convertir nuestros elementos a un array numérico, para lo que vamos a utilizar el propio keras...pero por desgracia tenemos que enviarle una lista de strings, lo que nos fuerza a convertir nuestros datos a ese formato. 
+Tal como sabrás si has entrenado alguna vez una red neuronal, ya sabrás que hay que convertir nuestros elementos a un array numérico. En este caso y ya que seguimos con los datos en databricks, vamos a utilizar el propio keras para conseguirlo...pero por desgracia tenemos que enviarle una lista de strings, lo que nos fuerza a convertir nuestros datos a ese formato. 
 
 Esto lo podemos hacer con el siguiente comando pyspark:
 
@@ -67,7 +67,7 @@ domains = parqDF.select("_c0").rdd.flatMap(lambda x: x).collect()
 
 # Rellenar nuestro vocabulario de tokenizacion
 
-Una vez ya tenemos nuestro dominio de texto en una lista, lo que tendremos que hacer es actualizar el vocabulario interno de nuestro tokenizador con esa información:
+Una vez ya tenemos nuestro dominio de texto en una lista (_"domains"_ en este caso), lo que tendremos que hacer es actualizar el vocabulario interno de nuestro tokenizador con esa información:
 
 ```python
 # ~3mins
@@ -105,7 +105,7 @@ max_len = len(max(url_int_tokens, key=len))
 
 # Salvar el tokenizador
 
-Es importantísimo salvar el tokenizador, para que todo el progreso que hemos conseguido sirva para algo :). De esta forma nos ahorraremos todo esto en la parte del entrenamiento de nuestra red neuronal (que se sale del foco de este artículo):
+Es **importantísimo salvar el tokenizador**, para que todo el progreso que hemos conseguido sirva para algo :). De esta forma nos ahorraremos todo esto en la parte del entrenamiento de nuestra red neuronal (que se sale del foco de este artículo):
 
 ```python
 # save tokenizer
@@ -120,18 +120,19 @@ Si recordais del anterior post, nosotros conectamos Databricks a nuestro azure b
 ![tokenizer](/img/posts_published_in_other_sites/procesar_datos_databricks/tokenizer.png)
 
 
-## Salvar el array numérico
+## Salvar los datos preparados para la red neuronal
 
 Por último ya lo que nos queda es aprovecharnos de Databricks para dejarnos ya mascadito al máximo la información. Realmente en la máquina que voy a hacer yo el entrenamiento no tengo problema de memoria (+120Gb de RAM) por lo que no seria necesario este paso, pero lo normal no va a ser eso y por tanto te vendrá bien tambien ser capaz de salvar el array numérico que contiene las transformaciones de nuestro tokenizador de texto a número.
 
-Concretamente, nos vamos a encontrar este problema debido a la función [pad_sequences](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/sequence/pad_sequences), que es <mark>monothread</mark> y nos dará un error de memoria. Esta función se encarga de conseguir una de las cosas necesarias para el entrenamiento de un LSTM, que es que TODAS LAS MUESTRAS DEBEN TENER EL MISMO NUMERO DE CARACTERISTICAS (columnas en nuestro caso que se corresponden con letras del dominio).
+Concretamente, nos vamos a encontrar este problema debido a la función [pad_sequences](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/sequence/pad_sequences), que es <mark>monothread</mark> y nos dará un error de memoria. Esta función se encarga de conseguir una de las cosas necesarias para el entrenamiento de un LSTM, que es que **TODAS LAS MUESTRAS DEBEN TENER EL MISMO NUMERO DE CARACTERISTICAS** (columnas en nuestro caso que se corresponden con letras del dominio).
 
 ```python
 # OUT OF MEMORY!
 x = sequence.pad_sequences(url_int_tokens, maxlen=max_len)
 ```
+>NOTE: Lo normal es que te acabe dando out of memory porque se va a ejecutar en un único nodo e hilo, que si no tienes suficiente memoria no será capaz de ejecutarlo.
 
-Como solución, lo que yo he hecho ha sido hacerme la función pad_sequence a mano, que al final es una cosa bastante sencilla, porque lo que hacemos es simplemente rellenar por ceros delante o detrás aquellos elementos que no lleguen a tener los 253 valores.
+Como solución, lo que yo he hecho ha sido hacerme la función [pad_sequence](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/sequence/pad_sequences) a mano, que al final es una cosa bastante sencilla, porque lo que hacemos es simplemente rellenar por ceros delante o detrás aquellos elementos que no lleguen a tener los 253 valores.
 
 ```python
 # Workaround to fill of 0
@@ -159,7 +160,7 @@ Aqui puedes ver un poco el resultado:
 
 ![padding](/img/posts_published_in_other_sites/procesar_datos_databricks/padding.png)
 
-# salvar el array numerico
+### Proceso de salvado
 
 Ahora el último problema a salvar es que nuestro objeto DataFrame es un array de arrays, lo que se complica a la hora de ser almacenado en CSV.
 

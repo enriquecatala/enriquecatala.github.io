@@ -8,18 +8,48 @@ excerpt_separator: <!--end_excerpt-->
 tags: Databricks Python Dev AI Azure DataPlatform
 ---
 
-En ocasiones necesitamos procesar toneladas de datos para entrenar un modelo nuevo. Lanzar la limpieza de datos en un entorno de trabajo de desarrollo puede no ser suficiente cuando se trabaja con mucha información y es por eso que databricks nos ayuda bastante en esta tarea.
+Preparar datos para deeplearning, es una tarea muy dependiente de la entrada que necesite nuestra red y de los datos que tenemos. En este capítulo vamos a ver como preparar datos para deeplearning con databricks para un problema de clasificación aparentemente sencillo que es saber si un dominio de internet es malicioso o no simplemente con el texto del mismo. 
 
-Lo que vamos a hacer en este post es ver cómo limpiar nuestros datos que usaremos posteriormente para entrenar un modelo de red neuronal de tipo Bidirectional LSTM-Attention (algo que queda fuera del alcance de este post). Los datos que vamos a utilizar en este caso incluyen dominios de internet comprometidos por diversos tipos de malware y por supuesto un conjunto de datos como referencia positiva.
+Vamos a disponer de un conjunto de datos muy grande de dominios de internet que tienen la catalogación de "buenos" y "malos", donde los "malos" son dominios generados por software malicioso. En principio no vamos a entrar en los detalles ahora del problema que queremos resolver ni del apartado relativo a la propia red neuronal, sino que vamos a verlo desde el punto de vista puro del tratamiento de datos. 
 
-En este caso disponemos de 93 tipos de malware detectados, teniendo algunos de ellos comprometidos mas de 100M de elementos, por lo que puedes imaginarte que hablamos de bastantes datos y que nuestro laptop no va a poder en tiempo razonable procesarlo para poder prepararlos.
+La red neuronal que vamos a entrenar va ser fundamentalmente una arquitectura de tipo LSTM con capa de atención (no vamos a entrar en sus detalles ahora). Puesto que su tarea va a ser "clasificación", lo que vamos a necesitar va a ser:
+- Array de números con las características a utilizar para entrenar la red neuronal.
+- Array de números con las etiquetas de cada dominio de internet.
 
-Como lo primero en todo proyecto de IA es preparar los datos, lo que vamos a hacer en este momento se centra en esa parte. Para ello resumo a alto nivel lo que vamos a hacer:
+Los datos que vamos a tener son un conjunto muy grande de dominios de internet y su categoria (junto a mas información irrelevante para este problema). 
+
+Vamos a disponer por tanto de algo así:
+
+| dominio | categoria |
+|---------|-----------|
+| google.com | clase1 |
+| facebook.com | clase1 |
+| tbitter.com | malo |
+| gogle.com | malo |
+
+Y lo que buscamos es tener algo así
+
+| dominio_ids | categoria_ids |
+|--------------|----------------|
+| [0,0,..., 424, 234] | 0 |
+| [0,0,...,,45, 35] | 1 |
+...
+
+Es decir, tendremos que convertir nuestros dominios a un array numérico y las etiquetas a números.
+
+Como ves, si has trabajado con redes neuronales es un problema bastante sencillo, siendo aqui el único "problema" el volumen de datos que vamos a mover.
+
+Respecto a los datos que vamos a utilizar: Disponemos de 93 tipos de malware detectados, teniendo algunos de ellos comprometidos mas de 100 millones de direcciones, por lo que puedes imaginarte que hablamos de bastantes datos y que nuestro laptop no va a poder en tiempo razonable procesarlo para poder prepararlos.
+
+Para ello resumo a alto nivel lo que vamos a hacer:
 
 - Crear cluster Databricks
 - Montar nuestro blob storage en nuestro cluster
 - Subir los ficheros a procesar
 - Procesar los ficheros para preparar los datos para el modelo
+   - Limpiar los datos
+   - Calcular las clases
+   - Tokenizar nuestros dominios y transformarlos de texto a array de números
 - Volcar los datos a un csv
 - Destruir cluster Databricks (opcional)
 - Destruir blob storage (opcional)
@@ -29,7 +59,7 @@ Como lo primero en todo proyecto de IA es preparar los datos, lo que vamos a hac
 
 Lo primero que vamos a hacer es crearnos nuestro cluster Databricks. Como es algo bastante sencillo y documentado, puede seguir esta [estupenda guia de Microsoft](https://docs.microsoft.com/en-us/azure/databricks/clusters/create)
 
-En lo que a nosotros nos afecta, solo quiero añadir que puesto que DBFS no permite subir ficheros de más de 2Gb de tamaño y que nuestro conjunto de datos sobrepasa eso con creces, lo que vamos a hacer es montar un **Azure blob storage** en nuestro cluster y para subir ahi nuestros datos con los que poder trabajar.
+En lo que a nosotros nos afecta, solo quiero añadir que puesto que **DBFS no permite subir ficheros de más de 2Gb de tamaño** y que nuestro conjunto de datos sobrepasa eso con creces, lo que vamos a hacer es montar un **Azure blob storage** en nuestro cluster y para subir ahi nuestros datos con los que poder trabajar.
 
 # Desplegar nuestro blob storage
 
@@ -76,7 +106,7 @@ dbutils.fs.mount(
   extra_configs = {"fs.azure.account.key.sentinelmlwstrololol.blob.core.windows.net":"ziYC59ESQEF3zpTROLOLOL"})
 ```
 
-Ahora solo tienes que lanzarlo desde tu cluster:
+Ahora solo tienes que lanzarlo desde tu cluster y ya quedará montado para siempre (mientras no lo desmontes):
 
 ![mount_blob](/img/posts_published_in_other_sites/procesar_datos_databricks/mount_blob_storage_1.png)
 
@@ -84,12 +114,14 @@ Y probar que efectivamente puedes acceder a tus ficheros:
 
 ![ls](/img/posts_published_in_other_sites/procesar_datos_databricks/ls.png)
 
+> NOTA: Los ficheros los hemos subido en el punto anterior
+
 
 # Preparar los datos
 
 En este paso vamos a realizar varias cosas, algunas en pyspark y otras en sparksql. Aqui ya es a gusto del desarrollador, yo simplemente me siento mas cómodo trabajando con SQL y por eso verás mucha query :)
 
-## Obtener un conjunto de datos base
+## Limpiar los datos
 
 Lo primero va a ser obtener un conjunto de datos nivelado por clases. Puesto que tengo 2M de dominios catalogados como "buenos" y más de 100M catalogados como "malos", para minimizar el bias lo que voy a hacer es primero cargar cada clase con un conjunto de datos aproximadamente de 1M como mucho.
 
@@ -110,9 +142,11 @@ for f in fs.get(conf).listStatus(path):
   file_path = str(f.getPath())
   file_name = file_path.split('/')[-1]    
   
+  # This one has the header
   if (file_name == "majestic_million.csv"):
     df = spark.read.option("header",True).option("sep",",").csv(file_path).select("Domain")
     dga_class = "alexa"
+  # this one has the domain in the second column
   elif (file_name == "top-1m.csv"):
     df = spark.read.option("header",False).option("sep",",").csv(file_path).select("_c1")
     dga_class = "alexa"
@@ -212,7 +246,7 @@ Como vemos, tenemos un montón...que toca limpiar antes :)
 
 ### Limpiar duplicados
 
-Para limpiar duplicados, vamos utilizar la estrategia de ROW_NUMBER:
+Para limpiar duplicados, vamos utilizar la estrategia de [ROW_NUMBER](https://docs.databricks.com/sql/language-manual/functions/row_number.html):
 
 ```sql
 %sql
@@ -230,7 +264,7 @@ De esta forma nos vamos a quedar con únicamente los dominios que no están dupl
 
 ## Shuffeling de datos
 
-Un requerimiento que vamos a tener a la hora de inyectar datos a la red neuronal que estamos montando va a ser que los datos estén barajados. Aprovechando que estamos en spark, vamos a hacer ese shuffeling con SQL y así nos ahorramos esa parte luego :)
+Un requerimiento que vamos a tener a la hora de inyectar datos a la red neuronal que estamos montando va a ser que **los datos estén barajados**. Aprovechando que estamos en spark, vamos a hacer ese shuffeling con SQL y así nos ahorramos esa parte luego :)
 
 ```sql
 %sql
@@ -241,7 +275,7 @@ order by rand()
 limit 10
 ```
 
->NOTA: Shuffeling de dga_class mediante ORDER BY RAND()
+>NOTA: Shuffeling de dga_class mediante ORDER BY [RAND()](https://docs.databricks.com/sql/language-manual/functions/rand.html)
 
 ![shuffeling](/img/posts_published_in_other_sites/procesar_datos_databricks/shuffeling.png)
 
@@ -277,15 +311,14 @@ select _c0 as domain,dga_class from cte where rn = 1 ORDER BY rand()"""
 spark.sql(sql_text).coalesce(1).write.option("mode","overwrite").option("header","true").csv(path=output_file_path)
 ```
 
-El resultado de ese output estará dentro del blob storage de nuestro azure, en una carpeta llamada "prepared_top_level_domains" y su contenido, gracias a haber forzado "coalesce(1)" en **un único fichero CSV** con prefijo "part-" que es el que más tarde me llevaré para el entrenamiento de mi red
+El resultado de ese output estará dentro del blob storage de nuestro azure, en una carpeta llamada "prepared_top_level_domains" y su contenido, gracias a haber forzado "_coalesce(1)_" en **un único fichero CSV** con prefijo "part-" que es el que más tarde me llevaré para el entrenamiento de mi red
 
 ![prepared](/img/posts_published_in_other_sites/procesar_datos_databricks/output.png)
 
-Ya solo nos queda bajarnos el fichero y enchufárselo a nuestra red neuronal, pero eso será otra historia :)
-
+Este dataset es el que contiene todos los dominios y sus clases, pero en modo texto, por lo que no podemos utilizarlo para entrenar nuestra red neuronal directamente, sino que tendremos que convertirlos a array de números, pero eso lo haremos en la siguiente parte de este post.
 ## Cuántas clases tenemos
 
-Por último solo nos queda saber cuantas clases tenemos, para que nuestro clasificador lo sepa y asignarles sus id a nombres correspondientes.
+Como siguiente tarea, ahora nos queda saber cuantas clases tenemos, para que nuestro clasificador lo sepa y asignarles sus id a nombres correspondientes.
 
 ```sql
 select distinct row_number() over (order by dga_class) dga_class_id,
