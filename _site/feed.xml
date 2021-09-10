@@ -5,7 +5,72 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 30 Aug 2021 04:07:42 -0500</pubDate>
+    <pubDate>Fri, 10 Sep 2021 09:58:49 -0500</pubDate>
+    
+      <item>
+        <title>How to use a specific version of az cli</title>
+        <link>http://0.0.0.0:4000/2021/09/09/install-specific-version-az-cli.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/09/09/install-specific-version-az-cli.html</guid>
+        <description>&lt;p&gt;There are some times when the latest version of az cli is not working. Like for example today while I was trying to debug a container issue running in Azure Container Instances.&lt;/p&gt;
+
+&lt;p&gt;I´m getting the following error while trying to connect and check why my container is not working:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~#@❯ az container logs &lt;span class=&quot;nt&quot;&gt;--resource-group&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;InteligenciaAlertasSentinel&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; detector
+The &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;failed with an unexpected error. Here is the traceback:
+&lt;span class=&quot;s1&quot;&gt;'ContainerInstanceManagementClient'&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;'container'&lt;/span&gt;
+Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/knack/cli.py&quot;&lt;/span&gt;, line 231, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;invoke
+    cmd_result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; self.invocation.execute&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 657, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;execute
+    raise ex
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 720, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;_run_jobs_serially
+    results.append&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;self._run_job&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;expanded_arg, cmd_copy&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 691, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;_run_job
+    result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; cmd_copy&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;params&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 328, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;__call__
+    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;self.handler&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;args, &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/command_operation.py&quot;&lt;/span&gt;, line 112, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;handler
+    client &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; self.client_factory&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;self.cli_ctx, command_args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;self.client_factory &lt;span class=&quot;k&quot;&gt;else &lt;/span&gt;None
+  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/command_modules/container/_client_factory.py&quot;&lt;/span&gt;, line 18, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;cf_container
+    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;_container_instance_client_factory&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli_ctx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.container
+AttributeError: &lt;span class=&quot;s1&quot;&gt;'ContainerInstanceManagementClient'&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;'container'&lt;/span&gt;
+To open an issue, please run: &lt;span class=&quot;s1&quot;&gt;'az feedback'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It seems the problem is &lt;a href=&quot;https://github.com/Azure/azure-cli/issues/19475&quot;&gt;related to the version of az cli&lt;/a&gt; that I´m using (the last one while typing this post).&lt;/p&gt;
+
+&lt;p&gt;For situations like this, i recommend you to use the &lt;a href=&quot;https://hub.docker.com/_/microsoft-azure-cli&quot;&gt;official docker repo of azure az cli&lt;/a&gt; which easily allows me to use a &lt;a href=&quot;https://mcrflowprodcentralus.data.mcr.microsoft.com/mcrprod/azure-cli?P1=1631287029&amp;amp;P2=1&amp;amp;P3=1&amp;amp;P4=4G2Xm%2FZgSoKLX2W856%2Feoxty3El5gyBaY2xnTS2KpLQ%3D&amp;amp;se=2021-09-10T15%3A17%3A09Z&amp;amp;sig=TDg2ib8Q5JU5FkGlx%2B7YQTXVQCJyPB8jPV6kIPf%2FEcc%3D&amp;amp;sp=r&amp;amp;sr=b&amp;amp;sv=2015-02-21&quot;&gt;specific version of az cli&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;If you have docker installed on your machine you can install the latest version of az cli using the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; mcr.microsoft.com/azure-cli:&amp;lt;version&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE: last version working is 2.27.2&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And that´s it!, as easy as that :)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Sep 2021 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Speaker netCoreConf 2021</title>
+        <link>http://0.0.0.0:4000/2021/08/31/Speaker-netCoreConf-2021.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/08/31/Speaker-netCoreConf-2021.html</guid>
+        <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el próximo evento &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;#netCoreConf&lt;/a&gt; que tendrá lugar en los dias 9 y 10 de Octubre 2021.&lt;/p&gt;
+
+&lt;p&gt;En mi sesión voy a hablar durante 55m de &lt;strong&gt;Deeplearning state-of-the-art aplicado&lt;/strong&gt; donde veremos cómo podemos realizar transfer learning sobre un modelo transformer state of the art como RoBERTa para Named Entity Recognition con nuestro propio dataset, que acabaremos desplegando en kubernetes para poder hacer inferencia como nuestra propia API de AI con FastAPI. La idea es que os quedeis con una alternativa diferente de bajo coste aprovechando Azure VM y AKS para desplegar los modelos que vuestros cientificos de datos acaban dejando típicamente en un python notebook :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jugaremos con Spacy, huggingface, pytorch, python, FastAPI, AKS y terraform :)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-codemotion-2021-2/card.jpg&quot; alt=&quot;card&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Aug 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>How to release memory consumed by vmmem WSL2</title>
@@ -740,107 +805,6 @@ rougify style base16.monokai.dark &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/s
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 30 Mar 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Copying files from docker container to host</title>
-        <link>http://0.0.0.0:4000/2021/03/23/docker-copying-files-from-docker-container-to-host.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/23/docker-copying-files-from-docker-container-to-host.html</guid>
-        <description>&lt;p&gt;Suppose that you are working from a stateless docker container in your dev environment (no mounted volumes) and you ended with some changes in files that you don´t want to loose.&lt;/p&gt;
-
-&lt;p&gt;One easy way to do that is to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker cp&lt;/code&gt; utility to get the data out of the container.&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;h2 id=&quot;search-for-the-container&quot;&gt;Search for the container&lt;/h2&gt;
-
-&lt;p&gt;The first thing to do is to get the id of your container&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; enrique  laptop  ~  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt; docker ps
-CONTAINER ID   IMAGE                            COMMAND                   CREATED       STATUS       PORTS
-       NAMES
-f13dafbb392c   database_frameworktsqldatabase   &lt;span class=&quot;s2&quot;&gt;&quot;/bin/sh -c &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/tmp/da…&quot;&lt;/span&gt;   2 hours ago   Up 2 hours   0.0.0.0:14330-&amp;gt;1433/tcp   database_frameworktsqldatabase_1
-735742e3ff08   tsqlgenerator:dev                &lt;span class=&quot;s2&quot;&gt;&quot;tail -f /dev/null&quot;&lt;/span&gt;       2 hours ago   Up 2 hours
-       TsqlGenerator
- enrique  laptop  ~  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In my case, the container i´m working on right now is the &lt;strong&gt;f13dafbb392c&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;copy-the-file&quot;&gt;Copy the file&lt;/h2&gt;
-
-&lt;p&gt;In my case, I was working from a stateless docker container and during my unit tests i detected some “data” mistakes that I wanted to fix manually (you know…quick fix :). I then ended with a new backup inside a sateless container…so my next thing is to extract that backup out of my container as soon as possible.&lt;/p&gt;
-
-&lt;p&gt;To copy the file, you only need to know:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;ContainerId&lt;/li&gt;
-  &lt;li&gt;full path to file&lt;/li&gt;
-  &lt;li&gt;where you want to extract that file&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker &lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ContainerId&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$fullPathToFile&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$outputDirectory&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;copy-command&quot;&gt;Copy command&lt;/h3&gt;
-
-&lt;p&gt;In our case scenario, the operation will be:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker &lt;span class=&quot;nb&quot;&gt;cp &lt;/span&gt;f13dafbb392c:/var/tmp/CMCalidad-with-data2.bak &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Tue, 23 Mar 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Remote jupyter notebook file root in vscode</title>
-        <link>http://0.0.0.0:4000/2021/03/01/remote-jupyter-notebook-file-root-vscode.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/01/remote-jupyter-notebook-file-root-vscode.html</guid>
-        <description>&lt;p&gt;When we use jupyter extensions in VScode and try to run a line of code that requires context of relative path, the default behaviour in vscode is different that the one we have with jupyter-notebooks. You can easily see this when comparing the output of a pwd command, opening the same notebook connected to the same jupyter notebook server…&lt;/p&gt;
-
-&lt;h2 id=&quot;vscode&quot;&gt;VScode&lt;/h2&gt;
-
-&lt;p&gt;VSCode connected to the same jupyter-notebook server (remote)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/notebook-file-root/vscode-notebook-file-root.png&quot; alt=&quot;vscode-notebook-file-root&quot; /&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;h2 id=&quot;jupyter-notebook-web&quot;&gt;Jupyter-notebook web&lt;/h2&gt;
-
-&lt;p&gt;Jupyter notebook server (same notebook opened from vscode in the same remote server)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/notebook-file-root/jupyter-notebook-file-root.png&quot; alt=&quot;jupyter-notebooks-file-root&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see, the vscode execution fails because it´s trying to open a module that doesn´t found, since it´s searching in the wrong directory.&lt;/p&gt;
-
-&lt;h2 id=&quot;change-vscode-notebook-file-root-behavior&quot;&gt;Change VSCode notebook file root behavior&lt;/h2&gt;
-
-&lt;p&gt;&lt;mark&gt;NOT WORKING FOR REMOTE JUPYTER KERNELS&lt;/mark&gt;&lt;/p&gt;
-
-&lt;p&gt;To make VSCode notebook run as jupyter-notebook server, you need to open settings in VSCode and change “notebook file root”, from &lt;em&gt;${workspaceFolder}&lt;/em&gt; to &lt;em&gt;${fileDirname}&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;So the config file must be like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/notebook-file-root/notebook-file-rootfiledirname.png&quot; alt=&quot;notebook-file-rootfiledirname&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;fix-for-remote-jupyter-kernel-force-the-path-with-python-&quot;&gt;Fix for remote jupyter kernel: Force the path with python :)&lt;/h2&gt;
-
-&lt;p&gt;But the things get complicated when you are dealing with remote jupyter notebooks, because it seems that we &lt;em&gt;still&lt;/em&gt; don´t have any solution. In my case, when I work with tensorflow, I´m always using my prepared tensorflow docker image containing all the libraries and configurations…so this requires me to connect the vscode remotely to the container…and the past solution mentioned earliear doesn´t work :(&lt;/p&gt;
-
-&lt;p&gt;The only solution I was able to use is to manually change the working directory:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chdir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getcwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/tf/notebooks/DNN/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# '.' if the path is to current folder
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#print(os.getcwd())
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: For more info, please check this https://github.com/microsoft/vscode-remote-release/issues/43&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 01 Mar 2021 16:00:00 -0600</pubDate>
       </item>
     
   </channel>
