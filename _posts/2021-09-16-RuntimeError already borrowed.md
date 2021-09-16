@@ -26,6 +26,6 @@ And this is now, with the [transformers](https://pypi.org/project/transformers/)
 
 ![x](/img/posts/runtimeerror-already-borrowed/solved.png)
 
-Near **~2.5x faster and 12x less error rate** :)
+Near **~3x faster and 15x less error rate** :)
 
 Nice!
