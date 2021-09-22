@@ -5,19 +5,19 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 16 Sep 2021 16:40:44 -0500</pubDate>
+    <pubDate>Wed, 22 Sep 2021 10:14:32 -0500</pubDate>
     
       <item>
         <title>RuntimeError: Already borrowed</title>
         <link>http://0.0.0.0:4000/2021/09/15/RuntimeError-already-borrowed.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2021/09/15/RuntimeError-already-borrowed.html</guid>
-        <description>&lt;p&gt;There was a nasty bug in &lt;a href=&quot;https://huggingface.co/&quot;&gt;huggingface’s&lt;/a&gt; &lt;a href=&quot;https://github.com/huggingface/tokenizers&quot;&gt;tokenizers&lt;/a&gt; that caused a random runtime error depending on how you deal with tokenizer and predict when processing your neural network. Since I´m using kubernetes I was able to fix it by allowing the pod to be scheduled again, so I didn´t paid too much attention to it because it was related to the library itself and it was not my code the one that caused the bug.&lt;/p&gt;
+        <description>&lt;p&gt;There was a nasty bug in &lt;a href=&quot;https://huggingface.co/&quot;&gt;huggingface’s&lt;/a&gt; &lt;a href=&quot;https://github.com/huggingface/tokenizers&quot;&gt;tokenizers&lt;/a&gt; that caused a random runtime error depending on how you deal with the tokenizer when processing your neural network in a &lt;strong&gt;multi-threading&lt;/strong&gt; environment. Since I´m using kubernetes I was able to fix it by allowing the pod to be scheduled again, so I didn´t paid too much attention to it because it was related to the library itself and it was not my code the one that caused the bug.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;NOTE: Details &lt;a href=&quot;https://github.com/huggingface/tokenizers/issues/537&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But then, while checking my &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview&quot;&gt;AppInsights&lt;/a&gt; I found something very bad :). I found that the bug that I thought was occurring “sometimes” was happening all the time:&lt;/p&gt;
+&lt;p&gt;But then, while checking my &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview&quot;&gt;AppInsights&lt;/a&gt; I found something very bad :). I found that the bug that I thought was occurring “&lt;em&gt;sometimes&lt;/em&gt;” was happening &lt;strong&gt;all the time&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;p&gt;This is the error rate of my backend with the &lt;a href=&quot;https://pypi.org/project/transformers/&quot;&gt;transformers&lt;/a&gt; version 4.6.0:&lt;/p&gt;
 
@@ -25,7 +25,27 @@
 
 &lt;!--end_excerpt--&gt;
 
-&lt;p&gt;After digging a little bit I found that the container I was using was still using the old version of the library, so I updated it and everything was back to normal (well…I did a couple of new tricks but I think it was still the same problem).&lt;/p&gt;
+&lt;p&gt;After digging a little bit I did a couple of things to improve the performance (none of them required change in my backend code):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Take myself in control of creating the whole image from scratch:
+    &lt;ul&gt;
+      &lt;li&gt;Change the base image from &lt;em&gt;pytorch/pytorch:1.9.0-cuda11.1-cudnn8-runtime&lt;/em&gt; to &lt;em&gt;ubuntu:20.04&lt;/em&gt;
+        &lt;ul&gt;
+          &lt;li&gt;“Official image” is 7.5Gb&lt;/li&gt;
+          &lt;li&gt;“Mine” is 2.7Gb (the one with cpu-only support)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Manually compile pytorch 1.9.0 with/without cuda support depending on my container requirements&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ensure fastapi[all]&amp;gt;=0.68.0&lt;/li&gt;
+  &lt;li&gt;Ensure transformers==4.10.2
+    &lt;ul&gt;
+      &lt;li&gt;This was the one who fixed the bug&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;And this is now, with the &lt;a href=&quot;https://pypi.org/project/transformers/&quot;&gt;transformers&lt;/a&gt; version 4.10.2:&lt;/p&gt;
 

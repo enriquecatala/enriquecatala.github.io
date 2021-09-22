@@ -519,13 +519,13 @@
         </p>
       </header>
       <div class="excerpt">
-        <p>There was a nasty bug in <a href="https://huggingface.co/">huggingface’s</a> <a href="https://github.com/huggingface/tokenizers">tokenizers</a> that caused a random runtime error depending on how you deal with tokenizer and predict when processing your neural network. Since I´m using kubernetes I was able to fix it by allowing the pod to be scheduled again, so I didn´t paid too much attention to it because it was related to the library itself and it was not my code the one that caused the bug.</p>
+        <p>There was a nasty bug in <a href="https://huggingface.co/">huggingface’s</a> <a href="https://github.com/huggingface/tokenizers">tokenizers</a> that caused a random runtime error depending on how you deal with the tokenizer when processing your neural network in a <strong>multi-threading</strong> environment. Since I´m using kubernetes I was able to fix it by allowing the pod to be scheduled again, so I didn´t paid too much attention to it because it was related to the library itself and it was not my code the one that caused the bug.</p>
 
 <blockquote>
   <p>NOTE: Details <a href="https://github.com/huggingface/tokenizers/issues/537">here</a></p>
 </blockquote>
 
-<p>But then, while checking my <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">AppInsights</a> I found something very bad :). I found that the bug that I thought was occurring “sometimes” was happening all the time:</p>
+<p>But then, while checking my <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">AppInsights</a> I found something very bad :). I found that the bug that I thought was occurring “<em>sometimes</em>” was happening <strong>all the time</strong>:</p>
 
 <p>This is the error rate of my backend with the <a href="https://pypi.org/project/transformers/">transformers</a> version 4.6.0:</p>
 
