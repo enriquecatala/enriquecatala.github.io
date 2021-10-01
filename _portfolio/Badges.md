@@ -29,6 +29,12 @@ tags: Portfolio
 <tbody>
   <tr>
     <td>
+        <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-data-scientist/" target="_blank">
+            <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/microsoft-certified-azure-data-scientist-associate.png?raw=true" 
+                 alt="Microsoft Certified: Azure Data Scientist Associate" >
+        </a>
+    </td>
+    <td>
         <a href="https://www.youracclaim.com/badges/0b17b446-3e58-4d13-aa0b-ded041a9260a/public_url" target="_blank">
         <img src="https://images.youracclaim.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png" 
                  alt="CKA: Certified Kubernetes Administrator"
@@ -68,9 +74,7 @@ tags: Portfolio
                  alt="Microsoft Certified Trainer 2020-2021" 
                  >
         </a> 
-    </td>  
-    </tr>  
-    <tr>
+    </td>     
     <td>
         <a href="https://www.youracclaim.com/earner/earned/badge/6f5fcfdf-094a-47da-a25e-9f0bdcb57740" target="_blank">
             <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2018.png" 
@@ -78,6 +82,8 @@ tags: Portfolio
                  >
         </a>
     </td>
+     </tr>  
+    <tr>
     <td>
         <a href="https://www.youracclaim.com/earner/earned/badge/e7a2d04c-0e28-472a-a78e-b6fb431510fe" target="_blank">
             <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2017.png" 
