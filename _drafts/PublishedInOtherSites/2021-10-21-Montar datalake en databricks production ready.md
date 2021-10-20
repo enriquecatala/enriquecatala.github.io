@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Montar datalake en Databricks production ready"
-date:   2021-07-21 00:00:00 +0200
+date:   2021-10-20 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
