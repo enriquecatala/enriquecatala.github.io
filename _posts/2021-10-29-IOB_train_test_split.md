@@ -10,7 +10,14 @@ tags: AI Python
 
 When you work with text data, you often want to split it into training and test sets. This is something very usual in machine learning and also in deep learning´s natural language processing. The problem is that you have to split the data in a way that is consistent with the training and test sets, but at the same time you want to keep your data consistent.
 
+![iob_train_test_split](/img/posts/IOB_train_test_split/train_test.png)
+
+>NOTE: img [source](https://datascience.stackexchange.com/questions/61467/clarification-on-train-test-and-val-and-how-to-use-implement-it)
+
+<!--end_excerpt-->
+
 When working with Named Entity Recognition (NER) you tipically work with IOB format. This is a very common format of tagging words in text data. But this comes with a problem...the data is stored in a very rudimentary and old way...the [IOB format](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning_(tagging)):
+
 
 
 IOB – Inside-Outside-Beginning 
