@@ -367,7 +367,7 @@
 
           
           
-          [<a href="/tag/AI">AI(6)</a>]
+          [<a href="/tag/AI">AI(7)</a>]
 
            
 
@@ -469,7 +469,7 @@
 
           
           
-          [<a href="/tag/Python">Python(2)</a>]
+          [<a href="/tag/Python">Python(3)</a>]
 
            
 
@@ -506,6 +506,75 @@
       </span>
     </div>
 
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2021/09/15/IOB_train_test_split.html">
+            IOB train_test_split
+          </a>
+        </h3>
+        <p class="meta">
+          September 15, 2021
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>When you work with text data, you often want to split it into training and test sets. This is something very usual in machine learning and also in deep learning´s natural language processing. The problem is that you have to split the data in a way that is consistent with the training and test sets, but at the same time you want to keep your data consistent.</p>
+
+<p>When working with Named Entity Recognition (NER) you tipically work with IOB format. This is a very common format of tagging words in text data. But this comes with a problem…the data is stored in a very rudimentary and old way…the <a href="https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning_(tagging)">IOB format</a>:</p>
+
+<p>IOB – Inside-Outside-Beginning</p>
+<ul>
+  <li>B-tag -&gt; token is beginning of a chunk</li>
+  <li>I-tag -&gt;   token is inside a chunk.</li>
+  <li>O-tag -&gt; token belongs to no chunk.</li>
+</ul>
+
+<p>So you basically have a single line per word and each sample (phrase in our case) will be delimited by an empty <em>“\n”</em>.</p>
+
+<pre><code class="language-txt">Last B-DATE
+year I-DATE
+, O
+8.3 B-QUANTITY
+million I-QUANTITY
+passengers O
+flew O
+the O
+airline O
+, O
+down O
+4 B-PERCENT
+percent I-PERCENT
+from O
+2007 B-DATE
+. O
+
+Everyone O
+knows O
+about O
+ADT, B-ORG
+longtime O
+home O
+security O
+system O
+provider O
+in O
+the B-GPE
+U.S. I-GPE
+
+</code></pre>
+
+<p>Here you will find a simple example of how to split a dataset into training and test sets:</p>
+
+<script src="https://gist.github.com/enriquecatala/b7123540d8fae9930ed11ac982038d0c.js"></script>
+
+<p>Enjoy!</p>
+
+        <a class="button" href="/2021/09/15/IOB_train_test_split.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
     
     <div class="post-teaser">
       <header>
@@ -640,31 +709,6 @@ To open an issue, please run: <span class="s1">'az feedback'</span>
 
 
         <a class="button" href="/2021/07/26/release-memory-consumed-by-vmmem.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/07/22/como-desplegar-redes-neuronales-kubernetes-hw-cuda.html">
-            Cómo desplegar redes neuronales en kubernetes con hardware CUDA
-          </a>
-        </h3>
-        <p class="meta">
-          July 22, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Hace unos dias tuve el placer y honor de ser ponente en el evento <a href="https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/">Kubernetes Community Days Spain</a></p>
-
-<p>Aqui te dejo el vídeo de mi sesión, espero que te guste:</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-MaFzqWaRyM?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-
-        <a class="button" href="/2021/07/22/como-desplegar-redes-neuronales-kubernetes-hw-cuda.html">
           Continue reading
         </a>
       </div>

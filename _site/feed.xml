@@ -5,7 +5,65 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Fri, 01 Oct 2021 09:13:31 -0500</pubDate>
+    <pubDate>Fri, 29 Oct 2021 10:17:39 -0500</pubDate>
+    
+      <item>
+        <title>IOB train_test_split</title>
+        <link>http://0.0.0.0:4000/2021/09/15/IOB_train_test_split.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/09/15/IOB_train_test_split.html</guid>
+        <description>&lt;p&gt;When you work with text data, you often want to split it into training and test sets. This is something very usual in machine learning and also in deep learning´s natural language processing. The problem is that you have to split the data in a way that is consistent with the training and test sets, but at the same time you want to keep your data consistent.&lt;/p&gt;
+
+&lt;p&gt;When working with Named Entity Recognition (NER) you tipically work with IOB format. This is a very common format of tagging words in text data. But this comes with a problem…the data is stored in a very rudimentary and old way…the &lt;a href=&quot;https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning_(tagging)&quot;&gt;IOB format&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;IOB – Inside-Outside-Beginning&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;B-tag -&amp;gt; token is beginning of a chunk&lt;/li&gt;
+  &lt;li&gt;I-tag -&amp;gt;   token is inside a chunk.&lt;/li&gt;
+  &lt;li&gt;O-tag -&amp;gt; token belongs to no chunk.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So you basically have a single line per word and each sample (phrase in our case) will be delimited by an empty &lt;em&gt;“\n”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;Last B-DATE
+year I-DATE
+, O
+8.3 B-QUANTITY
+million I-QUANTITY
+passengers O
+flew O
+the O
+airline O
+, O
+down O
+4 B-PERCENT
+percent I-PERCENT
+from O
+2007 B-DATE
+. O
+
+Everyone O
+knows O
+about O
+ADT, B-ORG
+longtime O
+home O
+security O
+system O
+provider O
+in O
+the B-GPE
+U.S. I-GPE
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here you will find a simple example of how to split a dataset into training and test sets:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/enriquecatala/b7123540d8fae9930ed11ac982038d0c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Sep 2021 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>RuntimeError: Already borrowed</title>
@@ -814,23 +872,6 @@ rougify style base16.monokai.dark &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/s
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 08 Apr 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>FastAPI helloworld!</title>
-        <link>http://0.0.0.0:4000/2021/03/31/fastapi-helloworld.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/03/31/fastapi-helloworld.html</guid>
-        <description>&lt;p&gt;He dejado en mi GitHub personal una pequeña API Rest escrita en Python con &lt;a href=&quot;https://fastapi.tiangolo.com/&quot;&gt;FastAPI&lt;/a&gt; que viene bien cuando quieres trastear con networking en Kubernetes. Jugar con tu ingress y ver si hace lo que quieres te resultará mas facil con esto (espero :).&lt;/p&gt;
-
-&lt;p&gt;Aqui la tienes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/enriquecatala/fastapi-helloworld&quot;&gt;FastAPI helloworld&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/enriquecatala/fastapi-helloworld&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 31 Mar 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
