@@ -1,0 +1,1 @@
+Ver lo que he tenido que hacer en ai-in-a-day github. Ver el docker compose
