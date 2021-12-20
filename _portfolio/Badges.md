@@ -12,6 +12,8 @@ tags: Portfolio
 [Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala 
 >For more info, see [about](/about)
 
+> Official [Credly badges](https://www.credly.com/users/enrique-catala-banuls/badges?sort=-state_updated_at&page=1 )
+
 # Linux Foundation Certification
 
 [CKA: Certified Kubernetes Administrator](https://www.youracclaim.com/badges/0b17b446-3e58-4d13-aa0b-ded041a9260a/public_url)

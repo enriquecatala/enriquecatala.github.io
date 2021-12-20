@@ -21,7 +21,7 @@ feature-img: "img/my-youtube-header.png"
 
 | Curriculum Vitae | Microsoft transcript | Cloud Native Certification |
 |-----------------|-----------------|-----------------|
-| [![Download Curriculum Vitae Enrique Catalá Bañuls](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - Europass CV - EN.pdf)           | [Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala  | [CKA: Certified Kubernetes Administrator](https://www.youracclaim.com/badges/0b17b446-3e58-4d13-aa0b-ded041a9260a/public_url) |
+| [![Download Curriculum Vitae Enrique Catalá Bañuls](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - CV - EN - WITHOUT CONTACT DETAILS.pdf)           | [Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala  | [CKA: Certified Kubernetes Administrator](https://www.youracclaim.com/badges/0b17b446-3e58-4d13-aa0b-ded041a9260a/public_url) |
 
 
 # BIO
