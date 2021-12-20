@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 20 Dec 2021 01:33:17 -0600</pubDate>
+    <pubDate>Mon, 20 Dec 2021 08:18:44 -0600</pubDate>
     
       <item>
         <title>IOB train_test_split</title>

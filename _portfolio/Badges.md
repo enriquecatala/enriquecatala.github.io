@@ -46,15 +46,21 @@ tags: Portfolio
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/azure-data-engineer-associate-600x600.png?raw=true" 
                  alt="Microsoft Certified: Azure Data Engineer Associate" >
         </a>
-    </td>   
-     <td>
-        <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-data-fundamentals" target="_blank">
+    </td>       
+     <td>     
+        <a href="https://www.credly.com/earner/earned/badge/86da9e09-9616-4624-9cd9-f76c4b9963a4" target="_blank">
+            <img src="https://images.credly.com/size/340x340/images/edc0b0d8-55ec-4dfe-9353-22c1bc4e07e8/azure-database-administrator-associate-600x600.png" 
+                 alt="Microsoft Certified: Azure Database Administrator" >
+        </a>       
+      </td>
+    </tr>
+   <tr>
+   <td>
+    <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-data-fundamentals" target="_blank">
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/azure-data-fundamentals-600x600.png?raw=true" 
                  alt="Microsoft Certified: Azure Data Fundamentals" >
         </a>
-    </td>
-    </tr>
-   <tr>
+   </td>
     <td>
         <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-data-fundamentals" target="_blank">
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/azure-fundamentals-600x600.png?raw=true" 
@@ -74,7 +80,9 @@ tags: Portfolio
                  alt="Microsoft Certified Trainer 2020-2021" 
                  >
         </a> 
-    </td>     
+    </td>         
+     </tr>  
+    <tr>
     <td>
         <a href="https://www.youracclaim.com/earner/earned/badge/6f5fcfdf-094a-47da-a25e-9f0bdcb57740" target="_blank">
             <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2018.png" 
@@ -82,8 +90,6 @@ tags: Portfolio
                  >
         </a>
     </td>
-     </tr>  
-    <tr>
     <td>
         <a href="https://www.youracclaim.com/earner/earned/badge/e7a2d04c-0e28-472a-a78e-b6fb431510fe" target="_blank">
             <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2017.png" 
