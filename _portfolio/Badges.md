@@ -113,7 +113,10 @@ tags: Portfolio
                  alt="Microsoft Openhack: Containers">
         </a>
   </td>
-  <td> </td>
+  <td> <a href="https://badge.azconf.dev/badge/995d461c-3589-41dd-8698-37cf726ae73d" target="_blank">
+            <img src="https://azconfdev.blob.core.windows.net/azbadges/speaker.png" 
+                 alt="AzConf: speaker">
+        </a> </td>
   <td> </td>
   </tr>
 </tbody>
