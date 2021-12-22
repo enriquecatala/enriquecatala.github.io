@@ -5,7 +5,27 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 20 Dec 2021 08:54:16 -0600</pubDate>
+    <pubDate>Wed, 22 Dec 2021 06:16:06 -0600</pubDate>
+    
+      <item>
+        <title>Speaker Codemotion 2021</title>
+        <link>http://0.0.0.0:4000/2021/12/21/codemotion-speaker-deeplearning-state-of-the-art.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2021/12/21/codemotion-speaker-deeplearning-state-of-the-art.html</guid>
+        <description>&lt;p&gt;I had the pleasure and honor to be speaker in the past &lt;a href=&quot;https://www.codemotion.com/&quot;&gt;codemotion world conference&lt;/a&gt; talking about #DeepLearning and #Azure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tittle:&lt;/strong&gt; Applied Deep Learning state-of-the-art&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; In this session we will see how to do transfer learning over a state-of-the-art pre-trained model like RoBERTa to achieve our own goal in Named Entity Recognition with our own DataSet. We will take and label new data to finally feed the network trying to achieve transfer learning. Then we will make use of the new fine tuned weights and use FastAPI to deploy our new fine tuned model to kubernetes to make inference.&lt;/p&gt;
+
+&lt;p&gt;Here is the video of my talk:&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://talks.codemotion.com/applied-deep-learning-state-of-the-art&quot;&gt;&lt;img src=&quot;/img/posts/codemotion-2021-speaker/codemotion2021speaker.png&quot; alt=&quot;CodemotionSpeaker&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 21 Dec 2021 16:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>IOB train_test_split</title>
@@ -857,29 +877,6 @@ rougify style base16.monokai.dark &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/s
 
 </description>
         <pubDate>Mon, 12 Apr 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cómo instalar Kubernetes con Kubeadm (2/4)</title>
-        <link>http://0.0.0.0:4000/2021/04/08/kubernetes-master-bootstap-kubeadm.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/08/kubernetes-master-bootstap-kubeadm.html</guid>
-        <description>&lt;p&gt;Una vez tenemos ya &lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;preparados nuestros nodos&lt;/a&gt;, ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-bootstrap-cluster-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Posts de la serie:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 08 Apr 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
