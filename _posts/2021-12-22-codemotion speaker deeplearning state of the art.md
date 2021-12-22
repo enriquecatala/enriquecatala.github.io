@@ -5,7 +5,7 @@ date:   2021-12-22 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: AI Python
+tags: AI Python Speaker Azure Dev
 ---
 
 I had the pleasure and honor to be speaker in the past [codemotion world conference](https://www.codemotion.com/) talking about #DeepLearning and #Azure.
