@@ -95,15 +95,12 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp
 ## 3) Instala una fuente de texto adecuada
 
 - Descarga [Cascadia-Code](https://github.com/microsoft/cascadia-code/releases) 
-
-- Descarga las [Nerd fonts](https://ohmyposh.dev/docs/fonts)
-
+- Descarga las [Nerd fonts](https://ohmyposh.dev/docs/configuration/fonts)
 - Instala _CascadiaCodePL.ttf_ 
 
 ![CascadiaCodePL.ttf](/img/posts/pretty-terminal/cascadia-code.png)
 
 - Instala _Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf_
-
 - Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:
 
 ```json 
