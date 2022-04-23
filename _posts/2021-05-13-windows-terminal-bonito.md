@@ -30,36 +30,28 @@ Para powershell
 
 ![x](/img/posts/pretty-terminal/1.png)
 
-### Instala los siguientes módulos
+### Instala oh-my-posh
 
 ```powershell
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+winget install JanDeDobbeleer.OhMyPosh
 ```
 
-Si además utilizas PowerShell Core, activa esto tambien
+Los temas cuelgan por defecto de esta variable _$env:POSH_THEMES_PATH_
+
+### Activa ejecion de powershell firmados remotamente a nivel usuario
 
 ```powershell
-Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-### Activa los módulos por defecto
+### Edita el fichero de powershell de arranque
 
-Para activar los módulos anteriores por defecto al arrancar powershell, ejecuta `notepad $PROFILE` 
-
-![powershell profile](/img/posts/pretty-terminal/notepad.png)
-
-y añadele estas líneas:
+Edita el fichero de arranque de powershell que se encuentra en la variable $PROFILE
 
 ```powershell
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme Paradox
+notepad $PROFILE
 ```
-
-y este es el aspecto que vas a tener ahora:
-
-![pretty-terminal1](/img/posts/pretty-terminal/without-fonts.png)
+añade esta línea `oh-my-posh init pwsh | Invoke-Expression`
 
 ## 3) Configuracion WSL2
 
@@ -104,7 +96,7 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp
 - Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:
 
 ```json 
-"fontFace":  "Cascadia Code PL"
+"fontFace":  "MesloLGS Nerd Font"
 ```
 
 De esta forma, por ejemplo la sección de powershell quedaría algo así:
@@ -115,7 +107,7 @@ De esta forma, por ejemplo la sección de powershell quedaría algo así:
    "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
    "name": "Windows PowerShell",
    "commandline": "powershell.exe",
-   "fontFace": "Cascadia Code PL",
+   "fontFace":  "MesloLGS Nerd Font",
    "hidden": false
 }
 ```
@@ -125,7 +117,7 @@ Tambien puedes hacerlo con el nuevo GUI
 ![settings nerd fonts windows terminal](/img/posts/pretty-terminal/settings-font.png)
 
 
-- Añade en tu visual studio code la siguiente configuración tambien `"terminal.integrated.fontFamily": "Cascadia Code PL"`
+- Añade en tu visual studio code la siguiente configuración tambien `"terminal.integrated.fontFamily": "MesloLGS Nerd Font"`
 
 >NOTA: [Aqui](https://www.nerdfonts.com/) tienes un montón de fuentes que puedes añadir. Solo recuerda utilizar una que tenga soporte para _PowerLine Glyphs_
 
@@ -140,4 +132,7 @@ En este punto, ya deberias ver algo así:
 
 La configuración que estoy utilizando yo es:
 - Fuente _"MesloLGS NF"_
-- Tema _"slim"_
+- Tema personalizado que puedes encontrar como json [aqui](/assets/files/oh-my-posh-v3-v2.json)
+  - basado en el tema _"slim"_
+
+> eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/oh-my-posh-v3-v2.json)"
