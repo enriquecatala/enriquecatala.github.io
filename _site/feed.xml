@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Wed, 12 Jan 2022 11:17:55 -0600</pubDate>
+    <pubDate>Tue, 26 Apr 2022 11:47:33 -0500</pubDate>
     
       <item>
         <title>AzureML from Docker Image</title>
@@ -597,33 +597,25 @@ to PATH &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your /home/enrique/.bash
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/1.png&quot; alt=&quot;x&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;instala-los-siguientes-módulos&quot;&gt;Instala los siguientes módulos&lt;/h3&gt;
+&lt;h3 id=&quot;instala-oh-my-posh&quot;&gt;Instala oh-my-posh&lt;/h3&gt;
 
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Install-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;posh-git&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Install-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;oh-my-posh&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;winget&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;JanDeDobbeleer.OhMyPosh&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Si además utilizas PowerShell Core, activa esto tambien&lt;/p&gt;
+&lt;p&gt;Los temas cuelgan por defecto de esta variable &lt;em&gt;$env:POSH_THEMES_PATH&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Install-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PSReadLine&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-AllowPrerelease&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Force&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-SkipPublisherCheck&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;h3 id=&quot;activa-ejecion-de-powershell-firmados-remotamente-a-nivel-usuario&quot;&gt;Activa ejecion de powershell firmados remotamente a nivel usuario&lt;/h3&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Set-ExecutionPolicy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ExecutionPolicy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;RemoteSigned&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;activa-los-módulos-por-defecto&quot;&gt;Activa los módulos por defecto&lt;/h3&gt;
+&lt;h3 id=&quot;edita-el-fichero-de-powershell-de-arranque&quot;&gt;Edita el fichero de powershell de arranque&lt;/h3&gt;
 
-&lt;p&gt;Para activar los módulos anteriores por defecto al arrancar powershell, ejecuta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;notepad $PROFILE&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Edita el fichero de arranque de powershell que se encuentra en la variable $PROFILE&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/notepad.png&quot; alt=&quot;powershell profile&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;y añadele estas líneas:&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Import-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;posh-git&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Import-Module&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;oh-my-posh&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Set-PoshPrompt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Theme&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Paradox&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;notepad&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;$PROFILE&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;y este es el aspecto que vas a tener ahora:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/without-fonts.png&quot; alt=&quot;pretty-terminal1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;añade esta línea &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oh-my-posh init pwsh | Invoke-Expression&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;3-configuracion-wsl2&quot;&gt;3) Configuracion WSL2&lt;/h2&gt;
 
@@ -658,29 +650,19 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
 &lt;h2 id=&quot;3-instala-una-fuente-de-texto-adecuada&quot;&gt;3) Instala una fuente de texto adecuada&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Descarga &lt;a href=&quot;https://github.com/microsoft/cascadia-code/releases&quot;&gt;Cascadia-Code&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Descarga las &lt;a href=&quot;https://ohmyposh.dev/docs/fonts&quot;&gt;Nerd fonts&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Instala &lt;em&gt;CascadiaCodePL.ttf&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Descarga &lt;a href=&quot;https://github.com/microsoft/cascadia-code/releases&quot;&gt;Cascadia-Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Descarga las &lt;a href=&quot;https://ohmyposh.dev/docs/configuration/fonts&quot;&gt;Nerd fonts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Instala &lt;em&gt;CascadiaCodePL.ttf&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code.png&quot; alt=&quot;CascadiaCodePL.ttf&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Instala &lt;em&gt;Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Instala &lt;em&gt;Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cascadia Code PL&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MesloLGS Nerd Font&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;De esta forma, por ejemplo la sección de powershell quedaría algo así:&lt;/p&gt;
@@ -690,7 +672,7 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;guid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{61c54bbd-c2c6-5271-96e7-009a87ff44bf}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Windows PowerShell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;commandline&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;powershell.exe&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cascadia Code PL&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MesloLGS Nerd Font&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hidden&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -700,7 +682,7 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
 &lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/settings-font.png&quot; alt=&quot;settings nerd fonts windows terminal&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Añade en tu visual studio code la siguiente configuración tambien &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;terminal.integrated.fontFamily&quot;: &quot;Cascadia Code PL&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Añade en tu visual studio code la siguiente configuración tambien &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;terminal.integrated.fontFamily&quot;: &quot;MesloLGS Nerd Font&quot;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -719,8 +701,16 @@ unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; 
 &lt;p&gt;La configuración que estoy utilizando yo es:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Fuente &lt;em&gt;“MesloLGS NF”&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Tema &lt;em&gt;“slim”&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Tema personalizado que puedes encontrar como json &lt;a href=&quot;/assets/files/oh-my-posh-v3-v2.json&quot;&gt;aqui&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;basado en el tema &lt;em&gt;“slim”&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;eval “$(oh-my-posh –init –shell bash –config ~/.poshthemes/oh-my-posh-v3-v2.json)”&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         <pubDate>Wed, 12 May 2021 17:00:00 -0500</pubDate>
       </item>
