@@ -3,9 +3,9 @@ version: '2.2'
 services:
   jekyll:
     image: jekyll/jekyll:4.2.0
-    #command: jekyll serve --watch --force_polling --verbose --safe
+    command: jekyll serve --watch --force_polling --verbose --safe
     # This is useful when you need to update gems https://enriquecatala.com/2020/08/08/githubpages-update-gems.html
-    command: bundle update
+    #command: bundle update
     ports:
       - 4000:4000
     volumes:
