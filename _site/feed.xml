@@ -5,7 +5,26 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 26 Apr 2022 11:51:36 -0500</pubDate>
+    <pubDate>Thu, 26 May 2022 08:42:00 -0500</pubDate>
+    
+      <item>
+        <title>Git credential store in WSL</title>
+        <link>http://0.0.0.0:4000/2022/05/25/Git-credential-store-in-wsl.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2022/05/25/Git-credential-store-in-wsl.html</guid>
+        <description>&lt;p&gt;For me, Windows11 is the best shell of Linux. I´m using it in my home and work and for that reason I´m using WSL2 to run my Linux and dev station (python, scala,…), so there is a trick to avoid the problem of the Git credential store in WSL2. The trick is to configure the credential helper of the git inside WSL2 as the windows11 credential helper.&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;To do this, just run the following command in the terminal or your WSL2 shell:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; credential.helper &lt;span class=&quot;s2&quot;&gt;&quot;/mnt/c/Program&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, you will be storing the same credentials of windows and linux&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 25 May 2022 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>AzureML from Docker Image</title>
@@ -844,29 +863,6 @@ rougify style base16.monokai.dark &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/s
 
 </description>
         <pubDate>Wed, 14 Apr 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cómo instalar Kubernetes con Kubeadm (3/4)</title>
-        <link>http://0.0.0.0:4000/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html</guid>
-        <description>&lt;p&gt;Una vez tenemos ya realizado el &lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;bootstrap del nodo master&lt;/a&gt;, es hora de inicializar nuestros nodos de procesamiento.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/data/kubernetes-instalar-cluster-kubernetes-con-kubeadm/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Posts de la serie:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 12 Apr 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
