@@ -175,6 +175,8 @@
 			
 			
 			
+			
+			
 			<!-- Social icons from Font Awesome, if enabled -->
 			
 
@@ -415,7 +417,7 @@
 
           
           
-          [<a href="/tag/Dev">Dev(9)</a>]
+          [<a href="/tag/Dev">Dev(10)</a>]
 
            
 
@@ -433,7 +435,7 @@
 
           
           
-          [<a href="/tag/GitHub">GitHub(6)</a>]
+          [<a href="/tag/GitHub">GitHub(7)</a>]
 
            
 
@@ -451,7 +453,7 @@
 
           
           
-          [<a href="/tag/OS">OS(6)</a>]
+          [<a href="/tag/OS">OS(7)</a>]
 
            
 
@@ -493,7 +495,7 @@
 
           
           
-          [<a href="/tag/WSL2">WSL2(8)</a>]
+          [<a href="/tag/WSL2">WSL2(9)</a>]
 
            
 
@@ -506,6 +508,27 @@
       </span>
     </div>
 
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2022/05/25/Git-credential-store-in-wsl.html">
+            Git credential store in WSL
+          </a>
+        </h3>
+        <p class="meta">
+          May 25, 2022
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>For me, Windows11 is the best shell of Linux. I´m using it in my home and work and for that reason I´m using WSL2 to run my Linux and dev station (python, scala,…), so there is a trick to avoid the problem of the Git credential store in WSL2. The trick is to configure the credential helper of the git inside WSL2 as the windows11 credential helper.</p>
+
+
+        <a class="button" href="/2022/05/25/Git-credential-store-in-wsl.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
     
     <div class="post-teaser">
       <header>
@@ -608,54 +631,6 @@
 
 
         <a class="button" href="/2021/09/15/RuntimeError-already-borrowed.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/09/09/install-specific-version-az-cli.html">
-            How to use a specific version of az cli
-          </a>
-        </h3>
-        <p class="meta">
-          September 9, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>There are some times when the latest version of az cli is not working. Like for example today while I was trying to debug a container issue running in Azure Container Instances.</p>
-
-<p>I´m getting the following error while trying to connect and check why my container is not working:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~#@❯ az container logs <span class="nt">--resource-group</span> <span class="s2">"InteligenciaAlertasSentinel"</span> <span class="nt">--name</span> detector
-The <span class="nb">command </span>failed with an unexpected error. Here is the traceback:
-<span class="s1">'ContainerInstanceManagementClient'</span> object has no attribute <span class="s1">'container'</span>
-Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/knack/cli.py"</span>, line 231, <span class="k">in </span>invoke
-    cmd_result <span class="o">=</span> self.invocation.execute<span class="o">(</span>args<span class="o">)</span>
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py"</span>, line 657, <span class="k">in </span>execute
-    raise ex
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py"</span>, line 720, <span class="k">in </span>_run_jobs_serially
-    results.append<span class="o">(</span>self._run_job<span class="o">(</span>expanded_arg, cmd_copy<span class="o">))</span>
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py"</span>, line 691, <span class="k">in </span>_run_job
-    result <span class="o">=</span> cmd_copy<span class="o">(</span>params<span class="o">)</span>
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py"</span>, line 328, <span class="k">in </span>__call__
-    <span class="k">return </span>self.handler<span class="o">(</span><span class="k">*</span>args, <span class="k">**</span>kwargs<span class="o">)</span>
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/command_operation.py"</span>, line 112, <span class="k">in </span>handler
-    client <span class="o">=</span> self.client_factory<span class="o">(</span>self.cli_ctx, command_args<span class="o">)</span> <span class="k">if </span>self.client_factory <span class="k">else </span>None
-  File <span class="s2">"/opt/az/lib/python3.6/site-packages/azure/cli/command_modules/container/_client_factory.py"</span>, line 18, <span class="k">in </span>cf_container
-    <span class="k">return </span>_container_instance_client_factory<span class="o">(</span>cli_ctx<span class="o">)</span>.container
-AttributeError: <span class="s1">'ContainerInstanceManagementClient'</span> object has no attribute <span class="s1">'container'</span>
-To open an issue, please run: <span class="s1">'az feedback'</span>
-</code></pre></div></div>
-
-<p>It seems the problem is <a href="https://github.com/Azure/azure-cli/issues/19475">related to the version of az cli</a> that I´m using (the last one while typing this post).</p>
-
-<p>For situations like this, i recommend you to use the <a href="https://hub.docker.com/_/microsoft-azure-cli">official docker repo of azure az cli</a> which easily allows me to use a <a href="https://mcrflowprodcentralus.data.mcr.microsoft.com/mcrprod/azure-cli?P1=1631287029&amp;P2=1&amp;P3=1&amp;P4=4G2Xm%2FZgSoKLX2W856%2Feoxty3El5gyBaY2xnTS2KpLQ%3D&amp;se=2021-09-10T15%3A17%3A09Z&amp;sig=TDg2ib8Q5JU5FkGlx%2B7YQTXVQCJyPB8jPV6kIPf%2FEcc%3D&amp;sp=r&amp;sr=b&amp;sv=2015-02-21">specific version of az cli</a>.</p>
-
-
-        <a class="button" href="/2021/09/09/install-specific-version-az-cli.html">
           Continue reading
         </a>
       </div>
