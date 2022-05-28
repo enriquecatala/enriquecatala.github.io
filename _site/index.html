@@ -126,6 +126,8 @@
 			
 			
 			
+			
+			
 			<li>
 				<a class="page-link" href="/about/">
 					About
@@ -417,7 +419,7 @@
 
           
           
-          [<a href="/tag/Dev">Dev(10)</a>]
+          [<a href="/tag/Dev">Dev(11)</a>]
 
            
 
@@ -453,7 +455,7 @@
 
           
           
-          [<a href="/tag/OS">OS(7)</a>]
+          [<a href="/tag/OS">OS(8)</a>]
 
            
 
@@ -472,6 +474,12 @@
           
           
           [<a href="/tag/Python">Python(5)</a>]
+
+           
+
+          
+          
+          [<a href="/tag/Scala">Scala(1)</a>]
 
            
 
@@ -508,6 +516,28 @@
       </span>
     </div>
 
+    
+    <div class="post-teaser">
+      <header>
+        <h3>
+          <a class="post-link" href="/2022/05/25/HADOOP_HOME-unset.html">
+            java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset
+          </a>
+        </h3>
+        <p class="meta">
+          May 25, 2022
+        </p>
+      </header>
+      <div class="excerpt">
+        <p>If you want to run a spark job in windows that make use of the spark SQL pool, you need to set the HADOOP_HOME and hadoop.home.dir environment variables manually and there is a very quick and easy solution to do this.</p>
+
+<p><a href="https://medium.com/@enriquecatala/java-io-filenotfoundexception-hadoop-home-and-hadoop-home-dir-are-unset-4004d5e05f67">Continua leyendo al artículo original</a></p>
+
+        <a class="button" href="/2022/05/25/HADOOP_HOME-unset.html">
+          Continue reading
+        </a>
+      </div>
+    </div>
     
     <div class="post-teaser">
       <header>
@@ -600,37 +630,6 @@
 
 
         <a class="button" href="/2021/09/15/IOB_train_test_split.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h3>
-          <a class="post-link" href="/2021/09/15/RuntimeError-already-borrowed.html">
-            RuntimeError: Already borrowed
-          </a>
-        </h3>
-        <p class="meta">
-          September 15, 2021
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>There was a nasty bug in <a href="https://huggingface.co/">huggingface’s</a> <a href="https://github.com/huggingface/tokenizers">tokenizers</a> that caused a random runtime error depending on how you deal with the tokenizer when processing your neural network in a <strong>multi-threading</strong> environment. Since I´m using kubernetes I was able to fix it by allowing the pod to be scheduled again, so I didn´t paid too much attention to it because it was related to the library itself and it was not my code the one that caused the bug.</p>
-
-<blockquote>
-  <p>NOTE: Details <a href="https://github.com/huggingface/tokenizers/issues/537">here</a></p>
-</blockquote>
-
-<p>But then, while checking my <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">AppInsights</a> I found something very bad :). I found that the bug that I thought was occurring “<em>sometimes</em>” was happening <strong>all the time</strong>:</p>
-
-<p>This is the error rate of my backend with the <a href="https://pypi.org/project/transformers/">transformers</a> version 4.6.0:</p>
-
-<p><img src="/img/posts/runtimeerror-already-borrowed/buggy.png" alt="x" /></p>
-
-
-        <a class="button" href="/2021/09/15/RuntimeError-already-borrowed.html">
           Continue reading
         </a>
       </div>
