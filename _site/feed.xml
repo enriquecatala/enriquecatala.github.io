@@ -5,7 +5,18 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 26 May 2022 08:42:00 -0500</pubDate>
+    <pubDate>Sat, 28 May 2022 07:01:33 -0500</pubDate>
+    
+      <item>
+        <title>java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset</title>
+        <link>http://0.0.0.0:4000/2022/05/25/HADOOP_HOME-unset.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2022/05/25/HADOOP_HOME-unset.html</guid>
+        <description>&lt;p&gt;If you want to run a spark job in windows that make use of the spark SQL pool, you need to set the HADOOP_HOME and hadoop.home.dir environment variables manually and there is a very quick and easy solution to do this.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@enriquecatala/java-io-filenotfoundexception-hadoop-home-and-hadoop-home-dir-are-unset-4004d5e05f67&quot;&gt;Continua leyendo al artículo original&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 May 2022 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Git credential store in WSL</title>
@@ -829,40 +840,6 @@ rougify style base16.monokai.dark &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/s
 
 </description>
         <pubDate>Mon, 26 Apr 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Libera espacio del fichero ext4.vhdx</title>
-        <link>http://0.0.0.0:4000/2021/04/14/Libera-espacio-del-fichero-ext4.vhdx.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/14/Libera-espacio-del-fichero-ext4.vhdx.html</guid>
-        <description>&lt;p&gt;Si utilizas #wsl2 para desarrollar y acabas generando contenedores grandes, verás crecer fuertemente tu fichero dockerfile donde se almacenan todos esos contenedores. Recientemente he estado trabajando con el modelo &lt;a href=&quot;https://github.com/EleutherAI/gpt-neo/&quot;&gt;GPT-NEO&lt;/a&gt; que tiene la friolera de 10.2Gb de tamaño en pesos de red neuronal…a la que he metido mis propios “artefactos” (dejemoslo ahi :). El caso es que cada etapa de generacion lleba a superar los 15Gb, haciendo que al final de la contienda mover una imagen como esta llegó a menearme 150Gb de disco.&lt;/p&gt;
-
-&lt;p&gt;Llegado el momento de limpiar el asunto me encontré con esto:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Total reclaimed space: 157.7GB
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Y con esto:
-&lt;img src=&quot;/img/posts/clean-ext4vhd/ext4.vhdx.png&quot; alt=&quot;ext4.vhdx&quot; /&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Para liberar el espacio tendras que seguir estos pasos:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Parar docker&lt;/li&gt;
-  &lt;li&gt;Ejecutar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Optimize-VHD -Path c:\path\to\data.vhdx -Mode Full&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Esperar :)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;En mi caso lancé:&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Optimize-VHD&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;C:\Users\ecatala\AppData\Local\Docker\wsl\data\ext4.vhdx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Mode&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Full&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/clean-ext4vhd/ext4.vhdx-2.png&quot; alt=&quot;ext4.vhdx-2&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 14 Apr 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
