@@ -5,7 +5,55 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Thu, 06 Oct 2022 12:30:25 -0500</pubDate>
+    <pubDate>Tue, 25 Oct 2022 16:25:15 -0500</pubDate>
+    
+      <item>
+        <title>fastapi-ai-template</title>
+        <link>http://0.0.0.0:4000/2022/10/24/fastapi-ai-template.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2022/10/24/fastapi-ai-template.html</guid>
+        <description>&lt;p&gt;FastAPI is a great choice in order to deploy RESTApi with python. Its fast, easy and powerful, and something to check if you work deploying AI models for real-time inferencing in kubernetes.&lt;/p&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@enriquecatala/fastapi-ai-template-c46a8c5ed3fc&quot;&gt;Read more…&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 24 Oct 2022 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Despliega tu red neuronal con FastAPI en kubernetes</title>
+        <link>http://0.0.0.0:4000/2022/10/04/despliega-red-neuronal-fastapi-kubernetes.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2022/10/04/despliega-red-neuronal-fastapi-kubernetes.html</guid>
+        <description>&lt;p&gt;Hace unos dias tuve el placer y honor de ser ponente en el evento &lt;a href=&quot;https://2022.es.pycon.org/&quot;&gt;PyCon2022&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui te dejo el vídeo de mi sesión, espero que te guste:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kTjBsHFGTBU?start=1&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Y este es el abstract de la sesión:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;FastAPI es una excelente elección a la hora de desplegar RESTApi. En esta sesión vamos a ver cómo podemos generar soluciones de despliegue de redes neuronales con FastAPI production ready. Veremos cómo hacer nuestra solución, poder depurarla usando docker y visual studio code y cómo desplegarlas con helm en nuestros clusteres kubernetes. Si te gusta el mix AI, python y kubernetes, esta es tu sesión.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Oct 2022 17:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Mesa redonda: Inteligencia Artificial. Su expansión en los negocios y en la educación</title>
+        <link>http://0.0.0.0:4000/2022/10/02/mesa-redonda-ia-negocios-educacion.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2022/10/02/mesa-redonda-ia-negocios-educacion.html</guid>
+        <description>&lt;p&gt;Aqui te dejo la grabación de la interesante mesa redonda sobre Inteligencia Artificial y su impacto en negocios y educación.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JIhX_fC0WWY?start=1372&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Espero que te guste&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Oct 2022 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset</title>
@@ -598,248 +646,6 @@ to PATH &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your /home/enrique/.bash
 &lt;p&gt;&lt;a href=&quot;https://training.solidq.com/es/course/curso-administracion-kubernetes/&quot;&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/banner-curso-administracion-kubernetes.png&quot; alt=&quot;curso admistracion 0-100&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 May 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Windows Terminal bonito</title>
-        <link>http://0.0.0.0:4000/2021/05/12/windows-terminal-bonito.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/12/windows-terminal-bonito.html</guid>
-        <description>&lt;p&gt;Si usas &lt;a href=&quot;https://github.com/microsoft/terminal&quot;&gt;Windows Terminal&lt;/a&gt; y tiras mucha linea de comando, en este post vamos a ver cómo hacer que nuestro terminal se vea estupendamente :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code2.png&quot; alt=&quot;cascadia code PL&quot; /&gt;
-&lt;img src=&quot;/img/posts/pretty-terminal/nerdfonts.png&quot; alt=&quot;nerd fonts&quot; /&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTA: Post basado en &lt;a href=&quot;https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh&quot;&gt;How to make a pretty prompt in Windows Terminal&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;1-instala-windows-terminal&quot;&gt;1) Instala Windows Terminal&lt;/h2&gt;
-
-&lt;p&gt;Descargalo de &lt;a href=&quot;https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-configuracion-powershell&quot;&gt;2) Configuracion PowerShell&lt;/h2&gt;
-
-&lt;p&gt;Para powershell&lt;/p&gt;
-
-&lt;h3 id=&quot;abre-una-ventana-powershell&quot;&gt;Abre una ventana powershell&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/1.png&quot; alt=&quot;x&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;instala-oh-my-posh&quot;&gt;Instala oh-my-posh&lt;/h3&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;winget&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;JanDeDobbeleer.OhMyPosh&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Los temas cuelgan por defecto de esta variable &lt;em&gt;$env:POSH_THEMES_PATH&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;activa-ejecion-de-powershell-firmados-remotamente-a-nivel-usuario&quot;&gt;Activa ejecion de powershell firmados remotamente a nivel usuario&lt;/h3&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Set-ExecutionPolicy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ExecutionPolicy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;RemoteSigned&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CurrentUser&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;edita-el-fichero-de-powershell-de-arranque&quot;&gt;Edita el fichero de powershell de arranque&lt;/h3&gt;
-
-&lt;p&gt;Edita el fichero de arranque de powershell que se encuentra en la variable $PROFILE&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;notepad&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;$PROFILE&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;añade esta línea &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oh-my-posh init pwsh | Invoke-Expression&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-configuracion-wsl2&quot;&gt;3) Configuracion WSL2&lt;/h2&gt;
-
-&lt;p&gt;Toca ahora el turno de tu distro favorita. En mi caso uso Ubuntu y la forma de activarlo es:&lt;/p&gt;
-
-&lt;h3 id=&quot;instalar-oh-my-posh&quot;&gt;Instalar oh-my-posh&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; /usr/local/bin/oh-my-posh
-&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; +x /usr/local/bin/oh-my-posh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;descargar-los-temas&quot;&gt;Descargar los &lt;a href=&quot;https://ohmyposh.dev/docs/themes/&quot;&gt;temas&lt;/a&gt;&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; ~/.poshthemes
-wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; ~/.poshthemes/themes.zip
-unzip ~/.poshthemes/themes.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; ~/.poshthemes
-&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;u+rw ~/.poshthemes/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.json
-&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ~/.poshthemes/themes.zip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;activar-el-tema&quot;&gt;Activar el tema&lt;/h3&gt;
-
-&lt;p&gt;Edita tu fichero &lt;em&gt;~/.bashrc&lt;/em&gt; y añade la siguiente línea:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;oh-my-posh &lt;span class=&quot;nt&quot;&gt;--init&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--shell&lt;/span&gt; bash &lt;span class=&quot;nt&quot;&gt;--config&lt;/span&gt; ~/.poshthemes/jandedobbeleer.omp.json&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTA: Elige tu &lt;a href=&quot;https://ohmyposh.dev/docs/themes/&quot;&gt;tema&lt;/a&gt;. En la imagen ves el de &lt;em&gt;jandedobbeleer&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;3-instala-una-fuente-de-texto-adecuada&quot;&gt;3) Instala una fuente de texto adecuada&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Descarga &lt;a href=&quot;https://github.com/microsoft/cascadia-code/releases&quot;&gt;Cascadia-Code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Descarga las &lt;a href=&quot;https://ohmyposh.dev/docs/configuration/fonts&quot;&gt;Nerd fonts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Instala &lt;em&gt;CascadiaCodePL.ttf&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code.png&quot; alt=&quot;CascadiaCodePL.ttf&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Instala &lt;em&gt;Meslo LG S Regular Nerd Font Complete Windows Compatible.ttf&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Añade en el fichero Settings.json de Windows Terminal la siguiente propiedad:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MesloLGS Nerd Font&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;De esta forma, por ejemplo la sección de powershell quedaría algo así:&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Make&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;changes&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;here&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;powershell.exe&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;profile.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;guid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{61c54bbd-c2c6-5271-96e7-009a87ff44bf}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Windows PowerShell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;commandline&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;powershell.exe&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fontFace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MesloLGS Nerd Font&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hidden&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Tambien puedes hacerlo con el nuevo GUI&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/settings-font.png&quot; alt=&quot;settings nerd fonts windows terminal&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Añade en tu visual studio code la siguiente configuración tambien &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;terminal.integrated.fontFamily&quot;: &quot;MesloLGS Nerd Font&quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTA: &lt;a href=&quot;https://www.nerdfonts.com/&quot;&gt;Aqui&lt;/a&gt; tienes un montón de fuentes que puedes añadir. Solo recuerda utilizar una que tenga soporte para &lt;em&gt;PowerLine Glyphs&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En este punto, ya deberias ver algo así:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/cascadia-code2.png&quot; alt=&quot;cascadia code PL&quot; /&gt;
-&lt;img src=&quot;/img/posts/pretty-terminal/nerdfonts.png&quot; alt=&quot;nerd fonts&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/pretty-terminal/visual_studio_pretty_terminal.png&quot; alt=&quot;code-pretty-terminal&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;mi-configuración&quot;&gt;Mi configuración&lt;/h2&gt;
-
-&lt;p&gt;La configuración que estoy utilizando yo es:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Fuente &lt;em&gt;“MesloLGS NF”&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Tema personalizado que puedes encontrar como json &lt;a href=&quot;/assets/files/oh-my-posh-v3-v2.json&quot;&gt;aqui&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;basado en el tema &lt;em&gt;“slim”&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;eval “$(oh-my-posh –init –shell bash –config ~/.poshthemes/oh-my-posh-v3-v2.json)”&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Wed, 12 May 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cute highlighting for code-snippets in GitHub pages</title>
-        <link>http://0.0.0.0:4000/2021/05/09/cute-highlighting-code-snippets-github-pages.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/09/cute-highlighting-code-snippets-github-pages.html</guid>
-        <description>&lt;p&gt;A long time ago I switched my personal blog to &lt;a href=&quot;https://enriquecatala.com/2020/05/28/Creating-my-new-blog-with-Jekyll.html&quot;&gt;GitHub Pages&lt;/a&gt;. In this post I want to share with you how easy is to change the look and feel of your code snippets.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: Please go and read how to &lt;a href=&quot;https://enriquecatala.com/2020/05/28/Creating-my-new-blog-with-Jekyll.html&quot;&gt;configure your blog with GitHub Pages&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;h2 id=&quot;1-integrate-kramdown-and-rouge&quot;&gt;1) Integrate kramdown and rouge&lt;/h2&gt;
-
-&lt;p&gt;The first thing to do is to configure kramdown and rouge via the Gemfile. To do so, you only need to add the following lines to your &lt;em&gt;Gemfile&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-gem&quot;&gt; gem &quot;kramdown&quot;, &quot;&amp;gt;= 2.3.1&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: you can check mine &lt;a href=&quot;https://github.com/enriquecatala/enriquecatala.github.io/blob/master/Gemfile&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-configure&quot;&gt;2) Configure&lt;/h2&gt;
-
-&lt;p&gt;Next thing to do is to configure your theme to use kramdown.&lt;/p&gt;
-
-&lt;p&gt;Go and edit your &lt;a href=&quot;https://github.com/enriquecatala/enriquecatala.github.io/blob/master/_config.yml&quot;&gt;_config.yml&lt;/a&gt; file and add the following&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;# BUILD SETTINGS&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kramdown&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;kramdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;GFM&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;syntax_highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rouge&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;3-check-your-own-style&quot;&gt;3) Check your own style&lt;/h2&gt;
-
-&lt;p&gt;There are a few syntax hightlighters that you can use. Now it´s time to check them and select the one that you like the most.&lt;/p&gt;
-
-&lt;p&gt;Go to this nice &lt;a href=&quot;https://spsarolkar.github.io/rouge-theme-preview/&quot;&gt;demo page&lt;/a&gt; and take a look :)&lt;/p&gt;
-
-&lt;h2 id=&quot;4-generate-your-template&quot;&gt;4) Generate your template&lt;/h2&gt;
-
-&lt;p&gt;After knowing the one that you want to use, now it´s time to generate the .css template. Suppose that you liked the &lt;em&gt;“base16.monokai.dark”&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install rougify&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby-rouge
-&lt;span class=&quot;c&quot;&gt;# Go to the folder where you have your css templates&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /your/css/template/for/jekyll/css/
-&lt;span class=&quot;c&quot;&gt;# Generate the template&lt;/span&gt;
-rougify style base16.monokai.dark &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; base16.monokai.dark.scss
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;5-setup-highlighter&quot;&gt;5) Setup highlighter&lt;/h2&gt;
-
-&lt;p&gt;To activate the css, you need to open your &lt;em&gt;main.scss&lt;/em&gt; and include the relative path to load the file:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;kramdown&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'kramdown/base16monokaidark'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: You can see how I did in my own blog &lt;a href=&quot;https://github.com/enriquecatala/enriquecatala.github.io/blob/master/css/main.scss&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;6-use-it&quot;&gt;6) Use it!&lt;/h2&gt;
-
-&lt;p&gt;To use the code in your post, you only need to include in markdown the “code” section, inlcuding the language you are using. Nothing else :)&lt;/p&gt;
-
-&lt;p&gt;You can check a post example &lt;a href=&quot;https://enriquecatala.com/2021/03/01/remote-jupyter-notebook-file-root-vscode.html&quot;&gt;here&lt;/a&gt;, with the real &lt;a href=&quot;https://github.com/enriquecatala/enriquecatala.github.io/blob/master/_posts/2021-03-02-remote%20jupyter%20notebook%20file%20root%20vscode.md&quot;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 09 May 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cómo instalar Kubernetes con Kubeadm (4/4)</title>
-        <link>http://0.0.0.0:4000/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html</guid>
-        <description>&lt;p&gt;Una vez tenemos ya &lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;nuestro cluster kubernetes con kubeadm terminado&lt;/a&gt;, es hora de añadir una capa de persistencia para poder utilizar despliegues stateful.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogvisionarios.com/e-learning/cloud/como-anadir-storage-server-cluster-kubernetes/&quot;&gt;&lt;img src=&quot;/img/posts/kubeadm/arc.png&quot; alt=&quot;kubeadm&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Accede al documento completo &lt;a href=&quot;https://blogvisionarios.com/e-learning/cloud/como-anadir-storage-server-cluster-kubernetes/&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Posts de la serie:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html&quot;&gt;1/4: Preparar los nodos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html&quot;&gt;2/4: Bootstrap de master&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/12/kubernetes-inicializar-nodos-procesamiento.html&quot;&gt;3/4: Añadir nodos de procesamiento&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://enriquecatala.com/2021/04/26/kubernetes-a%C3%B1adir-persistencia.html&quot;&gt;4/4: Añadir storage server a nuestro cluster kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 26 Apr 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
