@@ -5,7 +5,26 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 25 Oct 2022 16:41:37 -0500</pubDate>
+    <pubDate>Tue, 20 Dec 2022 11:07:28 -0600</pubDate>
+    
+      <item>
+        <title>Ingestando datos con cabeza</title>
+        <link>http://0.0.0.0:4000/2022/12/19/ingestando-datos-con-cabeza.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2022/12/19/ingestando-datos-con-cabeza.html</guid>
+        <description>&lt;p&gt;Hace unos dias tuve el placer y honor de ser ponente en el evento &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;NetCoreConf Madrid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui te dejo el vídeo de mi sesión, espero que te guste:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/f3GID7QNY4I?start=26&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;Y este es el abstract de la sesión:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Imagina que pudieras crear una arquitectura de ingesta de datos que te permitiese ser explotada en tiempo real o en batch a voluntad, preparada para equipos de IA (datos ultralimpios y versionados), que escalara sin límites y que además no tuvieras que preocuparte de limpiar los datos porque es literalmente imposible ingestar basura. ¿Te parece algo imposible? Vente que te voy a contar algunos secretos :)&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 19 Dec 2022 16:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>fastapi-ai-template</title>
@@ -621,31 +640,6 @@ to PATH &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your /home/enrique/.bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 14 May 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Speaker Kubernetes Community Days Spain</title>
-        <link>http://0.0.0.0:4000/2021/05/13/Speaker-Kubernetes-Spanish-Day.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/05/13/Speaker-Kubernetes-Spanish-Day.html</guid>
-        <description>&lt;p&gt;Tengo el placer y el honor de ser ponente en el próximo evento &lt;a href=&quot;https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/&quot;&gt;Kubernetes Community Days Spain&lt;/a&gt; que tendrá lugar en los dias 7 a 9 de Junio 2021 y que está organizado por &lt;a href=&quot;https://twitter.com/KCDSpain&quot;&gt;@KCDSpain&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;En mi sesión voy a hablar sobre &lt;strong&gt;Cómo desplegar redes neuronales en kubernetes con HW cuda&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/pods.png&quot; alt=&quot;demo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Y este es el abstract de la sesión:&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;&lt;em&gt;Kubernetes es la plataforma ideal para desplegar modelos deeplearning. Nos permite escalar nuestas redes en multiples pods y nodos, añadir soporte para hardware específico facilmente y además poder utilizar cualquier nube ya sea de forma pública o privada para nuestros modelos. En esta sesión vamos a ver cómo podemos montar nuestros propios contenedores con FastAPI, desplegarlos en nuestro propio cluster, cómo consumirlos y cómo preparar nuestra propia infraestructura para producción.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Un placer coincidir con tanto crack!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://training.solidq.com/es/course/curso-administracion-kubernetes/&quot;&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/banner-curso-administracion-kubernetes.png&quot; alt=&quot;curso admistracion 0-100&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 13 May 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
