@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Global Power Platform Boocamp 2023 Alicante"
-date:   2023-02-21 00:00:00 +0200
+date:   2023-02-10 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
