@@ -5,7 +5,29 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Sat, 14 Jan 2023 11:04:46 -0600</pubDate>
+    <pubDate>Tue, 21 Feb 2023 04:56:25 -0600</pubDate>
+    
+      <item>
+        <title>Global Power Platform Boocamp 2023 Alicante</title>
+        <link>http://0.0.0.0:4000/2023/02/20/Global-Power-Platform-2023-Alicante.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2023/02/20/Global-Power-Platform-2023-Alicante.html</guid>
+        <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el evento &lt;a href=&quot;https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857&quot;&gt;Global Power Platform Bootcamp 2023
+&lt;/a&gt; donde hablaré de cómo hacer BigData en una gran compañia como en la que estoy desempeñando actualmente las labores de Data Arquitect.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;a href=&quot;https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/posts/global_power_platform_2023/Agenda%20Power%20Platform%20Bootcamp%202023.png&quot; alt=&quot;Global Power Platform Bootcamp 2023&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Imagina que pudieras crear una arquitectura de ingesta de datos que te permitiese ser explotada en tiempo real o en batch a voluntad, preparada para equipos de IA (datos ultralimpios y versionados), que escalara sin límites y que además no tuvieras que preocuparte de limpiar los datos porque es literalmente imposible ingestar basura. ¿Te parece algo imposible? Vente que te voy a contar algunos secretos :)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857&quot;&gt;¿Te vienes?&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Feb 2023 16:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>10 performance powerbi tips</title>
@@ -366,27 +388,6 @@ To open an issue, please run: &lt;span class=&quot;s1&quot;&gt;'az feedback'&lt;
 &lt;p&gt;&lt;img src=&quot;/img/posts/vmmem-taking-too-much-memory/vmmem3.png&quot; alt=&quot;vmmem3&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Jul 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Cómo desplegar redes neuronales en kubernetes con hardware CUDA</title>
-        <link>http://0.0.0.0:4000/2021/07/22/como-desplegar-redes-neuronales-kubernetes-hw-cuda.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/07/22/como-desplegar-redes-neuronales-kubernetes-hw-cuda.html</guid>
-        <description>&lt;p&gt;Hace unos dias tuve el placer y honor de ser ponente en el evento &lt;a href=&quot;https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/&quot;&gt;Kubernetes Community Days Spain&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Aqui te dejo el vídeo de mi sesión, espero que te guste:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-MaFzqWaRyM?start=14&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;Y este es el abstract de la sesión:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Kubernetes es la plataforma ideal para desplegar modelos deeplearning. Nos permite escalar nuestas redes en multiples pods y nodos, añadir soporte para hardware específico facilmente y además poder utilizar cualquier nube ya sea de forma pública o privada para nuestros modelos. En esta sesión vamos a ver cómo podemos montar nuestros propios contenedores con FastAPI, desplegarlos en nuestro propio cluster, cómo consumirlos y cómo preparar nuestra propia infraestructura para producción.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 22 Jul 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
