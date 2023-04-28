@@ -5,12 +5,12 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 21 Feb 2023 04:56:25 -0600</pubDate>
+    <pubDate>Fri, 28 Apr 2023 07:48:16 -0500</pubDate>
     
       <item>
         <title>Global Power Platform Boocamp 2023 Alicante</title>
-        <link>http://0.0.0.0:4000/2023/02/20/Global-Power-Platform-2023-Alicante.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2023/02/20/Global-Power-Platform-2023-Alicante.html</guid>
+        <link>http://0.0.0.0:4000/2023/02/09/Global-Power-Platform-2023-Alicante.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2023/02/09/Global-Power-Platform-2023-Alicante.html</guid>
         <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el evento &lt;a href=&quot;https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857&quot;&gt;Global Power Platform Bootcamp 2023
 &lt;/a&gt; donde hablaré de cómo hacer BigData en una gran compañia como en la que estoy desempeñando actualmente las labores de Data Arquitect.&lt;/p&gt;
 
@@ -26,7 +26,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857&quot;&gt;¿Te vienes?&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Feb 2023 16:00:00 -0600</pubDate>
+        <pubDate>Thu, 09 Feb 2023 16:00:00 -0600</pubDate>
       </item>
     
       <item>
