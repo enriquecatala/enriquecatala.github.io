@@ -8,14 +8,13 @@ excerpt_separator: <!--end_excerpt-->
 tags: Speaker Azure Databricks Kubernetes Cloud Dev AI DataPlatform Performance Speaker YouTube
 ---
 
-Hace unos dias tuve el placer y honor de ser ponente en el evento [NetCoreConf Madrid](https://netcoreconf.com/) 
+"A few days ago, I had the pleasure and honor of being a speaker at the [NetCoreConf Madrid](https://netcoreconf.com/) event."
 
-Aqui te dejo el vídeo de mi sesión, espero que te guste: 
+Here is the video of my session, I hope you like it:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f3GID7QNY4I?start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!--end_excerpt-->
 
-Y este es el abstract de la sesión:
+This is the abstract of the session:
 
-_Imagina que pudieras crear una arquitectura de ingesta de datos que te permitiese ser explotada en tiempo real o en batch a voluntad, preparada para equipos de IA (datos ultralimpios y versionados), que escalara sin límites y que además no tuvieras que preocuparte de limpiar los datos porque es literalmente imposible ingestar basura. ¿Te parece algo imposible? Vente que te voy a contar algunos secretos :)_
-
+_Imagine if you could create a data ingestion architecture that allows you to exploit it in real-time or in batch at will, prepared for AI teams (ultra-clean and versioned data), that scales without limits, and where you don't have to worry about cleaning the data because it's literally impossible to ingest garbage. Does it seem impossible to you? Come over, and I'll share some secrets with you :)_

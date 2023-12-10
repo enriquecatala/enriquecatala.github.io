@@ -8,9 +8,9 @@ excerpt_separator: <!--end_excerpt-->
 tags: Speaker DataPlatform
 ---
 
-Tengo el placer y honor de ser ponente en el evento [CloudX Summit](https://www.stackit.de/en/cloudxsummit/) que se celebrará los próximos 26 a 28 de Junio 2023, donde tendré el gusto de presentar speach tanto con el CEO de SCRM tanto como con el Chief Architect.
+I have the pleasure and honor of being a speaker at the [CloudX Summit](https://www.stackit.de/en/cloudxsummit/) event, which will be held from June 26 to 28, 2023. I will have the pleasure of presenting a speech alongside the CEO of SCRM and the Chief Architect.
 
-En la sesión titulada "How to build and run one of Europe´s biggest Loayalty Programs" vamos a ver...pues eso mismo :). En lo que me toca a mi, enseñaré cómo hacemos streaming data ingestion a escala.
+In the session titled "How to build and run one of Europe's biggest Loyalty Programs," we will see... just that :). As for my part, I will show how we do streaming data ingestion at scale.
 
 <div style="text-align: center">
 <a href = "https://www.stackit.de/en/cloudxsummit/" target="_blank"><img src="/img/posts/stackit/cloudxsummit.png" alt="Cloud X Summit" width="70%"></a>

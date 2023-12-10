@@ -43,7 +43,7 @@ theme_settings:
   youtube: "enriquecatala"
 
   # Scripts
-  google_analytics: UA-169893411-1
+  google_analytics: G-5RCLKQTVGV
   disqus_shortname: enriquecatala
   katex: true # Enable if using math markup
 
