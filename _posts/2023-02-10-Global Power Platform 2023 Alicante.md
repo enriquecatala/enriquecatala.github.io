@@ -8,14 +8,14 @@ excerpt_separator: <!--end_excerpt-->
 tags: Speaker Azure PowerBI Dev Performance Databricks DataPlatform
 ---
 
-Tengo el placer y honor de ser ponente en el evento [Global Power Platform Bootcamp 2023
-](https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857) donde hablaré de cómo hacer BigData en una gran compañia como en la que estoy desempeñando actualmente las labores de Data Arquitect. 
+I have the pleasure and honor of being a speaker at the [Global Power Platform Bootcamp 2023
+](https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857) event where I will talk about how to handle Big Data in a large company like the one where I am currently working as a Data Architect.
 
 <div style="text-align: center">
 <a href = "https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857" target="_blank"><img src="/img/posts/global_power_platform_2023/Agenda%20Power%20Platform%20Bootcamp%202023.png" alt="Global Power Platform Bootcamp 2023" width="70%"></a>
 </div>
 
->_Imagina que pudieras crear una arquitectura de ingesta de datos que te permitiese ser explotada en tiempo real o en batch a voluntad, preparada para equipos de IA (datos ultralimpios y versionados), que escalara sin límites y que además no tuvieras que preocuparte de limpiar los datos porque es literalmente imposible ingestar basura. ¿Te parece algo imposible? Vente que te voy a contar algunos secretos :)_
+>_Imagine if you could create a data ingestion architecture that allows you to exploit it in real-time or in batch at will, prepared for AI teams (ultra-clean and versioned data), that scales without limits, and where you don't have to worry about cleaning the data because it's literally impossible to ingest garbage. Does it seem impossible to you? Come over, and I'll share some secrets with you :)_
 
 
 <!--end_excerpt-->
