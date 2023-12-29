@@ -3,11 +3,11 @@ layout: post
 title: Videos de algunas de mis conferencias públicas
 feature-img: "img/my-youtube-header.png"
 thumbnail-path: "/img/icons/teaching-75x75.png"
-short-description: Conferencias públicas
+short-description: Public conferences
 tags: Portfolio
 ---
 
-## Mis conferencias publicas
+## My public conferences
 
 [Conferencias públicas](
 https://www.youtube.com/watch?v=PDbE4gQisYI&list=PLXXExoAK--GI5TDbfPC8h6rLLuNZS80Le)

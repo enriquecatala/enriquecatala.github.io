@@ -19,10 +19,11 @@ layout: default
   {% endif %}
 
   <div class="work">
-    <h2>My Work</h2>
+    <h2>Portfolio</h2>
     <div>
       <ul>
-    {% for project in site.portfolio limit:7 %}
+    {% assign sorted_portfolio = site.portfolio | sort: 'title' %}
+    {% for project in sorted_portfolio limit:8 %}
         <li>
           <div>
             <a href="{{ project.url }}"><img src="{{ project.thumbnail-path }}" alt="{{ project.title }}" title="{{ project.title }}"/></a>
@@ -41,7 +42,7 @@ layout: default
 
  
   <div class="posts">
-    <h2>My Posts</h2>
+    <h2>Posts</h2>
 
     <div class="tags">
       <span>
