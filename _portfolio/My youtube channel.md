@@ -8,14 +8,14 @@ tags: Portfolio
 redirect_to: https://www.youtube.com/user/enriquecatala
 ---
 
-## Mi canal Youtube 
+## My youtube channel
 
 <script src="https://apis.google.com/js/platform.js"></script>
 <div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
 
 [youtube.com/enriquecatala](https://www.youtube.com/user/enriquecatala)
 
-## Mis conferencias publicas
+## My public conferences
 
-[Conferencias públicas](
+[Public conferences](
 https://www.youtube.com/watch?v=PDbE4gQisYI&list=PLXXExoAK--GI5TDbfPC8h6rLLuNZS80Le)

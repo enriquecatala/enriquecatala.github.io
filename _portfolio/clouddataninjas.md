@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Badges
-feature-img: "img/sample_feature_blue.png"
-thumbnail-path: "/img/icons/microsoft-certified-associate-badge-75x75.png"
-short-description: Exam badges earned
+title: Cloud Data Ninjas
+feature-img: "img/icons/ninja_pose.png"
+thumbnail-path: "img/icons/ninja_pose-75x75.png"
+short-description: Cloud Data Ninjas website
 tags: Portfolio
+redirect_to: https://www.clouddataninjas.com
 ---
 
 # Microsoft transcript 
@@ -20,7 +21,7 @@ tags: Portfolio
 
 # Certifications
 <div style="text-align:center;">
-<a href="https://www.credly.com/badges/cde0dbd2-8d03-4ca7-8284-d471d65d0e5f" target="_blank">
+<a href="https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala" target="_blank">
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/icons/MVP_Logo_horizontal.png?raw=true" 
                  alt="Microsoft DataPlatform MVP Enrique Catalá"
                  width ="70%" >

@@ -5,6 +5,8 @@ feature-img: "img/sample_feature_blue.png"
 thumbnail-path: "/img/icons/sqlserver-75x75.png"
 short-description: SQL Server docker image with all sample databases
 tags: Portfolio
+redirect_to: https://github.com/enriquecatala/mssql-server-samplesdb
+
 ---
 # [mssql-server-samplesdb](https://github.com/enriquecatala/mssql-server-samplesdb)
 
