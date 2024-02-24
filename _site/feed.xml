@@ -5,7 +5,7 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Sat, 20 Jan 2024 06:30:56 -0600</pubDate>
+    <pubDate>Sat, 24 Feb 2024 07:16:32 -0600</pubDate>
     
       <item>
         <title>Speaking at StackIT´s CloudX summit</title>
@@ -324,7 +324,7 @@ U.S. I-GPE
 &lt;p&gt;I´m getting the following error while trying to connect and check why my container is not working:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~#@❯ az container logs &lt;span class=&quot;nt&quot;&gt;--resource-group&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;InteligenciaAlertasSentinel&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; detector
 The &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;failed with an unexpected error. Here is the traceback:
-&lt;span class=&quot;s1&quot;&gt;'ContainerInstanceManagementClient'&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;'container'&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;&apos;ContainerInstanceManagementClient&apos;&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;&apos;container&apos;&lt;/span&gt;
 Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
   File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/knack/cli.py&quot;&lt;/span&gt;, line 231, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;invoke
     cmd_result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; self.invocation.execute&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -340,8 +340,8 @@ Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt
     client &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; self.client_factory&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;self.cli_ctx, command_args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;self.client_factory &lt;span class=&quot;k&quot;&gt;else &lt;/span&gt;None
   File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/command_modules/container/_client_factory.py&quot;&lt;/span&gt;, line 18, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;cf_container
     &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;_container_instance_client_factory&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli_ctx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.container
-AttributeError: &lt;span class=&quot;s1&quot;&gt;'ContainerInstanceManagementClient'&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;'container'&lt;/span&gt;
-To open an issue, please run: &lt;span class=&quot;s1&quot;&gt;'az feedback'&lt;/span&gt;
+AttributeError: &lt;span class=&quot;s1&quot;&gt;&apos;ContainerInstanceManagementClient&apos;&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;&apos;container&apos;&lt;/span&gt;
+To open an issue, please run: &lt;span class=&quot;s1&quot;&gt;&apos;az feedback&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;It seems the problem is &lt;a href=&quot;https://github.com/Azure/azure-cli/issues/19475&quot;&gt;related to the version of az cli&lt;/a&gt; that I´m using (the last one while typing this post).&lt;/p&gt;

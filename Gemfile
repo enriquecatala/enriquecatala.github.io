@@ -34,3 +34,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "kramdown", ">= 2.3.1"
 gem "nokogiri", ">= 1.13.9"
 gem "addressable", ">= 2.8.0"
+gem "webrick", ">= 1.7"
