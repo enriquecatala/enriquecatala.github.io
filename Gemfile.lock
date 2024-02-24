@@ -277,9 +277,9 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   kramdown (>= 2.3.1)
   minima (~> 2.0)
-  nokogiri (>= 1.13.9)
+  nokogiri (>= 1.16.2)
   tzinfo-data
-  webrick (>= 1.7)
+  webrick (>= 1.8.1)
 
 BUNDLED WITH
    2.3.25
