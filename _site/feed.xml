@@ -5,7 +5,26 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Sat, 24 Feb 2024 07:20:25 -0600</pubDate>
+    <pubDate>Fri, 08 Mar 2024 06:46:51 -0600</pubDate>
+    
+      <item>
+        <title>Empowering the Next Wave of Tech Talent: Celebrating 14 Years as a Microsoft Certified Trainer</title>
+        <link>http://0.0.0.0:4000/2024/03/07/MCT-14-years-in-a-row.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2024/03/07/MCT-14-years-in-a-row.html</guid>
+        <description>&lt;p&gt;🎉 Thrilled to share that I’ve officially renewed my status as a Microsoft Certified Trainer for the 14th consecutive year! 🚀&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;a href=&quot;https://enriquecatala.com/portfolio/Badges.html&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/badgesearned/MCT-2024.png&quot; alt=&quot;MCT 2024&quot; width=&quot;20%&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;p&gt;I’m deeply grateful for the support from the tech community. Looking forward to another year of empowering professionals with the skills they need to excel in the digital era.
+Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
+#MCT #MicrosoftCertifiedTrainer #ProfessionalDevelopment #TechCommunity&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Mar 2024 16:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Speaking at StackIT´s CloudX summit</title>
@@ -361,23 +380,6 @@ To open an issue, please run: &lt;span class=&quot;s1&quot;&gt;&apos;az feedback
 &lt;p&gt;And that´s it!, as easy as that :)&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Sep 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Speaker netCoreConf 2021</title>
-        <link>http://0.0.0.0:4000/2021/08/31/Speaker-netCoreConf-2021.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/08/31/Speaker-netCoreConf-2021.html</guid>
-        <description>&lt;p&gt;Tengo el placer y honor de ser ponente en el próximo evento &lt;a href=&quot;https://netcoreconf.com/&quot;&gt;#netCoreConf&lt;/a&gt; que tendrá lugar en los dias 9 y 10 de Octubre 2021.&lt;/p&gt;
-
-&lt;p&gt;En mi sesión voy a hablar durante 55m de &lt;strong&gt;Deeplearning state-of-the-art aplicado&lt;/strong&gt; donde veremos cómo podemos realizar transfer learning sobre un modelo transformer state of the art como RoBERTa para Named Entity Recognition con nuestro propio dataset, que acabaremos desplegando en kubernetes para poder hacer inferencia como nuestra propia API de AI con FastAPI. La idea es que os quedeis con una alternativa diferente de bajo coste aprovechando Azure VM y AKS para desplegar los modelos que vuestros cientificos de datos acaban dejando típicamente en un python notebook :)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jugaremos con Spacy, huggingface, pytorch, python, FastAPI, AKS y terraform :)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/speaker-codemotion-2021-2/card.jpg&quot; alt=&quot;card&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 31 Aug 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>

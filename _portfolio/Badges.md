@@ -70,21 +70,28 @@ tags: Portfolio
             </a>
         </td>   
         <td>
+            <a href="https://enriquecatala.com/2024/03/07/MCT-14-years-in-a-row.html" target="_blank">
+                <img src="/img/badgesearned/MCT-2024.png" 
+                    alt="Microsoft Certified Trainer 2024-2025" 
+                    >
+            </a> 
+        </td> 
+        <td>
             <a href="https://www.credly.com/badges/4800dab2-f2c6-4e81-9a18-b081cb755bb6" target="_blank">
                 <img src="https://images.credly.com/size/340x340/images/fd6bb2af-2f05-4d9b-a23e-39f8e309a82d/image.png" 
                     alt="Microsoft Certified Trainer 2023-2024" 
                     >
             </a> 
         </td> 
+    </tr>  
+    <tr>
         <td>
             <a href="https://www.credly.com/earner/earned/badge/ac6f07b2-0771-4a78-bbbe-a6551eef8a16" target="_blank">
                 <img src="https://images.credly.com/size/340x340/images/bb4156e4-c2e1-4399-b03c-af6feb7a6cc4/image.png" 
                     alt="Microsoft Certified Trainer 2022-2023" 
                     >
             </a> 
-        </td>           
-    </tr>  
-    <tr>
+        </td>               
         <td>
             <a href="https://www.youracclaim.com/earner/earned/badge/e375d52a-0b94-4bdc-8c3c-1f1b0f298297" target="_blank">
                 <img src="https://images.credly.com/size/340x340/images/a6ea4416-4f34-4a85-bc24-eb3fe32fd241/MCT-Microsoft_Certified_Trainer-600x600.png" 
@@ -106,15 +113,15 @@ tags: Portfolio
                  >
         </a>
     </td>
+    </tr>
+  <tr>
     <td>
         <a href="https://www.youracclaim.com/earner/earned/badge/e7a2d04c-0e28-472a-a78e-b6fb431510fe" target="_blank">
             <img src="https://raw.githubusercontent.com/enriquecatala/enriquecatala.github.io/master/img/badgesearned/MCT-2017.png" 
                  alt="Microsoft Certified Trainer 2017-2018" 
                  >
         </a>
-    </td>    
-  </tr>
-  <tr>
+    </td>      
     <td>
         <a href="https://docs.microsoft.com/en-us/learn/certifications/mcsa-sql2016-database-administration-certification" target="_blank">
             <img src="https://github.com/enriquecatala/enriquecatala.github.io/blob/master/img/badgesearned/MCSA-SQL%252B2016%252BDatabase%252BAdministration.png?raw=true" 
