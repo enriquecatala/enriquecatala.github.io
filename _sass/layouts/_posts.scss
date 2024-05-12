@@ -1,5 +1,6 @@
 article,
-.comments {
+.comments,
+.dataninja {
   @extend %padding-regular;
   border-bottom: 1px solid $border-color;
   float: left;
@@ -17,6 +18,21 @@ article {
     font-size: 0.9em;
   }
 }
+.dataninja {
+  text-align: center;
+
+  // Targeting the button inside .dataninja
+  .button {
+    background-color: blue; // Sets the background color to blue
+    color: white; // Sets the text color to white for better visibility
+    padding: 10px 20px; // Adds some padding to the button
+    text-decoration: none; // Removes underline from link
+    display: inline-block; // Ensures it sits properly in the flow
+    border-radius: 5px; // Optional: rounds the corners of the button
+  }
+}
+
+
 header {
   h1 {
     margin: 0;
@@ -47,3 +63,4 @@ header {
     @extend %padding-regular;
   }
 }
+

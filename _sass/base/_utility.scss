@@ -35,6 +35,24 @@ a.button:hover {
   color: $background-color;
   text-decoration: none;
 }
+
+.red-button {
+  background-color: $link-color; // This uses the red color already defined
+  color: $header-desc-text-color; // White color for text
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.red-button:hover {
+  background-color: darken($link-color, 10%); // Darkens the button on hover
+}
+
+
 // States
 .disabled {
   opacity: 0.7;

@@ -44,3 +44,5 @@ SELECT SUBSTRING(@letras_nif, pos_letra ,1) AS letra,
        str(numnif)+'-'+SUBSTRING(@letras_nif, pos_letra ,1) dni        
 FROM subselect
 ```
+
+Únete a la comunidad de [Cloud Data Ninjas](https://www.clouddataninjas.com/) para recibir recursos exclusivos, insights de vanguardia y estrategias avanzadas en arquitectura de datos y cloud, directamente en tu bandeja de entrada: [https://www.clouddataninjas.com/](https://www.clouddataninjas.com/)
