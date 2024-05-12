@@ -5,7 +5,7 @@ date:   2021-02-26 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure Kubernetes Cloud DataPlatform
+tags: DataNinja Speaker Azure Kubernetes Cloud DataPlatform
 ---
 
 El pasado 28 de Febrero 2021 tuve el honor de impartir una sesion en la [#netcoreconf](https://netcoreconf.com/) junto a grandes cracks de renombre nacional e internacional. 

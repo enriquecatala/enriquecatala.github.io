@@ -5,7 +5,7 @@ date:   2021-04-09 00:00:00 +0200
 tipue_search_active: false
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Kubernetes Docker
+tags: Kubernetes Docker DataNinja
 ---
 
 Una vez tenemos ya [preparados nuestros nodos](https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html), ya podemos continuar con la instalación de nuestro cluster. En esta parte 2, vamos ya por fin a inicializar nuestro nodo master.

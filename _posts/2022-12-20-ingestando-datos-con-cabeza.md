@@ -5,7 +5,7 @@ date:   2022-12-20 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure Databricks Kubernetes Cloud Dev AI DataPlatform Performance Speaker YouTube
+tags: DataNinja Speaker Azure Databricks Kubernetes Cloud Dev AI DataPlatform Performance Speaker YouTube
 ---
 
 "A few days ago, I had the pleasure and honor of being a speaker at the [NetCoreConf Madrid](https://netcoreconf.com/) event."

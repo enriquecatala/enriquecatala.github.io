@@ -5,7 +5,7 @@ date:   2021-09-10 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: WSL2 OS Azure
+tags: DataNinja WSL2 OS Azure
 ---
 
 There are some times when the latest version of az cli is not working. Like for example today while I was trying to debug a container issue running in Azure Container Instances.

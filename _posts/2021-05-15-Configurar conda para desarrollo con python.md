@@ -5,7 +5,7 @@ date:   2021-05-15 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Python Dev AI OS
+tags: DataNinja Python Dev AI OS
 ---
 
 Algún dia me animaré a hacer algun post/video sobre cómo hago dev y debug sobre python, pero mientras tanto, valga este post para recodar cómo preparar nuestro PC para desarrollo con python. Conda es un excelente entorno para data science, que incluye de serie y de forma gratuita 2 cosas super-utiles como son el editor "Spider" y la gestión de entornos muy cómoda. 

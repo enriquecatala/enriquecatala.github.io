@@ -5,7 +5,7 @@ date:   2022-10-03 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Cloud Dev AI
+tags: Speaker Cloud Dev AI DataNinja
 ---
 
 Aqui te dejo la grabación de la interesante mesa redonda sobre Inteligencia Artificial y su impacto en negocios y educación.

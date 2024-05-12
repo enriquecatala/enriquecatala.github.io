@@ -5,7 +5,7 @@ date:   2020-08-09 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Docker Blog
+tags: DataNinja Docker Blog
 ---
 It seems that kramdown has a big security issue and i want this to be fixed.
 

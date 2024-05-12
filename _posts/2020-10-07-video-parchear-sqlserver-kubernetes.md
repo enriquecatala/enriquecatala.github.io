@@ -5,7 +5,7 @@ date:   2020-10-07 00:00:53 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: SqlServer YouTube Kubernetes
+tags: SqlServer YouTube Kubernetes DataNinja
 ---
 
 En esta segunda parte sobre cómo parchear SQL Server 2019, vamos a ver cómo hacerlo con SQL Server funcionando sobre un entorno Kubernetes OnPremises. Veremos cómo hacer un downgrade de SQL Server.

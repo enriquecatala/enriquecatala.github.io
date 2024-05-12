@@ -5,7 +5,7 @@ date:   2021-03-31 00:00:00 +0200
 tipue_search_active: false
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Kubernetes Docker
+tags: Kubernetes Docker DataNinja
 ---
 
 En esta serie de 4 posts voy a enseñar cómo desplegar un cluster Kubernetes manualmente utilizando Kubeadm para tener una arquitectura similar a esta:

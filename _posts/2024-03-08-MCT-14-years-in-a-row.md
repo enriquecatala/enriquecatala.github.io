@@ -5,7 +5,7 @@ date:   2024-03-08 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: DataPlatform Azure AI Cloud Databricks dev Exam 
+tags: DataNinja DataPlatform Azure AI Cloud Databricks dev Exam
 ---
 
 🎉 Thrilled to share that I've officially renewed my status as a Microsoft Certified Trainer for the 14th consecutive year! 🚀

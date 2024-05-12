@@ -5,7 +5,7 @@ date:   2020-09-29 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: SqlServer WSL2 Docker Kubernetes GitHub
+tags: SqlServer WSL2 Docker Kubernetes GitHub DataNinja
 ---
 If you are like me, and you don´t have SQL Server installed locally on your dev laptop thanks to docker and the [wsl2](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004/)... you will love this. I´ve just updated the [docker images that contains all the samplesdb database](https://hub.docker.com/repository/docker/enriquecatala/mssql-server-samplesdb) with the lastest version of SQL Server.
 

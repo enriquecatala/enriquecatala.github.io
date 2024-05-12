@@ -5,7 +5,7 @@ date:   2021-09-01 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure Kubernetes Cloud DataPlatform AI Docker
+tags: DataNinja Speaker Azure Kubernetes Cloud DataPlatform AI Docker
 ---
 
 Tengo el placer y honor de ser ponente en el próximo evento [#netCoreConf](https://netcoreconf.com/) que tendrá lugar en los dias 9 y 10 de Octubre 2021.

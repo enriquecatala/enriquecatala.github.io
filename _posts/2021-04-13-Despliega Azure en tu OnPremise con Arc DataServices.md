@@ -5,7 +5,7 @@ date:   2021-04-13 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure Kubernetes Cloud DataPlatform
+tags: Speaker Azure Kubernetes Cloud DataPlatform DataNinja
 ---
 
 El próximo viernes 16 de Abril de 2021 tengo el honor de impartir una sesion en la [#GlobalAzure](https://globalazure.es/) junto a grandes cracks de renombre nacional e internacional. 

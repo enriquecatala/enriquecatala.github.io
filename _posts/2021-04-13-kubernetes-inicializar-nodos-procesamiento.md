@@ -5,7 +5,7 @@ date:   2021-04-13 00:00:00 +0200
 tipue_search_active: false
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Kubernetes Docker
+tags: Kubernetes Docker DataNinja
 ---
 
 Una vez tenemos ya realizado el [bootstrap del nodo master](https://enriquecatala.com/2021/04/08/kubernetes-master-bootstap-kubeadm.html), es hora de inicializar nuestros nodos de procesamiento. 

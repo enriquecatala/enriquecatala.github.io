@@ -5,7 +5,7 @@ date:   2020-07-13 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: BugFix
+tags: BugFix DataNinja
 ---
 
 With the new Windows 10 2004 update I´ve been suffering the bug from the new ScreenSketch tool that comes by default with this new version of Windows 10.

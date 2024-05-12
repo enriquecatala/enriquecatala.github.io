@@ -5,7 +5,7 @@ date:   2020-07-01 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: MVP DataPlatform
+tags: MVP DataPlatform DataNinja
 ---
 
 Wow! otro año mas, igual que la primera vez, una emoción enorme al recibir el premio [MVP en la categoria DataPlatform](https://mvp.microsoft.com/es-es/PublicProfile/5000312?fullName=Enrique%20Catala).**7 años seguidos** sintiendo la misma emoción y respeto por recibir este correo, con todo lo que lleva detrás.

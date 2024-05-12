@@ -5,7 +5,7 @@ date:   2021-03-24 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: WSL2
+tags: WSL2 DataNinja
 ---
 
 Suppose that you are working from a stateless docker container in your dev environment (no mounted volumes) and you ended with some changes in files that you don´t want to loose. 

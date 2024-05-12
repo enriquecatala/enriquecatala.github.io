@@ -5,7 +5,7 @@ date:   2021-02-26 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure Kubernetes Cloud DataPlatform
+tags: DataNinja Speaker Azure Kubernetes Cloud DataPlatform
 ---
 
 Tengo el placer y honor de ser ponente en el próximo evento [#netCoreConf](https://netcoreconf.com/) que tendrá lugar en los dias 27 y 28 de Febrero 2021 de forma virtual.

@@ -5,7 +5,7 @@ date:   2020-05-29 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: TSQL
+tags: TSQL DataNinja
 redirect_from: /2020/07/17/calculo-letras-dni-tsql.html
 ---
 

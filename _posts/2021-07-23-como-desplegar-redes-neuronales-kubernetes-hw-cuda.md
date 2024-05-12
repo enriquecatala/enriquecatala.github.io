@@ -5,7 +5,7 @@ date:   2021-07-23 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure Kubernetes Cloud DataPlatform Dev AI
+tags: DataNinja Speaker Azure Kubernetes Cloud DataPlatform Dev AI
 ---
 
 Hace unos dias tuve el placer y honor de ser ponente en el evento [Kubernetes Community Days Spain](https://community.cncf.io/events/details/cncf-kcd-spain-presents-kubernetes-community-days-spain/) 
