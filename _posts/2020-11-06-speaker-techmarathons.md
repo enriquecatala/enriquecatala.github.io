@@ -5,7 +5,7 @@ date:   2020-10-07 00:00:53 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: SqlServer PowerBI Speaker
+tags: SqlServer PowerBI Speaker DataNinja
 ---
 
 Tengo el placer y honor de ser ponente en el próximo evento [#TechMarathons](https://www.techmarathons.com/) que tendrá lugar en los dias 9 al 14 de Noviembre de 2020.

@@ -5,7 +5,7 @@ date:   2021-09-16 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: AI Kubernetes Python Performance Cloud
+tags: AI Kubernetes Python Performance Cloud DataNinja
 ---
 
 There was a nasty bug in [huggingface's](https://huggingface.co/) [tokenizers](https://github.com/huggingface/tokenizers) that caused a random runtime error depending on how you deal with the tokenizer when processing your neural network in a **multi-threading** environment. Since I´m using kubernetes I was able to fix it by allowing the pod to be scheduled again, so I didn´t paid too much attention to it because it was related to the library itself and it was not my code the one that caused the bug.

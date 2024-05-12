@@ -5,7 +5,7 @@ date:   2023-02-10 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure PowerBI Dev Performance Databricks DataPlatform
+tags: DataNinja Speaker Azure PowerBI Dev Performance Databricks DataPlatform
 ---
 
 I have the pleasure and honor of being a speaker at the [Global Power Platform Bootcamp 2023

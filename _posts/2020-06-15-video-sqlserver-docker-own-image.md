@@ -4,7 +4,7 @@ title:  "Video: Crea tu propia imagen de SQL Server para docker"
 date:   2020-06-15 21:25:53 +0200
 tipue_search_active: true
 comments: true
-tags: YouTube SqlServer WSL2 Docker
+tags: DataNinja YouTube SqlServer WSL2 Docker
 ---
 
 In this video we are going to create our first personalized image of SQL Server with docker.

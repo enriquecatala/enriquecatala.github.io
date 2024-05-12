@@ -5,7 +5,7 @@ date:   2020-05-29 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: TSQL
+tags: TSQL DataNinja
 redirect_from: /2020/07/17/calculo-letras-dni-tsql.html
 ---
 
@@ -44,3 +44,5 @@ SELECT SUBSTRING(@letras_nif, pos_letra ,1) AS letra,
        str(numnif)+'-'+SUBSTRING(@letras_nif, pos_letra ,1) dni        
 FROM subselect
 ```
+
+Únete a la comunidad de [Cloud Data Ninjas](https://www.clouddataninjas.com/) para recibir recursos exclusivos, insights de vanguardia y estrategias avanzadas en arquitectura de datos y cloud, directamente en tu bandeja de entrada: [https://www.clouddataninjas.com/](https://www.clouddataninjas.com/)

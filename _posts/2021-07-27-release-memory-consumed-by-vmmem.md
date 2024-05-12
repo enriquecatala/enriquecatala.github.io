@@ -5,7 +5,7 @@ date:   2021-07-27 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: WSL2 OS
+tags: WSL2 OS DataNinja
 ---
 
 There is a bug in WSL2 that causes the memory consumption of the vmmem process to not to be released. Right now, the version of WSL2 and windows i´m using is Windows 10 19043.1110 (21H1) and it´s still present.

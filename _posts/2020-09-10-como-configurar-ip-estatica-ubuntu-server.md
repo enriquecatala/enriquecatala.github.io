@@ -5,7 +5,7 @@ date:   2020-09-10 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: OS
+tags: OS DataNinja
 ---
 Si como en mi caso, tienes que levantar ubuntu server, sin GUI y necesitas añadirte la red, este es tu post :)
 

@@ -5,7 +5,7 @@ date:   2020-10-02 00:00:53 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: SqlServer YouTube
+tags: SqlServer YouTube DataNinja
 ---
 
 En este vídeo voy a hacer un ejemplo rápido sobre cómo es el proceso de parcheo de SQL Server y qué nos puede ocurrir si queremos "des-parchear" :). En esta ocasión lo vamos a hacer con Windows, dejando para un siguiente vídeo el cómo se hace cuando corremos nuestro SQL Server sobre Kubernetes.

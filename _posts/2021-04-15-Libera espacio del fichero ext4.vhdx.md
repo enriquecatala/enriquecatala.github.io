@@ -5,7 +5,7 @@ date:   2021-04-15 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Docker Dev
+tags: Docker Dev DataNinja
 ---
 
 Si utilizas #wsl2 para desarrollar y acabas generando contenedores grandes, verás crecer fuertemente tu fichero dockerfile donde se almacenan todos esos contenedores. Recientemente he estado trabajando con el modelo [GPT-NEO](https://github.com/EleutherAI/gpt-neo/) que tiene la friolera de 10.2Gb de tamaño en pesos de red neuronal...a la que he metido mis propios "artefactos" (dejemoslo ahi :). El caso es que cada etapa de generacion lleba a superar los 15Gb, haciendo que al final de la contienda mover una imagen como esta llegó a menearme 150Gb de disco.

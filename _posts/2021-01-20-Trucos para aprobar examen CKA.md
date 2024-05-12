@@ -5,7 +5,7 @@ date:   2021-01-20 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Exam Kubernetes
+tags: Exam Kubernetes DataNinja
 ---
 
 Hoy mismo recibo el mail indicándome que acabo de aprobar el examen [CKA: Certified Kubernetes Administrator](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/). El examen es bastante chulo porque se aparta del típico examen al que estaba acostumbrado (al menos yo) de tipo test. En este caso, se miden realmente tus capacidades resolutivas con la tecnologia, porque el examen se trata de 17 preguntas, de diferente dificultad, donde te dan un objetivo, una linea de comandos y un tiempo para conseguirlo. La verdad que he disfrutado muchísimo y al margen de lo dificil/facil que te pueda parecer, la experiencia es bastante satisfactoria.

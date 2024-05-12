@@ -5,7 +5,7 @@ date:   2023-01-14 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: Speaker Azure PowerBI Dev Performance
+tags: DataNinja Speaker Azure PowerBI Dev Performance
 ---
 
 Tengo el placer y honor de ser ponente en el evento  para impartir una sesión donde daré 10 tips de rendimiento en PowerBI. 

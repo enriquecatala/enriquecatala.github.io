@@ -5,7 +5,7 @@ date:   2020-07-09 00:00:00 +0200
 tipue_search_active: true
 comments: true
 excerpt_separator: <!--end_excerpt-->
-tags: PowerBI Speaker
+tags: PowerBI Speaker DataNinja
 ---
 
 El próximo día 14 de Julio de 2020 estaré como speaker en el [#MaratonPowerPlatform ](https://twitter.com/hashtag/MaratonPowerPlatform?src=hashtag_click)  a las 15pm hora española (utc+2) sobre [cómo trabajar con PowerBI con modo directquery en la vida real](https://events.bizzabo.com/maraton-virtual-power-platform/agenda/session/264159) 

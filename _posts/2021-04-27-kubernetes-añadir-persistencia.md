@@ -5,7 +5,7 @@ date:   2021-04-27 00:00:00 +0200
 comments: true
 tipue_search_active: false
 excerpt_separator: <!--end_excerpt-->
-tags: Kubernetes Docker
+tags: Kubernetes Docker DataNinja
 ---
 
 Una vez tenemos ya [nuestro cluster kubernetes con kubeadm terminado](https://enriquecatala.com/2021/03/30/instalar-cluster-kubernetes-kubeadm.html), es hora de añadir una capa de persistencia para poder utilizar despliegues stateful. 

@@ -5,7 +5,7 @@ date:   2021-05-10 00:00:00 +0200
 comments: true
 tipue_search_active: false
 excerpt_separator: <!--end_excerpt-->
-tags: Blog Dev GitHub
+tags: Blog Dev GitHub DataNinja
 ---
 
 A long time ago I switched my personal blog to [GitHub Pages](https://enriquecatala.com/2020/05/28/Creating-my-new-blog-with-Jekyll.html). In this post I want to share with you how easy is to change the look and feel of your code snippets.
