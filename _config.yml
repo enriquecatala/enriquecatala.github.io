@@ -6,7 +6,7 @@ url: https://enriquecatala.com # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Data engineering with Enrique Catalá
+  title: Become a Data Ninja with Enrique Catalá
   #avatar: avatar.png
   avatar: enrique.jpg
   gravatar: # Email MD5 hash
@@ -14,7 +14,8 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <h1>Data engineering with Enrique Catalá</h1>
+     <h1>Data Ninja insights with Enrique Catalá</h1>    
+
   header_text_feature_image: 
   footer_text: >    
       Boost your earnings with me, <a href="https://www.clouddataninjas.com/">become a Data Ninja !</a>
@@ -23,7 +24,7 @@ theme_settings:
   #Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme/">Portfolio-iro</a> <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>
   # Icons
   rss: false
-  email_address: "enrique@enriquecatala.com"
+  email_address: "enrique@clouddataninjas.com"
   behance:
   bitbucket:
   #dribbble: ""
