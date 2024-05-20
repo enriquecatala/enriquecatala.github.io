@@ -2,7 +2,7 @@
 layout: post
 title: Cloud Data Ninjas
 feature-img: "img/icons/ninja_pose.png"
-thumbnail-path: "img/icons/ninja_pose-75x75.png"
+thumbnail-path: "/img/icons/ninja_pose-75x75.png"
 short-description: Cloud Data Ninjas website
 tags: Portfolio
 redirect_to: https://www.clouddataninjas.com
