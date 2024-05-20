@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data engineering with Enrique Catalá</title>
+    <title>Become a Data Ninja with Enrique Catalá</title>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Sun, 12 May 2024 16:36:50 -0500</pubDate>
+    <pubDate>Mon, 20 May 2024 09:40:22 -0500</pubDate>
     
       <item>
         <title>Empowering the Next Wave of Tech Talent: Celebrating 14 Years as a Microsoft Certified Trainer</title>
