@@ -5,7 +5,57 @@
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Mon, 20 May 2024 10:42:33 -0500</pubDate>
+    <pubDate>Tue, 04 Jun 2024 17:56:48 -0500</pubDate>
+    
+      <item>
+        <title>Speaking at Databricks Data + AI Summit 2024</title>
+        <link>http://0.0.0.0:4000/2024/06/04/Im_Speaker_at_databricks_dais24.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2024/06/04/Im_Speaker_at_databricks_dais24.html</guid>
+        <description>&lt;p&gt;I am beyond thrilled to announce that &lt;strong&gt;I’ve been selected as a speaker&lt;/strong&gt; at the prestigious &lt;a href=&quot;https://www.databricks.com/dataaisummit/session/unity-catalog-migration-europes-top-supermarket-chain&quot;&gt;&lt;strong&gt;Data + AI Summit 2024&lt;/strong&gt;&lt;/a&gt; in San Francisco, taking place from June 10-13 2024. It’s an incredible honor to be chosen alongside Karthik Subbarao for this landmark event. Representing Schwarz Group and SCRM - Lidl International Hub on this international stage is truly a proud moment.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.databricks.com/dataaisummit/session/unity-catalog-migration-europes-top-supermarket-chain&quot;&gt;&lt;img src=&quot;/img/posts/dais24/dais24.png&quot; alt=&quot;dais24&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Session Highlight: “Unity Catalog Migration in Europe’s Top Supermarket Chain”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In our session, we will dive deep into the topic “Unity Catalog Migration in Europe’s Top Supermarket Chain.” This presentation will highlight how we migrated to UC at Lidl Plus without service disruption&lt;/p&gt;
+
+&lt;p&gt;We’ll cover:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Seamless Transition&lt;/strong&gt;: How we managed to ensure zero downtime during the migration of our extensive infrastructure.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Technical Insights&lt;/strong&gt;: Detailed exploration of the technical challenges and solutions we implemented.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Team Effort&lt;/strong&gt;: Celebrating the relentless spirit and innovative mindset of our team at SCRM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--end_excerpt--&gt;
+
+&lt;h3 id=&quot;behind-the-scenes-the-team&quot;&gt;Behind the Scenes: The Team&lt;/h3&gt;
+
+&lt;p&gt;This achievement wouldn’t have been possible without the outstanding support and hard work of my colleagues at SCRM. A special shout-out to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jaume Civit&lt;/li&gt;
+  &lt;li&gt;Eduardo Segarra&lt;/li&gt;
+  &lt;li&gt;Ruben Mejias Calderon&lt;/li&gt;
+  &lt;li&gt;Helena Giménez Millán&lt;/li&gt;
+  &lt;li&gt;Hugo Lopes&lt;/li&gt;
+  &lt;li&gt;Miguel López&lt;/li&gt;
+  &lt;li&gt;Jordi Casanovas Muñoz&lt;/li&gt;
+  &lt;li&gt;Marta Domínguez&lt;/li&gt;
+  &lt;li&gt;Leandro Szikora&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…and many others who have contributed to this success. Your dedication is truly commendable.&lt;/p&gt;
+
+&lt;h3 id=&quot;join-the-conversation&quot;&gt;Join the Conversation&lt;/h3&gt;
+
+&lt;p&gt;I invite you all to join the conversation about the evolving landscape of data management and AI. What challenges do you foresee? How do you envision the future of data architecture? Let’s start a discussion in the comments below.&lt;/p&gt;
+
+&lt;h3 id=&quot;learn-more&quot;&gt;Learn More&lt;/h3&gt;
+
+&lt;p&gt;For more details on our session, visit: &lt;a href=&quot;https://www.databricks.com/dataaisummit/session/unity-catalog-migration-europes-top-supermarket-chain&quot;&gt;Unity Catalog Migration in Europe’s Top Supermarket Chain&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Jun 2024 17:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Empowering the Next Wave of Tech Talent: Celebrating 14 Years as a Microsoft Certified Trainer</title>
@@ -332,54 +382,6 @@ U.S. I-GPE
 &lt;p&gt;Nice!&lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2021 17:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>How to use a specific version of az cli</title>
-        <link>http://0.0.0.0:4000/2021/09/09/install-specific-version-az-cli.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/2021/09/09/install-specific-version-az-cli.html</guid>
-        <description>&lt;p&gt;There are some times when the latest version of az cli is not working. Like for example today while I was trying to debug a container issue running in Azure Container Instances.&lt;/p&gt;
-
-&lt;p&gt;I´m getting the following error while trying to connect and check why my container is not working:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~#@❯ az container logs &lt;span class=&quot;nt&quot;&gt;--resource-group&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;InteligenciaAlertasSentinel&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; detector
-The &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;failed with an unexpected error. Here is the traceback:
-&lt;span class=&quot;s1&quot;&gt;&apos;ContainerInstanceManagementClient&apos;&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;&apos;container&apos;&lt;/span&gt;
-Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/knack/cli.py&quot;&lt;/span&gt;, line 231, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;invoke
-    cmd_result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; self.invocation.execute&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 657, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;execute
-    raise ex
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 720, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;_run_jobs_serially
-    results.append&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;self._run_job&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;expanded_arg, cmd_copy&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 691, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;_run_job
-    result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; cmd_copy&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;params&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py&quot;&lt;/span&gt;, line 328, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;__call__
-    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;self.handler&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;args, &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;kwargs&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/core/commands/command_operation.py&quot;&lt;/span&gt;, line 112, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;handler
-    client &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; self.client_factory&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;self.cli_ctx, command_args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;self.client_factory &lt;span class=&quot;k&quot;&gt;else &lt;/span&gt;None
-  File &lt;span class=&quot;s2&quot;&gt;&quot;/opt/az/lib/python3.6/site-packages/azure/cli/command_modules/container/_client_factory.py&quot;&lt;/span&gt;, line 18, &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;cf_container
-    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;_container_instance_client_factory&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli_ctx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.container
-AttributeError: &lt;span class=&quot;s1&quot;&gt;&apos;ContainerInstanceManagementClient&apos;&lt;/span&gt; object has no attribute &lt;span class=&quot;s1&quot;&gt;&apos;container&apos;&lt;/span&gt;
-To open an issue, please run: &lt;span class=&quot;s1&quot;&gt;&apos;az feedback&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It seems the problem is &lt;a href=&quot;https://github.com/Azure/azure-cli/issues/19475&quot;&gt;related to the version of az cli&lt;/a&gt; that I´m using (the last one while typing this post).&lt;/p&gt;
-
-&lt;p&gt;For situations like this, i recommend you to use the &lt;a href=&quot;https://hub.docker.com/_/microsoft-azure-cli&quot;&gt;official docker repo of azure az cli&lt;/a&gt; which easily allows me to use a &lt;a href=&quot;https://mcrflowprodcentralus.data.mcr.microsoft.com/mcrprod/azure-cli?P1=1631287029&amp;amp;P2=1&amp;amp;P3=1&amp;amp;P4=4G2Xm%2FZgSoKLX2W856%2Feoxty3El5gyBaY2xnTS2KpLQ%3D&amp;amp;se=2021-09-10T15%3A17%3A09Z&amp;amp;sig=TDg2ib8Q5JU5FkGlx%2B7YQTXVQCJyPB8jPV6kIPf%2FEcc%3D&amp;amp;sp=r&amp;amp;sr=b&amp;amp;sv=2015-02-21&quot;&gt;specific version of az cli&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--end_excerpt--&gt;
-
-&lt;p&gt;If you have docker installed on your machine you can install the latest version of az cli using the following command:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; mcr.microsoft.com/azure-cli:&amp;lt;version&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: last version working is 2.27.2&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And that´s it!, as easy as that :)&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Sep 2021 17:00:00 -0500</pubDate>
       </item>
     
   </channel>
