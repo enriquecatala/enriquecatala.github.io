@@ -1,28 +1,28 @@
 * { box-sizing: border-box; }
 html { background: $background-color; scroll-behavior: smooth; scroll-padding-top: 30px; }
-body { margin: 0; color: $text-color; font: $font-size / 1.7 $font-family-main; overflow-wrap: break-word; }
+body { margin: 0; color: $body-color; font-family: $font-family-main; font-size: $font-size; line-height: 1.7; overflow-wrap: break-word; }
 ::selection { background: $selection-color; }
-h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.15; letter-spacing: -.035em; margin: 0 0 .65em; }
+h1, h2, h3, h4, h5, h6 { color: $text-color; font-weight: 700; line-height: 1.15; letter-spacing: -.035em; margin: 0 0 .65em; }
 h1 { font-size: clamp(2.3rem, 5vw, 4.5rem); }
 h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); }
 h3 { font-size: 1.5rem; }
 p, ul, ol, dl { margin: 0 0 1.4em; }
 ul, ol { padding-left: 1.4em; }
 a { color: $link-color; text-decoration-thickness: 1px; text-underline-offset: 4px; }
-a:hover { color: #6e2a19; }
+a:hover { color: $link-hover-color; }
 img, iframe, video, embed, object { max-width: 100%; }
 img { height: auto; }
 button, input { font: inherit; }
 :focus-visible { outline: 3px solid $link-color; outline-offset: 5px; }
-blockquote { margin: 2em 0; border-left: 3px solid $link-color; padding: .5em 1.5em; background: #eeeee7; }
+blockquote { margin: 2em 0; border-left: 3px solid $link-color; padding: .5em 1.5em; background: $surface-muted-color; }
 blockquote p:last-child { margin: 0; }
 pre { overflow-x: auto; padding: 1.4em; font-size: .85em; line-height: 1.6; border-radius: 8px; }
 code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: .86em; }
-p code, li code { background: #e9eae3; padding: .15em .3em; border-radius: 3px; }
+p code, li code { background: $surface-muted-color; padding: .15em .3em; border-radius: 3px; }
 pre code { padding: 0; background: transparent; }
 table { display: block; overflow-x: auto; width: 100%; border-collapse: collapse; margin: 2em 0; font-size: .9em; }
 th, td { border: 1px solid $border-color; padding: .75em; text-align: left; min-width: 120px; }
-th { background: #e9eae3; }
+th { background: $surface-muted-color; }
 hr { border: 0; border-top: 1px solid $border-color; margin: 2em 0; }
 .math-display { display: block; overflow-x: auto; margin: 1.5em 0; }
 .content { min-height: 50vh; }

@@ -1,8 +1,8 @@
 .site-header { max-width: 1200px; margin: 0 auto; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid $border-color; }
 .branding { display: flex; align-items: center; gap: 16px; text-decoration: none; color: $text-color; font-size: 1rem; font-weight: 700; line-height: 1.3; }
-.branding small { display: block; font-weight: 400; font-size: .72rem; color: #65716a; margin-top: 5px; }
+.branding small { display: block; font-weight: 400; font-size: .72rem; color: $muted-color; margin-top: 5px; }
 .brand-mark { display: grid; place-content: center; position: relative; background: $text-color; color: white; width: 46px; height: 46px; border-radius: 50%; font-size: 1.3rem; letter-spacing: -.06em; }
-.brand-mark span { color: #efae87; position: absolute; right: 9px; bottom: 10px; }
+.brand-mark span { color: $selection-color; position: absolute; right: 9px; bottom: 10px; }
 .site-nav { display: flex; gap: 28px; align-items: center; }
 .site-nav a { color: $text-color; font-size: .85rem; text-decoration: none; padding: 8px 0; }
 .site-nav a:hover, .site-nav a[aria-current] { color: $link-color; text-decoration: underline; }
