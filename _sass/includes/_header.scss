@@ -1,53 +1,10 @@
-.site-header {
-  @extend %padding-small;
-  background: $brand-color;
-  border-bottom: 1px solid $border-color;
-  display: inline-block;
-  float: left;
-  width: 100%;
-
-  a {
-    color: $header-link-color;
-  }
-
-  .avatar {
-    height: 2em;
-    width: 2em;
-    float: left;
-    margin-top: -3px;
-    border-radius: 0.2em;
-    margin-right: 1em;
-  }
-
-  .site-title {
-    float: left;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.5;
-  }
-
-  .site-nav {
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      line-height: 1.5;
-      float: right;
-      text-align: right;
-    }
-    li {
-      display: inline;
-      float: left;
-      margin-right: 0.4em;
-    }
-    @media (max-width: 1100px) {
-      ul {
-        display: inline-block;
-        float: left;
-        padding-top: $padding-small;
-        text-align: left;
-        width: 100%;
-      }
-    }
-  }
-}
+.site-header { max-width: 1200px; margin: 0 auto; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid $border-color; }
+.branding { display: flex; align-items: center; gap: 16px; text-decoration: none; color: $text-color; font-size: 1rem; font-weight: 700; line-height: 1.3; }
+.branding small { display: block; font-weight: 400; font-size: .72rem; color: #65716a; margin-top: 5px; }
+.brand-mark { display: grid; place-content: center; position: relative; background: $text-color; color: white; width: 46px; height: 46px; border-radius: 50%; font-size: 1.3rem; letter-spacing: -.06em; }
+.brand-mark span { color: #efae87; position: absolute; right: 9px; bottom: 10px; }
+.site-nav { display: flex; gap: 28px; align-items: center; }
+.site-nav a { color: $text-color; font-size: .85rem; text-decoration: none; padding: 8px 0; }
+.site-nav a:hover, .site-nav a[aria-current] { color: $link-color; text-decoration: underline; }
+.site-nav .nav-search { border-left: 1px solid $border-color; padding-left: 24px; }
+@media (max-width: 680px) { .site-header { padding: 20px; flex-wrap: wrap; gap: 18px; } .site-nav { width: 100%; justify-content: space-between; gap: 12px; } .site-nav .nav-search { padding-left: 18px; } }

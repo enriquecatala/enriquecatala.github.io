@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="{{ page.lang | default: 'en' }}">
   {% include head.html %}
   <body>
     {% include header.html %}
-    <div class="content">
-      {{ content }}
-    </div>
+    <main class="content" id="main-content" tabindex="-1">{{ content }}</main>
     {% include footer.html %}
   </body>
 </html>
