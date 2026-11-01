@@ -11,7 +11,7 @@ theme_settings:
   #avatar: avatar.png
   avatar: enrique-estudio.png
   gravatar: # Email MD5 hash
-  description: "Blog de Enrique Catalá, Principal Data Architect de Lidl Plus. Plataformas de datos, streaming, Data Mesh y arquitecturas de agentes de IA." # used by search engines
+  description: "Blog de Enrique Catalá, Principal Data Architect. Plataformas de datos, streaming, Data Mesh y arquitecturas de agentes de IA." # used by search engines
 
   # Header and footer text
   header_text: >
@@ -44,7 +44,7 @@ theme_settings:
   tumblr:
   twitter: "enriquecatala"
   wordpress:
-  youtube: "enriquecatala"
+  youtube: ""
 
   # Scripts
   google_analytics: G-5RCLKQTVGV

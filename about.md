@@ -2,22 +2,23 @@
 layout: default
 title: About
 permalink: /about/
-description: "Enrique Catalá, Principal Data Architect for Lidl Plus: 20+ years in data platforms, technical leadership, streaming, Data Mesh and agentic AI."
+description: "Enrique Catalá, Principal Data Architect shaping a platform with 100M+ users. Computer Engineer, Executive Professional, Entrepreneur & Advisor."
 ---
 <div class="about-page">
   <section class="about-intro" aria-labelledby="about-title">
     <div>
       <p class="eyebrow">A little about me</p>
       <h1 id="about-title">Enrique Catalá<span class="accent">.</span></h1>
-      <p class="about-role">Computer Engineer &amp; Executive Professional.</p>
-      <p class="about-lead">I’m a Computer Engineer and Executive Professional with more than 20 years of experience in the Data Platform space. Currently, I serve as Principal Data Architect for Lidl Plus, one of Europe’s biggest loyalty programmes, at SCRM International Lidl Hub / Schwarz Global Services Barcelona.</p>
+      <p class="about-role">Principal Data Architect</p>
+      <p class="about-lead">I’m a Computer Engineer and Executive Professional with more than 20 years of experience in the Data Platform space. As <strong>Principal Data Architect</strong>, I shape the data architecture of a platform with <strong>over 100 million users</strong> within <strong>Europe’s leading retail group</strong>.</p>
+      <p class="about-affiliations">Entrepreneur &amp; Advisor</p>
       <div class="about-actions"><a class="button primary" href="{{ '/assets/files/Enrique Catala Bañuls - CV - EN - WITHOUT CONTACT DETAILS.pdf' | relative_url }}">Download my CV <span>↓</span></a><a class="text-link" href="https://www.linkedin.com/in/enriquecatala/">Find me on LinkedIn ↗</a></div>
     </div>
     <figure class="about-portrait"><img src="{{ '/img/enrique-estudio.png' | relative_url }}" alt="Enrique Catalá Bañuls" width="1717" height="2131"><figcaption>Enrique Catalá Bañuls</figcaption></figure>
   </section>
 
   <dl class="about-highlights" aria-label="Career highlights">
-    <div><dt>20+ years</dt><dd>Working with data platforms</dd></div>
+    <div><dt>100M+ users</dt><dd>Scale of the platform I help shape</dd></div>
     <div><dt>100+ engineers</dt><dd>Technical leadership across data &amp; platform</dd></div>
     <div><dt>10 years</dt><dd>Consecutive years as a Microsoft Data Platform MVP</dd></div>
   </dl>
@@ -25,7 +26,7 @@ description: "Enrique Catalá, Principal Data Architect for Lidl Plus: 20+ years
   <section class="about-story" aria-labelledby="story-title">
     <div><p class="eyebrow">The work behind the notes</p><h2 id="story-title">Building systems.<br>Sharing experience.</h2></div>
     <div class="about-prose">
-      <p>In my role as <strong>Principal Data Architect for Lidl Plus</strong>, I technically lead a team of <strong>100+ data and platform engineers</strong> in shaping our data architecture. I combine strategic guidance with technical stewardship to improve scalability, agility and innovation, working with business leaders to align technology with corporate goals.</p>
+      <p>In my role as <strong>Principal Data Architect</strong>, I technically lead a team of <strong>100+ data and platform engineers</strong> in shaping our data architecture. I combine strategic guidance with technical stewardship to improve scalability, agility and innovation, working with business leaders to align technology with corporate goals.</p>
       <p>My focus is on high-performance data platforms, large-scale streaming and decentralised architectures guided by <strong>Data Contracts and Data Mesh</strong>. Across the Schwarz Group, I work on federated, self-service capabilities and engineering standards for ingestion, modelling and data consumption.</p>
       <p>I’m also designing and deploying <strong>agentic architectures</strong> on top of data platforms: conversational analytics through semantic layers, LangGraph agents and multi-agent orchestration. I lead both the strategy and implementation of these systems, while continually researching emerging technologies and architectural methods. My earlier work in natural language processing and time-series forecasting informs this work.</p>
       <p>My commitment to technical excellence and the community led to <strong>10 consecutive years as a Microsoft Data Platform MVP</strong>. Teaching remains part of that journey, through conferences, training and this blog. Over my career, I’ve led more than 150 projects across countries including Spain, Germany, the USA, the United Arab Emirates, the Netherlands, Mexico, Saudi Arabia and Austria.</p>
@@ -58,9 +59,9 @@ description: "Enrique Catalá, Principal Data Architect for Lidl Plus: 20+ years
   <section class="about-bios" aria-labelledby="bios-title">
     <div><p class="eyebrow">For event organisers</p><h2 id="bios-title">Speaker biographies<span class="accent">.</span></h2><p>Long and short versions for introductions and event programmes.</p></div>
     <div class="bio-options">
-      <details><summary>Full biography</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect for Lidl Plus at SCRM International Lidl Hub / Schwarz Global Services Barcelona. With more than 20 years in the data platform space, he provides technical leadership to over 100 data and platform engineers. He combines strategic guidance and technical stewardship, working with business leaders to align technology with corporate goals. His work covers scalable data platforms, large-scale streaming, Data Contracts and federated architectures guided by Data Mesh principles. He establishes engineering standards for ingestion, modelling and consumption, and researches emerging technologies and architectural methods. He also designs agentic systems using LangGraph, semantic layers and multi-agent orchestration to enable conversational analytics. A Microsoft Data Platform MVP for 10 consecutive years, Enrique shares his experience through conferences, training and technical writing. His background includes over 150 international projects and co-founding Cloud Data Ninjas, a project that is no longer maintained.</p></details>
-      <details><summary>Short biography</summary><p>Enrique Catalá is Principal Data Architect for Lidl Plus at SCRM International Lidl Hub / Schwarz Global Services Barcelona. A Computer Engineer and Executive Professional with more than 20 years of experience, he provides technical leadership to over 100 data and platform engineers. His focus spans Data Mesh, streaming, Data Contracts and agentic AI. He was a Microsoft Data Platform MVP for 10 consecutive years.</p></details>
-      <details><summary>One-paragraph introduction</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect for Lidl Plus, specialising in scalable data platforms, streaming, Data Mesh and agentic AI. He brings more than 20 years of experience and a decade of recognition as a Microsoft Data Platform MVP.</p></details>
+      <details><summary>Full biography</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. He works at SCRM International Lidl Hub / Schwarz Global Services Barcelona. With more than 20 years in the data platform space, he provides technical leadership to over 100 data and platform engineers. He combines strategic guidance and technical stewardship, working with business leaders to align technology with corporate goals. His work covers scalable data platforms, large-scale streaming, Data Contracts and federated architectures guided by Data Mesh principles. He establishes engineering standards for ingestion, modelling and consumption, and researches emerging technologies and architectural methods. He also designs agentic systems using LangGraph, semantic layers and multi-agent orchestration to enable conversational analytics. A Microsoft Data Platform MVP for 10 consecutive years, Enrique shares his experience through conferences, training and technical writing. His background includes over 150 international projects and co-founding Cloud Data Ninjas, a project that is no longer maintained.</p></details>
+      <details><summary>Short biography</summary><p>Enrique Catalá is Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. A Computer Engineer and Executive Professional with more than 20 years of experience, he provides technical leadership to over 100 data and platform engineers. His focus spans Data Mesh, streaming, Data Contracts and agentic AI. He was a Microsoft Data Platform MVP for 10 consecutive years.</p></details>
+      <details><summary>One-paragraph introduction</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. He specialises in scalable data platforms, streaming, Data Mesh and agentic AI. He brings more than 20 years of experience and a decade of recognition as a Microsoft Data Platform MVP.</p></details>
     </div>
   </section>
   <section class="about-open-source" aria-labelledby="opensource-title">
@@ -72,5 +73,5 @@ description: "Enrique Catalá, Principal Data Architect for Lidl Plus: 20+ years
     </ul>
     <p class="about-personal"><strong>Away from the keyboard:</strong> I’m also an ultralight (ULM) pilot! <a class="text-link" href="https://youtu.be/1gtMmFfKebI?si=GpvOlHMlYoh3vmv_&amp;t=169">Watch me fly ↗</a></p>
   </section>
-  <nav class="about-connect" aria-label="More from Enrique"><span class="eyebrow">Get in touch</span><a href="mailto:enrique@enriquecatala.com">Email me ↗</a><a href="https://github.com/enriquecatala">GitHub ↗</a><a href="https://youtube.com/enriquecatala">YouTube ↗</a><a href="https://twitter.com/enriquecatala">Twitter / X ↗</a><a href="https://github.com/sponsors/enriquecatala">GitHub Sponsors ↗</a></nav>
+  <nav class="about-connect" aria-label="More from Enrique"><span class="eyebrow">Get in touch</span><a href="https://www.linkedin.com/in/enriquecatala/">LinkedIn ↗</a><a href="mailto:enrique@enriquecatala.com">Email me ↗</a><a href="https://github.com/enriquecatala">GitHub ↗</a><a href="https://twitter.com/enriquecatala">Twitter / X ↗</a><a href="https://github.com/sponsors/enriquecatala">GitHub Sponsors ↗</a></nav>
 </div>

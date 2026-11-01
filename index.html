@@ -1,6 +1,6 @@
 ---
 layout: default
-description: "Data platforms, streaming, Data Mesh and agentic AI with Enrique Catalá. Practical tutorials, technical talks and open-source projects."
+description: "Enrique Catalá, Principal Data Architect shaping a platform with 100M+ users. Data architecture, streaming and agentic AI at scale."
 ---
 <div class="home">
   {% if paginator.page == 1 %}
@@ -8,9 +8,9 @@ description: "Data platforms, streaming, Data Mesh and agentic AI with Enrique C
     <div class="hero-copy">
       <p class="eyebrow">Enrique Catalá · Principal Data Architect</p>
       <h1 id="intro-title">Making sense<br>of <em>data.</em></h1>
-      <p class="hero-description">Practical notes on data platforms, streaming and agentic AI. Lessons from technical leadership, hands-on architecture and sharing what works.</p>
+      <p class="hero-description">Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. Here I share lessons on data platforms, streaming and agentic AI at scale.</p>
       <div class="hero-links"><a class="button primary" href="#articles">Explore the articles <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">→</span></a></div>
-      <p class="hero-footnote">Engineering. Teaching. Always learning.</p>
+      <p class="hero-footnote">Engineer · Executive Professional · Entrepreneur &amp; Advisor</p>
     </div>
     <figure class="hero-portrait">
       <img src="{{ '/img/enrique-estudio.png' | relative_url }}" alt="Enrique Catalá" width="1717" height="2131" fetchpriority="high">
@@ -48,9 +48,9 @@ description: "Data platforms, streaming, Data Mesh and agentic AI with Enrique C
     <div class="section-heading"><div><p class="eyebrow">Beyond the blog</p><h2 id="portfolio-title">Work, talks &amp; resources<span class="accent">.</span></h2></div></div>
     <ul class="project-grid">
       {% assign sorted_portfolio = site.portfolio | sort: 'title' %}
-      {% for project in sorted_portfolio %}
+      {% for project in sorted_portfolio %}{% unless project.featured == false %}
       <li><a class="project-card" href="{{ project.url | relative_url }}"><img src="{{ project.thumbnail-path | relative_url }}" alt="" width="48" height="48" loading="lazy"><span><strong>{{ project.title }}</strong><span class="project-description">{{ project.short-description }}</span></span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
-      {% endfor %}
+      {% endunless %}{% endfor %}
     </ul>
   </section>
 </div>

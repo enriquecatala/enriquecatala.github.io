@@ -4,8 +4,8 @@
     <title>Data Engineering with Enrique Catalá</title>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
-    <description>Blog de Enrique Catalá, Principal Data Architect de Lidl Plus. Plataformas de datos, streaming, Data Mesh y arquitecturas de agentes de IA.</description>
-    <pubDate>Sun, 01 Nov 2026 22:08:24 +0000</pubDate>
+    <description>Blog de Enrique Catalá, Principal Data Architect. Plataformas de datos, streaming, Data Mesh y arquitecturas de agentes de IA.</description>
+    <pubDate>Sun, 01 Nov 2026 22:15:54 +0000</pubDate>
     
       <item>
         <title>Speaking at Databricks Data + AI Summit 2024</title>
