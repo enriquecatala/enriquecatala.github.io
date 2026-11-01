@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Cambio de blog y nuevo canal de youtube!"
 date:   2020-06-16 00:00:00 +0200

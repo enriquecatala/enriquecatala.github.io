@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 title: My YouTube channel
 feature-img: "img/my-youtube-header.png"

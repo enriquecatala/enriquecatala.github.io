@@ -1,4 +1,6 @@
 ---
+description: "Cómo calcular y validar la letra del DNI con T-SQL en SQL Server, con una consulta de ejemplo para procesar un conjunto de números."
+lang: es
 layout: post
 title:  "Cálculo de letras del DNI con T-SQL"
 date:   2020-05-29 00:00:00 +0200

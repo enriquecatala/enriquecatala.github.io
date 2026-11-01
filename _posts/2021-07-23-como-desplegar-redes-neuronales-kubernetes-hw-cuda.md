@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Cómo desplegar redes neuronales en kubernetes con hardware CUDA"
 date:   2021-07-23 00:00:00 +0200

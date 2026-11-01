@@ -98,3 +98,30 @@ plugins:
 # https://github.com/jekyll/jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
+
+# Search metadata. Page descriptions override excerpts and this site fallback.
+title: "Enrique Catalá | Data Engineering, Cloud & AI"
+description: "Practical data engineering tutorials and talks by Enrique Catalá. Explore SQL Server, Azure, Kubernetes, Python and AI architecture."
+lang: en
+social_image: /img/social-preview.png
+
+# Keep contributor documentation and build configuration out of the public site.
+exclude:
+  - AGENTS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - LICENSE
+  - .agents
+  - .codex
+  - .aws
+  - .atl
+  - .vscode
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: en

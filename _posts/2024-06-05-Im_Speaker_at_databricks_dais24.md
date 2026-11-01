@@ -1,4 +1,5 @@
 ---
+description: "Enrique Catalá at Data + AI Summit 2024: migrating Lidl Plus to Databricks Unity Catalog without service disruption."
 layout: post
 title:  "Speaking at Databricks Data + AI Summit 2024"
 date:   2024-06-05 00:00:00 +0200

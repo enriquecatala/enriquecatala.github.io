@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "10 performance powerbi tips"
 date:   2023-01-14 00:00:00 +0200

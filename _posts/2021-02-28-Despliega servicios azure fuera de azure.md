@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Despliega servicios de Azure fuera de Azure"
 date:   2021-02-26 00:00:00 +0200

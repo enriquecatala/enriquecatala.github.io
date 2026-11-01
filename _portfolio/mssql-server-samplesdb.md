@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 title: SQL Server samplesdb docker image
 feature-img: "img/sample_feature_blue.png"

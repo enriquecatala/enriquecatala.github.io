@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 title: GitHub account
 feature-img: "img/sample_feature_blue.png"

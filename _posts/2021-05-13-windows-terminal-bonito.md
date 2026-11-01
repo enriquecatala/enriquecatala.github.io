@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Windows Terminal bonito"
 date:   2021-05-13 00:00:00 +0200

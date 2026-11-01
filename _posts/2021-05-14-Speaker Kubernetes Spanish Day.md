@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Speaker Kubernetes Community Days Spain"
 date:   2021-05-14 00:00:00 +0200

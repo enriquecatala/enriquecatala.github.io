@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Speaker: Techmarathons"
 date:   2020-10-07 00:00:53 +0200
