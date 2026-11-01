@@ -2,34 +2,48 @@
 layout: default
 title: About
 permalink: /about/
-description: "Meet Enrique Catalá: data architect, computer engineer, speaker and educator."
+description: "Enrique Catalá, Principal Data Architect for Lidl Plus: 20+ years in data platforms, technical leadership, streaming, Data Mesh and agentic AI."
 ---
 <div class="about-page">
   <section class="about-intro" aria-labelledby="about-title">
     <div>
       <p class="eyebrow">A little about me</p>
       <h1 id="about-title">Enrique Catalá<span class="accent">.</span></h1>
-      <p class="about-role">Data architect. Engineer. Educator.</p>
-      <p class="about-lead">I build data platforms and share what I learn along the way. My work brings together architecture, distributed systems and a passion for teaching.</p>
+      <p class="about-role">Computer Engineer &amp; Executive Professional.</p>
+      <p class="about-lead">I’m a Computer Engineer and Executive Professional with more than 20 years of experience in the Data Platform space. Currently, I serve as Principal Data Architect for Lidl Plus, one of Europe’s biggest loyalty programmes, at SCRM International Lidl Hub / Schwarz Global Services Barcelona.</p>
       <div class="about-actions"><a class="button primary" href="{{ '/assets/files/Enrique Catala Bañuls - CV - EN - WITHOUT CONTACT DETAILS.pdf' | relative_url }}">Download my CV <span>↓</span></a><a class="text-link" href="https://www.linkedin.com/in/enriquecatala/">Find me on LinkedIn ↗</a></div>
     </div>
     <figure class="about-portrait"><img src="{{ '/img/enrique-estudio.png' | relative_url }}" alt="Enrique Catalá Bañuls" width="1717" height="2131"><figcaption>Enrique Catalá Bañuls</figcaption></figure>
   </section>
 
   <dl class="about-highlights" aria-label="Career highlights">
-    <div><dt>19+ years</dt><dd>Working with data platforms</dd></div>
-    <div><dt>150+ projects</dt><dd>Across international teams</dd></div>
-    <div><dt>10 years</dt><dd>As a Microsoft Data Platform MVP</dd></div>
+    <div><dt>20+ years</dt><dd>Working with data platforms</dd></div>
+    <div><dt>100+ engineers</dt><dd>Technical leadership across data &amp; platform</dd></div>
+    <div><dt>10 years</dt><dd>Consecutive years as a Microsoft Data Platform MVP</dd></div>
   </dl>
 
   <section class="about-story" aria-labelledby="story-title">
     <div><p class="eyebrow">The work behind the notes</p><h2 id="story-title">Building systems.<br>Sharing experience.</h2></div>
     <div class="about-prose">
-      <p>I’m a Computer Engineer and Data Architect at <strong>SCRM International Lidl Hub / Schwarz Global Services Barcelona</strong>, working on the data strategy behind <strong>Lidl Plus</strong>.</p>
-      <p>My interests lie in distributed computing and highly available transactional systems, across Azure and on-premises environments. I’ve worked on projects in Spain, Germany, the USA, the United Arab Emirates, the Netherlands, Mexico, Saudi Arabia and Austria.</p>
-      <p>Teaching has been a constant throughout that journey: through technical conferences, training and this blog. Earlier work in natural language processing and time-series forecasting also informs the way I approach data problems today.</p>
+      <p>In my role as <strong>Principal Data Architect for Lidl Plus</strong>, I technically lead a team of <strong>100+ data and platform engineers</strong> in shaping our data architecture. I combine strategic guidance with technical stewardship to improve scalability, agility and innovation, working with business leaders to align technology with corporate goals.</p>
+      <p>My focus is on high-performance data platforms, large-scale streaming and decentralised architectures guided by <strong>Data Contracts and Data Mesh</strong>. Across the Schwarz Group, I work on federated, self-service capabilities and engineering standards for ingestion, modelling and data consumption.</p>
+      <p>I’m also designing and deploying <strong>agentic architectures</strong> on top of data platforms: conversational analytics through semantic layers, LangGraph agents and multi-agent orchestration. I lead both the strategy and implementation of these systems, while continually researching emerging technologies and architectural methods. My earlier work in natural language processing and time-series forecasting informs this work.</p>
+      <p>My commitment to technical excellence and the community led to <strong>10 consecutive years as a Microsoft Data Platform MVP</strong>. Teaching remains part of that journey, through conferences, training and this blog. Over my career, I’ve led more than 150 projects across countries including Spain, Germany, the USA, the United Arab Emirates, the Netherlands, Mexico, Saudi Arabia and Austria.</p>
       <aside class="about-history"><span class="eyebrow">Part of the journey</span><p>I also co-founded <strong>Cloud Data Ninjas</strong>. The project is no longer maintained, but remains part of my professional history.</p><a class="text-link" href="{{ '/portfolio/clouddataninjas.html' | relative_url }}">View the archived project →</a></aside>
     </div>
+  </section>
+
+  <section class="about-focus" aria-labelledby="focus-title">
+    <div class="section-heading"><div><p class="eyebrow">What I work on</p><h2 id="focus-title">Platforms, strategy &amp; AI<span class="accent">.</span></h2></div></div>
+    <div class="credential-grid">
+      <div class="credential-card"><span class="eyebrow">Technical strategic leadership</span><h3>Data Mesh &amp; federation</h3><p>Leading the design and adoption of Data Mesh, collaborating across the Schwarz Group to establish a federated, scalable and self-service data platform.</p></div>
+      <div class="credential-card"><span class="eyebrow">Data platforms, streaming &amp; governance</span><h3>Real-time &amp; batch ingestion</h3><p>Building scalable ingestion systems with Spark, Databricks and Event Hubs, governed by robust Data Contracts. My streaming expertise also includes Kafka.</p></div>
+      <div class="credential-card"><span class="eyebrow">Agentic architectures &amp; AI</span><h3>Conversational analytics</h3><p>Leading the strategy and implementation of LangGraph-based agentic systems on top of data platforms, using semantic layers and complex multi-agent orchestration.</p></div>
+      <div class="credential-card"><span class="eyebrow">Standards &amp; best practices</span><h3>Engineering quality</h3><p>Establishing frameworks for data ingestion, modelling and consumption to uphold high standards of quality and engineering across the platform.</p></div>
+      <div class="credential-card"><span class="eyebrow">Tech-business integration</span><h3>Technology aligned with business</h3><p>Bringing technical and business insights into high-level strategic discussions with business leaders to align architecture and technology with corporate goals.</p></div>
+      <div class="credential-card"><span class="eyebrow">Innovation &amp; research</span><h3>Exploring what comes next</h3><p>Continually researching emerging technologies and architectural methods. My current exploration focuses on semantic layers, multi-agent systems and advanced Data Mesh.</p></div>
+    </div>
+    <p><strong>Ask me about:</strong> Data Platforms, Spark/Databricks, streaming with Kafka and Event Hubs, Data Contracts, agentic architectures with LangGraph, and AI/RAG integrations.</p>
   </section>
 
   <section class="about-credentials" aria-labelledby="credentials-title">
@@ -44,10 +58,19 @@ description: "Meet Enrique Catalá: data architect, computer engineer, speaker a
   <section class="about-bios" aria-labelledby="bios-title">
     <div><p class="eyebrow">For event organisers</p><h2 id="bios-title">Speaker biographies<span class="accent">.</span></h2><p>Long and short versions for introductions and event programmes.</p></div>
     <div class="bio-options">
-      <details><summary>Full biography</summary><p>I´m a Computer Engineer with more than 19 years of experience in DataPlatform, currently serving as the  <strong>Data Architect</strong>  at <em>SCRM International Lidl Hub / Schwarz Global Services Barcelona</em> and  <strong>co-founder</strong>  of <strong>Cloud Data Ninjas</strong>. As the Data Architect of <strong>Lidl Plus</strong>, one of the biggest Loyalty programs in Europe, I spearhead the data strategy, optimizing and innovating our company’s approach to data. My expertise includes a 10-year tenure as a Microsoft DataPlatform MVP and a year as a Microsoft AI MVP, in addition to certifications like Kubernetes Administrator, Data Scientist, Azure Data Engineer, Microsoft Certified Trainer and Cloud Data Ninja. My passion lies in distributed computing technologies and high-availability OLTP systems for both Azure Cloud and On-Premises. Although I no longer actively work in Natural Language Processing and multi-variate time series forecasting, my past experiences in these areas enrich my current projects. I have successfully led over 150 projects across diverse regions, including Spain, Germany, the USA, United Arab Emirates, Netherlands, Mexico, Saudi Arabia, Austria...</p></details>
-      <details><summary>Short biography</summary><p>Computer Engineer with +19 years of experience, <strong>Data architect</strong> at SCRM Lidl International Hub, <strong>co-founder</strong>  of Cloud Data Ninjas. I&#x27;m a seasoned Microsoft DataPlatform and AI MVP for 10 years, Certified Kubernetes Administrator, Certified Azure Data Scientist, Certified Azure Data Engineer, Microsoft Certified Trainer and Cloud Data Ninja.</p></details>
-      <details><summary>One-paragraph introduction</summary><p>Computer Engineer, <strong>Data architect</strong> of SCRM International Lidl Hub, <strong>co-founder</strong>  of Cloud Data Ninjas, seasoned Microsoft DataPlatform and AI MVP for 10 years, Certified Kubernetes Administrator, Certified Azure Data Scientist, Certified Azure Data Engineer, Microsoft Certified Trainer and Cloud Data Ninja.</p></details>
+      <details><summary>Full biography</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect for Lidl Plus at SCRM International Lidl Hub / Schwarz Global Services Barcelona. With more than 20 years in the data platform space, he provides technical leadership to over 100 data and platform engineers. He combines strategic guidance and technical stewardship, working with business leaders to align technology with corporate goals. His work covers scalable data platforms, large-scale streaming, Data Contracts and federated architectures guided by Data Mesh principles. He establishes engineering standards for ingestion, modelling and consumption, and researches emerging technologies and architectural methods. He also designs agentic systems using LangGraph, semantic layers and multi-agent orchestration to enable conversational analytics. A Microsoft Data Platform MVP for 10 consecutive years, Enrique shares his experience through conferences, training and technical writing. His background includes over 150 international projects and co-founding Cloud Data Ninjas, a project that is no longer maintained.</p></details>
+      <details><summary>Short biography</summary><p>Enrique Catalá is Principal Data Architect for Lidl Plus at SCRM International Lidl Hub / Schwarz Global Services Barcelona. A Computer Engineer and Executive Professional with more than 20 years of experience, he provides technical leadership to over 100 data and platform engineers. His focus spans Data Mesh, streaming, Data Contracts and agentic AI. He was a Microsoft Data Platform MVP for 10 consecutive years.</p></details>
+      <details><summary>One-paragraph introduction</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect for Lidl Plus, specialising in scalable data platforms, streaming, Data Mesh and agentic AI. He brings more than 20 years of experience and a decade of recognition as a Microsoft Data Platform MVP.</p></details>
     </div>
   </section>
-  <nav class="about-connect" aria-label="More from Enrique"><span class="eyebrow">Elsewhere</span><a href="https://github.com/enriquecatala">GitHub ↗</a><a href="https://youtube.com/enriquecatala">YouTube ↗</a><a href="https://twitter.com/enriquecatala">Twitter / X ↗</a><a href="https://github.com/sponsors/enriquecatala">GitHub Sponsors ↗</a></nav>
+  <section class="about-open-source" aria-labelledby="opensource-title">
+    <div class="section-heading"><div><p class="eyebrow">Built to share</p><h2 id="opensource-title">Open-source projects<span class="accent">.</span></h2></div><a class="text-link" href="https://github.com/enriquecatala">Explore my GitHub ↗</a></div>
+    <ul class="archive-list">
+      <li><a href="https://github.com/enriquecatala/mssql-server-samplesdb">mssql-server-samplesdb ↗</a><p>SQL Server Docker images with the official sample databases ready to use.</p></li>
+      <li><a href="https://github.com/enriquecatala/sqlserver-docker-alwayson">sqlserver-docker-alwayson ↗</a><p>Docker templates for SQL Server Availability Groups in local and test environments.</p></li>
+      <li><a href="https://github.com/enriquecatala/mcp-lightrag">mcp-lightrag ↗</a><p>An MCP server for LightRAG with support for idempotent file uploads.</p></li>
+    </ul>
+    <p class="about-personal"><strong>Away from the keyboard:</strong> I’m also an ultralight (ULM) pilot! <a class="text-link" href="https://youtu.be/1gtMmFfKebI?si=GpvOlHMlYoh3vmv_&amp;t=169">Watch me fly ↗</a></p>
+  </section>
+  <nav class="about-connect" aria-label="More from Enrique"><span class="eyebrow">Get in touch</span><a href="mailto:enrique@enriquecatala.com">Email me ↗</a><a href="https://github.com/enriquecatala">GitHub ↗</a><a href="https://youtube.com/enriquecatala">YouTube ↗</a><a href="https://twitter.com/enriquecatala">Twitter / X ↗</a><a href="https://github.com/sponsors/enriquecatala">GitHub Sponsors ↗</a></nav>
 </div>
