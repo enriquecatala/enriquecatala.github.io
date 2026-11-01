@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Become a Data Ninja with Enrique Catalá</title>
+    <title>Data Engineering with Enrique Catalá</title>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://0.0.0.0:4000/</link>
     <description>Blog de Enrique Catalá, Microsoft Data Platform MVP, Ingeniero Informático centrado en Ingeniería de datos con Enrique Catalá Bañuls.</description>
-    <pubDate>Tue, 04 Jun 2024 17:56:48 -0500</pubDate>
+    <pubDate>Sun, 01 Nov 2026 21:42:30 +0000</pubDate>
     
       <item>
         <title>Speaking at Databricks Data + AI Summit 2024</title>
@@ -54,7 +54,7 @@
 
 &lt;p&gt;For more details on our session, visit: &lt;a href=&quot;https://www.databricks.com/dataaisummit/session/unity-catalog-migration-europes-top-supermarket-chain&quot;&gt;Unity Catalog Migration in Europe’s Top Supermarket Chain&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 04 Jun 2024 17:00:00 -0500</pubDate>
+        <pubDate>Tue, 04 Jun 2024 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -73,7 +73,7 @@
 Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 #MCT #MicrosoftCertifiedTrainer #ProfessionalDevelopment #TechCommunity&lt;/p&gt;
 </description>
-        <pubDate>Thu, 07 Mar 2024 16:00:00 -0600</pubDate>
+        <pubDate>Thu, 07 Mar 2024 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -92,7 +92,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;&lt;a href=&quot;https://www.stackit.de/en/cloudxsummit/&quot;&gt;¿Te vienes?&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 22 Jun 2023 17:00:00 -0500</pubDate>
+        <pubDate>Thu, 22 Jun 2023 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -114,7 +114,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;&lt;a href=&quot;https://www.eventbrite.es/e/entradas-global-power-platform-bootcamp-2023-488547878857&quot;&gt;¿Te vienes?&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Feb 2023 16:00:00 -0600</pubDate>
+        <pubDate>Thu, 09 Feb 2023 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -134,7 +134,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;&lt;a href=&quot;https://www.eventbrite.com/e/registro-powerbiespanol-virtual-conf-2023-fin-tour-power-bi-days-477181431507&quot;&gt;¿Te vienes?&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 13 Jan 2023 16:00:00 -0600</pubDate>
+        <pubDate>Fri, 13 Jan 2023 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -152,7 +152,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;&lt;em&gt;Imagine if you could create a data ingestion architecture that allows you to exploit it in real-time or in batch at will, prepared for AI teams (ultra-clean and versioned data), that scales without limits, and where you don’t have to worry about cleaning the data because it’s literally impossible to ingest garbage. Does it seem impossible to you? Come over, and I’ll share some secrets with you :)&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 19 Dec 2022 16:00:00 -0600</pubDate>
+        <pubDate>Mon, 19 Dec 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -166,7 +166,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@enriquecatala/fastapi-ai-template-c46a8c5ed3fc&quot;&gt;Read more…&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 24 Oct 2022 17:00:00 -0500</pubDate>
+        <pubDate>Mon, 24 Oct 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -186,7 +186,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/speaker-kcdspain/sentiment%20inference%20huggingface.png&quot; alt=&quot;sentiment inference huggingface&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 04 Oct 2022 17:00:00 -0500</pubDate>
+        <pubDate>Tue, 04 Oct 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -200,7 +200,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;Espero que te guste&lt;/p&gt;
 </description>
-        <pubDate>Sun, 02 Oct 2022 17:00:00 -0500</pubDate>
+        <pubDate>Sun, 02 Oct 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -211,7 +211,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@enriquecatala/java-io-filenotfoundexception-hadoop-home-and-hadoop-home-dir-are-unset-4004d5e05f67&quot;&gt;Continua leyendo al artículo original&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 May 2022 17:00:00 -0500</pubDate>
+        <pubDate>Wed, 25 May 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -230,7 +230,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 &lt;p&gt;Now, you will be storing the same credentials of windows and linux&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 25 May 2022 17:00:00 -0500</pubDate>
+        <pubDate>Wed, 25 May 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -244,7 +244,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@enriquecatala/work-locally-with-azure-machine-learning-from-docker-image-2c2e6884a3e8&quot;&gt;Read more…&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 11 Jan 2022 16:00:00 -0600</pubDate>
+        <pubDate>Tue, 11 Jan 2022 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -264,7 +264,7 @@ Here’s to #LifelongLearning and the never-ending pursuit of excellence! 🌟
 &lt;p&gt;&lt;a href=&quot;https://talks.codemotion.com/applied-deep-learning-state-of-the-art&quot;&gt;&lt;img src=&quot;/img/posts/codemotion-2021-speaker/codemotion2021speaker.png&quot; alt=&quot;CodemotionSpeaker&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 21 Dec 2021 16:00:00 -0600</pubDate>
+        <pubDate>Tue, 21 Dec 2021 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -330,7 +330,7 @@ U.S. I-GPE
 
 &lt;p&gt;Enjoy!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 15 Sep 2021 17:00:00 -0500</pubDate>
+        <pubDate>Wed, 15 Sep 2021 22:00:00 +0000</pubDate>
       </item>
     
       <item>
@@ -381,7 +381,7 @@ U.S. I-GPE
 
 &lt;p&gt;Nice!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 15 Sep 2021 17:00:00 -0500</pubDate>
+        <pubDate>Wed, 15 Sep 2021 22:00:00 +0000</pubDate>
       </item>
     
   </channel>
