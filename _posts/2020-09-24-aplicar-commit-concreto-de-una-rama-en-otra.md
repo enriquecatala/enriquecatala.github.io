@@ -1,4 +1,6 @@
 ---
+description: "Cómo llevar un commit concreto de una rama de Git a otra con cherry-pick para reutilizar una corrección sin fusionar todos los cambios."
+lang: es
 layout: post
 title:  "Cómo aplicar un commit concreto de una rama en otra"
 date:   2020-09-10 00:00:00 +0200

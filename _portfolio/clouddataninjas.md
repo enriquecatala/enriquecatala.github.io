@@ -3,10 +3,11 @@ layout: post
 title: Cloud Data Ninjas
 feature-img: "img/icons/ninja_pose.png"
 thumbnail-path: "/img/icons/ninja_pose-75x75.png"
-short-description: Cloud Data Ninjas website
+short-description: Past project, no longer maintained
 tags: Portfolio
-redirect_to: https://www.clouddataninjas.com
 ---
+
+Cloud Data Ninjas is a project I co-founded that is no longer maintained.
 
 # Microsoft transcript 
 

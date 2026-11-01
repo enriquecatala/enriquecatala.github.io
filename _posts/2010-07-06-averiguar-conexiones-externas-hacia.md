@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Averiguar conexiones externas hacia nuestro SQL Server"
 date:   2010-07-06 00:00:00 +0200

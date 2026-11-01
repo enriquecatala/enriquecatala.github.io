@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Libera espacio del fichero ext4.vhdx"
 date:   2021-04-15 00:00:00 +0200

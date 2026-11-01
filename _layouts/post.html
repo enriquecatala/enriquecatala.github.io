@@ -1,51 +1,15 @@
 ---
 layout: default
 ---
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <h1 class="title">{{ page.title }}</h1>
-    <p class="meta">
-    {{ page.date | date: "%B %-d, %Y" }}
-    {% if page.author %} - {{ page.author }}{% endif %}
-    </p>
-  </header>  
-  <section class="post-content">
-    <!-- Social links -->
-    <div class="social_links">
-      <a href="https://www.clouddataninjas.com"><img src="https://img.shields.io/website?down_color=red&down_message=down&label=clouddataninjas.com&up_color=46C018&url=https%3A%2F%2Fwww.clouddataninjas.com&style=for-the-badge" alt="Cloud Data Ninjas"></a>
-      <a href="https://github.com/enriquecatala" target="_blank"><img  src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=for-the-badge" alt="GitHub followers of Enrique Catalá" ></a>
-      <a href="https://github.com/sponsors/enriquecatala" target="_blank"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=for-the-badge&logo=github&logoColor=EA4AAA" alt="Sponsor Enrique Catalá on GitHub" ></a>    
-      <a href="https://www.linkedin.com/in/enriquecatala" target="_blank"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=for-the-badge&logo=linkedin" alt="LinkedIn Enrique Catalá" ></a>        
-      <a href="https://twitter.com/enriquecatala" target="_blank"><img src="https://img.shields.io/twitter/follow/enriquecatala?color=blue&label=twitter&style=for-the-badge" alt="Twitter @enriquecatala" ></a>    
-      <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>    
-    </div>  
-  <!-- Tags -->  
-  {% if page.tags %}
-    <span>[
-      {% for tag in page.tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-      {% endfor %}
-    ]</span>
-  {% endif %}
-
-  <!-- this is the content of the post-->
-  {{ content }}
-
-  </section>
-
-  <center><a class="button" href="/">Go back home</a></center>
-
+<article class="reading-page">
+  <header class="article-header">
+    <a class="eyebrow" href="{{ '/' | relative_url }}#articles">← Back to the notebook</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}<p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %B %Y' }}</time>{% if page.author %} · {{ page.author }}{% endif %}</p>{% endif %}
+    {% if page.tags %}<div class="tags">{% for tag in page.tags %}<a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a>{% endfor %}</div>{% endif %}
+  </header>
+  {% if page.feature-img %}<img class="article-feature" src="{{ page.feature-img | relative_url }}" alt="" loading="lazy">{% endif %}
+  <div class="post-content">{{ content }}</div>
+  <div class="article-end"><a class="text-link" href="{{ '/' | relative_url }}#articles">← Explore more articles</a><span>Written by Enrique Catalá</span></div>
 </article>
-
-
-  {% include dataninja.html %}
-
-
-<!-- Disqus -->
-{% if site.theme_settings.disqus_shortname %}
-<div class="comments">
-  {% include disqus.html %}
-</div>
-{% endif %}
-
+{% if site.theme_settings.disqus_shortname %}<div class="comments">{% include disqus.html %}</div>{% endif %}

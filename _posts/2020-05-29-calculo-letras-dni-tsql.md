@@ -1,4 +1,6 @@
 ---
+description: "Cómo calcular y validar la letra del DNI con T-SQL en SQL Server, con una consulta de ejemplo para procesar un conjunto de números."
+lang: es
 layout: post
 title:  "Cálculo de letras del DNI con T-SQL"
 date:   2020-05-29 00:00:00 +0200
@@ -44,5 +46,3 @@ SELECT SUBSTRING(@letras_nif, pos_letra ,1) AS letra,
        str(numnif)+'-'+SUBSTRING(@letras_nif, pos_letra ,1) dni        
 FROM subselect
 ```
-
-Únete a la comunidad de [Cloud Data Ninjas](https://www.clouddataninjas.com/) para recibir recursos exclusivos, insights de vanguardia y estrategias avanzadas en arquitectura de datos y cloud, directamente en tu bandeja de entrada: [https://www.clouddataninjas.com/](https://www.clouddataninjas.com/)

@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Despliega tu red neuronal con FastAPI en kubernetes"
 date:   2022-10-05 00:00:00 +0200

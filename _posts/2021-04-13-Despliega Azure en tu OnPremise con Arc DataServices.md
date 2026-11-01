@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Despliega Azure en tu OnPremise con Azure Arc DataServices"
 date:   2021-04-13 00:00:00 +0200

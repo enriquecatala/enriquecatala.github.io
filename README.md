@@ -61,3 +61,38 @@ A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and 
 [Original Repo](https://github.com/Bloc/portfolio-iro/)
 
 [Demo](https://rohanchandra.github.io/type-theme/)
+
+## Dependency maintenance
+
+Development uses the official `ruby:3.3-bookworm` image and the versions in
+`Gemfile.lock`. The container installs missing gems into a persistent
+`bundle-cache` volume before running Jekyll.
+
+```sh
+docker compose pull
+docker compose run --rm --entrypoint bundle jekyll update
+docker compose run --rm jekyll jekyll build --safe
+docker compose up
+```
+
+Review and commit `Gemfile.lock` after updating. Check search results and math
+rendering when changing jQuery or KaTeX. Ruby 3.3 receives security maintenance
+until March 2027; plan the next Ruby upgrade before that date.
+
+Known audit limitation: `github-pages` pins `jekyll-remote-theme` 0.4.3, which
+requires `rubyzip < 3.0`. The resolved `rubyzip` 2.4.1 is affected by
+[CVE-2026-85396](https://github.com/advisories/GHSA-47m2-wp7j-p9vc); the fix
+requires 3.4.0 or newer. Resolving this requires an upstream dependency change
+or a separate build setup that does not depend on the GitHub Pages bundle.
+
+## Search metadata
+
+Titles, canonical URLs, social cards and structured data are rendered by
+`_includes/seo.html`. Set a concise `description` and the main content language
+(`lang: en` or `lang: es`) in page front matter. Posts fall back to their excerpt.
+Use `image: /img/...` for a relevant sharing image; keep it below 5 MB.
+Set `last_modified_at` only for a real content update, not on every build.
+Utility pages use `noindex: true` together with `sitemap: false`; robots.txt
+keeps them crawlable so crawlers can read the noindex directive.
+After publishing, submit `/sitemap.xml` in Google Search Console and inspect
+representative article URLs. Local checks do not establish live indexing.

@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Speaker netCoreConf 2021"
 date:   2021-09-01 00:00:00 +0200

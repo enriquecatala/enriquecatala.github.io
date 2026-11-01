@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Video: Parchear SQL Server en windows (1/2)"
 date:   2020-10-02 00:00:53 +0200

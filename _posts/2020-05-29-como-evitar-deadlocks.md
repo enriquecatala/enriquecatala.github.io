@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Como evitar los temidos DeadLocks"
 date:   2020-05-29 00:00:00 +0200

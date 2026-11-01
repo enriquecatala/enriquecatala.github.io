@@ -1,5 +1,7 @@
 ---
+sitemap: false
 layout: post
+featured: false
 title: My YouTube channel
 feature-img: "img/my-youtube-header.png"
 thumbnail-path: "/img/icons/youtube-75x75.png"

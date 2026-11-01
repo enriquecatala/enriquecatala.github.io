@@ -1,59 +1,14 @@
-// Mix-ins
-%padding-small {
-  padding: $padding-x-small $padding-x-small * 2;
-  @media (max-width: 1000px) {
-    padding: $padding-x-small $padding-x-small;
-  }
-}
-%padding-regular {
-  padding: $padding-small $padding-large;
-  @media (max-width: 1000px) {
-    padding: $padding-small * 1.5 $padding-large / 1.6;
-  }
-}
-%padding-regular-posts {
-  padding: 1% $padding-large 1%;
-  @media (max-width: 1000px) {
-    padding: $padding-small * 1.5 $padding-large / 1.6;
-  }
-}
-%link-hover {
-  text-decoration: underline;
-  color: darken($link-color, 15%);
-}
-// Buttons
-.button {
-  border-radius: 0.3em;
-  border: 1px solid;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 0.5em 0.75em;
-}
-a.button:hover {
-  background: $link-color;
-  border: 1px solid $link-color;
-  color: $background-color;
-  text-decoration: none;
-}
-
-.red-button {
-  background-color: $link-color; // This uses the red color already defined
-  color: $header-desc-text-color; // White color for text
-  font-size: 20px;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.red-button:hover {
-  background-color: darken($link-color, 10%); // Darkens the button on hover
-}
-
-
-// States
-.disabled {
-  opacity: 0.7;
-}
+.eyebrow { font-size: .73rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; color: $muted-color; text-decoration: none; }
+.accent { color: $link-color; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 24px; border: 1px solid $border-color; padding: 12px 22px; border-radius: 4px; text-decoration: none; font-size: .95rem; font-weight: 700; }
+.button:hover { background: $surface-muted-color; }
+.button.primary { background: $text-color; color: #fff; border-color: $text-color; }
+.button.primary:hover { background: $link-hover-color; }
+.text-link { font-size: .9rem; font-weight: 700; text-decoration: none; }
+.text-link:hover { text-decoration: underline; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags a { display: inline-flex; gap: 8px; align-items: center; border: 1px solid $border-color; border-radius: 4px; padding: 5px 12px; font-size: .8rem; text-decoration: none; color: $body-color; }
+.tags a:hover { background: $surface-muted-color; border-color: $interactive-border-color; }
+.tags span { color: $muted-color; }
+.skip-link { position: absolute; left: 24px; top: -100px; background: $text-color; color: white; padding: 12px; z-index: 10; }
+.skip-link:focus { top: 12px; color: white; }

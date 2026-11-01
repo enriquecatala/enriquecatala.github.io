@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Cómo instalar Kubernetes con Kubeadm (3/4)"
 date:   2021-04-13 00:00:00 +0200

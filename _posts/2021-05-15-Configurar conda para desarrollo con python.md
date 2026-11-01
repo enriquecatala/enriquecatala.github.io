@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: post
 title:  "Configurar conda para desarrollo con python"
 date:   2021-05-15 00:00:00 +0200

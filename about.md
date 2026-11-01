@@ -1,54 +1,77 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
-feature-img: "img/my-youtube-header.png"
+description: "Enrique Catalá, Principal Data Architect shaping a platform with 100M+ users. Computer Engineer, Executive Professional, Entrepreneur & Advisor."
 ---
+<div class="about-page">
+  <section class="about-intro" aria-labelledby="about-title">
+    <div>
+      <p class="eyebrow">A little about me</p>
+      <h1 id="about-title">Enrique Catalá<span class="accent">.</span></h1>
+      <p class="about-role">Principal Data Architect</p>
+      <p class="about-lead">I’m a Computer Engineer and Executive Professional with more than 20 years of experience in the Data Platform space. As <strong>Principal Data Architect</strong>, I shape the data architecture of a platform with <strong>over 100 million users</strong> within <strong>Europe’s leading retail group</strong>.</p>
+      <p class="about-affiliations">Entrepreneur &amp; Advisor</p>
+      <div class="about-actions"><a class="button primary" href="{{ '/assets/files/Enrique Catala Bañuls - CV - EN - WITHOUT CONTACT DETAILS.pdf' | relative_url }}">Download my CV <span>↓</span></a><a class="text-link" href="https://www.linkedin.com/in/enriquecatala/">Find me on LinkedIn ↗</a></div>
+    </div>
+    <figure class="about-portrait"><img src="{{ '/img/enrique-estudio.png' | relative_url }}" alt="Enrique Catalá Bañuls" width="1717" height="2131"><figcaption>Enrique Catalá Bañuls</figcaption></figure>
+  </section>
 
-# Enrique Catalá Bañuls
+  <dl class="about-highlights" aria-label="Career highlights">
+    <div><dt>100M+ users</dt><dd>Scale of the platform I help shape</dd></div>
+    <div><dt>100+ engineers</dt><dd>Technical leadership across data &amp; platform</dd></div>
+    <div><dt>10 years</dt><dd>Consecutive years as a Microsoft Data Platform MVP</dd></div>
+  </dl>
 
-<div style="display: flex; align-items: center; justify-content: center;">
-    <img class="img-valign" 
-         src="https://enriquecatala.com/img/enrique.jpg" 
-         alt="Enrique Catalá Bañuls" 
-         style="min-height: 100px; max-height: 150px; width: auto;" />
-    <a href="https://www.credly.com/badges/cde0dbd2-8d03-4ca7-8284-d471d65d0e5f">
-        <img src="/img/icons/MVP_Logo_horizontal.png" 
-        alt="MVP Logo" style="min-height: 100px; max-height: 150px; "/>
-    </a>
+  <section class="about-story" aria-labelledby="story-title">
+    <div><p class="eyebrow">The work behind the notes</p><h2 id="story-title">Building systems.<br>Sharing experience.</h2></div>
+    <div class="about-prose">
+      <p>In my role as <strong>Principal Data Architect</strong>, I technically lead a team of <strong>100+ data and platform engineers</strong> in shaping our data architecture. I combine strategic guidance with technical stewardship to improve scalability, agility and innovation, working with business leaders to align technology with corporate goals.</p>
+      <p>My focus is on high-performance data platforms, large-scale streaming and decentralised architectures guided by <strong>Data Contracts and Data Mesh</strong>. Across the Schwarz Group, I work on federated, self-service capabilities and engineering standards for ingestion, modelling and data consumption.</p>
+      <p>I’m also designing and deploying <strong>agentic architectures</strong> on top of data platforms: conversational analytics through semantic layers, LangGraph agents and multi-agent orchestration. I lead both the strategy and implementation of these systems, while continually researching emerging technologies and architectural methods. My earlier work in natural language processing and time-series forecasting informs this work.</p>
+      <p>My commitment to technical excellence and the community led to <strong>10 consecutive years as a Microsoft Data Platform MVP</strong>. Teaching remains part of that journey, through conferences, training and this blog. Over my career, I’ve led more than 150 projects across countries including Spain, Germany, the USA, the United Arab Emirates, the Netherlands, Mexico, Saudi Arabia and Austria.</p>
+      <aside class="about-history"><span class="eyebrow">Part of the journey</span><p>I also co-founded <strong>Cloud Data Ninjas</strong>. The project is no longer maintained, but remains part of my professional history.</p><a class="text-link" href="{{ '/portfolio/clouddataninjas.html' | relative_url }}">View the archived project →</a></aside>
+    </div>
+  </section>
+
+  <section class="about-focus" aria-labelledby="focus-title">
+    <div class="section-heading"><div><p class="eyebrow">What I work on</p><h2 id="focus-title">Platforms, strategy &amp; AI<span class="accent">.</span></h2></div></div>
+    <div class="credential-grid">
+      <div class="credential-card"><span class="eyebrow">Technical strategic leadership</span><h3>Data Mesh &amp; federation</h3><p>Leading the design and adoption of Data Mesh, collaborating across the Schwarz Group to establish a federated, scalable and self-service data platform.</p></div>
+      <div class="credential-card"><span class="eyebrow">Data platforms, streaming &amp; governance</span><h3>Real-time &amp; batch ingestion</h3><p>Building scalable ingestion systems with Spark, Databricks and Event Hubs, governed by robust Data Contracts. My streaming expertise also includes Kafka.</p></div>
+      <div class="credential-card"><span class="eyebrow">Agentic architectures &amp; AI</span><h3>Conversational analytics</h3><p>Leading the strategy and implementation of LangGraph-based agentic systems on top of data platforms, using semantic layers and complex multi-agent orchestration.</p></div>
+      <div class="credential-card"><span class="eyebrow">Standards &amp; best practices</span><h3>Engineering quality</h3><p>Establishing frameworks for data ingestion, modelling and consumption to uphold high standards of quality and engineering across the platform.</p></div>
+      <div class="credential-card"><span class="eyebrow">Tech-business integration</span><h3>Technology aligned with business</h3><p>Bringing technical and business insights into high-level strategic discussions with business leaders to align architecture and technology with corporate goals.</p></div>
+      <div class="credential-card"><span class="eyebrow">Innovation &amp; research</span><h3>Exploring what comes next</h3><p>Continually researching emerging technologies and architectural methods. My current exploration focuses on semantic layers, multi-agent systems and advanced Data Mesh.</p></div>
+    </div>
+    <p><strong>Ask me about:</strong> Data Platforms, Spark/Databricks, streaming with Kafka and Event Hubs, Data Contracts, agentic architectures with LangGraph, and AI/RAG integrations.</p>
+  </section>
+
+  <section class="about-credentials" aria-labelledby="credentials-title">
+    <div class="section-heading"><div><p class="eyebrow">Learning &amp; recognition</p><h2 id="credentials-title">Credentials<span class="accent">.</span></h2></div><a class="text-link" href="{{ '/portfolio/Badges.html' | relative_url }}">Explore all badges →</a></div>
+    <div class="credential-grid">
+      <div class="credential-card"><span class="eyebrow">Microsoft</span><h3>MVP recognition</h3><p>A decade as a Data Platform MVP, plus a year as an AI MVP.</p><a class="text-link" href="https://www.credly.com/badges/cde0dbd2-8d03-4ca7-8284-d471d65d0e5f">View credential ↗</a></div>
+      <div class="credential-card"><span class="eyebrow">Cloud native</span><h3>Kubernetes</h3><p>Certified Kubernetes Administrator (CKA).</p><a class="text-link" href="https://www.youracclaim.com/badges/0b17b446-3e58-4d13-aa0b-ded041a9260a/public_url">View credential ↗</a></div>
+      <div class="credential-card"><span class="eyebrow">Data &amp; education</span><h3>Azure &amp; training</h3><p>Azure Data Scientist, Azure Data Engineer and Microsoft Certified Trainer.</p><details><summary>Microsoft transcript</summary><p>ID: 977266<br>Access code: enriquecatala</p><a class="text-link" href="https://mcp.microsoft.com/Anonymous/Transcript/Validate">Open transcript ↗</a></details></div>
+    </div>
+  </section>
+
+  <section class="about-bios" aria-labelledby="bios-title">
+    <div><p class="eyebrow">For event organisers</p><h2 id="bios-title">Speaker biographies<span class="accent">.</span></h2><p>Long and short versions for introductions and event programmes.</p></div>
+    <div class="bio-options">
+      <details><summary>Full biography</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. He works at SCRM International Lidl Hub / Schwarz Global Services Barcelona. With more than 20 years in the data platform space, he provides technical leadership to over 100 data and platform engineers. He combines strategic guidance and technical stewardship, working with business leaders to align technology with corporate goals. His work covers scalable data platforms, large-scale streaming, Data Contracts and federated architectures guided by Data Mesh principles. He establishes engineering standards for ingestion, modelling and consumption, and researches emerging technologies and architectural methods. He also designs agentic systems using LangGraph, semantic layers and multi-agent orchestration to enable conversational analytics. A Microsoft Data Platform MVP for 10 consecutive years, Enrique shares his experience through conferences, training and technical writing. His background includes over 150 international projects and co-founding Cloud Data Ninjas, a project that is no longer maintained.</p></details>
+      <details><summary>Short biography</summary><p>Enrique Catalá is Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. A Computer Engineer and Executive Professional with more than 20 years of experience, he provides technical leadership to over 100 data and platform engineers. His focus spans Data Mesh, streaming, Data Contracts and agentic AI. He was a Microsoft Data Platform MVP for 10 consecutive years.</p></details>
+      <details><summary>One-paragraph introduction</summary><p>Enrique Catalá is a Computer Engineer and Executive Professional, currently Principal Data Architect shaping a platform with over 100 million users within Europe’s leading retail group. He specialises in scalable data platforms, streaming, Data Mesh and agentic AI. He brings more than 20 years of experience and a decade of recognition as a Microsoft Data Platform MVP.</p></details>
+    </div>
+  </section>
+  <section class="about-open-source" aria-labelledby="opensource-title">
+    <div class="section-heading"><div><p class="eyebrow">Built to share</p><h2 id="opensource-title">Open-source projects<span class="accent">.</span></h2></div><a class="text-link" href="https://github.com/enriquecatala">Explore my GitHub ↗</a></div>
+    <ul class="archive-list">
+      <li><a href="https://github.com/enriquecatala/mssql-server-samplesdb">mssql-server-samplesdb ↗</a><p>SQL Server Docker images with the official sample databases ready to use.</p></li>
+      <li><a href="https://github.com/enriquecatala/sqlserver-docker-alwayson">sqlserver-docker-alwayson ↗</a><p>Docker templates for SQL Server Availability Groups in local and test environments.</p></li>
+      <li><a href="https://github.com/enriquecatala/mcp-lightrag">mcp-lightrag ↗</a><p>An MCP server for LightRAG with support for idempotent file uploads.</p></li>
+    </ul>
+    <p class="about-personal"><strong>Away from the keyboard:</strong> I’m also an ultralight (ULM) pilot! <a class="text-link" href="https://youtu.be/1gtMmFfKebI?si=GpvOlHMlYoh3vmv_&amp;t=169">Watch me fly ↗</a></p>
+  </section>
+  <nav class="about-connect" aria-label="More from Enrique"><span class="eyebrow">Get in touch</span><a href="https://www.linkedin.com/in/enriquecatala/">LinkedIn ↗</a><a href="mailto:enrique@enriquecatala.com">Email me ↗</a><a href="https://github.com/enriquecatala">GitHub ↗</a><a href="https://twitter.com/enriquecatala">Twitter / X ↗</a><a href="https://github.com/sponsors/enriquecatala">GitHub Sponsors ↗</a></nav>
 </div>
-
-<a href="https://www.clouddataninjas.com">
-        <img src="/img/CLOUDDATANINJAS.png" 
-        alt="Cloud Data Ninjas" style="min-height: 100px; max-height: 150px; "/>
-    </a>
-
-<div class="social_links">
-    <a href="https://www.clouddataninjas.com"><img src="https://img.shields.io/website?down_color=red&down_message=down&label=clouddataninjas.com&up_color=46C018&url=https%3A%2F%2Fwww.clouddataninjas.com&style=for-the-badge" alt="Cloud Data Ninjas"></a>
-    <a href="https://github.com/enriquecatala" target="_blank"><img  src="https://img.shields.io/github/followers/enriquecatala?label=GitHub&style=for-the-badge" alt="GitHub followers of Enrique Catalá" ></a>
-    <a href="https://github.com/sponsors/enriquecatala" target="_blank"><img src="https://img.shields.io/badge/GitHub_Sponsors--_.svg?style=for-the-badge&logo=github&logoColor=EA4AAA" alt="Sponsor Enrique Catalá on GitHub" ></a>    
-    <a href="https://www.linkedin.com/in/enriquecatala" target="_blank"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=for-the-badge&logo=linkedin" alt="LinkedIn Enrique Catalá" ></a>        
-    <a href="https://twitter.com/enriquecatala" target="_blank"><img src="https://img.shields.io/twitter/follow/enriquecatala?color=blue&label=twitter&style=for-the-badge" alt="Twitter @enriquecatala" ></a>    
-    <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channelid="UCYboHnN6tvFfHqPWZWY82AQ" data-layout="default" data-count="default"></div>    
-</div>  
-
-| Curriculum Vitae | Microsoft transcript | Cloud Native Certification |
-|-----------------|-----------------|-----------------|
-| [![Download Curriculum Vitae Enrique Catalá Bañuls](/img/icons/transcript.png)](/assets/files/Enrique Catala Bañuls - CV - EN - WITHOUT CONTACT DETAILS.pdf)           | [Microsoft transcript](https://mcp.microsoft.com/Anonymous/Transcript/Validate) <br> Transcript ID: 977266<br> Access code: enriquecatala  | [CKA: Certified Kubernetes Administrator](https://www.youracclaim.com/badges/0b17b446-3e58-4d13-aa0b-ded041a9260a/public_url) |
-
-
-# BIO
-
-I´m a Computer Engineer with more than 19 years of experience in DataPlatform, currently serving as **Data Architect** at _SCRM International Lidl Hub / Schwarz Global Services Barcelona_ and **co-founder** of [**Cloud Data Ninjas**](https://www.clouddataninjas.com/). As the Data Architect of **Lidl Plus** (one of the biggest Loyalty programs in Europe), I spearhead the data strategy, optimizing and innovating our company’s approach to data. With over two decades of experience in the field, I've had the privilege of working on cutting-edge projects around the world. My passion for data, technology, and teaching led to a decade-long tenure as a Microsoft Data Platform MVP. 
-
-## Long
-
-I´m a Computer Engineer with more than 19 years of experience in DataPlatform, currently serving as the  **Data Architect**  at _SCRM International Lidl Hub / Schwarz Global Services Barcelona_ and  **co-founder**  of [**Cloud Data Ninjas**](https://www.clouddataninjas.com/). As the Data Architect of **Lidl Plus**, one of the biggest Loyalty programs in Europe, I spearhead the data strategy, optimizing and innovating our company’s approach to data. My expertise includes a 10-year tenure as a Microsoft DataPlatform MVP and a year as a Microsoft AI MVP, in addition to certifications like Kubernetes Administrator, Data Scientist, Azure Data Engineer, Microsoft Certified Trainer and Cloud Data Ninja. My passion lies in distributed computing technologies and high-availability OLTP systems for both Azure Cloud and On-Premises. Although I no longer actively work in Natural Language Processing and multi-variate time series forecasting, my past experiences in these areas enrich my current projects. I have successfully led over 150 projects across diverse regions, including Spain, Germany, the USA, United Arab Emirates, Netherlands, Mexico, Saudi Arabia, Austria...
-
-## Short
-
-Computer Engineer with +19 years of experience, **Data architect** at SCRM Lidl International Hub, **co-founder**  of [Cloud Data Ninjas](https://www.clouddataninjas.com/). I'm a seasoned Microsoft DataPlatform and AI MVP for 10 years, Certified Kubernetes Administrator, Certified Azure Data Scientist, Certified Azure Data Engineer, Microsoft Certified Trainer and Cloud Data Ninja.
-
-## Ultra-short
-
-Computer Engineer, **Data architect** of SCRM International Lidl Hub, **co-founder**  of [Cloud Data Ninjas](https://www.clouddataninjas.com/), seasoned Microsoft DataPlatform and AI MVP for 10 years, Certified Kubernetes Administrator, Certified Azure Data Scientist, Certified Azure Data Engineer, Microsoft Certified Trainer and Cloud Data Ninja.

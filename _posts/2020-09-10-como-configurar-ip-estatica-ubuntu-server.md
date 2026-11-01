@@ -1,4 +1,6 @@
 ---
+description: "Configura una IP estática en Ubuntu Server sin interfaz gráfica mediante Netplan: archivo YAML, dirección de red y aplicación de los cambios."
+lang: es
 layout: post
 title:  "Cómo configurar ip estática en Ubuntu Server"
 date:   2020-09-10 00:00:00 +0200
